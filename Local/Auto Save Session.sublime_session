@@ -1392,10 +1392,30 @@
 			"build_varint": "",
 			"command_palette":
 			{
-				"height": 242.0,
-				"last_filter": "gitsta",
+				"height": 392.0,
+				"last_filter": "gitp",
 				"selected_items":
 				[
+					[
+						"gitp",
+						"Git: Push Current Branch"
+					],
+					[
+						"gits",
+						"Git: Status"
+					],
+					[
+						"gitaddre",
+						"Git: Add Remote"
+					],
+					[
+						"gitco",
+						"Git: Commit"
+					],
+					[
+						"git :add",
+						"Git: Quick Add"
+					],
 					[
 						"gitsta",
 						"Git: Status"
@@ -1810,7 +1830,19 @@
 			{
 				"height": 0.0
 			},
+			"output.git-commit":
+			{
+				"height": 118.0
+			},
 			"output.git-init":
+			{
+				"height": 118.0
+			},
+			"output.git-push":
+			{
+				"height": 118.0
+			},
+			"output.git-remote":
 			{
 				"height": 118.0
 			},
