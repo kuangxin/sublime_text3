@@ -1,0 +1,80 @@
+[
+{
+    "keys": ["f10"], "command": "verilog_type",
+    "context":
+    [
+        { "key": "num_selections", "operator": "equal", "operand": 1 },
+        { "key": "selector", "operator": "equal", "operand": "source.systemverilog"}
+    ]
+},
+{
+    "keys": ["alt+m"], "command": "verilog_module_inst",
+    "context":
+    [
+        { "key": "num_selections", "operator": "equal", "operand": 1 },
+        { "key": "selector", "operator": "equal", "operand": "source.systemverilog"}
+    ]
+},
+{
+    "keys": ["ctrl+shift+f10"], "command": "verilog_toggle_dot_star",
+    "context":
+    [
+        { "key": "num_selections", "operator": "equal", "operand": 1 },
+        { "key": "selector", "operator": "equal", "operand": "source.systemverilog"}
+    ]
+},
+{
+    "keys": ["ctrl+shift+a"], "command": "verilog_align",
+    "context":
+    [
+        { "key": "selector", "operator": "equal", "operand": "source.systemverilog"}
+    ]
+},
+{
+    "keys": ["alt+shift+a"], "command": "verilog_align", "args":{"cmd":"reindent"},
+    "context":
+    [
+        { "key": "selector", "operator": "equal", "operand": "source.systemverilog"}
+    ]
+},
+{
+    "keys": ["ctrl+f12"], "command": "verilog_goto_driver",
+    "context":
+    [
+        { "key": "num_selections", "operator": "equal", "operand": 1 },
+        { "key": "selector", "operator": "equal", "operand": "source.systemverilog"}
+    ]
+},
+{
+    "keys": ["shift+f12"], "command": "verilog_goto_declaration",
+    "context":
+    [
+        { "key": "num_selections", "operator": "equal", "operand": 1 },
+        { "key": "selector", "operator": "equal", "operand": "source.systemverilog"}
+    ]
+},
+{
+    "keys": ["ctrl+'"],
+    "command": "insert_snippet", "args": {"contents": "begin\n\t$0\nend"},
+    "context": [{ "key": "selection_empty", "operator": "equal", "operand": true, "match_all": true }]
+},
+{
+    "keys": ["ctrl+'"],
+    "command": "run_macro_file",
+    "args": {"file": "Packages/SystemVerilog/beginend.sublime-macro"},
+    "context": [{ "key": "selection_empty", "operator": "equal", "operand": false, "match_all": true }]
+},
+
+    { "keys": ["f3"], "command": "find_under" },
+    { "keys": ["shift+f3"], "command": "find_prev" },
+    { "keys": ["ctrl+f3"], "command": "find_under" },
+    { "keys": ["ctrl+shift+f3"], "command": "find_under_prev" },
+    { "keys": ["alt+d"], "command": "find_all_under" },
+    { "keys": ["ctrl+alt+pageup"], "command": "select_lines", "args": {"forward": false} },
+    { "keys": ["ctrl+alt+enter"], "command": "select_lines", "args": {"forward": true} },
+    { "keys": ["ctrl+alt+l"], "command": "split_selection_into_lines" },
+{
+    "keys": ["ctrl+m"],
+    "command": "module"
+}        
+]

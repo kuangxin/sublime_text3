@@ -1,0 +1,9 @@
+<snippet>
+	<description>initial</description>
+	<content><![CDATA[initial
+begin
+	${0:}
+end]]></content>
+	<tabTrigger>ini</tabTrigger>
+	<scope>source.systemverilog</scope>
+</snippet>

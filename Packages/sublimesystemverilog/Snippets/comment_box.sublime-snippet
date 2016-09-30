@@ -1,0 +1,8 @@
+<snippet>
+   <name>divide Box</name>
+   <content><![CDATA[//******************************************************************************
+//                               $1
+//******************************************************************************]]></content>
+    <tabTrigger>div</tabTrigger>
+    <scope>source.systemverilog</scope>
+</snippet>

@@ -1,0 +1,18 @@
+<snippet>
+	<description>generate</description>
+	<content><![CDATA[generate
+	genvar var;
+	for(var=0;var 16;var=var+1)
+      begin:  
+        gen_name
+        mult_18x25 mult_18x25_1u2 (
+        .CLK(I_sys_clk),
+        .A({{(18-AD_BW){W_dout_fifo1[var1][AD_BW-1]}},W_dout_fifo1[var1][AD_BW-1:0]}),
+        .B({{(25-COE_BW){W_coe_rom1[var1][COE_BW-1]}},W_coe_rom1[var1][COE_BW-1:0]}),   
+        .P({{(43-AD_BW-COE_BW){1'b0}},W_fifo1_mult[var1]}) 
+        );
+      end
+endgenerate]]></content>
+	<tabTrigger>ge</tabTrigger>
+	<scope>source.systemverilog</scope>
+</snippet>
