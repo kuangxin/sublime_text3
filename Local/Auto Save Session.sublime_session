@@ -1,12 +1,13 @@
 {
 	"folder_history":
 	[
-		"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3",
+		"/E/FPGA/K7_changzhou/changzhou.srcs/sources_1/new",
 		"/E/FPGA/rtl_template",
+		"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3",
 		"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new"
 	],
 	"last_version": 3114,
-	"last_window_id": 4,
+	"last_window_id": 6,
 	"log_indexing": false,
 	"settings":
 	{
@@ -18,8 +19,116 @@
 				"selected_items":
 				[
 					[
+						"W_rx",
+						"W_rx_clk"
+					],
+					[
+						"al",
+						"al	always"
+					],
+					[
+						"I_",
+						"I_baud_rate"
+					],
+					[
+						"O_u",
+						"O_uart_trans_clk	reg"
+					],
+					[
+						"div",
+						"div	comment_long"
+					],
+					[
+						"RST",
+						"R_rst2"
+					],
+					[
+						"clk",
+						"clk_18m432"
+					],
+					[
+						"ge",
+						"ge	generate"
+					],
+					[
+						"gen",
+						"genvar"
+					],
+					[
+						"Idac",
+						"I_dac_ena1"
+					],
+					[
+						"Ic",
+						"I_SCLK"
+					],
+					[
 						"I",
-						"I_tx_clk"
+						"I_rst_n"
+					],
+					[
+						"r1",
+						"REG1_CONTINUE_MODE"
+					],
+					[
+						"r3",
+						"REG3B_MUTE"
+					],
+					[
+						"O_uart_e",
+						"O_uart_ena"
+					],
+					[
+						"O_dac",
+						"O_dac_ena"
+					],
+					[
+						"O_uart_",
+						"O_uart_ena"
+					],
+					[
+						"Rda",
+						"R_DA_length"
+					],
+					[
+						"r",
+						"readmemh	$readmemh()"
+					],
+					[
+						"I_ser",
+						"I_serdes_ena"
+					],
+					[
+						"da",
+						"DA_data_begin"
+					],
+					[
+						"U",
+						"UART_lenth_count"
+					],
+					[
+						"R_da",
+						"R_rx_isDA"
+					],
+					[
+						"R_rd",
+						"R_rd_en"
+					],
+					[
+						"W_rd",
+						"W_rd_valid"
+					],
+					[
+						"O_ser",
+						"O_serdes_ena"
+					],
+					[
+						"di",
+						"div	comment_long"
+					],
+					[
+						"R_head",
+						"R_head_begin1"
 					],
 					[
 						"R_l",
@@ -52,10 +161,6 @@
 					[
 						"be",
 						"beg	begin .. end"
-					],
-					[
-						"al",
-						"always"
 					],
 					[
 						"data",
@@ -123,15 +228,87 @@
 			},
 			"file_history":
 			[
+				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/uart_rx.v",
+				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/uart_tx.v",
+				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/tob_tb.sv",
+				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/top.sv",
+				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/serdes_rom_uart.dat",
+				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new - 24uart/uart_user.v",
+				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new - 24uart/divide_325.v",
+				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/sublimesystemverilog/Snippets/always.sublime-snippet",
+				"/E/FPGA/A7_changzhou/changzhou.srcs/constrs_1/new/top.xdc",
+				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/serdes_wrapper.sv",
+				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/serdes_exdes.v",
+				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/uart.sv",
+				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/uart_user.v",
+				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/serdes_tx_ctrl.sv",
+				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/serdes_rx_ctrl.sv",
+				"/E/FPGA/K7_changzhou/changzhou.srcs/sources_1/new/dac_if_top.sv",
+				"/E/FPGA/K7_changzhou/changzhou.srcs/sources_1/new/dac_ifx4.sv",
+				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/dac_if_top.sv",
+				"/E/FPGA/A7_serdes_x1/serdes_example/serdes_example.srcs/sources_1/imports/example_design/serdes_exdes.v",
+				"/E/FPGA/A7_changzhou/changzhou.srcs/constrs_1/new/serdes_exdes.v",
+				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/dac_if_tb.sv",
+				"/e/FPGA/A7_serdes_x1/serdes_example/serdes_example.srcs/sources_1/imports/example_design/serdes_exdes.v",
+				"/E/FPGA/A7_serdes_x1/serdes_example/serdes_example.srcs/sources_1/imports/example_design/serdes_gt_frame_gen.v",
+				"/E/FPGA/A7_serdes_x1/serdes_example/serdes_example.srcs/sources_1/imports/example_design/gt_rom_init_rx.dat",
+				"/E/FPGA/PPC_20150715_50T/xilinx/src/serdes_if.v",
+				"/E/FPGA/PPC_20150715_50T/xilinx/src/top.v",
+				"/e/FPGA/A7_serdes_x1/serdes_example/serdes_example.srcs/constrs_1/imports/example_design/serdes_exdes.xdc",
+				"/C/Users/Kuangxin/AppData/Local/Temp/serdes.xdc",
+				"/C/Users/Kuangxin/AppData/Local/Temp/serdes.veo",
+				"/C/Users/Kuangxin/AppData/Local/Temp/ila.veo",
+				"/E/FPGA/rtl_template/serdes/example_design/serdes_exdes.v",
+				"/E/FPGA/K7_serdes/serdes_example/serdes_example/serdes_example.srcs/sources_1/imports/example_design/serdes_exdes.v",
+				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/top_test_led.sv",
+				"/E/FPGA/A7_changzhou/changzhou.srcs/constrs_1/new/led.xdc",
+				"/C/Users/Kuangxin/Documents/python/top_test_led.sv",
+				"/C/Users/Kuangxin/Documents/python/generate_sine.py",
+				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/dac_ifx4.sv",
+				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/dac_if.sv",
+				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/serdes_rx_ctrl_tb.sv",
+				"/E/FPGA/changzhou_Chnl2/Chnl_kintex7_2048chnl/rtl/DA_module.v",
+				"/C/Users/Kuangxin/Documents/MATLAB/sin12.m",
+				"/C/Users/Kuangxin/Documents/MATLAB/genarate_sin.m",
+				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/dac_rom.dat",
+				"/E/FPGA/changzhou_Chnl2/Chnl_kintex7_2048chnl/rtl/test_top_TB.v",
+				"/E/FPGA/changzhou_Chnl2/Chnl_kintex7_2048chnl/rtl/top.v",
+				"/E/FPGA/changzhou_Chnl2/Chnl_kintex7_2048chnl/rtl/DA_OUT.v",
+				"/E/FPGA/changzhou_Chnl2/Chnl_kintex7_2048chnl/rtl/top.ucf",
+				"/C/Users/Kuangxin/AppData/Local/Temp/fifo_dac_clocks.xdc",
+				"/C/Users/Kuangxin/AppData/Local/Temp/fifo_dac.xdc",
+				"/C/Users/Kuangxin/AppData/Local/Temp/clk_dac.veo",
+				"/C/Users/Kuangxin/AppData/Local/Temp/fifo_dac.veo",
+				"/C/Users/Kuangxin/Documents/python/dac_rom.dat",
+				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/sublimesystemverilog/Snippets/generate.sublime-snippet",
+				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/divide_325.v",
+				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/uart_tb.v",
+				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/serdes_w",
+				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/serdes_rom.dat",
+				"/C/Xilinx/Vivado/2015.4/scripts/init.tcl",
+				"/C/Xilinx/Vivado/2015.4/examples/Vivado_Tutorial/Sources/hdl/or1200/or1200_cpu.v",
+				"/C/Xilinx/Vivado/2015.4/examples/Vivado_Tutorial/run_cpu_kintex7_batch.tcl",
+				"/C/Xilinx/Vivado/2015.4/examples/Vivado_Tutorial/create_bft_kintex7_batch.tcl",
+				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+				"/C/Users/Kuangxin/AppData/Local/Temp/HZ$D.876.391/HZ$D.876.392/aggregate_data_types_example1/array_unpacked.sv",
+				"/C/Users/Kuangxin/AppData/Local/Temp/HZ$D.795.1613/HZ$D.795.1614/aggregate_data_types_example2/array_packed.sv",
+				"/C/Users/Kuangxin/Desktop/data_types_example1/data_types_example1/ALU.sv",
+				"/C/Users/Kuangxin/Desktop/data_types_example1/data_types_example1/definitions.sv",
+				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/generate_rom.py",
+				"/C/Users/Kuangxin/Documents/python/format_width.py",
+				"/C/Users/Kuangxin/Documents/python/bin2hex.py",
+				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/head_rom.dat",
+				"/C/Users/Kuangxin/AppData/Local/Temp/serdes_rx_fifo.veo",
+				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/sublimesystemverilog/SystemVerilog.sublime-settings",
+				"/E/FPGA/K7_serdes/serdes_example/serdes_example/serdes_example.srcs/sources_1/imports/example_design/serdes_gt_frame_check.v",
+				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/serdes_tx_ctrl_tb.sv",
+				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/serdes_tx_ctrl.v",
 				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/User/SublimeGit.sublime-settings",
 				"/C/Users/Kuangxin/.gitconfig",
 				"/E/FPGA/A7_changzhou/changzhou.sim/sim_1/behav/modelsim.ini",
 				"/C/modeltech_10.0a/modelsim.ini",
 				"/C/modeltech64_10.1c/modelsim.ini",
-				"/C/Xilinx/Vivado/2015.4/scripts/init.tcl",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/tob_tb.sv",
-				"/E/FPGA/K7_serdes/serdes_example/serdes_example/serdes_example.srcs/sources_1/imports/example_design/serdes_exdes.v",
-				"/E/FPGA/K7_serdes/serdes_example/serdes_example/serdes_example.srcs/sources_1/imports/example_design/serdes_gt_frame_check.v",
 				"/E/FPGA/K7_serdes/serdes_example/serdes_example/serdes_example.srcs/sim_1/imports/simulation/serdes_tb.v",
 				"/E/FPGA/A7_changzhou/changzhou.sim/sim_1/behav/top_tb_simulate.do",
 				"/E/FPGA/A7_changzhou/changzhou.sim/sim_3/behav/top_tb_compile.do",
@@ -140,22 +317,14 @@
 				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/sublimesystemverilog/verilog_completion.py",
 				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
 				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/top.v",
-				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/sublimesystemverilog/SystemVerilog.sublime-settings",
-				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/sublimesystemverilog/Snippets/comment_box.sublime-snippet",
 				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/sublimesystemverilog/Snippets/comment_long.sublime-snippet",
 				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/sublimesystemverilog/Snippets/comment_short.sublime-snippet",
 				"/H/sublimesystemverilog/Snippets/initial.sublime-snippet",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/head_rom.dat",
 				"/E/FPGA/rtl_template/serdes/example_design/gt_rom_init_tx.dat",
-				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/sublimesystemverilog/Snippets/generate.sublime-snippet",
 				"/G/软件安装包/常用软件/Sublime Text 2/Packages/Verilog/Snippets/if_else.tmSnippet",
 				"/D/BaiduYunDownload/Sublime Text 2/Sublime Text 2/Packages/Verilog/Snippets/generate.tmSnippet",
-				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/sublimesystemverilog/Snippets/always.sublime-snippet",
 				"/G/软件安装包/常用软件/Sublime Text 2/Packages/Verilog/Snippets/generate.tmSnippet",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/uart.sv",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/uart_rx.v",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/uart_tb.v",
 				"/G/软件安装包/常用软件/Sublime Text 2/Packages/Verilog/Snippets/case.tmSnippet",
 				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/sublimesystemverilog/Snippets/case.sublime-snippet",
 				"/G/软件安装包/常用软件/Sublime Text 2/Packages/Verilog/Snippets/begin.tmSnippet",
@@ -186,214 +355,152 @@
 				"/e/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example/serdes_example.srcs/sources_1/ip/serdes/serdes.xdc",
 				"/e/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example/serdes_example.srcs/sources_1/ip/serdes/serdes_multi_gt.v",
 				"/e/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example/serdes_example.srcs/sources_1/ip/serdes/serdes_support.v",
-				"/e/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example/serdes_example.srcs/sources_1/ip/serdes/serdes_init.v",
-				"/e/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example/serdes_example.srcs/sources_1/ip/serdes/serdes/example_design/serdes_sync_block.v",
-				"/e/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example/serdes_example.srcs/sources_1/ip/serdes/serdes/example_design/serdes_rx_startup_fsm.v",
-				"/e/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example/serdes_example.srcs/sources_1/ip/serdes/serdes/example_design/serdes_tx_startup_fsm.v",
-				"/e/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example/serdes_example.srcs/sources_1/ip/serdes/serdes_gt.v",
-				"/E/FPGA/yangzhou_signaldetect2/FPGA_PRJ/Vivado_2016_0317_18bit/V7_585_xpr.srcs/sources_1/rtl_723/Beamf_top.sv",
-				"/E/FPGA/yangzhou_signaldetect2/FPGA_PRJ/Vivado_2016_0317_18bit/V7_585_xpr.srcs/sources_1/rtl_723/beamrecv.sv",
-				"/E/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example.runs/impl_1/debug_nets.ltx",
-				"/C/Users/Kuangxin/Documents/python/bin2hex.py",
-				"/C/Users/Kuangxin/Documents/python/creat license.py",
-				"/C/Users/Kuangxin/Documents/python/print_increase.py",
-				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/User/Python.sublime-build",
-				"/C/Users/Kuangxin/Documents/python/kkxxai.py",
-				"/C/Users/Kuangxin/Documents/python/kkxx.py",
-				"/C/Users/Kuangxin/Documents/python/row_data.py",
-				"/e/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example/serdes_example.srcs/sources_1/ip/serdes/serdes_ooc.xdc",
-				"/e/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example.srcs/sources_1/imports/example_design/serdes_gt_frame_gen.v",
-				"/e/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example.srcs/sources_1/ip/serdes/serdes.v",
-				"/e/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example.srcs/constrs_1/imports/example_design/serdes_exdes.xdc",
-				"/e/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example.srcs/sources_1/imports/example_design/serdes_exdes.v",
-				"/e/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example/serdes_example.srcs/sources_1/ip/vio_0/vio_0_ooc.xdc",
-				"/e/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example/serdes_example.srcs/sources_1/ip/ila_1/ila_1_ooc.xdc",
-				"/e/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example/serdes_example.srcs/sources_1/ip/ila_0/ila_0_ooc.xdc",
-				"/e/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example/serdes_example.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.veo",
-				"/e/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example.srcs/sources_1/ip/ila_0/ila_v6_0/constraints/ila.xdc",
-				"/e/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example.srcs/sources_1/ip/ila_0/ila_0_ooc.xdc",
-				"/e/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example.srcs/sources_1/ip/vio_0/synth/vio_0.v",
-				"/e/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example.srcs/sources_1/ip/vio_0/vio_0_ooc.xdc",
-				"/e/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example.srcs/sources_1/ip/ila_1/ila_1_ooc.xdc",
-				"/e/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example.srcs/sources_1/ip/serdes/serdes_ooc.xdc",
-				"/e/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example.srcs/sources_1/ip/serdes/serdes.xdc",
-				"/e/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example.srcs/sources_1/ip/ila_1/ila_v6_0/constraints/ila.xdc",
-				"/E/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example.srcs/sources_1/imports/example_design/gt_rom_init_tx.dat",
-				"/E/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example.srcs/sources_1/imports/example_design/gt_rom_init_rx.dat",
-				"/e/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example.srcs/sources_1/ip/vio_0/vio_0.xdc",
-				"/C/Users/Kuangxin/Documents/MATLAB/genarate_sin.m",
-				"/C/Users/Kuangxin/AppData/Local/YNote/Data/kuangxin_0@163.com/915e4dccda39408f9d3458badc7fc408/sin12.m",
-				"/C/Users/Kuangxin/Documents/MATLAB/sin12.m",
-				"/C/Users/Kuangxin/Documents/MATLAB/MAHAFZA/addnoise.m",
-				"/C/FPGA_PRJ/changzhou/changzhou.srcs/sources_1/new/top.sv",
-				"/C/FPGA_PRJ/changzhou_ver1/FPGA_prj/Chnl_K7_0612/src/DA_module.v",
-				"/C/Users/Kuangxin/Documents/MATLAB/fft/Untitled.m",
-				"/C/FPGA_PRJ/changzhou/changzhou.srcs/sources_1/new/uart.sv",
-				"/C/FPGA_PRJ/changzhou_ver1/FPGA_prj/Chnl_K7_0612/src/DUC_AGC_DA.v",
-				"/C/FPGA_PRJ/changzhou_ver1/FPGA_prj/Chnl_K7_0612/src/top.v",
-				"/C/FPGA_PRJ/changzhou_ver1/FPGA_prj/Chnl_K7_0612/src/data_syn.v",
-				"/C/Users/floodlee/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
-				"/C/Users/floodlee/AppData/Roaming/Sublime Text 3/Packages/sublimesystemverilog/Snippets/module.sublime-snippet",
-				"/C/FPGA_PRJ/changzhou_ver1/FPGA_prj/Chnl_K7_0612/src/DA_OUT.v",
-				"/C/Users/floodlee/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
-				"/C/Users/floodlee/AppData/Roaming/Sublime Text 3/Packages/sublimesystemverilog/verilog_align.py",
-				"/C/FPGA_PRJ/changzhou_ver1/FPGA_prj/Chnl_K7_0612/src/serdes/serdes.v",
-				"/C/Users/floodlee/AppData/Roaming/Sublime Text 3/Packages/Default/Default (Windows).sublime-keymap",
-				"/C/Users/floodlee/AppData/Roaming/Sublime Text 2/Packages/User/Verilog.sublime-settings",
-				"/C/Users/floodlee/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
-				"/C/Users/floodlee/AppData/Roaming/Sublime Text 2/Packages/User/divide_long.py",
-				"/C/FPGA_PRJ/changzhou/changzhou.srcs/sources_1/new/uart_tb.v",
-				"/C/FPGA_PRJ/changzhou/changzhou.srcs/sources_1/new/uart_tx.v",
-				"/C/FPGA_PRJ/changzhou/changzhou.srcs/sources_1/new/test.sv",
-				"/C/Users/floodlee/AppData/Roaming/Sublime Text 3/Packages/sublimesystemverilog/test.sv",
-				"/C/Users/floodlee/AppData/Roaming/Sublime Text 3/Packages/sublimesystemverilog/case.sublime-snippet",
-				"/C/Users/floodlee/AppData/Roaming/Sublime Text 3/Packages/User/SystemVerilog.sublime-settings",
-				"/C/Users/floodlee/AppData/Roaming/Sublime Text 3/Packages/SystemVerilog/SystemVerilog.sublime-settings"
+				"/e/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example/serdes_example.srcs/sources_1/ip/serdes/serdes_init.v"
 			],
 			"find":
 			{
-				"height": 34.0
+				"height": 23.0
 			},
 			"find_in_files":
 			{
-				"height": 0.0,
+				"height": 90.0,
 				"where_history":
 				[
 				]
 			},
 			"find_state":
 			{
-				"case_sensitive": false,
+				"case_sensitive": true,
 				"find_history":
 				[
-					"\\",
-					"I_uart_dat",
-					"R_head_rom",
-					"I_uart_dat",
-					"R_ram_din",
-					"R_head_rom",
-					"R_length_cnt",
-					"W_ser_tx_ena",
-					"W_ser_tx_data",
-					"R_data_dat",
-					"O_serdes_ena",
-					"O_serdes_data",
-					"O_serdes_ena",
-					"I_tx_clk",
+					"671",
+					"-1",
+					"740",
+					"3233\n3435\n3637\n3839\n3a3b",
+					"23",
+					"R_even_check",
+					"11",
+					"R_count_sample",
+					"P_SAMPLE_BAUD_38400",
+					"P_TRANS_BAUD_38400",
+					"O_uart_sample_clk",
+					"R_param_sample",
+					"R_even_check",
+					"R_cnt_num",
+					"I_rx_dat",
+					"W_baud_rate",
+					"24",
+					"I_tx_dat",
+					"W_uart_ready",
+					"W_ready",
+					"W_uart_ready",
+					"I_uart_ready",
+					"W_uart_ready",
+					"I_uart_ready",
+					"W_baud_rate",
+					"23",
+					"RX",
+					"I_baud_rate",
+					"W_dac_data",
+					"W_dac_ena",
+					"W_tx_clk",
+					"output",
+					"W_SCK",
 					"I_rx_clk",
 					"I_tx_clk",
-					"I_rst_n",
-					"wire",
-					"decl",
-					"indent_level",
-					"sig_type",
-					"var",
-					"ds",
-					"Reg",
-					"reg",
-					"input",
-					"sig_type",
-					"reg",
-					"Reg",
-					"reg",
-					"Reg",
-					"reg",
-					"sig_type",
-					"logic",
-					"decl",
-					"verilog_module_inst",
-					"import",
-					"#",
-					"sv",
-					"verilog_module_inst",
-					"sv",
-					"SV",
-					"sv",
-					"svh",
-					"'v'",
-					"verilog_do_module_inst",
-					"logic",
-					"reg",
-					"ctrl+m",
-					"R_tx_state",
-					"R_tx_count",
-					"R_data_cnt",
-					"R_data_dat",
-					"R_uart_length",
-					"W_uart_rx_ena",
-					"23",
-					"R_uart_length",
-					"O_serdes_data",
-					"z",
-					"zz",
-					"zzz",
-					"zzzz",
-					"W_uart_rx_ena",
-					"I_uart_ena",
-					"R_head_begin1",
-					"R_data_begin",
-					"R_head_begin",
-					"R_data_begin",
-					"R_data_cnt",
-					"R_head_cnt",
-					"R_head_dat",
-					"R_head_cnt",
-					"R_head_dat",
-					"R_head_rom",
-					"rom",
-					"R_data_dat",
-					"R_ram_din",
-					"R_tx_count",
-					"R_ram_add",
-					"R_ram_add1",
-					"W_ram_dout",
-					"R_rd_add",
-					"R_ram_rden",
-					"R_ram_wren",
-					"R_ram_rden",
-					"W_ram_dout",
-					"R_ram_din",
-					"W_ram_dout",
-					"R_ram_wea",
-					"R_ram_din",
-					"I_rd_en",
-					"O_serdes_data",
+					"W_rx_clk",
+					"W_tx_clk",
+					"W_rx_clk",
+					"uart_user uart_generate (\n                        .I_rst_n          (I_rst_n          ),\n                        .I_sys_clk        (I_sys_clk        ),\n                        .I_uart_sample_clk(I_uart_sample_clk),\n                        .I_uart_trans_clk (I_uart_trans_clk ),\n                        .I_tx_clk         (I_tx_clk         ),\n                        .I_rx_clk         (I_rx_clk         ),",
 					"I_div_clk",
-					"R_uart_tx_en",
-					"R_tx_rd_en",
-					"R_uart_tx_en",
-					"O_rx_dat",
+					"I_sample_clk",
+					"I_div_clk",
+					"I_sample_clk",
 					"O_rx_empty",
-					"O_rx_valid",
-					"O_rx_empty",
-					"W_tx_empty",
-					"O_ready",
-					"R_tail",
-					"O_rx_valid",
-					"O_rx_empty",
-					"EXAMPLE_CONFIG_INDEPENDENT_LANES",
-					"EXAMPLE_LANE_WITH_START_CHAR",
-					"EXAMPLE_WORDS_IN_BRAM",
-					"EXAMPLE_SIM_GTRESET_SPEEDUP",
-					"EXAMPLE_USE_CHIPSCOPE",
-					"STABLE_CLOCK_PERIOD",
-					"EXAMPLE_WORDS_IN_BRAM",
-					"gt0_tx_system_reset_c",
-					"gt0_txfsmresetdone_r2",
-					"gt0_tx_system_reset_c",
-					"gt0_txfsmresetdone_r2",
-					"rxresetdone_vio_i",
+					"R_",
+					"R_count_sample",
+					"R_count_trans",
+					"R_count_trans_trans",
+					"R_count_trans_sample",
+					"R_cnt_num",
+					"R_count",
+					"R_cnt_num",
+					"I_sys_clk",
+					"I_clk_50M",
+					"W_uart_trans_clk",
+					"clk_sample",
+					"sample_clk",
+					"div_clk",
+					"23",
+					"I_sample_clk",
+					"I_div_clk",
+					"I_sample_clk",
+					"I_div_clk",
+					"O_uartclk_trans",
+					"O_uartclk_sample",
+					"O_clk_tx",
+					"O_clk_sample",
+					"O_clk_div",
+					"b00_0000_0000_0000_0000_0000_0001",
+					"R_uart_length",
+					"21",
+					"22",
+					"24",
+					"O_uart_rd_en",
+					"59",
+					"R_length_cnt",
+					"25",
+					"23",
+					"27",
+					"26",
+					"24",
+					"UART_data_roll",
+					"R_uart_length",
+					"UART_lenth_count",
+					"O_baud_rate",
+					"R_baud_rate",
+					"R_rx_isUART",
+					"W_rd_dout",
+					"23",
+					"R_cnt_ena",
+					"R_cnt_num",
+					"I_tx_dat",
+					"I_rx_clk",
+					"I_tx_dat",
+					"R_cnt_num",
+					"I_tx_dat",
+					"count",
+					"// TODO: Check connection ! Signal/port not matching : Expecting logic logic [15:0]  -- Found logic [15:0] ",
+					"// TODO: Check connection ! Signal/port not matching : Expecting logic logic  -- Found logic ",
+					"gt0_txfsmresetdone",
+					",",
+					"gt0_rxcharisk",
+					"soft_reset_vio_i",
+					"soft_reset_i",
+					",",
+					"gt0_txusrclk2_i",
+					"gt0_txusrclk_i",
+					"gt0_rxfsmresetdone",
+					"gt0_rxfsmresetdone_r",
+					"gt0_txfsmresetdone_r",
 					"gt0_rxfsmresetdone_i",
-					"rxresetdone_vio_i",
-					"track_data_r2",
-					"track_data_r3",
-					"track_data_r",
-					"track_data_r3",
-					"rx_data_has_start_char_c",
-					"rx_data_aligned",
-					"rx_data_has_start_char_c",
-					"start_of_packet_detected_c",
-					"start_of_packet_detected_r"
+					"gt0_txfsmresetdone_i",
+					"gt0_txfsmresetdone_r",
+					"gt0_rxfsmresetdone_r",
+					"gt0_rxresetdone_r",
+					"gt0_txfsmresetdone_i",
+					"gt0_txresetdone_i",
+					"gt0_rxresetdone_i",
+					"gt0_txfsmresetdone",
+					"gt0_txfsmresetdone_i",
+					"gt0_tx_system_reset_c",
+					"gt0_txfsmresetdone_i",
+					"gt0_rxresetdone_r3",
+					"gt0_tx_system_reset_c",
+					"W_dac_data",
+					"I_SCLK",
+					"var1",
+					"I_SCLK"
 				],
 				"highlight": true,
 				"in_selection": false,
@@ -405,12 +512,12 @@
 				"reverse": false,
 				"show_context": true,
 				"use_buffer2": true,
-				"whole_word": false,
+				"whole_word": true,
 				"wrap": true
 			},
 			"incremental_find":
 			{
-				"height": 26.0
+				"height": 23.0
 			},
 			"input":
 			{
@@ -423,7 +530,7 @@
 			},
 			"output.exec":
 			{
-				"height": 118.0
+				"height": 433.0
 			},
 			"output.find_results":
 			{
@@ -432,7 +539,7 @@
 			"pinned_build_system": "Packages/Python/Python.sublime-build",
 			"replace":
 			{
-				"height": 48.0
+				"height": 42.0
 			},
 			"save_all_on_build": true,
 			"select_file":
@@ -466,7 +573,7 @@
 			"show_open_files": false,
 			"show_tabs": true,
 			"side_bar_visible": true,
-			"side_bar_width": 202.0,
+			"side_bar_width": 214.0,
 			"status_bar_visible": true,
 			"template_settings":
 			{
@@ -482,8 +589,124 @@
 				"selected_items":
 				[
 					[
+						"div",
+						"div	comment_short"
+					],
+					[
+						"rx_",
+						"R_rx_isUART"
+					],
+					[
+						"R_ex",
+						"R_exchange_dat0"
+					],
+					[
+						"W_rx",
+						"W_rx_clk"
+					],
+					[
+						"al",
+						"al	always"
+					],
+					[
+						"I_",
+						"I_baud_rate"
+					],
+					[
+						"O_u",
+						"O_uart_trans_clk	reg"
+					],
+					[
+						"RST",
+						"R_rst2"
+					],
+					[
+						"clk",
+						"clk_18m432"
+					],
+					[
+						"ge",
+						"ge	generate"
+					],
+					[
+						"gen",
+						"genvar"
+					],
+					[
+						"Idac",
+						"I_dac_ena1"
+					],
+					[
+						"Ic",
+						"I_SCLK"
+					],
+					[
 						"I",
-						"I_tx_clk"
+						"I_rst_n"
+					],
+					[
+						"r1",
+						"REG1_CONTINUE_MODE"
+					],
+					[
+						"r3",
+						"REG3B_MUTE"
+					],
+					[
+						"O_uart_e",
+						"O_uart_ena"
+					],
+					[
+						"O_dac",
+						"O_dac_ena"
+					],
+					[
+						"O_uart_",
+						"O_uart_ena"
+					],
+					[
+						"Rda",
+						"R_DA_length"
+					],
+					[
+						"r",
+						"readmemh	$readmemh()"
+					],
+					[
+						"I_ser",
+						"I_serdes_ena"
+					],
+					[
+						"da",
+						"DA_data_begin"
+					],
+					[
+						"U",
+						"UART_lenth_count"
+					],
+					[
+						"R_da",
+						"R_rx_isDA"
+					],
+					[
+						"R_rd",
+						"R_rd_en"
+					],
+					[
+						"W_rd",
+						"W_rd_valid"
+					],
+					[
+						"O_ser",
+						"O_serdes_ena"
+					],
+					[
+						"di",
+						"div	comment_long"
+					],
+					[
+						"R_head",
+						"R_head_begin1"
 					],
 					[
 						"R_l",
@@ -518,10 +741,6 @@
 						"beg	begin .. end"
 					],
 					[
-						"al",
-						"always"
-					],
-					[
 						"data",
 						"sync_data_valid"
 					],
@@ -534,10 +753,18 @@
 			"buffers":
 			[
 				{
-					"file": "/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/serdes_tx_ctrl.v",
+					"file": "/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/top.sv",
 					"settings":
 					{
-						"buffer_size": 12144,
+						"buffer_size": 17439,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/serdes_wrapper.sv",
+					"settings":
+					{
+						"buffer_size": 4384,
 						"line_ending": "Windows"
 					}
 				},
@@ -545,56 +772,65 @@
 					"file": "/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/serdes_tx_ctrl.sv",
 					"settings":
 					{
-						"buffer_size": 12144,
+						"buffer_size": 16584,
 						"line_ending": "Windows"
 					}
 				},
 				{
-					"file": "/E/FPGA/K7_serdes/serdes_example/serdes_example/serdes_example.srcs/sources_1/imports/example_design/serdes_gt_frame_check.v",
+					"file": "/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/dac_if.sv",
 					"settings":
 					{
-						"buffer_size": 16569,
-						"line_ending": "Unix"
+						"buffer_size": 16749,
+						"line_ending": "Windows"
+					}
+				},
+				{
+					"file": "/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/serdes_rx_ctrl.sv",
+					"settings":
+					{
+						"buffer_size": 24642,
+						"line_ending": "Windows"
+					}
+				},
+				{
+					"file": "/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/uart_clk_gen.v",
+					"settings":
+					{
+						"buffer_size": 5672,
+						"line_ending": "Windows"
 					}
 				},
 				{
 					"file": "/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/uart.sv",
 					"settings":
 					{
-						"buffer_size": 6807,
+						"buffer_size": 7060,
 						"line_ending": "Windows"
 					}
 				},
 				{
-					"file": "/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/serdes_tx_ctrl_tb.sv",
+					"file": "/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/uart_rx.v",
 					"settings":
 					{
-						"buffer_size": 1907,
+						"buffer_size": 6683,
 						"line_ending": "Windows"
 					}
 				},
 				{
-					"file": "/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/top.sv",
+					"file": "/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/uart_tx.v",
 					"settings":
 					{
-						"buffer_size": 5793,
-						"line_ending": "Unix"
-					}
-				},
-				{
-					"file": "/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/uart_user.v",
-					"settings":
-					{
-						"buffer_size": 3815,
+						"buffer_size": 5552,
 						"line_ending": "Windows"
 					}
 				},
 				{
-					"file": "/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/sublimesystemverilog/SystemVerilog.sublime-settings",
+					"contents": "E:/FPGA/A7_changzhou/changzhou.runs/impl_1/top.bit\n\nwrite_cfgmem -force -format MCS -interface spix4 -size 512 -loadbit \"up 0x0 \\\n    E:/FPGA/A7_changzhou_reset_n/changzhou.runs/impl_1/top.bit\" \\\n    E:/FPGA/A7_changzhou_reset_n/changzhou.runs/impl_1",
 					"settings":
 					{
-						"buffer_size": 3973,
-						"line_ending": "Unix"
+						"buffer_size": 250,
+						"line_ending": "Windows",
+						"name": "E:/FPGA/A7_changzhou/changzhou.runs/impl_1/top.bit"
 					}
 				}
 			],
@@ -655,281 +891,284 @@
 			},
 			"expanded_folders":
 			[
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new"
+				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new",
+				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/serdes"
 			],
 			"file_history":
 			[
-				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/User/SublimeGit.sublime-settings",
-				"/C/Users/Kuangxin/.gitconfig",
-				"/E/FPGA/A7_changzhou/changzhou.sim/sim_1/behav/modelsim.ini",
-				"/C/modeltech_10.0a/modelsim.ini",
-				"/C/modeltech64_10.1c/modelsim.ini",
-				"/C/Xilinx/Vivado/2015.4/scripts/init.tcl",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/tob_tb.sv",
-				"/E/FPGA/K7_serdes/serdes_example/serdes_example/serdes_example.srcs/sources_1/imports/example_design/serdes_exdes.v",
-				"/E/FPGA/K7_serdes/serdes_example/serdes_example/serdes_example.srcs/sources_1/imports/example_design/serdes_gt_frame_check.v",
-				"/E/FPGA/K7_serdes/serdes_example/serdes_example/serdes_example.srcs/sim_1/imports/simulation/serdes_tb.v",
-				"/E/FPGA/A7_changzhou/changzhou.sim/sim_1/behav/top_tb_simulate.do",
-				"/E/FPGA/A7_changzhou/changzhou.sim/sim_3/behav/top_tb_compile.do",
-				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/sublimesystemverilog/verilogutil/verilogutil.py",
-				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/sublimesystemverilog/verilog_module.py",
-				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/sublimesystemverilog/verilog_completion.py",
-				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/top.v",
-				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/sublimesystemverilog/SystemVerilog.sublime-settings",
-				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
-				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/sublimesystemverilog/Snippets/comment_box.sublime-snippet",
-				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/sublimesystemverilog/Snippets/comment_long.sublime-snippet",
-				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/sublimesystemverilog/Snippets/comment_short.sublime-snippet",
-				"/H/sublimesystemverilog/Snippets/initial.sublime-snippet",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/head_rom.dat",
-				"/E/FPGA/rtl_template/serdes/example_design/gt_rom_init_tx.dat",
-				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/sublimesystemverilog/Snippets/generate.sublime-snippet",
-				"/G/软件安装包/常用软件/Sublime Text 2/Packages/Verilog/Snippets/if_else.tmSnippet",
-				"/D/BaiduYunDownload/Sublime Text 2/Sublime Text 2/Packages/Verilog/Snippets/generate.tmSnippet",
-				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/sublimesystemverilog/Snippets/always.sublime-snippet",
-				"/G/软件安装包/常用软件/Sublime Text 2/Packages/Verilog/Snippets/generate.tmSnippet",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/uart.sv",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/uart_rx.v",
+				"/E/FPGA/A7_changzhou/changzhou.srcs/constrs_1/new/top.xdc",
+				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/dac_if.sv",
+				"/E/FPGA/rtl_template/xilinx_primitives.sv",
+				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/serdes/serdes_exdes.v",
+				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/serdes_rom_ad.dat",
+				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/serdes_rx_ctrl.sv",
+				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/top_test_led.sv",
+				"/E/FPGA/A7_changzhou_reset_n/changzhou.srcs/sources_1/new/serdes_rx_ctrl.sv",
+				"/E/FPGA/A7_changzhou_reset_n/changzhou.srcs/sources_1/new/serdes/serdes_exdes.v",
+				"/E/FPGA/A7_changzhou_reset_n/changzhou.srcs/sources_1/new/top.sv",
+				"/E/FPGA/A7_changzhou_reset_n/changzhou.srcs/sources_1/new/dac_if.sv",
+				"/E/FPGA/A7_changzhou_reset_n/changzhou.srcs/constrs_1/new/top.xdc",
+				"/C/Users/Kuangxin/Desktop/dspb_client.py",
+				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/dac_rom.dat",
+				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/serdes_tx_ctrl.sv",
+				"/E/FPGA/A7_changzhou/changzhou.srcs/constrs_1/new/serdes_exdes.xdc",
+				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/uart_top.sv",
 				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/uart_tb.v",
-				"/G/软件安装包/常用软件/Sublime Text 2/Packages/Verilog/Snippets/case.tmSnippet",
-				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/sublimesystemverilog/Snippets/case.sublime-snippet",
-				"/G/软件安装包/常用软件/Sublime Text 2/Packages/Verilog/Snippets/begin.tmSnippet",
-				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/sublimesystemverilog/Snippets/module.sublime-snippet",
-				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/sublimesystemverilog/Snippets/if.sublime-snippet",
-				"/C/Users/Kuangxin/AppData/Local/Temp/serdes_ram.veo",
-				"/C/Users/Kuangxin/AppData/Local/Temp/fifo_uart.veo",
-				"/C/Users/Kuangxin/AppData/Local/Temp/serdes_ram.vho",
-				"/E/FPGA/A7_changzhou/changzhou.sim/sim_2/behav/uart_tb_compile.do",
-				"/E/FPGA/A7_changzhou/changzhou.sim/sim_2/behav/modelsim.ini",
-				"/E/FPGA/A7_changzhou/changzhou.sim/sim_2/behav/glbl.v",
-				"/E/FPGA/A7_changzhou/changzhou.sim/sim_2/behav/uart_tb_wave.do",
-				"/E/FPGA/A7_changzhou/changzhou.sim/sim_2/behav/gt_rom_init_tx.dat",
-				"/E/FPGA/rtl_template/serdes/K7_vivado_serdes_x4/serdes_exdes.v",
-				"/e/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example/serdes_example.srcs/sources_1/imports/example_design/serdes_exdes.v",
-				"/e/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example/serdes_example.srcs/sources_1/imports/example_design/serdes_gt_frame_check.v",
-				"/e/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example/serdes_example.srcs/sim_1/imports/simulation/serdes_tb.v",
-				"/e/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example/serdes_example.srcs/sources_1/ip/serdes/serdes.v",
-				"/e/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example/serdes_example.srcs/sources_1/imports/example_design/serdes_gt_frame_gen.v",
-				"/E/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example/serdes_example.srcs/sources_1/imports/example_design/gt_rom_init_tx.dat",
-				"/E/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example/serdes_example.srcs/sim_1/imports/simulation/functional/gt_rom_init_rx.dat",
-				"/E/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example/serdes_example.srcs/sim_1/imports/simulation/functional/gt_rom_init_tx.dat",
-				"/E/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example/serdes_example.runs/impl_1/debug_nets.ltx",
-				"/C/Users/Kuangxin/AppData/Roaming/Xilinx/Vivado/debug_nets.ltx",
-				"/e/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example/serdes_example.srcs/constrs_1/imports/example_design/serdes_exdes.xdc",
-				"/E/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example/serdes_example.srcs/sources_1/imports/example_design/gt_rom_init_rx.dat",
-				"/E/FPGA/rtl_template/mac/gmac_if.v",
-				"/e/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example/serdes_example.srcs/sources_1/ip/serdes/serdes.xdc",
-				"/e/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example/serdes_example.srcs/sources_1/ip/serdes/serdes_multi_gt.v",
-				"/e/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example/serdes_example.srcs/sources_1/ip/serdes/serdes_support.v",
-				"/e/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example/serdes_example.srcs/sources_1/ip/serdes/serdes_init.v",
-				"/e/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example/serdes_example.srcs/sources_1/ip/serdes/serdes/example_design/serdes_sync_block.v",
-				"/e/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example/serdes_example.srcs/sources_1/ip/serdes/serdes/example_design/serdes_rx_startup_fsm.v",
-				"/e/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example/serdes_example.srcs/sources_1/ip/serdes/serdes/example_design/serdes_tx_startup_fsm.v",
-				"/e/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example/serdes_example.srcs/sources_1/ip/serdes/serdes_gt.v",
-				"/E/FPGA/yangzhou_signaldetect2/FPGA_PRJ/Vivado_2016_0317_18bit/V7_585_xpr.srcs/sources_1/rtl_723/Beamf_top.sv",
-				"/E/FPGA/yangzhou_signaldetect2/FPGA_PRJ/Vivado_2016_0317_18bit/V7_585_xpr.srcs/sources_1/rtl_723/beamrecv.sv",
-				"/E/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example.runs/impl_1/debug_nets.ltx",
-				"/C/Users/Kuangxin/Documents/python/bin2hex.py",
-				"/C/Users/Kuangxin/Documents/python/creat license.py",
-				"/C/Users/Kuangxin/Documents/python/print_increase.py",
-				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/User/Python.sublime-build",
-				"/C/Users/Kuangxin/Documents/python/kkxxai.py",
-				"/C/Users/Kuangxin/Documents/python/kkxx.py",
-				"/C/Users/Kuangxin/Documents/python/row_data.py",
-				"/e/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example/serdes_example.srcs/sources_1/ip/serdes/serdes_ooc.xdc",
-				"/e/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example.srcs/sources_1/imports/example_design/serdes_gt_frame_gen.v",
-				"/e/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example.srcs/sources_1/ip/serdes/serdes.v",
-				"/e/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example.srcs/constrs_1/imports/example_design/serdes_exdes.xdc",
-				"/e/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example.srcs/sources_1/imports/example_design/serdes_exdes.v",
-				"/e/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example/serdes_example.srcs/sources_1/ip/vio_0/vio_0_ooc.xdc",
-				"/e/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example/serdes_example.srcs/sources_1/ip/ila_1/ila_1_ooc.xdc",
-				"/e/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example/serdes_example.srcs/sources_1/ip/ila_0/ila_0_ooc.xdc",
-				"/e/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example/serdes_example.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.veo",
-				"/e/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example.srcs/sources_1/ip/ila_0/ila_v6_0/constraints/ila.xdc",
-				"/e/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example.srcs/sources_1/ip/ila_0/ila_0_ooc.xdc",
-				"/e/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example.srcs/sources_1/ip/vio_0/synth/vio_0.v",
-				"/e/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example.srcs/sources_1/ip/vio_0/vio_0_ooc.xdc",
-				"/e/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example.srcs/sources_1/ip/ila_1/ila_1_ooc.xdc",
-				"/e/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example.srcs/sources_1/ip/serdes/serdes_ooc.xdc",
-				"/e/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example.srcs/sources_1/ip/serdes/serdes.xdc",
-				"/e/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example.srcs/sources_1/ip/ila_1/ila_v6_0/constraints/ila.xdc",
-				"/E/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example.srcs/sources_1/imports/example_design/gt_rom_init_tx.dat",
-				"/E/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example.srcs/sources_1/imports/example_design/gt_rom_init_rx.dat",
-				"/e/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example.srcs/sources_1/ip/vio_0/vio_0.xdc",
-				"/C/Users/Kuangxin/Documents/MATLAB/genarate_sin.m",
-				"/C/Users/Kuangxin/AppData/Local/YNote/Data/kuangxin_0@163.com/915e4dccda39408f9d3458badc7fc408/sin12.m",
+				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/uart_tx.v",
+				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/uart_rx.v",
+				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/uart_clk_gen.v",
+				"/E/FPGA/rtl_template/xilinx_primitives.v",
+				"/C/Users/Kuangxin/AppData/Local/Temp/clk_dac.xdc",
+				"/C/Users/Kuangxin/AppData/Local/Temp/sys_clk_ooc.xdc",
+				"/C/Users/Kuangxin/AppData/Local/Temp/sys_clk.xdc",
+				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/top.sv",
+				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/tob_tb.sv",
+				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/serdes_rom_uart.dat",
+				"/C/Users/Kuangxin/Desktop/dspb_client1.py",
+				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/top_test.sv",
+				"/E/FPGA/A7_changzhou/changzhou.srcs/constrs_1/new/led.xdc",
+				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/uart_user.v",
+				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/serdes_rx_ctrl_tb.sv",
+				"/C/Users/Kuangxin/AppData/Local/Temp/fifo_uart_clocks.xdc",
+				"/E/FPGA/V5_1008/V5_1008/V5_0427/xilinx/src/serdes_if.v",
+				"/E/FPGA/V5_1008/V5_1008/V5_0427/xilinx/src/top.v",
+				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/uart.sv",
+				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/serdes_rom_ad.txt",
+				"/C/Users/Kuangxin/Documents/MATLAB/I_data24.txt",
+				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/serdes_rom_uart.txt",
+				"/C/Users/Kuangxin/AppData/Local/Temp/ila_uart1.veo",
+				"/C/Users/Kuangxin/AppData/Local/Temp/fifo_uart_ooc.xdc",
+				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/serdes_wrapper.sv",
+				"/C/Users/Kuangxin/AppData/Local/Temp/serdes_ram_ooc.xdc",
+				"/E/A7_serdes_x1/serdes_example/serdes_example.srcs/sources_1/imports/example_design/serdes_exdes.v",
+				"/C/Users/Kuangxin/AppData/Local/Temp/ila_dac.veo",
+				"/C/Users/Kuangxin/AppData/Local/Temp/ila_uart.veo",
+				"/C/Users/Kuangxin/AppData/Local/Temp/serdes_rx_fifo_ooc.xdc",
+				"/C/Users/Kuangxin/AppData/Local/Temp/ila_dac_ooc.xdc",
+				"/C/Users/Kuangxin/AppData/Local/Temp/ila_uart_ooc.xdc",
+				"/C/Users/Kuangxin/AppData/Local/Temp/ila_ooc.xdc",
+				"/C/Users/Kuangxin/AppData/Local/Temp/ila.xdc",
+				"/E/FPGA/A7_serdes_x1/serdes_example/serdes_example.runs/impl_1/debug_nets.ltx",
+				"/E/A7_serdes_x1/serdes_example/serdes_example.srcs/sources_1/imports/example_design/gt_rom_init_tx.dat",
+				"/C/Users/Kuangxin/AppData/Local/Temp/fifo_dac_clocks.xdc",
+				"/E/FPGA/A7_serdes_x1/serdes_example/serdes_example.srcs/sources_1/imports/example_design/serdes_exdes.v",
+				"/E/A7_serdes_x1/serdes_example/serdes_example.srcs/constrs_1/imports/example_design/serdes_exdes.xdc",
+				"/C/Users/Kuangxin/AppData/Local/Temp/serdes.veo",
+				"/E/FPGA/A7_changzhou/changzhou.srcs/constrs_1/new/dac_if_top.xdc",
+				"/E/FPGA/V5_1006_1/V5_0427/xilinx/src/top.v",
+				"/E/FPGA/A7_serdes_x1/serdes_example/serdes_example.srcs/constrs_1/imports/example_design/serdes_exdes.xdc",
+				"/E/FPGA/V5_1006_1/V5_0427/xilinx/src/serdes_if.v",
+				"/C/Users/Kuangxin/AppData/Local/Temp/ila.veo",
+				"/C/Python27/lib/socket.py",
+				"/C/Users/Kuangxin/AppData/Local/Temp/serdes.xdc",
+				"/C/Users/Kuangxin/AppData/Local/Temp/sys_clk.veo",
+				"/E/FPGA/A7_serdes_x1/serdes_example/serdes_example.srcs/sources_1/imports/example_design/serdes_gt_frame_check.v",
+				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/dac_if_top.sv",
+				"/E/FPGA/changzhou_Chnl2/Chnl_kintex7_2048chnl/rtl/serdes/serdes.v",
+				"/E/FPGA/changzhou_Chnl2/AD_Board_new_fir/src/serdes_if.v",
+				"/E/FPGA/A7_serdes_x1/serdes_example/serdes_example.srcs/sources_1/imports/example_design/gt_rom_init_tx.dat",
+				"/E/FPGA/changzhou_Chnl2/Chnl_kintex7_2048chnl/rtl/serdes/serdes_rx.v",
+				"/C/Users/Kuangxin/AppData/Local/Temp/clk_dac.veo",
+				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/dac_ifx4.sv",
+				"/E/FPGA/rtl_template/generate_vivado_MCS.txt",
+				"/E/FPGA/rtl_template/serdes/example_design/serdes_exdes.v",
+				"/E/FPGA/K7_serdes/serdes_example/serdes_example/serdes_example.srcs/sources_1/imports/example_design/serdes_exdes.v",
+				"/E/FPGA/K7_changzhou/changzhou.srcs/sources_1/new/dac_ifx4.sv",
+				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/serdes_rom.dat",
+				"/E/FPGA/K7_changzhou/changzhou.srcs/sources_1/new/dac_if_top.sv",
+				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new - 24uart/uart_user.v",
+				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new - 24uart/divide_325.v",
+				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/sublimesystemverilog/Snippets/always.sublime-snippet",
+				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/serdes_exdes.v",
+				"/E/FPGA/A7_changzhou/changzhou.srcs/constrs_1/new/serdes_exdes.v",
+				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/dac_if_tb.sv",
+				"/e/FPGA/A7_serdes_x1/serdes_example/serdes_example.srcs/sources_1/imports/example_design/serdes_exdes.v",
+				"/E/FPGA/A7_serdes_x1/serdes_example/serdes_example.srcs/sources_1/imports/example_design/serdes_gt_frame_gen.v",
+				"/E/FPGA/A7_serdes_x1/serdes_example/serdes_example.srcs/sources_1/imports/example_design/gt_rom_init_rx.dat",
+				"/E/FPGA/PPC_20150715_50T/xilinx/src/serdes_if.v",
+				"/E/FPGA/PPC_20150715_50T/xilinx/src/top.v",
+				"/e/FPGA/A7_serdes_x1/serdes_example/serdes_example.srcs/constrs_1/imports/example_design/serdes_exdes.xdc",
+				"/C/Users/Kuangxin/Documents/python/top_test_led.sv",
+				"/C/Users/Kuangxin/Documents/python/generate_sine.py",
+				"/E/FPGA/changzhou_Chnl2/Chnl_kintex7_2048chnl/rtl/DA_module.v",
 				"/C/Users/Kuangxin/Documents/MATLAB/sin12.m",
-				"/C/Users/Kuangxin/Documents/MATLAB/MAHAFZA/addnoise.m",
-				"/C/FPGA_PRJ/changzhou/changzhou.srcs/sources_1/new/top.sv",
-				"/C/FPGA_PRJ/changzhou_ver1/FPGA_prj/Chnl_K7_0612/src/DA_module.v",
-				"/C/Users/Kuangxin/Documents/MATLAB/fft/Untitled.m",
-				"/C/FPGA_PRJ/changzhou/changzhou.srcs/sources_1/new/uart.sv",
-				"/C/FPGA_PRJ/changzhou_ver1/FPGA_prj/Chnl_K7_0612/src/DUC_AGC_DA.v",
-				"/C/FPGA_PRJ/changzhou_ver1/FPGA_prj/Chnl_K7_0612/src/top.v",
-				"/C/FPGA_PRJ/changzhou_ver1/FPGA_prj/Chnl_K7_0612/src/data_syn.v",
-				"/C/Users/floodlee/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
-				"/C/Users/floodlee/AppData/Roaming/Sublime Text 3/Packages/sublimesystemverilog/Snippets/module.sublime-snippet",
-				"/C/FPGA_PRJ/changzhou_ver1/FPGA_prj/Chnl_K7_0612/src/DA_OUT.v",
-				"/C/Users/floodlee/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
-				"/C/Users/floodlee/AppData/Roaming/Sublime Text 3/Packages/sublimesystemverilog/verilog_align.py",
-				"/C/FPGA_PRJ/changzhou_ver1/FPGA_prj/Chnl_K7_0612/src/serdes/serdes.v",
-				"/C/Users/floodlee/AppData/Roaming/Sublime Text 3/Packages/Default/Default (Windows).sublime-keymap",
-				"/C/Users/floodlee/AppData/Roaming/Sublime Text 2/Packages/User/Verilog.sublime-settings",
-				"/C/Users/floodlee/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
-				"/C/Users/floodlee/AppData/Roaming/Sublime Text 2/Packages/User/divide_long.py",
-				"/C/FPGA_PRJ/changzhou/changzhou.srcs/sources_1/new/uart_tb.v",
-				"/C/FPGA_PRJ/changzhou/changzhou.srcs/sources_1/new/uart_tx.v",
-				"/C/FPGA_PRJ/changzhou/changzhou.srcs/sources_1/new/test.sv",
-				"/C/Users/floodlee/AppData/Roaming/Sublime Text 3/Packages/sublimesystemverilog/test.sv",
-				"/C/Users/floodlee/AppData/Roaming/Sublime Text 3/Packages/sublimesystemverilog/case.sublime-snippet",
-				"/C/Users/floodlee/AppData/Roaming/Sublime Text 3/Packages/User/SystemVerilog.sublime-settings",
-				"/C/Users/floodlee/AppData/Roaming/Sublime Text 3/Packages/SystemVerilog/SystemVerilog.sublime-settings"
+				"/C/Users/Kuangxin/Documents/MATLAB/genarate_sin.m",
+				"/E/FPGA/changzhou_Chnl2/Chnl_kintex7_2048chnl/rtl/test_top_TB.v",
+				"/E/FPGA/changzhou_Chnl2/Chnl_kintex7_2048chnl/rtl/top.v",
+				"/E/FPGA/changzhou_Chnl2/Chnl_kintex7_2048chnl/rtl/DA_OUT.v",
+				"/E/FPGA/changzhou_Chnl2/Chnl_kintex7_2048chnl/rtl/top.ucf",
+				"/C/Users/Kuangxin/AppData/Local/Temp/fifo_dac.xdc",
+				"/C/Users/Kuangxin/AppData/Local/Temp/fifo_dac.veo",
+				"/C/Users/Kuangxin/Documents/python/dac_rom.dat",
+				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/sublimesystemverilog/Snippets/generate.sublime-snippet",
+				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/divide_325.v",
+				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/serdes_w",
+				"/C/Xilinx/Vivado/2015.4/scripts/init.tcl",
+				"/C/Xilinx/Vivado/2015.4/examples/Vivado_Tutorial/Sources/hdl/or1200/or1200_cpu.v",
+				"/C/Xilinx/Vivado/2015.4/examples/Vivado_Tutorial/run_cpu_kintex7_batch.tcl",
+				"/C/Xilinx/Vivado/2015.4/examples/Vivado_Tutorial/create_bft_kintex7_batch.tcl",
+				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+				"/C/Users/Kuangxin/AppData/Local/Temp/HZ$D.876.391/HZ$D.876.392/aggregate_data_types_example1/array_unpacked.sv",
+				"/C/Users/Kuangxin/AppData/Local/Temp/HZ$D.795.1613/HZ$D.795.1614/aggregate_data_types_example2/array_packed.sv",
+				"/C/Users/Kuangxin/Desktop/data_types_example1/data_types_example1/ALU.sv",
+				"/C/Users/Kuangxin/Desktop/data_types_example1/data_types_example1/definitions.sv",
+				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/generate_rom.py",
+				"/C/Users/Kuangxin/Documents/python/format_width.py",
+				"/C/Users/Kuangxin/Documents/python/bin2hex.py",
+				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/head_rom.dat",
+				"/C/Users/Kuangxin/AppData/Local/Temp/serdes_rx_fifo.veo",
+				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/sublimesystemverilog/SystemVerilog.sublime-settings",
+				"/E/FPGA/K7_serdes/serdes_example/serdes_example/serdes_example.srcs/sources_1/imports/example_design/serdes_gt_frame_check.v",
+				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/serdes_tx_ctrl_tb.sv",
+				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/serdes_tx_ctrl.v",
+				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/User/SublimeGit.sublime-settings",
+				"/C/Users/Kuangxin/.gitconfig"
 			],
 			"find":
 			{
-				"height": 34.0
+				"height": 21.0
 			},
 			"find_in_files":
 			{
-				"height": 0.0,
+				"height": 90.0,
 				"where_history":
 				[
 				]
 			},
 			"find_state":
 			{
-				"case_sensitive": false,
+				"case_sensitive": true,
 				"find_history":
 				[
-					"\\",
-					"I_uart_dat",
-					"R_head_rom",
-					"I_uart_dat",
-					"R_ram_din",
-					"R_head_rom",
-					"R_length_cnt",
-					"W_ser_tx_ena",
-					"W_ser_tx_data",
-					"R_data_dat",
-					"O_serdes_ena",
-					"O_serdes_data",
-					"O_serdes_ena",
-					"I_tx_clk",
-					"I_rx_clk",
-					"I_tx_clk",
+					"negedge",
+					"~I_rst",
 					"I_rst_n",
+					"negedge",
+					"I_rst_n",
+					"negedge",
+					"I_rst_n",
+					"negedge",
+					"I_rst_n",
+					"negedge",
+					"I_rst_n",
+					"negedge",
+					"I_rst_n",
+					"negedge",
+					"~",
+					"I_rst_n",
+					"negedge",
+					"I_rst_n",
+					"W_dout1",
+					"W_dout2",
+					"I_rst_n",
+					"80",
+					"x80",
+					"80",
+					"00",
+					"R_data2",
+					"R_data1",
+					"80",
+					"W_dout1",
+					"W_dout2",
+					"I_dac_data2",
+					"I_dac_data1",
+					"W_dac_ena",
+					"W_dac_data",
+					"W_dac_ena",
+					"O_DOUT",
+					"O_RST",
+					"W_rst_n",
+					"I_dac_ena2",
+					"I_dac_ena1",
+					"I_dac_data2",
+					"I_dac_data1",
+					"R_start",
+					"I_dac_ena1",
+					"W_rst",
+					"negedge",
+					"W_rst_n",
+					"I_sys_clk",
+					"R_dac_ena",
+					"R_dac_double_byte",
+					"R_tx_dat",
+					"O_tx_dat",
+					"R1_rx_dat",
+					"R3_rx_dat",
+					"R1_rx_dat",
+					"R_cnt_ena",
+					"R_cnt_num",
+					"R_count_trans",
+					"R_count_sample",
+					"P_SAMPLE_BAUD_4800",
+					"P_TRANS_BAUD_4800",
+					"TX",
+					"R_count_sample",
+					"R_count_trans",
+					"P_TRANS_BAUD_2400",
+					"_sample",
+					"eate_generated_clock",
+					"create_generated_clock",
+					"[1]",
+					"get_pins",
+					"create_generated_clock",
+					"clk_100m",
+					"P_TRANS_BAUD_57600",
+					"I_baud_rate",
+					"clk_100m",
+					"I_sys_clk",
+					"W_uart_sample_clk",
+					"0",
+					"W_uart_sample_clk",
+					"W_uart_trans_clk",
+					"R_ram_rden",
 					"wire",
-					"decl",
-					"indent_level",
-					"sig_type",
-					"var",
-					"ds",
-					"Reg",
-					"reg",
-					"input",
-					"sig_type",
-					"reg",
-					"Reg",
-					"reg",
-					"Reg",
-					"reg",
-					"sig_type",
-					"logic",
-					"decl",
-					"verilog_module_inst",
-					"import",
-					"#",
-					"sv",
-					"verilog_module_inst",
-					"sv",
-					"SV",
-					"sv",
-					"svh",
-					"'v'",
-					"verilog_do_module_inst",
-					"logic",
-					"reg",
-					"ctrl+m",
-					"R_tx_state",
-					"R_tx_count",
-					"R_data_cnt",
-					"R_data_dat",
-					"R_uart_length",
-					"W_uart_rx_ena",
-					"23",
-					"R_uart_length",
-					"O_serdes_data",
-					"z",
-					"zz",
-					"zzz",
-					"zzzz",
+					"W_serdes_rx_clk",
+					"W_serdes_tx_clk",
+					"W_SCK",
+					"I_SCLK",
+					"O_DOUT",
+					"I_sys_clk",
+					"inter_time",
+					"W_rst_n",
+					"I_rst_n",
+					"I_sys_clk",
+					"I_baud_rate",
+					"I_tx_clk",
 					"W_uart_rx_ena",
 					"I_uart_ena",
-					"R_head_begin1",
-					"R_data_begin",
-					"R_head_begin",
-					"R_data_begin",
-					"R_data_cnt",
-					"R_head_cnt",
-					"R_head_dat",
-					"R_head_cnt",
-					"R_head_dat",
-					"R_head_rom",
-					"rom",
-					"R_data_dat",
-					"R_ram_din",
-					"R_tx_count",
-					"R_ram_add",
-					"R_ram_add1",
-					"W_ram_dout",
-					"R_rd_add",
-					"R_ram_rden",
-					"R_ram_wren",
-					"R_ram_rden",
-					"W_ram_dout",
-					"R_ram_din",
-					"W_ram_dout",
-					"R_ram_wea",
-					"R_ram_din",
-					"I_rd_en",
-					"O_serdes_data",
-					"I_div_clk",
-					"R_uart_tx_en",
-					"R_tx_rd_en",
-					"R_uart_tx_en",
-					"O_rx_dat",
-					"O_rx_empty",
+					"RX",
 					"O_rx_valid",
-					"O_rx_empty",
-					"W_tx_empty",
-					"O_ready",
-					"R_tail",
-					"O_rx_valid",
-					"O_rx_empty",
-					"EXAMPLE_CONFIG_INDEPENDENT_LANES",
-					"EXAMPLE_LANE_WITH_START_CHAR",
-					"EXAMPLE_WORDS_IN_BRAM",
-					"EXAMPLE_SIM_GTRESET_SPEEDUP",
-					"EXAMPLE_USE_CHIPSCOPE",
-					"STABLE_CLOCK_PERIOD",
-					"EXAMPLE_WORDS_IN_BRAM",
-					"gt0_tx_system_reset_c",
-					"gt0_txfsmresetdone_r2",
-					"gt0_tx_system_reset_c",
-					"gt0_txfsmresetdone_r2",
-					"rxresetdone_vio_i",
-					"gt0_rxfsmresetdone_i",
-					"rxresetdone_vio_i",
-					"track_data_r2",
-					"track_data_r3",
-					"track_data_r",
-					"track_data_r3",
-					"rx_data_has_start_char_c",
-					"rx_data_aligned",
-					"rx_data_has_start_char_c",
-					"start_of_packet_detected_c",
-					"start_of_packet_detected_r"
+					"I_check_mode",
+					"b0010",
+					"W_uart_rx_dat",
+					"tx",
+					"W_uart_rx_dat",
+					"W_SCK",
+					"I_SCLK",
+					"I_FS",
+					"R_get_data_tosend",
+					"656",
+					"W_rst_n",
+					"R_start_en",
+					"R_initial_ok",
+					"O_serdes_tx_data",
+					"R_test_data",
+					"R_initial_ok",
+					"686",
+					"672",
+					"uart_trans_clk",
+					"W_uart_trans_clk",
+					"clk_100m",
+					"var0",
+					"var",
+					"[])",
+					"uart_sample_clk",
+					"W_uart_sample_clk",
+					"I_check_mode",
+					"W_check_mode",
+					"W_baud_rate",
+					"O_check_mode"
 				],
 				"highlight": true,
 				"in_selection": false,
@@ -941,7 +1180,7 @@
 				"reverse": false,
 				"show_context": true,
 				"use_buffer2": true,
-				"whole_word": false,
+				"whole_word": true,
 				"wrap": true
 			},
 			"folders":
@@ -953,24 +1192,24 @@
 			"groups":
 			[
 				{
-					"selected": 0,
+					"selected": 1,
 					"sheets":
 					[
 						{
 							"buffer": 0,
-							"file": "/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/serdes_tx_ctrl.v",
+							"file": "/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/top.sv",
 							"semi_transient": false,
 							"settings":
 							{
-								"buffer_size": 12144,
+								"buffer_size": 17439,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										5999,
-										5999
+										5342,
+										5342
 									]
 								],
 								"settings":
@@ -982,58 +1221,31 @@
 									"translate_tabs_to_spaces": true
 								},
 								"translation.x": 0.0,
-								"translation.y": 3399.0,
-								"zoom_level": 1.0
-							},
-							"stack_index": 0,
-							"type": "text"
-						},
-						{
-							"buffer": 1,
-							"file": "/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/serdes_tx_ctrl.sv",
-							"semi_transient": false,
-							"settings":
-							{
-								"buffer_size": 12144,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										5995,
-										5995
-									]
-								],
-								"settings":
-								{
-									"origin_encoding": "ASCII",
-									"syntax": "Packages/sublimesystemverilog/SystemVerilog.sublime-syntax",
-									"tab_size": 4,
-									"translate_tabs_to_spaces": true
-								},
-								"translation.x": 0.0,
-								"translation.y": 3409.0,
+								"translation.y": 3120.0,
 								"zoom_level": 1.0
 							},
 							"stack_index": 1,
 							"type": "text"
 						},
 						{
-							"buffer": 2,
-							"file": "/E/FPGA/K7_serdes/serdes_example/serdes_example/serdes_example.srcs/sources_1/imports/example_design/serdes_gt_frame_check.v",
+							"buffer": 1,
+							"file": "/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/serdes_wrapper.sv",
 							"semi_transient": false,
 							"settings":
 							{
-								"buffer_size": 16569,
+								"buffer_size": 4384,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										0,
-										0
+										2522,
+										2522
+									],
+									[
+										3049,
+										3049
 									]
 								],
 								"settings":
@@ -1044,27 +1256,291 @@
 									"translate_tabs_to_spaces": true
 								},
 								"translation.x": 0.0,
-								"translation.y": 7862.0,
+								"translation.y": 1316.0,
 								"zoom_level": 1.0
 							},
-							"stack_index": 2,
+							"stack_index": 0,
 							"type": "text"
 						},
 						{
-							"buffer": 3,
-							"file": "/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/uart.sv",
+							"buffer": 2,
+							"file": "/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/serdes_tx_ctrl.sv",
 							"semi_transient": false,
 							"settings":
 							{
-								"buffer_size": 6807,
+								"buffer_size": 16584,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										0,
-										0
+										1971,
+										1971
+									]
+								],
+								"settings":
+								{
+									"origin_encoding": "ASCII",
+									"syntax": "Packages/sublimesystemverilog/SystemVerilog.sublime-syntax",
+									"tab_size": 4,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 465.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 4,
+							"type": "text"
+						},
+						{
+							"buffer": 3,
+							"file": "/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/dac_if.sv",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 16749,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										4729,
+										4729
+									]
+								],
+								"settings":
+								{
+									"origin_encoding": "ASCII",
+									"syntax": "Packages/sublimesystemverilog/SystemVerilog.sublime-syntax",
+									"tab_size": 4,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 1903.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 3,
+							"type": "text"
+						},
+						{
+							"buffer": 4,
+							"file": "/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/serdes_rx_ctrl.sv",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 24642,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										5202,
+										5202
+									],
+									[
+										5387,
+										5387
+									],
+									[
+										5671,
+										5671
+									],
+									[
+										6011,
+										6011
+									],
+									[
+										6199,
+										6199
+									],
+									[
+										6393,
+										6393
+									],
+									[
+										6643,
+										6643
+									],
+									[
+										6822,
+										6822
+									],
+									[
+										7011,
+										7011
+									],
+									[
+										7431,
+										7431
+									],
+									[
+										7681,
+										7681
+									],
+									[
+										7890,
+										7890
+									],
+									[
+										8113,
+										8113
+									],
+									[
+										8431,
+										8431
+									],
+									[
+										8710,
+										8710
+									],
+									[
+										9009,
+										9009
+									],
+									[
+										9422,
+										9422
+									],
+									[
+										9696,
+										9696
+									],
+									[
+										9990,
+										9990
+									],
+									[
+										10401,
+										10401
+									],
+									[
+										10684,
+										10684
+									],
+									[
+										10988,
+										10988
+									],
+									[
+										11407,
+										11407
+									],
+									[
+										11761,
+										11761
+									],
+									[
+										11955,
+										11955
+									],
+									[
+										12300,
+										12300
+									],
+									[
+										12616,
+										12616
+									],
+									[
+										14825,
+										14825
+									],
+									[
+										15259,
+										15259
+									],
+									[
+										15712,
+										15712
+									],
+									[
+										16612,
+										16612
+									],
+									[
+										17095,
+										17095
+									],
+									[
+										17455,
+										17455
+									],
+									[
+										17655,
+										17655
+									],
+									[
+										18013,
+										18013
+									],
+									[
+										18343,
+										18343
+									]
+								],
+								"settings":
+								{
+									"origin_encoding": "ASCII",
+									"syntax": "Packages/sublimesystemverilog/SystemVerilog.sublime-syntax",
+									"tab_size": 4,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": -0.0,
+								"translation.y": 8929.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 2,
+							"type": "text"
+						},
+						{
+							"buffer": 5,
+							"file": "/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/uart_clk_gen.v",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 5672,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										5648,
+										5648
+									]
+								],
+								"settings":
+								{
+									"origin_encoding": "ASCII",
+									"syntax": "Packages/sublimesystemverilog/SystemVerilog.sublime-syntax",
+									"tab_size": 4,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 1849.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 5,
+							"type": "text"
+						},
+						{
+							"buffer": 6,
+							"file": "/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/uart.sv",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 7060,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										7035,
+										7035
 									]
 								],
 								"settings":
@@ -1075,101 +1551,7 @@
 									"translate_tabs_to_spaces": true
 								},
 								"translation.x": 0.0,
-								"translation.y": 0.0,
-								"zoom_level": 1.0
-							},
-							"stack_index": 4,
-							"type": "text"
-						},
-						{
-							"buffer": 4,
-							"file": "/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/serdes_tx_ctrl_tb.sv",
-							"semi_transient": false,
-							"settings":
-							{
-								"buffer_size": 1907,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										1505,
-										1505
-									]
-								],
-								"settings":
-								{
-									"is_init_dirty_state": false,
-									"origin_encoding": "ASCII",
-									"syntax": "Packages/sublimesystemverilog/SystemVerilog.sublime-syntax"
-								},
-								"translation.x": 0.0,
-								"translation.y": 0.0,
-								"zoom_level": 1.0
-							},
-							"stack_index": 3,
-							"type": "text"
-						},
-						{
-							"buffer": 5,
-							"file": "/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/top.sv",
-							"semi_transient": false,
-							"settings":
-							{
-								"buffer_size": 5793,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										5232,
-										5232
-									]
-								],
-								"settings":
-								{
-									"is_init_dirty_state": false,
-									"origin_encoding": "ASCII",
-									"syntax": "Packages/sublimesystemverilog/SystemVerilog.sublime-syntax",
-									"tab_size": 4,
-									"translate_tabs_to_spaces": true
-								},
-								"translation.x": 0.0,
-								"translation.y": 2394.0,
-								"zoom_level": 1.0
-							},
-							"stack_index": 5,
-							"type": "text"
-						},
-						{
-							"buffer": 6,
-							"file": "/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/uart_user.v",
-							"semi_transient": false,
-							"settings":
-							{
-								"buffer_size": 3815,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										3430,
-										3438
-									]
-								],
-								"settings":
-								{
-									"is_init_dirty_state": false,
-									"origin_encoding": "ASCII",
-									"syntax": "Packages/sublimesystemverilog/SystemVerilog.sublime-syntax",
-									"tab_size": 4,
-									"translate_tabs_to_spaces": true
-								},
-								"translation.x": 0.0,
-								"translation.y": 1674.0,
+								"translation.y": 2746.0,
 								"zoom_level": 1.0
 							},
 							"stack_index": 6,
@@ -1177,611 +1559,99 @@
 						},
 						{
 							"buffer": 7,
-							"file": "/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/sublimesystemverilog/SystemVerilog.sublime-settings",
+							"file": "/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/uart_rx.v",
 							"semi_transient": false,
 							"settings":
 							{
-								"buffer_size": 3973,
+								"buffer_size": 6683,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										3487,
-										3498
+										6186,
+										6186
 									]
 								],
 								"settings":
 								{
-									"is_init_dirty_state": false,
 									"origin_encoding": "ASCII",
-									"syntax": "Packages/JavaScript/JSON.sublime-syntax",
-									"translate_tabs_to_spaces": false
+									"syntax": "Packages/sublimesystemverilog/SystemVerilog.sublime-syntax",
+									"tab_size": 4,
+									"translate_tabs_to_spaces": true
 								},
 								"translation.x": 0.0,
-								"translation.y": 378.0,
+								"translation.y": 2642.0,
 								"zoom_level": 1.0
 							},
 							"stack_index": 7,
 							"type": "text"
+						},
+						{
+							"buffer": 8,
+							"file": "/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/uart_tx.v",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 5552,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										5279,
+										5279
+									]
+								],
+								"settings":
+								{
+									"origin_encoding": "ASCII",
+									"syntax": "Packages/sublimesystemverilog/SystemVerilog.sublime-syntax",
+									"tab_size": 4,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 2057.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 8,
+							"type": "text"
 						}
 					]
-				}
-			],
-			"incremental_find":
-			{
-				"height": 26.0
-			},
-			"input":
-			{
-				"height": 34.0
-			},
-			"layout":
-			{
-				"cells":
-				[
-					[
-						0,
-						0,
-						1,
-						1
-					]
-				],
-				"cols":
-				[
-					0.0,
-					1.0
-				],
-				"rows":
-				[
-					0.0,
-					1.0
-				]
-			},
-			"menu_visible": true,
-			"output.SystemVerilog":
-			{
-				"height": 128.0
-			},
-			"output.exec":
-			{
-				"height": 118.0
-			},
-			"output.find_results":
-			{
-				"height": 0.0
-			},
-			"pinned_build_system": "Packages/Python/Python.sublime-build",
-			"position": "0,2,2,-32000,-32000,-1,-1,613,76,75,732",
-			"project": "",
-			"replace":
-			{
-				"height": 48.0
-			},
-			"save_all_on_build": true,
-			"select_file":
-			{
-				"height": 0.0,
-				"last_filter": "",
-				"selected_items":
-				[
-				],
-				"width": 0.0
-			},
-			"select_project":
-			{
-				"height": 0.0,
-				"last_filter": "",
-				"selected_items":
-				[
-				],
-				"width": 0.0
-			},
-			"select_symbol":
-			{
-				"height": 0.0,
-				"last_filter": "",
-				"selected_items":
-				[
-				],
-				"width": 0.0
-			},
-			"selected_group": 0,
-			"settings":
-			{
-			},
-			"show_minimap": true,
-			"show_open_files": false,
-			"show_tabs": true,
-			"side_bar_visible": true,
-			"side_bar_width": 202.0,
-			"status_bar_visible": true,
-			"template_settings":
-			{
-			},
-			"window_id": 2,
-			"workspace_name": ""
-		},
-		{
-			"auto_complete":
-			{
-				"selected_items":
-				[
-					[
-						"I",
-						"I_tx_clk"
-					],
-					[
-						"R_l",
-						"R_length_cnt"
-					],
-					[
-						"O_",
-						"O_uart_rd_en"
-					],
-					[
-						"TX_",
-						"TX_DATA"
-					],
-					[
-						"R_tx",
-						"R_tx_count"
-					],
-					[
-						"TX",
-						"TX_DATA"
-					],
-					[
-						"if",
-						"if	if else"
-					],
-					[
-						"H",
-						"HEAD_TYPE"
-					],
-					[
-						"be",
-						"beg	begin .. end"
-					],
-					[
-						"al",
-						"always"
-					],
-					[
-						"data",
-						"sync_data_valid"
-					],
-					[
-						"alw",
-						"always	always Async"
-					]
-				]
-			},
-			"buffers":
-			[
-				{
-					"contents": "",
-					"settings":
-					{
-						"buffer_size": 0,
-						"line_ending": "Windows"
-					}
-				}
-			],
-			"build_system": "",
-			"build_system_choices":
-			[
-				[
-					[
-						[
-							"Packages/Python/Python.sublime-build",
-							""
-						],
-						[
-							"Packages/Python/Python.sublime-build",
-							"Syntax Check"
-						]
-					],
-					[
-						"Packages/Python/Python.sublime-build",
-						""
-					]
-				]
-			],
-			"build_varint": "",
-			"command_palette":
-			{
-				"height": 392.0,
-				"last_filter": "gitp",
-				"selected_items":
-				[
-					[
-						"gitp",
-						"Git: Push Current Branch"
-					],
-					[
-						"gits",
-						"Git: Status"
-					],
-					[
-						"gitaddre",
-						"Git: Add Remote"
-					],
-					[
-						"gitco",
-						"Git: Commit"
-					],
-					[
-						"git :add",
-						"Git: Quick Add"
-					],
-					[
-						"gitsta",
-						"Git: Status"
-					],
-					[
-						"git:init",
-						"Git: Init"
-					],
-					[
-						"insta",
-						"Package Control: Install Package"
-					],
-					[
-						"Package Control: ",
-						"Package Control: List Packages"
-					]
-				],
-				"width": 432.0
-			},
-			"console":
-			{
-				"height": 126.0,
-				"history":
-				[
-					"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
-				]
-			},
-			"distraction_free":
-			{
-				"menu_visible": true,
-				"show_minimap": false,
-				"show_open_files": false,
-				"show_tabs": false,
-				"side_bar_visible": false,
-				"status_bar_visible": false
-			},
-			"expanded_folders":
-			[
-				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3"
-			],
-			"file_history":
-			[
-				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/.gitignore",
-				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/User/SublimeGit.sublime-settings",
-				"/C/Users/Kuangxin/.gitconfig",
-				"/E/FPGA/A7_changzhou/changzhou.sim/sim_1/behav/modelsim.ini",
-				"/C/modeltech_10.0a/modelsim.ini",
-				"/C/modeltech64_10.1c/modelsim.ini",
-				"/C/Xilinx/Vivado/2015.4/scripts/init.tcl",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/tob_tb.sv",
-				"/E/FPGA/K7_serdes/serdes_example/serdes_example/serdes_example.srcs/sources_1/imports/example_design/serdes_exdes.v",
-				"/E/FPGA/K7_serdes/serdes_example/serdes_example/serdes_example.srcs/sources_1/imports/example_design/serdes_gt_frame_check.v",
-				"/E/FPGA/K7_serdes/serdes_example/serdes_example/serdes_example.srcs/sim_1/imports/simulation/serdes_tb.v",
-				"/E/FPGA/A7_changzhou/changzhou.sim/sim_1/behav/top_tb_simulate.do",
-				"/E/FPGA/A7_changzhou/changzhou.sim/sim_3/behav/top_tb_compile.do",
-				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/sublimesystemverilog/verilogutil/verilogutil.py",
-				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/sublimesystemverilog/verilog_module.py",
-				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/sublimesystemverilog/verilog_completion.py",
-				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/top.v",
-				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/sublimesystemverilog/SystemVerilog.sublime-settings",
-				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
-				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/sublimesystemverilog/Snippets/comment_box.sublime-snippet",
-				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/sublimesystemverilog/Snippets/comment_long.sublime-snippet",
-				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/sublimesystemverilog/Snippets/comment_short.sublime-snippet",
-				"/H/sublimesystemverilog/Snippets/initial.sublime-snippet",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/head_rom.dat",
-				"/E/FPGA/rtl_template/serdes/example_design/gt_rom_init_tx.dat",
-				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/sublimesystemverilog/Snippets/generate.sublime-snippet",
-				"/G/软件安装包/常用软件/Sublime Text 2/Packages/Verilog/Snippets/if_else.tmSnippet",
-				"/D/BaiduYunDownload/Sublime Text 2/Sublime Text 2/Packages/Verilog/Snippets/generate.tmSnippet",
-				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/sublimesystemverilog/Snippets/always.sublime-snippet",
-				"/G/软件安装包/常用软件/Sublime Text 2/Packages/Verilog/Snippets/generate.tmSnippet",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/uart.sv",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/uart_rx.v",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/uart_tb.v",
-				"/G/软件安装包/常用软件/Sublime Text 2/Packages/Verilog/Snippets/case.tmSnippet",
-				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/sublimesystemverilog/Snippets/case.sublime-snippet",
-				"/G/软件安装包/常用软件/Sublime Text 2/Packages/Verilog/Snippets/begin.tmSnippet",
-				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/sublimesystemverilog/Snippets/module.sublime-snippet",
-				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/sublimesystemverilog/Snippets/if.sublime-snippet",
-				"/C/Users/Kuangxin/AppData/Local/Temp/serdes_ram.veo",
-				"/C/Users/Kuangxin/AppData/Local/Temp/fifo_uart.veo",
-				"/C/Users/Kuangxin/AppData/Local/Temp/serdes_ram.vho",
-				"/E/FPGA/A7_changzhou/changzhou.sim/sim_2/behav/uart_tb_compile.do",
-				"/E/FPGA/A7_changzhou/changzhou.sim/sim_2/behav/modelsim.ini",
-				"/E/FPGA/A7_changzhou/changzhou.sim/sim_2/behav/glbl.v",
-				"/E/FPGA/A7_changzhou/changzhou.sim/sim_2/behav/uart_tb_wave.do",
-				"/E/FPGA/A7_changzhou/changzhou.sim/sim_2/behav/gt_rom_init_tx.dat",
-				"/E/FPGA/rtl_template/serdes/K7_vivado_serdes_x4/serdes_exdes.v",
-				"/e/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example/serdes_example.srcs/sources_1/imports/example_design/serdes_exdes.v",
-				"/e/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example/serdes_example.srcs/sources_1/imports/example_design/serdes_gt_frame_check.v",
-				"/e/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example/serdes_example.srcs/sim_1/imports/simulation/serdes_tb.v",
-				"/e/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example/serdes_example.srcs/sources_1/ip/serdes/serdes.v",
-				"/e/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example/serdes_example.srcs/sources_1/imports/example_design/serdes_gt_frame_gen.v",
-				"/E/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example/serdes_example.srcs/sources_1/imports/example_design/gt_rom_init_tx.dat",
-				"/E/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example/serdes_example.srcs/sim_1/imports/simulation/functional/gt_rom_init_rx.dat",
-				"/E/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example/serdes_example.srcs/sim_1/imports/simulation/functional/gt_rom_init_tx.dat",
-				"/E/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example/serdes_example.runs/impl_1/debug_nets.ltx",
-				"/C/Users/Kuangxin/AppData/Roaming/Xilinx/Vivado/debug_nets.ltx",
-				"/e/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example/serdes_example.srcs/constrs_1/imports/example_design/serdes_exdes.xdc",
-				"/E/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example/serdes_example.srcs/sources_1/imports/example_design/gt_rom_init_rx.dat",
-				"/E/FPGA/rtl_template/mac/gmac_if.v",
-				"/e/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example/serdes_example.srcs/sources_1/ip/serdes/serdes.xdc",
-				"/e/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example/serdes_example.srcs/sources_1/ip/serdes/serdes_multi_gt.v",
-				"/e/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example/serdes_example.srcs/sources_1/ip/serdes/serdes_support.v",
-				"/e/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example/serdes_example.srcs/sources_1/ip/serdes/serdes_init.v",
-				"/e/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example/serdes_example.srcs/sources_1/ip/serdes/serdes/example_design/serdes_sync_block.v",
-				"/e/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example/serdes_example.srcs/sources_1/ip/serdes/serdes/example_design/serdes_rx_startup_fsm.v",
-				"/e/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example/serdes_example.srcs/sources_1/ip/serdes/serdes/example_design/serdes_tx_startup_fsm.v",
-				"/e/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example/serdes_example.srcs/sources_1/ip/serdes/serdes_gt.v",
-				"/E/FPGA/yangzhou_signaldetect2/FPGA_PRJ/Vivado_2016_0317_18bit/V7_585_xpr.srcs/sources_1/rtl_723/Beamf_top.sv",
-				"/E/FPGA/yangzhou_signaldetect2/FPGA_PRJ/Vivado_2016_0317_18bit/V7_585_xpr.srcs/sources_1/rtl_723/beamrecv.sv",
-				"/E/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example.runs/impl_1/debug_nets.ltx",
-				"/C/Users/Kuangxin/Documents/python/bin2hex.py",
-				"/C/Users/Kuangxin/Documents/python/creat license.py",
-				"/C/Users/Kuangxin/Documents/python/print_increase.py",
-				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/User/Python.sublime-build",
-				"/C/Users/Kuangxin/Documents/python/kkxxai.py",
-				"/C/Users/Kuangxin/Documents/python/kkxx.py",
-				"/C/Users/Kuangxin/Documents/python/row_data.py",
-				"/e/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example/serdes_example.srcs/sources_1/ip/serdes/serdes_ooc.xdc",
-				"/e/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example.srcs/sources_1/imports/example_design/serdes_gt_frame_gen.v",
-				"/e/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example.srcs/sources_1/ip/serdes/serdes.v",
-				"/e/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example.srcs/constrs_1/imports/example_design/serdes_exdes.xdc",
-				"/e/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example.srcs/sources_1/imports/example_design/serdes_exdes.v",
-				"/e/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example/serdes_example.srcs/sources_1/ip/vio_0/vio_0_ooc.xdc",
-				"/e/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example/serdes_example.srcs/sources_1/ip/ila_1/ila_1_ooc.xdc",
-				"/e/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example/serdes_example.srcs/sources_1/ip/ila_0/ila_0_ooc.xdc",
-				"/e/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example/serdes_example.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.veo",
-				"/e/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example.srcs/sources_1/ip/ila_0/ila_v6_0/constraints/ila.xdc",
-				"/e/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example.srcs/sources_1/ip/ila_0/ila_0_ooc.xdc",
-				"/e/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example.srcs/sources_1/ip/vio_0/synth/vio_0.v",
-				"/e/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example.srcs/sources_1/ip/vio_0/vio_0_ooc.xdc",
-				"/e/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example.srcs/sources_1/ip/ila_1/ila_1_ooc.xdc",
-				"/e/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example.srcs/sources_1/ip/serdes/serdes_ooc.xdc",
-				"/e/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example.srcs/sources_1/ip/serdes/serdes.xdc",
-				"/e/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example.srcs/sources_1/ip/ila_1/ila_v6_0/constraints/ila.xdc",
-				"/E/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example.srcs/sources_1/imports/example_design/gt_rom_init_tx.dat",
-				"/E/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example.srcs/sources_1/imports/example_design/gt_rom_init_rx.dat",
-				"/e/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example.srcs/sources_1/ip/vio_0/vio_0.xdc",
-				"/C/Users/Kuangxin/Documents/MATLAB/genarate_sin.m",
-				"/C/Users/Kuangxin/AppData/Local/YNote/Data/kuangxin_0@163.com/915e4dccda39408f9d3458badc7fc408/sin12.m",
-				"/C/Users/Kuangxin/Documents/MATLAB/sin12.m",
-				"/C/Users/Kuangxin/Documents/MATLAB/MAHAFZA/addnoise.m",
-				"/C/FPGA_PRJ/changzhou/changzhou.srcs/sources_1/new/top.sv",
-				"/C/FPGA_PRJ/changzhou_ver1/FPGA_prj/Chnl_K7_0612/src/DA_module.v",
-				"/C/Users/Kuangxin/Documents/MATLAB/fft/Untitled.m",
-				"/C/FPGA_PRJ/changzhou/changzhou.srcs/sources_1/new/uart.sv",
-				"/C/FPGA_PRJ/changzhou_ver1/FPGA_prj/Chnl_K7_0612/src/DUC_AGC_DA.v",
-				"/C/FPGA_PRJ/changzhou_ver1/FPGA_prj/Chnl_K7_0612/src/top.v",
-				"/C/FPGA_PRJ/changzhou_ver1/FPGA_prj/Chnl_K7_0612/src/data_syn.v",
-				"/C/Users/floodlee/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
-				"/C/Users/floodlee/AppData/Roaming/Sublime Text 3/Packages/sublimesystemverilog/Snippets/module.sublime-snippet",
-				"/C/FPGA_PRJ/changzhou_ver1/FPGA_prj/Chnl_K7_0612/src/DA_OUT.v",
-				"/C/Users/floodlee/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
-				"/C/Users/floodlee/AppData/Roaming/Sublime Text 3/Packages/sublimesystemverilog/verilog_align.py",
-				"/C/FPGA_PRJ/changzhou_ver1/FPGA_prj/Chnl_K7_0612/src/serdes/serdes.v",
-				"/C/Users/floodlee/AppData/Roaming/Sublime Text 3/Packages/Default/Default (Windows).sublime-keymap",
-				"/C/Users/floodlee/AppData/Roaming/Sublime Text 2/Packages/User/Verilog.sublime-settings",
-				"/C/Users/floodlee/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
-				"/C/Users/floodlee/AppData/Roaming/Sublime Text 2/Packages/User/divide_long.py",
-				"/C/FPGA_PRJ/changzhou/changzhou.srcs/sources_1/new/uart_tb.v",
-				"/C/FPGA_PRJ/changzhou/changzhou.srcs/sources_1/new/uart_tx.v",
-				"/C/FPGA_PRJ/changzhou/changzhou.srcs/sources_1/new/test.sv",
-				"/C/Users/floodlee/AppData/Roaming/Sublime Text 3/Packages/sublimesystemverilog/test.sv",
-				"/C/Users/floodlee/AppData/Roaming/Sublime Text 3/Packages/sublimesystemverilog/case.sublime-snippet",
-				"/C/Users/floodlee/AppData/Roaming/Sublime Text 3/Packages/User/SystemVerilog.sublime-settings",
-				"/C/Users/floodlee/AppData/Roaming/Sublime Text 3/Packages/SystemVerilog/SystemVerilog.sublime-settings"
-			],
-			"find":
-			{
-				"height": 26.0
-			},
-			"find_in_files":
-			{
-				"height": 0.0,
-				"where_history":
-				[
-				]
-			},
-			"find_state":
-			{
-				"case_sensitive": false,
-				"find_history":
-				[
-					"\\",
-					"I_uart_dat",
-					"R_head_rom",
-					"I_uart_dat",
-					"R_ram_din",
-					"R_head_rom",
-					"R_length_cnt",
-					"W_ser_tx_ena",
-					"W_ser_tx_data",
-					"R_data_dat",
-					"O_serdes_ena",
-					"O_serdes_data",
-					"O_serdes_ena",
-					"I_tx_clk",
-					"I_rx_clk",
-					"I_tx_clk",
-					"I_rst_n",
-					"wire",
-					"decl",
-					"indent_level",
-					"sig_type",
-					"var",
-					"ds",
-					"Reg",
-					"reg",
-					"input",
-					"sig_type",
-					"reg",
-					"Reg",
-					"reg",
-					"Reg",
-					"reg",
-					"sig_type",
-					"logic",
-					"decl",
-					"verilog_module_inst",
-					"import",
-					"#",
-					"sv",
-					"verilog_module_inst",
-					"sv",
-					"SV",
-					"sv",
-					"svh",
-					"'v'",
-					"verilog_do_module_inst",
-					"logic",
-					"reg",
-					"ctrl+m",
-					"R_tx_state",
-					"R_tx_count",
-					"R_data_cnt",
-					"R_data_dat",
-					"R_uart_length",
-					"W_uart_rx_ena",
-					"23",
-					"R_uart_length",
-					"O_serdes_data",
-					"z",
-					"zz",
-					"zzz",
-					"zzzz",
-					"W_uart_rx_ena",
-					"I_uart_ena",
-					"R_head_begin1",
-					"R_data_begin",
-					"R_head_begin",
-					"R_data_begin",
-					"R_data_cnt",
-					"R_head_cnt",
-					"R_head_dat",
-					"R_head_cnt",
-					"R_head_dat",
-					"R_head_rom",
-					"rom",
-					"R_data_dat",
-					"R_ram_din",
-					"R_tx_count",
-					"R_ram_add",
-					"R_ram_add1",
-					"W_ram_dout",
-					"R_rd_add",
-					"R_ram_rden",
-					"R_ram_wren",
-					"R_ram_rden",
-					"W_ram_dout",
-					"R_ram_din",
-					"W_ram_dout",
-					"R_ram_wea",
-					"R_ram_din",
-					"I_rd_en",
-					"O_serdes_data",
-					"I_div_clk",
-					"R_uart_tx_en",
-					"R_tx_rd_en",
-					"R_uart_tx_en",
-					"O_rx_dat",
-					"O_rx_empty",
-					"O_rx_valid",
-					"O_rx_empty",
-					"W_tx_empty",
-					"O_ready",
-					"R_tail",
-					"O_rx_valid",
-					"O_rx_empty",
-					"EXAMPLE_CONFIG_INDEPENDENT_LANES",
-					"EXAMPLE_LANE_WITH_START_CHAR",
-					"EXAMPLE_WORDS_IN_BRAM",
-					"EXAMPLE_SIM_GTRESET_SPEEDUP",
-					"EXAMPLE_USE_CHIPSCOPE",
-					"STABLE_CLOCK_PERIOD",
-					"EXAMPLE_WORDS_IN_BRAM",
-					"gt0_tx_system_reset_c",
-					"gt0_txfsmresetdone_r2",
-					"gt0_tx_system_reset_c",
-					"gt0_txfsmresetdone_r2",
-					"rxresetdone_vio_i",
-					"gt0_rxfsmresetdone_i",
-					"rxresetdone_vio_i",
-					"track_data_r2",
-					"track_data_r3",
-					"track_data_r",
-					"track_data_r3",
-					"rx_data_has_start_char_c",
-					"rx_data_aligned",
-					"rx_data_has_start_char_c",
-					"start_of_packet_detected_c",
-					"start_of_packet_detected_r"
-				],
-				"highlight": true,
-				"in_selection": false,
-				"preserve_case": false,
-				"regex": false,
-				"replace_history":
-				[
-				],
-				"reverse": false,
-				"show_context": true,
-				"use_buffer2": true,
-				"whole_word": false,
-				"wrap": true
-			},
-			"folders":
-			[
-				{
-					"path": "C:\\Users\\Kuangxin\\AppData\\Roaming\\Sublime Text 3"
-				}
-			],
-			"groups":
-			[
+				},
 				{
 					"selected": 0,
 					"sheets":
 					[
 						{
-							"buffer": 0,
+							"buffer": 9,
 							"semi_transient": false,
 							"settings":
 							{
-								"buffer_size": 0,
+								"buffer_size": 250,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										0,
-										0
+										250,
+										250
 									]
 								],
 								"settings":
 								{
-									"auto_name": "",
+									"auto_name": "E:/FPGA/A7_changzhou/changzhou.runs/impl_1/top.bit",
+									"is_init_dirty_state": true,
 									"syntax": "Packages/Text/Plain text.tmLanguage"
 								},
 								"translation.x": 0.0,
 								"translation.y": 0.0,
 								"zoom_level": 1.0
 							},
-							"stack_index": 0,
+							"stack_index": 9,
 							"type": "text"
 						}
 					]
@@ -1789,7 +1659,7 @@
 			],
 			"incremental_find":
 			{
-				"height": 26.0
+				"height": 21.0
 			},
 			"input":
 			{
@@ -1804,11 +1674,18 @@
 						0,
 						1,
 						1
+					],
+					[
+						1,
+						0,
+						2,
+						1
 					]
 				],
 				"cols":
 				[
 					0.0,
+					0.954873646209,
 					1.0
 				],
 				"rows":
@@ -1824,34 +1701,18 @@
 			},
 			"output.exec":
 			{
-				"height": 118.0
+				"height": 208.0
 			},
 			"output.find_results":
 			{
 				"height": 0.0
 			},
-			"output.git-commit":
-			{
-				"height": 118.0
-			},
-			"output.git-init":
-			{
-				"height": 118.0
-			},
-			"output.git-push":
-			{
-				"height": 118.0
-			},
-			"output.git-remote":
-			{
-				"height": 118.0
-			},
 			"pinned_build_system": "Packages/Python/Python.sublime-build",
-			"position": "0,2,3,-1,-1,-1,-1,615,170,77,826",
+			"position": "0,2,3,-32000,-32000,-1,-1,597,491,59,1147",
 			"project": "",
 			"replace":
 			{
-				"height": 48.0
+				"height": 38.0
 			},
 			"save_all_on_build": true,
 			"select_file":
@@ -1889,12 +1750,12 @@
 			"show_open_files": false,
 			"show_tabs": true,
 			"side_bar_visible": true,
-			"side_bar_width": 202.0,
+			"side_bar_width": 339.0,
 			"status_bar_visible": true,
 			"template_settings":
 			{
 			},
-			"window_id": 4,
+			"window_id": 2,
 			"workspace_name": ""
 		}
 	],
