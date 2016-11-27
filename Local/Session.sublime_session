@@ -1,13 +1,22 @@
 {
 	"folder_history":
 	[
+		"/E/FPGA/s_m_test_0720/S_K7_M480_one_test/xilinx/top/rtl",
+		"/E/FPGA/s_m_test_0720/S_K7_M480_one_test/xilinx/rtl",
+		"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/rtl/serdes_if",
+		"/E/FPGA/Bird_Radar_v2/MS_K7_P/rtl",
+		"/F/2016学习/学习论文/jpeg2000/rtl",
+		"/E/FPGA/0801/0801/MS_K7_P/rtl",
+		"/E/FPGA/changzhou_reset_n/changzhou_reset_n.srcs",
+		"/E/FPGA/A7_changzhou_reset_n/changzhou.srcs",
+		"/E/FPGA/A7_changzhou/changzhou.srcs",
 		"/E/FPGA/K7_changzhou/changzhou.srcs/sources_1/new",
 		"/E/FPGA/rtl_template",
 		"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3",
 		"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new"
 	],
 	"last_version": 3114,
-	"last_window_id": 6,
+	"last_window_id": 20,
 	"log_indexing": false,
 	"settings":
 	{
@@ -19,24 +28,140 @@
 				"selected_items":
 				[
 					[
-						"W_rx",
-						"W_rx_clk"
+						"dr",
+						"DRP_CLK_IN"
+					],
+					[
+						"R",
+						"R_powerup_ok"
+					],
+					[
+						"Oc",
+						"O_config_dat"
+					],
+					[
+						"w",
+						"W_rx_link"
+					],
+					[
+						"P",
+						"P_RX_SYNC"
+					],
+					[
+						"tx",
+						"W_tx_link"
+					],
+					[
+						"rx",
+						"W_rx_link"
+					],
+					[
+						"W",
+						"W_rx_link"
+					],
+					[
+						"r1",
+						"R1_serdes_data"
+					],
+					[
+						"Rdais",
+						"R_data_is_k"
+					],
+					[
+						"O_c",
+						"O_m_ctrl_ena"
+					],
+					[
+						"img",
+						"IMG_HADD_WIDTH"
+					],
+					[
+						"S",
+						"STATE2"
+					],
+					[
+						"cons",
+						"CONST_ETA"
+					],
+					[
+						"ws",
+						"W_sum_x"
+					],
+					[
+						"m",
+						"multi_MxN"
 					],
 					[
 						"al",
 						"al	always"
 					],
 					[
-						"I_",
-						"I_baud_rate"
+						"s",
+						"W_sum_x"
 					],
 					[
-						"O_u",
-						"O_uart_trans_clk	reg"
+						"be",
+						"beg	begin .. end"
+					],
+					[
+						"da",
+						"DATA_WIDTH"
 					],
 					[
 						"div",
 						"div	comment_long"
+					],
+					[
+						"I_c",
+						"I_ctrl_ena"
+					],
+					[
+						"Is",
+						"I_sys_rst_n"
+					],
+					[
+						"I_",
+						"I_signal_ena"
+					],
+					[
+						"I",
+						"I_signal_ena"
+					],
+					[
+						"write",
+						"write_ctrl"
+					],
+					[
+						"bit",
+						"BITSTREAM"
+					],
+					[
+						"a",
+						"A"
+					],
+					[
+						"lien",
+						"line1"
+					],
+					[
+						"for",
+						"forv	Vector For Loop"
+					],
+					[
+						"rx_",
+						"R_rx_isUART"
+					],
+					[
+						"R_ex",
+						"R_exchange_dat0"
+					],
+					[
+						"W_rx",
+						"W_rx_clk"
+					],
+					[
+						"O_u",
+						"O_uart_trans_clk	reg"
 					],
 					[
 						"RST",
@@ -61,14 +186,6 @@
 					[
 						"Ic",
 						"I_SCLK"
-					],
-					[
-						"I",
-						"I_rst_n"
-					],
-					[
-						"r1",
-						"REG1_CONTINUE_MODE"
 					],
 					[
 						"r3",
@@ -97,10 +214,6 @@
 					[
 						"I_ser",
 						"I_serdes_ena"
-					],
-					[
-						"da",
-						"DA_data_begin"
 					],
 					[
 						"U",
@@ -159,10 +272,6 @@
 						"HEAD_TYPE"
 					],
 					[
-						"be",
-						"beg	begin .. end"
-					],
-					[
 						"data",
 						"sync_data_valid"
 					],
@@ -174,6 +283,22 @@
 			},
 			"build_system_choices":
 			[
+				[
+					[
+						[
+							"Packages/C++/C++ Single File.sublime-build",
+							""
+						],
+						[
+							"Packages/C++/C++ Single File.sublime-build",
+							"Run"
+						]
+					],
+					[
+						"Packages/C++/C++ Single File.sublime-build",
+						"Run"
+					]
+				],
 				[
 					[
 						[
@@ -189,25 +314,41 @@
 						"Packages/Python/Python.sublime-build",
 						""
 					]
+				],
+				[
+					[
+						[
+							"Packages/User/C++.sublime-build",
+							""
+						],
+						[
+							"Packages/User/C++.sublime-build",
+							"Run"
+						]
+					],
+					[
+						"Packages/User/C++.sublime-build",
+						"Run"
+					]
 				]
 			],
 			"build_varint": "",
 			"command_palette":
 			{
-				"height": 242.0,
-				"last_filter": "insta",
+				"height": 392.0,
+				"last_filter": "Package Control: ",
 				"selected_items":
 				[
 					[
-						"insta",
-						"Package Control: Install Package"
+						"Package Control: ",
+						"Package Control: Disable Package"
 					],
 					[
-						"Package Control: ",
-						"Package Control: List Packages"
+						"insta",
+						"Package Control: Install Package"
 					]
 				],
-				"width": 432.0
+				"width": 400.0
 			},
 			"console":
 			{
@@ -228,138 +369,138 @@
 			},
 			"file_history":
 			[
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/uart_rx.v",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/uart_tx.v",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/tob_tb.sv",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/top.sv",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/serdes_rom_uart.dat",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new - 24uart/uart_user.v",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new - 24uart/divide_325.v",
-				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/sublimesystemverilog/Snippets/always.sublime-snippet",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/constrs_1/new/top.xdc",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/serdes_wrapper.sv",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/serdes_exdes.v",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/uart.sv",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/uart_user.v",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/serdes_tx_ctrl.sv",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/serdes_rx_ctrl.sv",
-				"/E/FPGA/K7_changzhou/changzhou.srcs/sources_1/new/dac_if_top.sv",
-				"/E/FPGA/K7_changzhou/changzhou.srcs/sources_1/new/dac_ifx4.sv",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/dac_if_top.sv",
+				"/G/FPGA_Backup/Xilinx/Chengdu_Bird_Radar/0908_FPGA_PRJ/MS_K7_P/MS_K7_P/rtl/serdes_if/serdes_tran_ctrl_tb.v",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/rtl/serdes_ifx8/serdes_tran_ctrl_tb.v",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/rtl/serdes_ifx8/serdes_tran_ctrl.v",
+				"/G/FPGA_Backup/Xilinx/Chengdu_Bird_Radar/0908_FPGA_PRJ/MS_K7_P/MS_K7_P/rtl/cfar_target_tx_tran_ctrl.v",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/rtl/accu_data.v",
+				"/G/FPGA_Backup/Xilinx/Chengdu_Bird_Radar/0908_FPGA_PRJ/MS_K7_P/MS_K7_P/rtl/top.v",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/rtl/top.v",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/rtl/accu_data_TB.v",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/serdes_rx_ctrl.v",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/top.v",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/ctrl_signal.v",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/write_ctrl.v",
+				"/E/FPGA/k7_m_simulation/k7_m_simulation/write_ctrl/top.v",
+				"/E/FPGA/s_m_test_0720/S_K7_M420_one_test/xilinx/top/top.v",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/ram_array80.v",
+				"/E/FPGA/k7_m_simulation/k7_m_simulation/write_ctrl/ram_array80.v",
+				"/E/FPGA/s_m_test_0720/S_K7_M480_one_test/xilinx/top/top.v",
+				"/C/Users/Kuangxin/Desktop/ug480_7Series_XADC/verilog/ug480_tb.v",
+				"/C/Users/Kuangxin/Desktop/ug480_7Series_XADC/verilog/ug480.v",
+				"/E/FPGA/s_m_test_0720/S_K7_M420_one_test/xilinx/top/sqrt_cfar.v",
+				"/E/FPGA/s_m_test_0720/S_K7_M480_one_test/xilinx/top/rtl/ug480.v",
+				"/C/Users/Kuangxin/Desktop/ug480_7Series_XADC/verilog/ug480.xdc",
+				"/C/Users/Kuangxin/Desktop/ug480_7Series_XADC/readme.txt",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/ctrl_mode.v",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/read_ctrl.v",
+				"/e/FPGA/K7_serdes/gtwizard_0_example/gtwizard_0_example.srcs/sim_1/imports/simulation/gtwizard_0_tb.v",
+				"/E/FPGA/K7_serdes/gtwizard_0_example/gtwizard_0_example.srcs/sources_1/imports/example_design/gt_rom_init_tx.dat",
+				"/e/FPGA/K7_serdes/gtwizard_0_example/gtwizard_0_example.srcs/sources_1/imports/example_design/gtwizard_0_gt_frame_check.v",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/ipcore_dir/serdes_coe/example_design/serdes_coe_gt_frame_gen.v",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/ipcore_dir/serdes_coe/example_design/serdes_coe_exdes.v",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/serdes_ifx8/serdes_coe_exdes.v",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/ipcore_dir/serdes_coe/example_design/serdes_coe_gt_frame_check.v",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/ipcore_dir/serdes_coe/example_design/gt_rom_init_tx.dat",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/ipcore_dir/serdes_coe/example_design/gt_rom_init_rx.dat",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/serdes_ifx8/serdes_coe_gt.v",
+				"/E/FPGA/s_m_test_0720/S_K7_M420_one_test/xilinx/top/top.ucf",
+				"/E/FPGA/s_m_test_0720/S_K7_M420_one_test/xilinx/top/serdes_rx_ctrl.v",
+				"/E/FPGA/s_m_test_0720/S_K7_M420_one_test/xilinx/rtl/serdes_ifx8/serdes_k7_if.v",
+				"/E/FPGA/s_m_test_0720/S_K7_M420_one_test/xilinx/rtl/serdes_ifx8/serdes_coe_gt.v",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/no_bit/rx_data.cdc",
+				"/E/FPGA/s_m_test_0720/S_K7_M420_one_test/xilinx/top/rx_data.cdc",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/rtl/serdes_ifx8/serdes_coe_gt.v",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/ipcore_dir/serdes_coe_gt.v",
+				"/E/FPGA/rtl_template/serdesx8/serdes_coe_gt.v",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/rtl/serdes_ifx8/serdes_k7_if.v",
+				"/C/Users/Kuangxin/Desktop/example_design/serdes_coe_gt.v",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/rtl/serdes_ifx8/serdes_coe_exdes.v",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/serdes_ifx8/serdes_coe.v",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/serdes_ifx8/serdes_coe_init.v",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/utriEMAC_clk_wiz.v",
+				"/G/FPGA_Backup/Xilinx/Chengdu_Bird_Radar/0908_FPGA_PRJ/M_EPLD_syn/M_EPLD_syn/rtl/top.v",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/serdes_ifx8/serdes_k7_if.v",
+				"/C/Users/Kuangxin/Desktop/example_design0/serdes_coe_exdes.v",
+				"/G/FPGA_Backup/Xilinx/Chengdu_Bird_Radar/0908_FPGA_PRJ/M_EPLD_syn/M_EPLD_syn/rtl/cpu_ctrl.v",
+				"/E/FPGA/rtl_template/vivado_serdes_test/example_design/serdes_gt_frame_check.v",
+				"/E/FPGA/A7_serdes_x1/serdes_example/serdes_example.srcs/sources_1/imports/example_design/serdes_gt_frame_check.v",
 				"/E/FPGA/A7_serdes_x1/serdes_example/serdes_example.srcs/sources_1/imports/example_design/serdes_exdes.v",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/constrs_1/new/serdes_exdes.v",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/dac_if_tb.sv",
-				"/e/FPGA/A7_serdes_x1/serdes_example/serdes_example.srcs/sources_1/imports/example_design/serdes_exdes.v",
-				"/E/FPGA/A7_serdes_x1/serdes_example/serdes_example.srcs/sources_1/imports/example_design/serdes_gt_frame_gen.v",
-				"/E/FPGA/A7_serdes_x1/serdes_example/serdes_example.srcs/sources_1/imports/example_design/gt_rom_init_rx.dat",
-				"/E/FPGA/PPC_20150715_50T/xilinx/src/serdes_if.v",
-				"/E/FPGA/PPC_20150715_50T/xilinx/src/top.v",
-				"/e/FPGA/A7_serdes_x1/serdes_example/serdes_example.srcs/constrs_1/imports/example_design/serdes_exdes.xdc",
-				"/C/Users/Kuangxin/AppData/Local/Temp/serdes.xdc",
-				"/C/Users/Kuangxin/AppData/Local/Temp/serdes.veo",
-				"/C/Users/Kuangxin/AppData/Local/Temp/ila.veo",
+				"/E/FPGA/rtl_template/serdes_ifx8/serdes_k7_if.v",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/top.ucf",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/rtl/serdes_if/serdes_k7_if.v",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/rtl/serdes_if/serdes_tran_ctrl.v",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/serdes_coe_exdes.v",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/rtl/serdes_if/serdes_coe_exdes.v",
+				"/G/FPGA_Backup/Xilinx/Chengdu_Bird_Radar/0908_FPGA_PRJ/MS_K7_P/MS_K7_P/rtl/serdes_if/serdes_tran_ctrl.v",
+				"/G/FPGA_Backup/Xilinx/Chengdu_Bird_Radar/0908_FPGA_PRJ/M_K7_M/M_K7_M/xilinx/top/serdes_rx_ctrl.v",
+				"/E/FPGA/s_m_test_0720/S_K7_M420_one_test/xilinx/top/ipcore_dir/xadc/simulation/timing/xadc_tb.v",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/no_bit/serdes_rx.cdc",
+				"/e/FPGA/A7_xadc/xadc_wiz_0_example/xadc_wiz_0_example.srcs/sources_1/imports/example_design/xadc_wiz_0_exdes.v",
+				"/C/Users/Kuangxin/AppData/Local/Temp/xadc_wiz_0.v",
+				"/e/FPGA/A7_xadc/xadc_wiz_0_example/xadc_wiz_0_example.srcs/sim_1/imports/xadc_wiz_0/xadc_wiz_0/simulation/xadc_wiz_0_tb.v",
+				"/E/FPGA/s_m_test_0720/S_K7_M420_one_test/xilinx/top/ipcore_dir/xadc/example_design/xadc_exdes.v",
+				"/E/FPGA/s_m_test_0720/S_K7_M420_one_test/xilinx/top/ipcore_dir/xadc/simulation/xadc_tb.v",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/serdes_tx.cdc",
+				"/E/FPGA/s_m_test_0720/S_K7_M420_one_test/xilinx/top/serdes_k7_if.v",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/serdes_k7_if.v",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/serdes_rx.cdc",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/top.ucf",
+				"/E/FPGA/rtl_template/serdesx8/top.ucf",
+				"/E/FPGA/rtl_template/serdesx8/serdes_rx.cdc",
+				"/E/FPGA/rtl_template/serdesx8/serdes_top.v",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/ipcore_dir/serdes_coe.v",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/ipcore_dir/serdes_coe/example_design/serdes_coe_tx_startup_fsm.v",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/ipcore_dir/serdes_coe/example_design/serdes_coe_gt_usrclk_source.v",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/ipcore_dir/serdes_coe/example_design/serdes_coe_init.v",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/rtl/serdes_if/serdes_k7_if_tb.v",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/rtl/serdes_if/top.v",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/rtl/serdes_if/serdes_top.v",
+				"/E/FPGA/rtl_template/serdesx1/serdes_k7_if.v",
+				"/E/FPGA/s_m_test_0720/S_K7_M420_one_test/xilinx/rtl/serdes_coe_exdes.v",
+				"/C/Users/Kuangxin/Desktop/cdc0.txt",
+				"/C/Users/Kuangxin/Desktop/cdc1.txt",
+				"/E/FPGA/s_m_test_0720/S_K7_M480_one_test/xilinx/top/ipcore_dir/serdes_coe/example_design/serdes_coe_exdes.v",
+				"/E/FPGA/s_m_test_0720/S_K7_M480_one_test/xilinx/top/ipcore_dir/serdes_coe/example_design/serdes_coe_gt_frame_check.v",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/ipcore_dir/serdes_coe/example_design/serdes_coe_exdes.v",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/ipcore_dir/serdes_coe/example_design/serdes_coe_gt_frame_check.v",
+				"/E/FPGA/rtl_template/serdes_test/example_design/serdes_exdes.v",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/ipcore_dir/dcm_400mhz.v",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/bit_file/serdes_tx.cdc",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/serdes_k7_slave_if.v",
+				"/E/FPGA/s_m_test_0720/M_K7_M_one_test/xilinx/top/ipcore_dir/serdes_coe/example_design/serdes_coe_exdes.ucf",
 				"/E/FPGA/rtl_template/serdes/example_design/serdes_exdes.v",
-				"/E/FPGA/K7_serdes/serdes_example/serdes_example/serdes_example.srcs/sources_1/imports/example_design/serdes_exdes.v",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/top_test_led.sv",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/constrs_1/new/led.xdc",
-				"/C/Users/Kuangxin/Documents/python/top_test_led.sv",
-				"/C/Users/Kuangxin/Documents/python/generate_sine.py",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/dac_ifx4.sv",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/dac_if.sv",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/serdes_rx_ctrl_tb.sv",
-				"/E/FPGA/changzhou_Chnl2/Chnl_kintex7_2048chnl/rtl/DA_module.v",
-				"/C/Users/Kuangxin/Documents/MATLAB/sin12.m",
-				"/C/Users/Kuangxin/Documents/MATLAB/genarate_sin.m",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/dac_rom.dat",
-				"/E/FPGA/changzhou_Chnl2/Chnl_kintex7_2048chnl/rtl/test_top_TB.v",
-				"/E/FPGA/changzhou_Chnl2/Chnl_kintex7_2048chnl/rtl/top.v",
-				"/E/FPGA/changzhou_Chnl2/Chnl_kintex7_2048chnl/rtl/DA_OUT.v",
-				"/E/FPGA/changzhou_Chnl2/Chnl_kintex7_2048chnl/rtl/top.ucf",
-				"/C/Users/Kuangxin/AppData/Local/Temp/fifo_dac_clocks.xdc",
-				"/C/Users/Kuangxin/AppData/Local/Temp/fifo_dac.xdc",
-				"/C/Users/Kuangxin/AppData/Local/Temp/clk_dac.veo",
-				"/C/Users/Kuangxin/AppData/Local/Temp/fifo_dac.veo",
-				"/C/Users/Kuangxin/Documents/python/dac_rom.dat",
-				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/sublimesystemverilog/Snippets/generate.sublime-snippet",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/divide_325.v",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/uart_tb.v",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/serdes_w",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/serdes_rom.dat",
-				"/C/Xilinx/Vivado/2015.4/scripts/init.tcl",
-				"/C/Xilinx/Vivado/2015.4/examples/Vivado_Tutorial/Sources/hdl/or1200/or1200_cpu.v",
-				"/C/Xilinx/Vivado/2015.4/examples/Vivado_Tutorial/run_cpu_kintex7_batch.tcl",
-				"/C/Xilinx/Vivado/2015.4/examples/Vivado_Tutorial/create_bft_kintex7_batch.tcl",
-				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
-				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
-				"/C/Users/Kuangxin/AppData/Local/Temp/HZ$D.876.391/HZ$D.876.392/aggregate_data_types_example1/array_unpacked.sv",
-				"/C/Users/Kuangxin/AppData/Local/Temp/HZ$D.795.1613/HZ$D.795.1614/aggregate_data_types_example2/array_packed.sv",
-				"/C/Users/Kuangxin/Desktop/data_types_example1/data_types_example1/ALU.sv",
-				"/C/Users/Kuangxin/Desktop/data_types_example1/data_types_example1/definitions.sv",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/generate_rom.py",
-				"/C/Users/Kuangxin/Documents/python/format_width.py",
-				"/C/Users/Kuangxin/Documents/python/bin2hex.py",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/head_rom.dat",
-				"/C/Users/Kuangxin/AppData/Local/Temp/serdes_rx_fifo.veo",
-				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/sublimesystemverilog/SystemVerilog.sublime-settings",
+				"/E/FPGA/rtl_template/serdesx4/serdes_4if.v",
+				"/C/Users/Kuangxin/AppData/Local/Temp/HZ$D.893.4881/dds_config.v",
+				"/E/FPGA/s_m_test_0720/S_K7_M420_one_test/xilinx/top/serdes_s_k7_if.v",
 				"/E/FPGA/K7_serdes/serdes_example/serdes_example/serdes_example.srcs/sources_1/imports/example_design/serdes_gt_frame_check.v",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/serdes_tx_ctrl_tb.sv",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/serdes_tx_ctrl.v",
-				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/User/SublimeGit.sublime-settings",
-				"/C/Users/Kuangxin/.gitconfig",
-				"/E/FPGA/A7_changzhou/changzhou.sim/sim_1/behav/modelsim.ini",
-				"/C/modeltech_10.0a/modelsim.ini",
-				"/C/modeltech64_10.1c/modelsim.ini",
-				"/E/FPGA/K7_serdes/serdes_example/serdes_example/serdes_example.srcs/sim_1/imports/simulation/serdes_tb.v",
-				"/E/FPGA/A7_changzhou/changzhou.sim/sim_1/behav/top_tb_simulate.do",
-				"/E/FPGA/A7_changzhou/changzhou.sim/sim_3/behav/top_tb_compile.do",
-				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/sublimesystemverilog/verilogutil/verilogutil.py",
-				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/sublimesystemverilog/verilog_module.py",
-				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/sublimesystemverilog/verilog_completion.py",
-				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/top.v",
-				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/sublimesystemverilog/Snippets/comment_box.sublime-snippet",
-				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/sublimesystemverilog/Snippets/comment_long.sublime-snippet",
-				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/sublimesystemverilog/Snippets/comment_short.sublime-snippet",
-				"/H/sublimesystemverilog/Snippets/initial.sublime-snippet",
-				"/E/FPGA/rtl_template/serdes/example_design/gt_rom_init_tx.dat",
-				"/G/软件安装包/常用软件/Sublime Text 2/Packages/Verilog/Snippets/if_else.tmSnippet",
-				"/D/BaiduYunDownload/Sublime Text 2/Sublime Text 2/Packages/Verilog/Snippets/generate.tmSnippet",
-				"/G/软件安装包/常用软件/Sublime Text 2/Packages/Verilog/Snippets/generate.tmSnippet",
-				"/G/软件安装包/常用软件/Sublime Text 2/Packages/Verilog/Snippets/case.tmSnippet",
-				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/sublimesystemverilog/Snippets/case.sublime-snippet",
-				"/G/软件安装包/常用软件/Sublime Text 2/Packages/Verilog/Snippets/begin.tmSnippet",
-				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/sublimesystemverilog/Snippets/module.sublime-snippet",
-				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/sublimesystemverilog/Snippets/if.sublime-snippet",
-				"/C/Users/Kuangxin/AppData/Local/Temp/serdes_ram.veo",
-				"/C/Users/Kuangxin/AppData/Local/Temp/fifo_uart.veo",
-				"/C/Users/Kuangxin/AppData/Local/Temp/serdes_ram.vho",
-				"/E/FPGA/A7_changzhou/changzhou.sim/sim_2/behav/uart_tb_compile.do",
-				"/E/FPGA/A7_changzhou/changzhou.sim/sim_2/behav/modelsim.ini",
-				"/E/FPGA/A7_changzhou/changzhou.sim/sim_2/behav/glbl.v",
-				"/E/FPGA/A7_changzhou/changzhou.sim/sim_2/behav/uart_tb_wave.do",
-				"/E/FPGA/A7_changzhou/changzhou.sim/sim_2/behav/gt_rom_init_tx.dat",
-				"/E/FPGA/rtl_template/serdes/K7_vivado_serdes_x4/serdes_exdes.v",
-				"/e/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example/serdes_example.srcs/sources_1/imports/example_design/serdes_exdes.v",
-				"/e/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example/serdes_example.srcs/sources_1/imports/example_design/serdes_gt_frame_check.v",
-				"/e/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example/serdes_example.srcs/sim_1/imports/simulation/serdes_tb.v",
-				"/e/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example/serdes_example.srcs/sources_1/ip/serdes/serdes.v",
-				"/e/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example/serdes_example.srcs/sources_1/imports/example_design/serdes_gt_frame_gen.v",
-				"/E/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example/serdes_example.srcs/sources_1/imports/example_design/gt_rom_init_tx.dat",
-				"/E/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example/serdes_example.srcs/sim_1/imports/simulation/functional/gt_rom_init_rx.dat",
-				"/E/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example/serdes_example.srcs/sim_1/imports/simulation/functional/gt_rom_init_tx.dat",
-				"/E/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example/serdes_example.runs/impl_1/debug_nets.ltx",
-				"/C/Users/Kuangxin/AppData/Roaming/Xilinx/Vivado/debug_nets.ltx",
-				"/e/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example/serdes_example.srcs/constrs_1/imports/example_design/serdes_exdes.xdc",
-				"/E/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example/serdes_example.srcs/sources_1/imports/example_design/gt_rom_init_rx.dat",
-				"/E/FPGA/rtl_template/mac/gmac_if.v",
-				"/e/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example/serdes_example.srcs/sources_1/ip/serdes/serdes.xdc",
-				"/e/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example/serdes_example.srcs/sources_1/ip/serdes/serdes_multi_gt.v",
-				"/e/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example/serdes_example.srcs/sources_1/ip/serdes/serdes_support.v",
-				"/e/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example/serdes_example.srcs/sources_1/ip/serdes/serdes_init.v"
+				"/E/FPGA/K7_serdes/serdes_example/serdes_example/serdes_example.srcs/sources_1/imports/example_design/serdes_exdes.v",
+				"/E/FPGA/K7_serdes/serdes_example/serdes_example/serdes_example.srcs/sources_1/ip/serdes/serdes_init.v",
+				"/E/FPGA/K7_serdes/serdes_example/serdes_example/serdes_example.srcs/sources_1/ip/serdes/serdes.v",
+				"/E/FPGA/K7_serdes/serdes_example/serdes_example/serdes_example.srcs/sources_1/ip/serdes/serdes_multi_gt.v",
+				"/E/FPGA/K7_serdes/serdes_example/serdes_example/serdes_example.srcs/sources_1/ip/serdes/serdes_support.v",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/rtl/serdes_if/serdes_k7_slave.v",
+				"/E/FPGA/s_m_test_0720/M_K7_M_one_test/xilinx/top/serdes_coe_exdes.v",
+				"/E/FPGA/s_m_test_0720/M_K7_M_one_test/xilinx/top/top.v",
+				"/E/FPGA/s_m_test_0720/M_K7_M_one_test/xilinx/top/top.ucf",
+				"/E/FPGA/s_m_test_0720/S_K7_M420_one_test/xilinx/top/ipcore_dir/serdes_coe/example_design/serdes_coe_gt_usrclk_source.v",
+				"/E/FPGA/s_m_test_0720/M_K7_M_one_test/xilinx/top/ipcore_dir/serdes_coe/example_design/serdes_coe_exdes.v",
+				"/E/FPGA/s_m_test_0720/S_K7_M420_one_test/xilinx/top/ipcore_dir/serdes_coe/example_design/serdes_coe_exdes.ucf",
+				"/E/FPGA/s_m_test_0720/M_K7_M_one_test/xilinx/top/ipcore_dir/serdes_coe.v",
+				"/E/FPGA/s_m_test_0720/M_K7_M_one_test/xilinx/top/ipcore_dir/serdes_coe/example_design/serdes_coe_exdes.xdc",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/ipcore_dir/serdes_coe/example_design/serdes_coe_exdes.ucf",
+				"/C/Users/Kuangxin/AppData/Local/Temp/HZ$D.609.2528/HZ$D.609.2529/M_K7_M/xilinx/top/top.v",
+				"/C/Users/Kuangxin/Desktop/ar59851_ISE_14_7_preliminary_rev1/ar59851_ISE_14_7_preliminary_rev1/data/patch_readme/ar59239_Vivado_2013_4_readme_preliminary_rev1.txt",
+				"/C/Users/Kuangxin/AppData/Local/Temp/HZ$D.212.2518/HZ$D.212.2519/MS_K7_P/top.ucf",
+				"/F/2016学习/学习论文/jpeg2000/rtl/dwt.sv",
+				"/F/2016学习/学习论文/jpeg2000/08967574kakaduv5.2.5_exe/Usage_Examples.txt",
+				"/C/Users/Kuangxin/Desktop/branch_stack/branch_stack/test_branchstack.sv",
+				"/C/Users/Kuangxin/Desktop/branch_stack/branch_stack/branchstack2.sv",
+				"/C/Users/Kuangxin/Desktop/branch_stack/branch_stack/sys_defs.sv"
 			],
 			"find":
 			{
-				"height": 23.0
+				"height": 34.0
 			},
 			"find_in_files":
 			{
@@ -373,134 +514,134 @@
 				"case_sensitive": true,
 				"find_history":
 				[
-					"671",
-					"-1",
-					"740",
-					"3233\n3435\n3637\n3839\n3a3b",
-					"23",
-					"R_even_check",
-					"11",
-					"R_count_sample",
-					"P_SAMPLE_BAUD_38400",
-					"P_TRANS_BAUD_38400",
-					"O_uart_sample_clk",
-					"R_param_sample",
-					"R_even_check",
-					"R_cnt_num",
-					"I_rx_dat",
-					"W_baud_rate",
-					"24",
-					"I_tx_dat",
-					"W_uart_ready",
-					"W_ready",
-					"W_uart_ready",
-					"I_uart_ready",
-					"W_uart_ready",
-					"I_uart_ready",
-					"W_baud_rate",
-					"23",
-					"RX",
-					"I_baud_rate",
-					"W_dac_data",
-					"W_dac_ena",
-					"W_tx_clk",
-					"output",
-					"W_SCK",
-					"I_rx_clk",
-					"I_tx_clk",
-					"W_rx_clk",
-					"W_tx_clk",
-					"W_rx_clk",
-					"uart_user uart_generate (\n                        .I_rst_n          (I_rst_n          ),\n                        .I_sys_clk        (I_sys_clk        ),\n                        .I_uart_sample_clk(I_uart_sample_clk),\n                        .I_uart_trans_clk (I_uart_trans_clk ),\n                        .I_tx_clk         (I_tx_clk         ),\n                        .I_rx_clk         (I_rx_clk         ),",
-					"I_div_clk",
-					"I_sample_clk",
-					"I_div_clk",
-					"I_sample_clk",
-					"O_rx_empty",
-					"R_",
-					"R_count_sample",
-					"R_count_trans",
-					"R_count_trans_trans",
-					"R_count_trans_sample",
-					"R_cnt_num",
-					"R_count",
-					"R_cnt_num",
-					"I_sys_clk",
-					"I_clk_50M",
-					"W_uart_trans_clk",
-					"clk_sample",
-					"sample_clk",
-					"div_clk",
-					"23",
-					"I_sample_clk",
-					"I_div_clk",
-					"I_sample_clk",
-					"I_div_clk",
-					"O_uartclk_trans",
-					"O_uartclk_sample",
-					"O_clk_tx",
-					"O_clk_sample",
-					"O_clk_div",
-					"b00_0000_0000_0000_0000_0000_0001",
-					"R_uart_length",
-					"21",
-					"22",
-					"24",
-					"O_uart_rd_en",
-					"59",
-					"R_length_cnt",
-					"25",
-					"23",
-					"27",
-					"26",
-					"24",
-					"UART_data_roll",
-					"R_uart_length",
-					"UART_lenth_count",
-					"O_baud_rate",
-					"R_baud_rate",
-					"R_rx_isUART",
-					"W_rd_dout",
-					"23",
-					"R_cnt_ena",
-					"R_cnt_num",
-					"I_tx_dat",
-					"I_rx_clk",
-					"I_tx_dat",
-					"R_cnt_num",
-					"I_tx_dat",
-					"count",
-					"// TODO: Check connection ! Signal/port not matching : Expecting logic logic [15:0]  -- Found logic [15:0] ",
-					"// TODO: Check connection ! Signal/port not matching : Expecting logic logic  -- Found logic ",
-					"gt0_txfsmresetdone",
-					",",
-					"gt0_rxcharisk",
-					"soft_reset_vio_i",
-					"soft_reset_i",
-					",",
-					"gt0_txusrclk2_i",
-					"gt0_txusrclk_i",
-					"gt0_rxfsmresetdone",
-					"gt0_rxfsmresetdone_r",
-					"gt0_txfsmresetdone_r",
-					"gt0_rxfsmresetdone_i",
-					"gt0_txfsmresetdone_i",
-					"gt0_txfsmresetdone_r",
-					"gt0_rxfsmresetdone_r",
-					"gt0_rxresetdone_r",
-					"gt0_txfsmresetdone_i",
-					"gt0_txresetdone_i",
-					"gt0_rxresetdone_i",
-					"gt0_txfsmresetdone",
-					"gt0_txfsmresetdone_i",
-					"gt0_tx_system_reset_c",
-					"gt0_txfsmresetdone_i",
-					"gt0_rxresetdone_r3",
-					"gt0_tx_system_reset_c",
-					"W_dac_data",
-					"I_SCLK",
-					"var1",
-					"I_SCLK"
+					"W_M420_tx_rd_data",
+					"R_M420_tx_rd_data",
+					"O_tx1_serdes_dat",
+					"P_cycle2",
+					"P_cycle1",
+					"R_M420_result_ena",
+					"I_M420_signal_ena",
+					"R1_M420_signaldata",
+					"R_M420_signaldata",
+					"R1_M420_signaldata",
+					"W_mach_angle_cfar",
+					"R2_mode14_en",
+					"R_fifo_rd_start",
+					"R_M420_tx_rd_en",
+					"W_M420_signaldata",
+					"I_M420_i_result_dat",
+					"SIN1",
+					"COS1",
+					"P_CONST_DATAI",
+					"R3_rang_wr_ena",
+					"I_ctrl_ena",
+					"O_m_ctrl_ena",
+					"O_ctrl_en",
+					"I_ctrl_ena",
+					"I_rang_wr_ena",
+					"I_ram_data_num",
+					"W_in_ram_wr_ena",
+					"R_rang_wr_ena",
+					"R3_rang_wr_ena",
+					"R_rang_wr_ena",
+					"R3_rang_wr_ena",
+					"R_data_ram_wr",
+					"R1_rang_wr_ena",
+					"R2_rang_wr_ena",
+					"I_rang_wr_ena",
+					"I_ctrl_ena",
+					"I_rang_wr_ena",
+					"R_result_ena",
+					"R_rang_wr_ena",
+					"I_rang_wr_ena",
+					"R_data_valid",
+					"I_rang_wr_ena",
+					"R_rang_wr_ena",
+					"R_ram2_num",
+					"P_ADDR_MODE1",
+					"R_addr_mode",
+					"R2_ctrl_ena",
+					"R1_ctrl_ena",
+					"R_ctrl_ena",
+					"I_ctrl_ena",
+					"O_ram_wr_ena",
+					"R7_ctrl_ena",
+					"I_ctrl_ena",
+					"W_ctrl_ena",
+					"DCLK",
+					"VAUXP",
+					"VN",
+					"VP",
+					"CHANNEL",
+					"O_result_exp",
+					"R_delay_blk_exp",
+					"R1_result_blk_exp",
+					"W_fft32_xk_re",
+					"W_fft16_xk_re",
+					"TX_REFCLK_PERIOD",
+					"gttx_reset_i",
+					"rxn_in_i",
+					"txn_out_i",
+					"W_in_ram_wr_ena",
+					"W_rang_wr_ena",
+					"R_rd_mode",
+					"R_fft16_start",
+					"O_fft16_start",
+					"W_fft32_start",
+					"W_fft16_rfd",
+					"W_rd_fft_addr",
+					"W_fft64_start",
+					"W_fft32_start",
+					"W_data_array0",
+					"W_in_ram_wr_ena",
+					"O_rang_i_dat",
+					"R_rang_i_dat",
+					"I_rang_i_dat",
+					"W_rang_i_dat",
+					"W_rx_ctrl_data",
+					"CHANBOND_SEQ_LEN",
+					"3c1c",
+					"RX_DATA_IN",
+					"rx_data_r_track",
+					"bram_data_r",
+					"chanbondseq_in_data",
+					"input_to_chanbond_reg_i",
+					"rx_chanbond_reg",
+					"CHANBOND_SEQ_LEN",
+					"gt7_rxchbondo_i",
+					"gt6_rxchbondo_i",
+					"gt5_rxchbondo_i",
+					"gt4_rxchbondo_i",
+					"gt3_rxchbondo_i",
+					"gt2_rxchbondo_i",
+					"gt1_rxchbondo_i",
+					"gt0_rxchbondo_i",
+					"gt0_rxchanbondseq_i",
+					"gt0_rxchbonden_i",
+					"RXCHBONDLEVEL_IN",
+					"gt0_rxchbondo_i",
+					"00000000000001000000\n00000000000002bc0100\n00000000000004030000\n00000000000006050000\n0000000000003c1c0f00\n0000000000007c5c0f00\n00000000000008070000\n0000000000000a090000\n0000000000000c0b0000\n0000000000000e0d0000\n000000000000100f0000\n00000000000012110000\n00000000000014130000\n00000000000016150000\n00000000000018170000\n0000000000001a190000\n00000000000001000000\n00000000000002bc0100\n00000000000004030000\n00000000000006050000\n0000000000003c1c0f00\n0000000000007c5c0f00\n00000000000008070000\n0000000000000a090000\n0000000000000c0b0000\n0000000000000e0d0000\n000000000000100f0000\n00000000000012110000\n00000000000014130000\n00000000000016150000\n00000000000018170000\n0000000000001a190000\n00000000000001000000\n00000000000002bc0100\n00000000000004030000\n00000000000006050000\n0000000000003c1c0f00\n0000000000007c5c0f00\n00000000000008070000\n0000000000000a090000\n0000000000000c0b0000\n0000000000000e0d0000\n000000000000100f0000\n00000000000012110000\n00000000000014130000\n00000000000016150000\n00000000000018170000\n0000000000001a190000\n00000000000001000000\n00000000000002bc0100\n00000000000004030000\n00000000000006050000\n0000000000003c1c0f00\n0000000000007c5c0f00\n00000000000008070000\n0000000000000a090000\n0000000000000c0b0000\n0000000000000e0d0000\n000000000000100f0000\n00000000000012110000\n00000000000014130000\n00000000000016150000\n00000000000018170000\n0000000000001a190000\n00000000000001000000\n00000000000002bc0100\n00000000000004030000\n00000000000006050000\n0000000000003c1c0f00\n0000000000007c5c0f00\n00000000000008070000\n0000000000000a090000\n0000000000000c0b0000\n0000000000000e0d0000\n000000000000100f0000\n00000000000012110000\n00000000000014130000\n00000000000016150000\n00000000000018170000\n0000000000001a190000\n00000000000001000000\n00000000000002bc0100\n00000000000004030000\n00000000000006050000\n0000000000003c1c0f00\n0000000000007c5c0f00\n00000000000008070000\n0000000000000a090000\n0000000000000c0b0000\n0000000000000e0d0000\n000000000000100f0000\n00000000000012110000\n00000000000014130000\n00000000000016150000\n00000000000018170000\n0000000000001a190000\n00000000000001000000\n00000000000002bc0100\n00000000000004030000\n00000000000006050000\n0000000000003c1c0f00\n0000000000007c5c0f00\n00000000000008070000\n0000000000000a090000\n0000000000000c0b0000\n0000000000000e0d0000\n000000000000100f0000\n00000000000012110000\n00000000000014130000\n00000000000016150000\n00000000000018170000\n0000000000001a190000\n00000000000001000000\n00000000000002bc0100\n00000000000004030000\n00000000000006050000\n0000000000003c1c0f00\n0000000000007c5c0f00\n00000000000008070000\n0000000000000a090000\n0000000000000c0b0000\n0000000000000e0d0000\n000000000000100f0000\n00000000000012110000\n00000000000014130000\n00000000000016150000\n00000000000018170000\n0000000000001a190000\n00000000000001000000\n00000000000002bc0100\n00000000000004030000\n00000000000006050000\n0000000000003c1c0f00\n0000000000007c5c0f00\n00000000000008070000\n0000000000000a090000\n0000000000000c0b0000\n0000000000000e0d0000\n000000000000100f0000\n00000000000012110000\n00000000000014130000\n00000000000016150000\n00000000000018170000\n0000000000001a190000\n00000000000001000000\n00000000000002bc0100\n00000000000004030000\n00000000000006050000\n0000000000003c1c0f00\n0000000000007c5c0f00\n00000000000008070000\n0000000000000a090000\n0000000000000c0b0000\n0000000000000e0d0000\n000000000000100f0000\n00000000000012110000\n00000000000014130000\n00000000000016150000\n00000000000018170000\n0000000000001a190000\n00000000000001000000\n00000000000002bc0100\n00000000000004030000\n00000000000006050000\n0000000000003c1c0f00\n0000000000007c5c0f00\n00000000000008070000\n0000000000000a090000\n0000000000000c0b0000\n0000000000000e0d0000\n000000000000100f0000\n00000000000012110000\n00000000000014130000\n00000000000016150000\n00000000000018170000\n0000000000001a190000\n00000000000001000000\n00000000000002bc0100\n00000000000004030000\n00000000000006050000\n0000000000003c1c0f00\n0000000000007c5c0f00\n00000000000008070000\n0000000000000a090000\n0000000000000c0b0000\n0000000000000e0d0000\n000000000000100f0000\n00000000000012110000\n00000000000014130000\n00000000000016150000\n00000000000018170000\n0000000000001a190000\n00000000000001000000\n00000000000002bc0100\n00000000000004030000\n00000000000006050000\n0000000000003c1c0f00\n0000000000007c5c0f00\n00000000000008070000\n0000000000000a090000\n0000000000000c0b0000\n0000000000000e0d0000\n000000000000100f0000\n00000000000012110000\n00000000000014130000\n00000000000016150000\n00000000000018170000\n0000000000001a190000\n00000000000001000000\n00000000000002bc0100\n00000000000004030000\n00000000000006050000\n0000000000003c1c0f00\n0000000000007c5c0f00\n00000000000008070000\n0000000000000a090000\n0000000000000c0b0000\n0000000000000e0d0000\n000000000000100f0000\n00000000000012110000\n00000000000014130000\n00000000000016150000\n00000000000018170000\n0000000000001a190000\n00000000000001000000\n00000000000002bc0100\n00000000000004030000\n00000000000006050000\n0000000000003c1c0f00\n0000000000007c5c0f00\n00000000000008070000\n0000000000000a090000\n0000000000000c0b0000\n0000000000000e0d0000\n000000000000100f0000\n00000000000012110000\n00000000000014130000\n00000000000016150000\n00000000000018170000\n0000000000001a190000\n00000000000001000000\n00000000000002bc0100\n00000000000004030000\n00000000000006050000\n0000000000003c1c0f00\n0000000000007c5c0f00\n00000000000008070000\n0000000000000a090000\n0000000000000c0b0000\n0000000000000e0d0000\n000000000000100f0000\n00000000000012110000\n00000000000014130000\n00000000000016150000\n00000000000018170000\n0000000000001a190000\n00000000000001000000\n00000000000002bc0100\n00000000000004030000\n00000000000006050000\n0000000000003c1c0f00\n0000000000007c5c0f00\n00000000000008070000\n0000000000000a090000\n0000000000000c0b0000\n0000000000000e0d0000\n000000000000100f0000\n00000000000012110000\n00000000000014130000\n00000000000016150000\n00000000000018170000\n0000000000001a190000\n00000000000001000000\n00000000000002bc0100\n00000000000004030000\n00000000000006050000\n0000000000003c1c0f00\n0000000000007c5c0f00\n00000000000008070000\n0000000000000a090000\n0000000000000c0b0000\n0000000000000e0d0000\n000000000000100f0000\n00000000000012110000\n00000000000014130000\n00000000000016150000\n00000000000018170000\n0000000000001a190000\n00000000000001000000\n00000000000002bc0100\n00000000000004030000\n00000000000006050000\n0000000000003c1c0f00\n0000000000007c5c0f00\n00000000000008070000\n0000000000000a090000\n0000000000000c0b0000\n0000000000000e0d0000\n000000000000100f0000\n00000000000012110000\n00000000000014130000\n00000000000016150000\n00000000000018170000\n0000000000001a190000\n00000000000001000000\n00000000000002bc0100\n00000000000004030000\n00000000000006050000\n0000000000003c1c0f00\n0000000000007c5c0f00\n00000000000008070000\n0000000000000a090000\n0000000000000c0b0000\n0000000000000e0d0000\n000000000000100f0000\n00000000000012110000\n00000000000014130000\n00000000000016150000\n00000000000018170000\n0000000000001a190000\n00000000000001000000\n00000000000002bc0100\n00000000000004030000\n00000000000006050000\n0000000000003c1c0f00\n0000000000007c5c0f00\n00000000000008070000\n0000000000000a090000\n0000000000000c0b0000\n0000000000000e0d0000\n000000000000100f0000\n00000000000012110000\n00000000000014130000\n00000000000016150000\n00000000000018170000\n0000000000001a190000\n00000000000001000000\n00000000000002bc0100\n00000000000004030000\n00000000000006050000\n0000000000003c1c0f00\n0000000000007c5c0f00\n00000000000008070000\n0000000000000a090000\n0000000000000c0b0000\n0000000000000e0d0000\n000000000000100f0000\n00000000000012110000\n00000000000014130000\n00000000000016150000\n00000000000018170000\n0000000000001a190000\n00000000000001000000\n00000000000002bc0100\n00000000000004030000\n00000000000006050000\n0000000000003c1c0f00\n0000000000007c5c0f00\n00000000000008070000\n0000000000000a090000\n0000000000000c0b0000\n0000000000000e0d0000\n000000000000100f0000\n00000000000012110000\n00000000000014130000\n00000000000016150000\n00000000000018170000\n0000000000001a190000\n00000000000001000000\n00000000000002bc0100\n00000000000004030000\n00000000000006050000\n0000000000003c1c0f00\n0000000000007c5c0f00\n00000000000008070000\n0000000000000a090000\n0000000000000c0b0000\n0000000000000e0d0000\n000000000000100f0000\n00000000000012110000\n00000000000014130000\n00000000000016150000\n00000000000018170000\n0000000000001a190000\n00000000000001000000\n00000000000002bc0100\n00000000000004030000\n00000000000006050000\n0000000000003c1c0f00\n0000000000007c5c0f00\n00000000000008070000\n0000000000000a090000\n0000000000000c0b0000\n0000000000000e0d0000\n000000000000100f0000\n00000000000012110000\n00000000000014130000\n00000000000016150000\n00000000000018170000\n0000000000001a190000\n00000000000001000000\n00000000000002bc0100\n00000000000004030000\n00000000000006050000\n0000000000003c1c0f00\n0000000000007c5c0f00\n00000000000008070000\n0000000000000a090000\n0000000000000c0b0000\n0000000000000e0d0000\n000000000000100f0000\n00000000000012110000\n00000000000014130000\n00000000000016150000\n00000000000018170000\n0000000000001a190000\n00000000000001000000\n00000000000002bc0100\n00000000000004030000\n00000000000006050000\n0000000000003c1c0f00\n0000000000007c5c0f00\n00000000000008070000\n0000000000000a090000\n0000000000000c0b0000\n0000000000000e0d0000\n000000000000100f0000\n00000000000012110000\n00000000000014130000\n00000000000016150000\n00000000000018170000\n0000000000001a190000\n00000000000001000000\n00000000000002bc0100\n00000000000004030000\n00000000000006050000\n0000000000003c1c0f00\n0000000000007c5c0f00\n00000000000008070000\n0000000000000a090000\n0000000000000c0b0000\n0000000000000e0d0000\n000000000000100f0000\n00000000000012110000\n00000000000014130000\n00000000000016150000\n00000000000018170000\n0000000000001a190000\n00000000000001000000\n00000000000002bc0100\n00000000000004030000\n00000000000006050000\n0000000000003c1c0f00\n0000000000007c5c0f00\n00000000000008070000\n0000000000000a090000\n0000000000000c0b0000\n0000000000000e0d0000\n000000000000100f0000\n00000000000012110000\n00000000000014130000\n00000000000016150000\n00000000000018170000\n0000000000001a190000\n00000000000001000000\n00000000000002bc0100\n00000000000004030000\n00000000000006050000\n0000000000003c1c0f00\n0000000000007c5c0f00\n00000000000008070000\n0000000000000a090000\n0000000000000c0b0000\n0000000000000e0d0000\n000000000000100f0000\n00000000000012110000\n00000000000014130000\n00000000000016150000\n00000000000018170000\n0000000000001a190000\n00000000000001000000\n00000000000002bc0100\n00000000000004030000\n00000000000006050000\n0000000000003c1c0f00\n0000000000007c5c0f00\n00000000000008070000\n0000000000000a090000\n0000000000000c0b0000\n0000000000000e0d0000\n000000000000100f0000\n00000000000012110000\n00000000000014130000\n00000000000016150000\n00000000000018170000\n0000000000001a190000\n00000000000001000000\n00000000000002bc0100\n00000000000004030000\n00000000000006050000\n0000000000003c1c0f00\n0000000000007c5c0f00\n00000000000008070000\n0000000000000a090000\n0000000000000c0b0000\n0000000000000e0d0000\n000000000000100f0000\n00000000000012110000\n00000000000014130000\n00000000000016150000\n00000000000018170000\n0000000000001a190000\n",
+					"gt0_txcharisk_i",
+					"gt0_txcharisk_float_i",
+					"W_ctrl_ena",
+					"I_ctrl_ena",
+					"W_rd_mode",
+					"I_ctrl_mode",
+					"gt0_txcharisk_float_i",
+					"gt0_txdata_float_i",
+					"gt0_txdata_float16_i",
+					"gt0_txdata_i",
+					"1c",
+					"W_rx_link",
+					"P_RX_SYNC",
+					"R_rx_link",
+					"R_tx_link",
+					"O_data_ena",
+					"gt2_rxdata_i",
+					"W_rx_user_data2",
+					"R_energy_or_iq_gtx0",
+					"R0_energy_or_iq",
+					"gtx0"
 				],
 				"highlight": true,
 				"in_selection": false,
@@ -517,7 +658,7 @@
 			},
 			"incremental_find":
 			{
-				"height": 23.0
+				"height": 21.0
 			},
 			"input":
 			{
@@ -530,7 +671,7 @@
 			},
 			"output.exec":
 			{
-				"height": 433.0
+				"height": 232.0
 			},
 			"output.find_results":
 			{
@@ -539,7 +680,7 @@
 			"pinned_build_system": "Packages/Python/Python.sublime-build",
 			"replace":
 			{
-				"height": 42.0
+				"height": 38.0
 			},
 			"save_all_on_build": true,
 			"select_file":
@@ -573,7 +714,7 @@
 			"show_open_files": false,
 			"show_tabs": true,
 			"side_bar_visible": true,
-			"side_bar_width": 214.0,
+			"side_bar_width": 210.0,
 			"status_bar_visible": true,
 			"template_settings":
 			{
@@ -589,8 +730,160 @@
 				"selected_items":
 				[
 					[
+						"alw",
+						"always_c	always_comb"
+					],
+					[
+						"R_res",
+						"R3_result_dat"
+					],
+					[
+						"I_cf",
+						"I_cfar_ena"
+					],
+					[
+						"vccaux",
+						"vcc_aux_min"
+					],
+					[
+						"vccin",
+						"vccint_min"
+					],
+					[
+						"tem",
+						"temp_min"
+					],
+					[
+						"vccb",
+						"vcc_bram_max"
+					],
+					[
+						"vcca",
+						"vcc_aux_max"
+					],
+					[
+						"temp_",
+						"temp_max"
+					],
+					[
+						"dr",
+						"DRP_CLK_IN"
+					],
+					[
+						"R",
+						"R_powerup_ok"
+					],
+					[
+						"Oc",
+						"O_config_dat"
+					],
+					[
+						"w",
+						"W_rx_link"
+					],
+					[
+						"P",
+						"P_RX_SYNC"
+					],
+					[
+						"tx",
+						"W_tx_link"
+					],
+					[
+						"rx",
+						"W_rx_link"
+					],
+					[
+						"W",
+						"W_rx_link"
+					],
+					[
+						"r1",
+						"R1_serdes_data"
+					],
+					[
+						"Rdais",
+						"R_data_is_k"
+					],
+					[
+						"O_c",
+						"O_m_ctrl_ena"
+					],
+					[
+						"img",
+						"IMG_HADD_WIDTH"
+					],
+					[
+						"S",
+						"STATE2"
+					],
+					[
+						"cons",
+						"CONST_ETA"
+					],
+					[
+						"ws",
+						"W_sum_x"
+					],
+					[
+						"m",
+						"multi_MxN"
+					],
+					[
+						"al",
+						"al	always"
+					],
+					[
+						"s",
+						"W_sum_x"
+					],
+					[
+						"be",
+						"beg	begin .. end"
+					],
+					[
+						"da",
+						"DATA_WIDTH"
+					],
+					[
 						"div",
-						"div	comment_short"
+						"div	comment_long"
+					],
+					[
+						"I_c",
+						"I_ctrl_ena"
+					],
+					[
+						"Is",
+						"I_sys_rst_n"
+					],
+					[
+						"I_",
+						"I_signal_ena"
+					],
+					[
+						"I",
+						"I_signal_ena"
+					],
+					[
+						"write",
+						"write_ctrl"
+					],
+					[
+						"bit",
+						"BITSTREAM"
+					],
+					[
+						"a",
+						"A"
+					],
+					[
+						"lien",
+						"line1"
+					],
+					[
+						"for",
+						"forv	Vector For Loop"
 					],
 					[
 						"rx_",
@@ -603,14 +896,6 @@
 					[
 						"W_rx",
 						"W_rx_clk"
-					],
-					[
-						"al",
-						"al	always"
-					],
-					[
-						"I_",
-						"I_baud_rate"
 					],
 					[
 						"O_u",
@@ -641,14 +926,6 @@
 						"I_SCLK"
 					],
 					[
-						"I",
-						"I_rst_n"
-					],
-					[
-						"r1",
-						"REG1_CONTINUE_MODE"
-					],
-					[
 						"r3",
 						"REG3B_MUTE"
 					],
@@ -675,10 +952,6 @@
 					[
 						"I_ser",
 						"I_serdes_ena"
-					],
-					[
-						"da",
-						"DA_data_begin"
 					],
 					[
 						"U",
@@ -737,91 +1010,77 @@
 						"HEAD_TYPE"
 					],
 					[
-						"be",
-						"beg	begin .. end"
-					],
-					[
 						"data",
 						"sync_data_valid"
-					],
-					[
-						"alw",
-						"always	always Async"
 					]
 				]
 			},
 			"buffers":
 			[
 				{
-					"file": "/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/top.sv",
+					"contents": "//----------------------------------------------------NUST-----------------------------------------------------\n// ==============================420=================================\n// Project Name :   DBF\n// File name    :   accu_data.v\n// Library      :   WORK\n// Created On   :   2010-9-15 11:48\n// Comments     :   \n// ----------------------------------------------------------------------\n// >>>>>>>>>>>>>>>>>>>>>>>>> COPYRIGHT NOTICE <<<<<<<<<<<<<<<<<<<<<<<<<<<\n// ----------------------------------------------------------------------\n// Copyright 2010 (c) NUST\n//\n// NUST owns the sole copyright to this software. Under \n// international copyright laws you (1) may not make a copy of this software\n// except for the purposes of maintaining a single archive copy, (2) may not \n// derive works herefrom, (3) may not distribute this work to others. These \n// rights are provided for information clarification, other restrictions of \n// rights may apply as well.\n// ----------------------------------------------------------------------\n// >>>>>>>>>>>>>>>>>>>>>>>>>>>>> Warrantee <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<\n// ----------------------------------------------------------------------\n// NUST MAKES NO WARRANTY OF ANY KIND WITH REGARD TO THE USE OF\n// THIS SOFTWARE, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO,\n// THE IMPLIED WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR\n// PURPOSE.\n// ----------------------------------------------------------------------\n//\n// Revision History :\n// ----------------------------------------------------------------------\n//  Ver :           | Author:   Liht    | Mod. Date :    |    \n//  Update Detail:                  | \n// ----------------------------------------------------------------------\n// OverView\n// ========\n//\n// ----------------------------------------------------------------------\n// ======================================================================\n`timescale 1ns/100ps\nmodule  accu_data(\n    //====system reset====\n    I_reset_n           ,\n    \n    //====system clock====\n    I_sys_clk           ,   //200MHz working clock\n\n    //====ctrl output====\n    O_result_ena        ,\n    O_result_i_dat      ,\n    O_result_q_dat      ,\n    O_ctrl_en           ,\n    O_ctrl_signal       ,\n    O_m_ctrl_mode       ,\n    O_m_ctrl_ena        \n    );\n\n//------------------------------------------External Signal Definitions------------------------------------------\n//====input====\ninput           I_reset_n           ;\ninput           I_sys_clk           ;\n\n//====output====\n\noutput        O_result_ena  ;\noutput [23:0] O_result_i_dat;\noutput [23:0] O_result_q_dat;\noutput        O_ctrl_en     ;\noutput[ 2:0] O_ctrl_signal ;\noutput [1:0] O_m_ctrl_mode;\noutput       O_m_ctrl_ena ;\n//-----------------------------------------Internal Reg Definitions----------------------------------------------\n//====output register define====\nreg        O_result_ena  ;\nreg [23:0] O_result_i_dat;\nreg [23:0] O_result_q_dat;\nreg        O_ctrl_en     ;\n\nreg[ 2:0] O_ctrl_signal    ;\nreg [ 4:0] O_angle_info     ;\nreg [15:0] O_mach_angle_info;\nreg [ 1:0] O_m_ctrl_mode    ;\nreg        O_m_ctrl_ena     ;\n//====parameter====\nparameter TCO_DELAY = 1           ;\nparameter SIN1      = 24'd0       ;\nparameter SIN2      = 24'd1605090 ;\nparameter SIN3      = 24'd2965820 ;\nparameter SIN4      = 24'd3875031 ;\nparameter SIN5      = 24'd4194303 ;\nparameter SIN6      = 24'd3875031 ;\nparameter SIN7      = 24'd2965820 ;\nparameter SIN8      = 24'd1605090 ;\nparameter SIN9      = 24'd0       ;\nparameter SIN10     = -24'd1605090;\nparameter SIN11     = -24'd2965820;\nparameter SIN12     = -24'd3875031;\nparameter SIN13     = -24'd4194303;\nparameter SIN14     = -24'd3875031;\nparameter SIN15     = -24'd2965820;\nparameter SIN16     = -24'd1605090;\nparameter COS1      = 24'd4194303 ;\nparameter COS2      = 24'd3875031 ;\nparameter COS3      = 24'd2965820 ;\nparameter COS4      = 24'd1605090 ;\nparameter COS5      = 24'd0       ;\nparameter COS6      = -24'd1605090;\nparameter COS7      = -24'd2965820;\nparameter COS8      = -24'd3875031;\nparameter COS9      = -24'd4194303;\nparameter COS10     = -24'd3875031;\nparameter COS11     = -24'd2965820;\nparameter COS12     = -24'd1605090;\nparameter COS13     = 24'd0       ;\nparameter COS14     = 24'd1605090 ;\nparameter COS15     = 24'd2965820 ;\nparameter COS16     = 24'd3875031 ;\n\nparameter P_CONST_DATAI = 24'h123456; //24'h65792/64=1028\nparameter P_CONST_DATAQ = 24'h789abc; //24'h65792/64=1028\n//====internal register define====\nreg             R_ifft1_dv              ; \nreg[27:0]       R_ifft1_xk_re           ; \nreg[27:0]       R_ifft1_xk_im           ;\nreg             R_ifft2_dv              ;\nreg[27:0]       R_ifft2_xk_re           ;\nreg[27:0]       R_ifft2_xk_im           ;\nreg             R_ifft3_dv              ;\nreg[27:0]       R_ifft3_xk_re           ;\nreg[27:0]       R_ifft3_xk_im           ;\nreg             R_ifft4_dv              ;\nreg[27:0]       R_ifft4_xk_re           ;\nreg[27:0]       R_ifft4_xk_im           ;\nreg             R_ifft5_dv              ; \nreg[27:0]       R_ifft5_xk_re           ; \nreg[27:0]       R_ifft5_xk_im           ;\nreg             R_result_ena            ;  \nreg             R1_result_ena           ;\nreg             R2_result_ena           ;\nreg[13:0]       R_iq_data_cnt           ;\nreg[3:0]        R_iq_cycle_cnt          ;        \nreg[14:0]       R_index_cnt             ;\nreg[27:0]       R_i_result_dat          ;\nreg[27:0]       R_q_result_dat          ;\nreg             R_result_ena_fft1       ;\nreg[17:0]       R_i_result_dat_fft1     ;\nreg[17:0]       R_q_result_dat_fft1     ;\nreg             R1_result_ena_fft1      ;\nreg[17:0]       R1_i_result_dat_fft1    ;\nreg[17:0]       R1_q_result_dat_fft1    ;\nwire[35:0]      W_result_ii_dat_fft1    ;\nwire[35:0]      W_result_qq_dat_fft1    ;\nreg[35:0]       R_result_ii_dat_fft1    ;\nreg[35:0]       R_result_qq_dat_fft1    ;\nreg[36:0]       R_result_sigma_dat_fft1 ;\nwire[18:0]      W_sqrt_dat_fft1         ;\nreg[28:0]       R_delay_ena_fft1        ;\nreg[18:0]       R_sqrt_dat_fft1         ;\nreg[12:0]       R_result_wr_addr_fft1   ;\nwire[18:0]      W_result_dat_fft1       ;\nreg             R_result_ena_fft2       ;\nreg[17:0]       R_i_result_dat_fft2     ;\nreg[17:0]       R_q_result_dat_fft2     ;\nreg             R1_result_ena_fft2      ;\nreg[17:0]       R1_i_result_dat_fft2    ;\nreg[17:0]       R1_q_result_dat_fft2    ;\nwire[35:0]      W_result_ii_dat_fft2    ;\nwire[35:0]      W_result_qq_dat_fft2    ;\nreg[35:0]       R_result_ii_dat_fft2    ;\nreg[35:0]       R_result_qq_dat_fft2    ;\nreg[36:0]       R_result_sigma_dat_fft2 ;\nwire[18:0]      W_sqrt_dat_fft2         ;\nreg[28:0]       R_delay_ena_fft2        ;\nreg[18:0]       R_sqrt_dat_fft2         ;\nreg[12:0]       R_result_wr_addr_fft2   ;\nwire[18:0]      W_result_dat_fft2       ;\nreg             R_result_ena_fft3       ;\nreg[17:0]       R_i_result_dat_fft3     ;\nreg[17:0]       R_q_result_dat_fft3     ;\nreg             R1_result_ena_fft3      ;\nreg[17:0]       R1_i_result_dat_fft3    ;\nreg[17:0]       R1_q_result_dat_fft3    ;\nwire[35:0]      W_result_ii_dat_fft3    ;\nwire[35:0]      W_result_qq_dat_fft3    ;\nreg[35:0]       R_result_ii_dat_fft3    ;\nreg[35:0]       R_result_qq_dat_fft3    ;\nreg[36:0]       R_result_sigma_dat_fft3 ;\nwire[18:0]      W_sqrt_dat_fft3         ;\nreg[28:0]       R_delay_ena_fft3        ;\nreg[18:0]       R_sqrt_dat_fft3         ;\nreg[12:0]       R_result_wr_addr_fft3   ;\nwire[18:0]      W_result_dat_fft3       ;\nreg             R_result_ena_fft4       ;\nreg[17:0]       R_i_result_dat_fft4     ;\nreg[17:0]       R_q_result_dat_fft4     ;\nreg             R1_result_ena_fft4      ;\nreg[17:0]       R1_i_result_dat_fft4    ;\nreg[17:0]       R1_q_result_dat_fft4    ;\nwire[35:0]      W_result_ii_dat_fft4    ;\nwire[35:0]      W_result_qq_dat_fft4    ;\nreg[35:0]       R_result_ii_dat_fft4    ;\nreg[35:0]       R_result_qq_dat_fft4    ;\nreg[36:0]       R_result_sigma_dat_fft4 ;\nwire[18:0]      W_sqrt_dat_fft4         ;\nreg[30:0]       R_delay_ena_fft4        ;\nreg[18:0]       R_sqrt_dat_fft4         ;\nreg[19:0]       W_sqrt_dat_add1         ;\nreg[19:0]       W_sqrt_dat_add2         ;\nreg[20:0]       W_sqrt_dat_add3         ;\nwire[23:0]      O_sqrt_data             ;\nreg[12:0]       R_result_rd_addr        ;\nreg[2:0]        R_ctrl_signal           ;\nreg[4:0]        R_angle_info            ;\nreg[15:0]       R_mach_angle_info       ;\nreg[14:0]       R1_index_cnt            ;\nreg[14:0]       R_add_num               ;\nreg[3:0]        R_cycle_16;\n//---------------------------------------------Main Body of Code---------------------------------------------------\n//---------------------------------------pre data---------------------------------------\nalways@(posedge I_sys_clk or negedge I_reset_n)\nbegin\n    if(~I_reset_n)\n    begin\n        R_add_num <= 0;\n        R_cycle_16<=0;\n    end\n    else\n    begin\n        if (R_add_num == 15'd16384) \n        begin\n            R_add_num <= 0;\n            R_cycle_16 <= R_cycle_16+1;\n        end\n        else\n        begin\n            R_add_num <= R_add_num + 1;\n            R_cycle_16 <= R_cycle_16;\n        end\n    end\nend\n\nalways@(posedge I_sys_clk or negedge I_reset_n)\nbegin\n    if(~I_reset_n)\n    begin\n        O_ctrl_en <= 0;\n        O_ctrl_signal    <=3'd0;\n    end\n    else\n    begin\n        if (R_add_num == 15'd20) \n        begin\n            O_ctrl_en <= 1;\n            O_ctrl_signal    <=3'd2;\n        end\n        else\n        begin\n            O_ctrl_en <= 0;\n            O_ctrl_signal    <=3'd2;\n        end\n    end\nend\n\n\n\n\n\n\nalways@(posedge I_sys_clk or negedge I_reset_n)\nbegin\n    if(~I_reset_n)\n    begin\n        O_m_ctrl_ena <= 0;\n    end\n    else\n    begin\n        if (R_add_num == 15'd1) \n        begin\n            O_m_ctrl_ena <= &R_cycle_16;\n        end\n        else if(R_add_num == 15'd100)\n        begin\n            O_m_ctrl_ena <= 0;\n        end\n    end\nend\n\nalways@(posedge I_sys_clk or negedge I_reset_n)\nbegin\n    if(~I_reset_n)\n    begin\n        R_result_ena <= 0;\n    end\n    else\n    begin\n        if (R_add_num == 15'd100) \n        begin\n            R_result_ena <= 1;\n        end\n        else if(R_add_num == 15'd8291)//15'd8299)\n        begin\n            R_result_ena <= 0;\n        end\n    end\nend\n\n\n//====output result i & q data====\n\nalways @ (posedge I_sys_clk or negedge I_reset_n)\nbegin\n    if(~I_reset_n)\n    begin\n        R1_result_ena  <=  1'b0;\n        R2_result_ena  <=  1'b0;\n    end\n    else\n    begin\n        R1_result_ena  <=  R_result_ena ;\n        R2_result_ena  <=  R1_result_ena;\n    end\nend\n\nalways @ (posedge I_sys_clk or negedge I_reset_n)\nbegin\n    if(~I_reset_n)\n    begin\n        R_iq_cycle_cnt  <=  4'b0;\n    end\n    else\n    begin\n        if((~R1_result_ena)&&(R2_result_ena))\n        begin\n            R_iq_cycle_cnt  <=  R_iq_cycle_cnt + 4'b1;\n        end\n        else\n        begin\n            R_iq_cycle_cnt  <=  R_iq_cycle_cnt;\n        end\n    end\nend\n\nalways @ (posedge I_sys_clk or negedge I_reset_n)\nbegin\n    if(~I_reset_n)\n    begin\n        R_iq_data_cnt  <=  14'b0;\n    end\n    else\n    begin\n        if(R_result_ena)\n        begin\n            R_iq_data_cnt  <=  R_iq_data_cnt + 14'b1;\n        end\n        else\n        begin\n            R_iq_data_cnt  <=  14'b0;\n        end\n    end\nend\n\nalways @ (posedge I_sys_clk or negedge I_reset_n)\nbegin\n    if(~I_reset_n)\n    begin\n        R1_result_ena  <=  1'b0;\n        R2_result_ena  <=  1'b0;\n    end\n    else\n    begin\n        R1_result_ena  <=  R_result_ena ;\n        R2_result_ena  <=  R1_result_ena;\n    end\nend\n\nalways @ (posedge I_sys_clk or negedge I_reset_n)\nbegin\n    if(~I_reset_n)\n    begin\n        O_result_ena    <=  1'b0;\n    end\n    else\n    begin\n        O_result_ena    <=  R_result_ena;\n    end\nend\n\n// always @ (posedge I_sys_clk or negedge I_reset_n)\n// begin\n//     if(~I_reset_n)\n//     begin\n//         O_result_i_dat  <=  24'h0;\n//         O_result_q_dat  <=  24'h0;\n//     end\n//     else\n//     begin\n//         O_result_i_dat  <=  {10'd0,R_iq_data_cnt};\n//         O_result_q_dat  <=  {10'd0,R_iq_data_cnt};\n//     end\n// end\n\n\nalways @ (posedge I_sys_clk or negedge I_reset_n)\nbegin\n    if(~I_reset_n)\n    begin\n        O_result_i_dat  <=  24'h0;\n        O_result_q_dat  <=  24'h0;\n    end\n    else\n    begin\n        case(R_iq_cycle_cnt)\n        4'd0:\n        begin\n            case(R_iq_data_cnt)\n            14'd0,14'd20,14'd30,14'd40,14'd50,14'd511,14'd7680,14'd8191:\n            begin\n                O_result_i_dat  <=  COS1;\n                O_result_q_dat  <=  SIN1;\n            end    \n            default:\n            begin\n                O_result_i_dat  <=  P_CONST_DATAI;\n                O_result_q_dat  <=  P_CONST_DATAQ;\n            end\n            endcase\n        end\n        4'd1:\n        begin\n            case(R_iq_data_cnt)\n            14'd0,14'd20,14'd30,14'd40,14'd50,14'd511,14'd7680,14'd8191:\n            begin\n                O_result_i_dat  <=  COS2;\n                O_result_q_dat  <=  SIN2;\n            end    \n            default:\n            begin\n                O_result_i_dat  <=  P_CONST_DATAI;\n                O_result_q_dat  <=  P_CONST_DATAQ;\n            end\n            endcase\n        end\n        4'd2:\n        begin\n            case(R_iq_data_cnt)\n            14'd0,14'd20,14'd30,14'd40,14'd50,14'd511,14'd7680,14'd8191:\n            begin\n                O_result_i_dat  <=  COS3;\n                O_result_q_dat  <=  SIN3;\n            end   \n            default:\n            begin\n                O_result_i_dat  <=  P_CONST_DATAI;\n                O_result_q_dat  <=  P_CONST_DATAQ;\n            end\n            endcase\n        end\n        4'd3:\n        begin\n            case(R_iq_data_cnt)\n            14'd0,14'd20,14'd30,14'd40,14'd50,14'd511,14'd7680,14'd8191:\n            begin\n                O_result_i_dat  <=  COS4;\n                O_result_q_dat  <=  SIN4;\n            end    \n            default:\n            begin\n                O_result_i_dat  <=  P_CONST_DATAI;\n                O_result_q_dat  <=  P_CONST_DATAQ;\n            end\n            endcase\n        end\n        4'd4:\n        begin\n            case(R_iq_data_cnt)\n            14'd0,14'd20,14'd30,14'd40,14'd50,14'd511,14'd7680,14'd8191:\n            begin\n                O_result_i_dat  <=  COS5;\n                O_result_q_dat  <=  SIN5;\n            end   \n            default:\n            begin\n                O_result_i_dat  <=  P_CONST_DATAI;\n                O_result_q_dat  <=  P_CONST_DATAQ;\n            end\n            endcase\n        end\n        4'd5:\n        begin\n            case(R_iq_data_cnt)\n            14'd0,14'd20,14'd30,14'd40,14'd50,14'd511,14'd7680,14'd8191:\n            begin\n                O_result_i_dat  <=  COS6;\n                O_result_q_dat  <=  SIN6;\n            end   \n            default:\n            begin\n                O_result_i_dat  <=  P_CONST_DATAI;\n                O_result_q_dat  <=  P_CONST_DATAQ;\n            end\n            endcase\n        end\n        4'd6:\n        begin\n            case(R_iq_data_cnt)\n            14'd0,14'd20,14'd30,14'd40,14'd50,14'd511,14'd7680,14'd8191:\n            begin\n                O_result_i_dat  <=  COS7;\n                O_result_q_dat  <=  SIN7;\n            end    \n            default:\n            begin\n                O_result_i_dat  <=  P_CONST_DATAI;\n                O_result_q_dat  <=  P_CONST_DATAQ;\n            end\n            endcase\n        end\n        4'd7:\n        begin\n            case(R_iq_data_cnt)\n            14'd0,14'd20,14'd30,14'd40,14'd50,14'd511,14'd7680,14'd8191:\n            begin\n                O_result_i_dat  <=  COS8;\n                O_result_q_dat  <=  SIN8;\n            end     \n            default:\n            begin\n                O_result_i_dat  <=  P_CONST_DATAI;\n                O_result_q_dat  <=  P_CONST_DATAQ;\n            end\n            endcase\n        end\n        4'd8:\n        begin\n            case(R_iq_data_cnt)\n            14'd0,14'd20,14'd30,14'd40,14'd50,14'd511,14'd7680,14'd8191:\n            begin\n                O_result_i_dat  <=  COS9;\n                O_result_q_dat  <=  SIN9;\n            end   \n            default:\n            begin\n                O_result_i_dat  <=  P_CONST_DATAI;\n                O_result_q_dat  <=  P_CONST_DATAQ;\n            end\n            endcase\n        end\n        4'd9:\n        begin\n            case(R_iq_data_cnt)\n            14'd0,14'd20,14'd30,14'd40,14'd50,14'd511,14'd7680,14'd8191:\n            begin\n                O_result_i_dat  <=  COS10;\n                O_result_q_dat  <=  SIN10;\n            end    \n            default:\n            begin\n                O_result_i_dat  <=  P_CONST_DATAI;\n                O_result_q_dat  <=  P_CONST_DATAQ;\n            end\n            endcase\n        end\n        4'd10:\n        begin\n            case(R_iq_data_cnt)\n            14'd0,14'd20,14'd30,14'd40,14'd50,14'd511,14'd7680,14'd8191:\n            begin\n                O_result_i_dat  <=  COS11;\n                O_result_q_dat  <=  SIN11;\n            end      \n            default:\n            begin\n                O_result_i_dat  <=  P_CONST_DATAI;\n                O_result_q_dat  <=  P_CONST_DATAQ;\n            end\n            endcase\n        end\n        4'd11:\n        begin\n            case(R_iq_data_cnt)\n            14'd0,14'd20,14'd30,14'd40,14'd50,14'd511,14'd7680,14'd8191:\n            begin\n                O_result_i_dat  <=  COS12;\n                O_result_q_dat  <=  SIN12;\n            end   \n            default:\n            begin\n                O_result_i_dat  <=  P_CONST_DATAI;\n                O_result_q_dat  <=  P_CONST_DATAQ;\n            end\n            endcase\n        end\n        4'd12:\n        begin\n            case(R_iq_data_cnt)\n            14'd0,14'd20,14'd30,14'd40,14'd50,14'd511,14'd7680,14'd8191:\n            begin\n                O_result_i_dat  <=  COS13;\n                O_result_q_dat  <=  SIN13;\n            end       \n            default:\n            begin\n                O_result_i_dat  <=  P_CONST_DATAI;\n                O_result_q_dat  <=  P_CONST_DATAQ;\n            end\n            endcase\n        end\n        4'd13:\n        begin\n            case(R_iq_data_cnt)\n            14'd0,14'd20,14'd30,14'd40,14'd50,14'd511,14'd7680,14'd8191:\n            begin\n                O_result_i_dat  <=  COS14;\n                O_result_q_dat  <=  SIN14;\n            end     \n            default:\n            begin\n                O_result_i_dat  <=  P_CONST_DATAI;\n                O_result_q_dat  <=  P_CONST_DATAQ;\n            end\n            endcase\n        end\n        4'd14:\n        begin\n            case(R_iq_data_cnt)\n            14'd0,14'd20,14'd30,14'd40,14'd50,14'd511,14'd7680,14'd8191:\n            begin\n                O_result_i_dat  <=  COS15;\n                O_result_q_dat  <=  SIN15;\n            end      \n            default:\n            begin\n                O_result_i_dat  <=  P_CONST_DATAI;\n                O_result_q_dat  <=  P_CONST_DATAQ;\n            end\n            endcase\n        end\n        4'd15:\n        begin\n            case(R_iq_data_cnt)\n            14'd0,14'd20,14'd30,14'd40,14'd50,14'd511,14'd7680,14'd8191:\n            begin\n                O_result_i_dat  <=  COS16;\n                O_result_q_dat  <=  SIN16;\n            end   \n            default:\n            begin\n                O_result_i_dat  <=  P_CONST_DATAI;\n                O_result_q_dat  <=  P_CONST_DATAQ;\n            end\n            endcase\n        end\n        endcase      \n    end\nend\n\nalways @ (posedge I_sys_clk or negedge I_reset_n)\nbegin\n    if(~I_reset_n)\n    begin\n        O_m_ctrl_mode   <=  2'h0;\n    end\n    else\n    begin\n        //====send to M_FPGA ====\n        case(O_ctrl_signal)\n        3'b010: O_m_ctrl_mode   <=  2'h0;\n        3'b011: O_m_ctrl_mode   <=  2'h1;\n        3'b101: O_m_ctrl_mode   <=  2'h2;\n        3'b110: O_m_ctrl_mode   <=  2'h3;\n        default:;\n        endcase\n    end\nend\n//====output result i & q data====\n\n\nendmodule\n//====END====\n",
+					"file": "/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/rtl/accu_data.v",
+					"file_size": 20660,
+					"file_write_time": 131247329263937996,
 					"settings":
 					{
-						"buffer_size": 17418,
+						"buffer_size": 19985,
+						"line_ending": "Windows"
+					}
+				},
+				{
+					"file": "/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/rtl/top.v",
+					"settings":
+					{
+						"buffer_size": 28643,
+						"line_ending": "Windows"
+					}
+				},
+				{
+					"file": "/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/top_tb.v",
+					"settings":
+					{
+						"buffer_size": 83544,
+						"line_ending": "Windows"
+					}
+				},
+				{
+					"file": "/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/gene_data.v",
+					"settings":
+					{
+						"buffer_size": 20174,
+						"line_ending": "Windows"
+					}
+				},
+				{
+					"file": "/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/sublimesystemverilog/verilog_align.py",
+					"settings":
+					{
+						"buffer_size": 3789,
 						"line_ending": "Unix"
 					}
 				},
 				{
-					"file": "/E/FPGA/A7_changzhou/changzhou.srcs/constrs_1/new/top.xdc",
+					"file": "/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
 					"settings":
 					{
-						"buffer_size": 11898,
+						"buffer_size": 2663,
 						"line_ending": "Windows"
 					}
 				},
 				{
-					"file": "/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/serdes/serdes_exdes.v",
+					"file": "/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/sublimesystemverilog/verilogutil/verilog_beautifier.py",
 					"settings":
 					{
-						"buffer_size": 16228,
+						"buffer_size": 59422,
 						"line_ending": "Unix"
 					}
 				},
 				{
-					"file": "/E/FPGA/rtl_template/xilinx_primitives.sv",
+					"contents": "# Class/function to process verilog file\nimport re, string, os\nimport pprint\nimport functools\n\n# regular expression for signal/variable declaration:\n#   start of line follow by 1 to 4 word,\n#   an optionnal array size,\n#   an optional list of words\n#   the signal itself (not part of the regular expression)\nre_bw    = r'[\\w\\*\\(\\)\\/><\\:\\-\\+`\\$\\s]+'\nre_var   = r'^\\s*(\\w+\\s+)?(\\w+\\s+)?([A-Za-z_][\\w\\:\\.]*\\s?)(\\['+re_bw+r'\\])?\\s*([A-Za-z_][\\w=,\\s]*,\\s*)?\\b'\nre_decl  = r'(?:^|,|(?:\\w|\\)|#)\\s*\\(|;)\\s*(?:const\\s+)?(\\w+\\s+)?(\\w+\\s+)?(\\w+\\s+)?([A-Za-z_][\\w\\:\\.]*\\s*)((?:\\['+re_bw+r'\\]\\s*)*)\\s*((?:[A-Za-z_]\\w*(?:\\s*\\[[^=\\^\\&\\|,;]*?\\]\\s*)?\\s*(?:\\=\\s*[\\w\\.\\:]+\\s*)?,\\s*)*)\\b'\nre_enum  = r'^\\s*(typedef\\s+)?(enum)\\s+(\\w+\\s*)?(\\['+re_bw+r'\\])?\\s*(\\{[\\w=,\\s`\\'\\/\\*]+\\})\\s*([A-Za-z_][\\w=,\\s]*,\\s*)?\\b'\nre_union = r'^\\s*(typedef\\s+)?(struct|union|`\\w+)\\s+(packed\\s+)?(signed|unsigned)?\\s*(\\{[\\w,;\\s`\\[\\:\\]\\/\\*\\+\\-><\\(\\)\\$]+\\})\\s*([A-Za-z_][\\w=,\\s]*,\\s*)?\\b'\nre_tdp   = r'^\\s*(typedef\\s+)(\\w+)\\s*(#\\s*\\(.*?\\))?\\s*()\\b'\nre_inst  = r'^\\s*(virtual)?(\\s*)()(\\w+)\\s*(#\\s*\\([^;]+\\))?\\s*()\\b'\nre_param = r'^\\s*parameter\\b((?:\\s*(?:\\w+\\s+)?(?:[A-Za-z_]\\w+)\\s*=\\s*(?:[^,;]*)\\s*,)*)(\\s*(\\w+\\s+)?([A-Za-z_]\\w+)\\s*=\\s*([^,;]*)\\s*;)'\n\n# Port direction list constant\nport_dir = ['input', 'output','inout', 'ref']\n\n\ndef clean_comment(text):\n    def replacer(match):\n        s = match.group(0)\n        if s.startswith('/'):\n            return \" \" # note: a space and not an empty string\n        else:\n            return s\n\n    pattern = re.compile(\n        r'//.*?$|/\\*.*?\\*/|\"(?:\\\\.|[^\\\\\"])*\"',\n        re.DOTALL | re.MULTILINE\n    )\n    # do we need trim whitespaces?\n    # txt_clean = re.sub(pattern, replacer, text)\n    # return re.sub(r'^\\s*$', '', txt_clean, flags = re.MULTILINE)\n    return re.sub(pattern, replacer, text)\n\n# Extract declaration of var_name from a file\ndef get_type_info_file(fname,var_name):\n    # print(\"Parsing file \" + fname + \" for variable \" + var_name)\n    fdate = os.path.getmtime(fname)\n    ti = get_type_info_file_cache(fname, var_name, fdate)\n    # print(get_type_info_file_cache.cache_info())\n    return ti\n\n@functools.lru_cache(maxsize=32)\ndef get_type_info_file_cache(fname, var_name, fdate):\n    with open(fname) as f:\n        flines = f.read()\n        ti = get_type_info(flines, var_name)\n    return ti\n\n# Extract the declaration of var_name from txt\n#return a tuple: complete string, type, arraytype (none, fixed, dynamic, queue, associative)\ndef get_type_info(txt,var_name,search_decl=True):\n    txt = clean_comment(txt)\n    # print('[get_type_info] text = {0}'.format(txt))\n    m = re.search(re_enum+r'('+var_name+r')\\b.*$', txt, flags=re.MULTILINE)\n    tag = 'enum'\n    idx_type = 1\n    idx_bw = 3\n    idx_max = 5\n    idx_val = -1\n    if not m:\n        m = re.search(re_union+r'('+var_name+r')\\b.*$', txt, flags=re.MULTILINE)\n        tag = 'struct'\n        if not m:\n            idx_type = 1\n            idx_bw = 3\n            idx_max = 3\n            m = re.search(re_tdp+r'('+var_name+r')\\b\\s*;.*$', txt, flags=re.MULTILINE)\n            tag = 'typedef'\n            if not m and search_decl:\n                re_str = re_decl+r'('+var_name+r'\\b\\s*(\\[[^=\\^\\&\\|,;]*?\\]\\s*)?)(\\s*=\\s*(\\'?\\{.+?\\}|[^,;]+))?[^\\.]*?$'\n                # print(re_str)\n                m = re.search(re_str, txt, flags=re.MULTILINE)\n                tag = 'decl'\n                idx_type = 3\n                idx_bw = 4\n                idx_max = 5\n                idx_val = 9\n                if not m :\n                    m = re.search(re_inst+r'('+var_name+r')\\b.*$', txt, flags=re.MULTILINE)\n                    tag = 'inst'\n    # print('[get_type_info] tag = {0} , groups = {1}, str={2}'.format(tag,m.groups(),m.group(0)))\n    ti = get_type_info_from_match(var_name,m,idx_type,idx_bw,idx_max,idx_val,tag)[0]\n    return ti\n\n# Extract the macro content from `define name macro_content\ndef get_macro(txt, name):\n    txt = clean_comment(txt)\n    m = re.search(r'(?s)^\\s*`define\\s+'+name+r'\\b[ \\t]*(?:\\((.*?)\\)[ \\t]*)?(.*?)(?<!\\\\)\\n',txt,re.MULTILINE)\n    if not m:\n        return ''\n    # remove line return\n    macro = m.groups()[1].replace('\\\\\\n','')\n    param_list = m.groups()[0]\n    if param_list:\n        param_list = param_list.replace('\\\\\\n','')\n    # remove escape character for string\n    macro = macro.replace('`\"','\"')\n    # TODO: Expand macro if there is some arguments\n    return macro,param_list\n\n# Extract all signal declaration\ndef get_all_type_info(txt):\n    # print('[get_all_type_info] \\n'+txt)\n    # Cleanup function contents since this can contains some signal declaration\n    # print('[get_all_type_info] Cleanup functions/task')\n    txt = re.sub(r'(?s)^[ \\t\\w]*(protected|local)?[ \\t\\w]*(virtual)?[ \\t\\w]*(?P<block>function|task)\\b.*?\\bend(?P=block)\\b.*?$','',txt, flags=re.MULTILINE)\n    txt = re.sub(r'(?s)^[ \\t\\w]*(import|export)[ \\t\\w]*(\\\".*?\\\"[ \\t\\w]*)?(pure)?[ \\t\\w]*(?P<block>function|task)\\b.*?;','',txt, flags=re.MULTILINE)\n    # Cleanup constraint definition\n    # print('[get_all_type_info] Cleanup constraint')\n    txt = re.sub(r'(?s)constraint\\s+\\w+\\s*\\{\\s*(?:[^\\{\\}]+?(?:\\{[^\\{\\}]*?\\})?)*?\\s*\\}','',txt,  flags=re.MULTILINE)\n    # print('[get_all_type_info] \\n'+txt)\n    # Suppose text has already been cleaned\n    ti = []\n    # Look all modports\n    # print('[get_all_type_info] Look for modports')\n    r = re.compile(r'(?s)modport\\s+(\\w+)\\s*\\((.*?)\\);', flags=re.MULTILINE)\n    modports = r.findall(txt)\n    if modports:\n        for modport in modports:\n            ti.append({'decl':modport[1].replace('\\n',''),'type':'','array':'','bw':'', 'name':modport[0], 'tag':'modport'})\n        # remove modports before looking for I/O and field to avoid duplication of signals\n        txt = r.sub('',txt)\n    # Look for clocking block\n    # print('[get_all_type_info] Look for clocking block')\n    r = re.compile(r'(?s)clocking\\s+(\\w+)(.*?)endclocking(\\s*:\\s*\\w+)?', flags=re.MULTILINE)\n    cbs = r.findall(txt)\n    if cbs:\n        for cb in cbs:\n            ti.append({'decl':'clocking '+cb[0],'type':'','array':'','bw':'', 'name':cb[0], 'tag':'clocking'})\n        # remove clocking block before looking for I/O and field to avoid duplication of signals\n        txt = r.sub('',txt)\n    # Look for enum declaration\n    # print('[get_all_type_info] Look for enum declaration')\n    r = re.compile(re_enum+r'(\\w+\\b(\\s*\\[[^=\\^\\&\\|,;]*?\\]\\s*)?)\\s*;',flags=re.MULTILINE)\n    for m in r.finditer(txt):\n        ti_tmp = get_type_info_from_match('',m,1,3,5,-1,'enum')\n        # print('[get_all_type_info] enum groups=%s => ti=%s' %(str(m.groups()),str(ti_tmp)))\n        ti += [x for x in ti_tmp if x['type']]\n    # remove enum declaration since the content could be interpreted as signal declaration\n    txt = r.sub('',txt)\n    # Look for struct declaration\n    # print('[get_all_type_info] Look for struct declaration')\n    r = re.compile(re_union+r'(\\w+\\b(\\s*\\[[^=\\^\\&\\|,;]*?\\]\\s*)?)\\s*;',flags=re.MULTILINE)\n    # print('[get_all_type_info] struct re=\"{0}\"'.format(r.pattern))\n    for m in r.finditer(txt):\n        ti_tmp = get_type_info_from_match('',m,1,3,5,-1,'struct')\n        # print('[get_all_type_info] struct groups=%s => ti=%s' %(str(m.groups()),str(ti_tmp)))\n        ti += [x for x in ti_tmp if x['type']]\n    # remove struct declaration since the content could be interpreted as signal declaration\n    txt = r.sub('',txt)\n    # Look for typedef declaration\n    # print('[get_all_type_info] Look for typedef declaration')\n    r = re.compile(re_tdp+r'(\\w+\\b(\\s*\\[[^=\\^\\&\\|,;]*?\\]\\s*)?)\\s*;',flags=re.MULTILINE)\n    for m in r.finditer(txt):\n        ti_tmp = get_type_info_from_match('',m,1,3,3,-1,'typedef')\n        # print('[get_all_type_info] typedef groups=%s => ti=%s' %(str(m.groups()),str(ti_tmp)))\n        ti += [x for x in ti_tmp if x['type']]\n    # remove typedef declaration since the content could be interpreted as signal declaration\n    txt = r.sub('',txt)\n    # Look for signal declaration\n    # print('[get_all_type_info] Look for signal declaration')\n    # TODO: handle init value\n    re_str = re_decl+r'(\\w+\\b(\\s*\\[[^=\\^\\&\\|,;\\[\\]]*?\\]\\s*)*)\\s*(?:\\=\\s*(\\'\\{.+\\}|[\\w\\.\\:\\'\\\"]+)\\s*)?(?=;|,|\\)\\s*;)'\n    # print('[get_all_type_info] decl re=\"{0}\"'.format(re_str))\n    r = re.compile(re_str,flags=re.MULTILINE)\n    for m in r.finditer(txt):\n        ti_tmp = get_type_info_from_match('',m,3,4,5,8,'decl')\n        # print('[get_all_type_info] decl groups=%s => ti=%s' %(str(m.groups()),str(ti_tmp)))\n        ti += [x for x in ti_tmp if x['type']]\n    # Look for interface instantiation\n    # print('[get_all_type_info] Look for interface instantiation')\n    re_str = re_inst+r'(\\w+\\b(\\s*\\[[^=\\^\\&\\|,;]*?\\]\\s*)?)\\s*\\('\n    r = re.compile(re_str,flags=re.MULTILINE)\n    # print('[get_all_type_info] inst re=\"{0}\"'.format(re_str))\n    for m in r.finditer(txt):\n        ti_tmp = get_type_info_from_match('',m,3,4,5,-1,'inst')\n        # print('[get_all_type_info] inst groups=%s => ti=%s' %(str(m.groups()),str(ti_tmp)))\n        ti += [x for x in ti_tmp if x['type']]\n    # print('[get_all_type_info] {0}'.format(ti))\n    # Look for non-ansi declaration where a signal is declared twice (I/O then reg/wire) and merge it into one declaration\n    ti_dict = {}\n    pop_list = []\n    for (i,x) in enumerate(ti[:]) :\n        if x['name'] in ti_dict:\n            ti_index = ti_dict[x['name']][1]\n            # print('[get_all_type_info] Duplicate found for %s => %s and %s' %(x['name'],ti_dict[x['name']],x))\n            if ti[ti_index]['type'].split()[0] in ['input', 'output', 'inout']:\n                ti[ti_index]['decl'] = ti[ti_index]['decl'].replace(ti[ti_index]['type'],ti[ti_index]['type'].split()[0] + ' ' + x['type'])\n                ti[ti_index]['type'] = x['type']\n                pop_list.append(i)\n        else :\n            ti_dict[x['name']] = (x,i)\n    for i in sorted(pop_list,reverse=True):\n        ti.pop(i)\n    # pprint.pprint(ti, width=200)\n    return ti\n\n# Get type info from a match object\ndef get_type_info_from_match(var_name,m,idx_type,idx_bw,idx_max,idx_val,tag):\n    ti_not_found = {'decl':None,'type':None,'array':\"\",'bw':\"\", 'name':var_name, 'tag':tag, 'value':None}\n    # print(\"[SV:get_type_info_from_match] varname={0} m={1} idx_type={2} idx_bw={3} idx_max={4},idx_val={5} tag={6}\".format(var_name,m.groups(),idx_type,idx_bw,idx_max,idx_val,tag))\n    #return a tuple of None if not found\n    if not m:\n        return [ti_not_found]\n    if not m.groups()[idx_type]:\n        return [ti_not_found]\n    line = m.group(0).strip()\n    # Extract the type itself: should be the mandatory word, except if is a sign qualifier\n    t = str.rstrip(m.groups()[idx_type]).split('.')[0]\n    if t==\"unsigned\" or t==\"signed\": # TODO check if other cases might happen\n        if m.groups()[2] is not None:\n            t = str.rstrip(m.groups()[2]) + ' ' + t\n        elif m.groups()[1] is not None:\n            t = str.rstrip(m.groups()[1]) + ' ' + t\n        elif m.groups()[0] is not None and not m.groups()[0].startswith('end'):\n            t = str.rstrip(m.groups()[0]) + ' ' + t\n    elif t==\"const\": # identifying a variable as simply const is typical of a struct/union : look for it\n        m = re.search( re_union+var_name+r'.*$', txt, flags=re.MULTILINE)\n        if m is None:\n            return [ti_not_found]\n        t = m.groups()[1]\n        idx_bw = 3\n    # Remove potential false positive\n    if t in ['begin', 'end', 'endspecify', 'else', 'posedge', 'negedge', 'timeunit', 'timeprecision','assign', 'disable', 'property', 'initial', 'assert', 'cover']:\n        return [ti_not_found]\n    # print(\"[SV:get_type_info_from_match] Group => \" + str(m.groups()))\n    value = None\n    ft = ''\n    bw = ''\n    if var_name!='':\n        signal_list = re.findall(r'('+var_name + r')\\b\\s*(\\[(.*?)\\]\\s*)?', m.groups()[idx_max+1], flags=re.MULTILINE)\n        if idx_val > 0 and len(m.groups())>idx_val and m.groups()[idx_val]:\n            value = str.rstrip(m.groups()[idx_val])\n    else:\n        signal_list = []\n        re_str = r'(\\w+)\\b\\s*(\\[(.*)\\]\\s*)?(?:\\=\\s*(\\'\\{.+?\\}|[\\w\\.\\:\\'\\\"]+)\\s*)?,?'\n        if m.groups()[idx_max]:\n            signal_list = re.findall(re_str, m.groups()[idx_max], flags=re.MULTILINE)\n            # print(\"[SV:get_type_info_from_match] idxmax => signal_list = \" + str(signal_list))\n        if m.groups()[idx_max+1]:\n            s = m.groups()[idx_max+1]\n            # print(\"[SV:get_type_info_from_match] idxmax+1 => s = \" + str(s))\n            if idx_val > 0 and len(m.groups())>idx_val and m.groups()[idx_val]:\n                s += ' = ' + m.groups()[idx_val]\n            signal_list += re.findall(re_str, s, flags=re.MULTILINE)\n            # print(\"[SV:get_type_info_from_match] idxmax+1 => signal_list = \" + str(signal_list))\n    # remove reserved keyword that could end up in the list\n    signal_list = [s for s in signal_list if s[0] not in ['if','case', 'for', 'foreach', 'generate', 'input', 'output', 'inout']]\n    if not signal_list:\n        return [ti_not_found]\n    # print(\"[SV:get_type_info_from_match] signal_list = \" + str(signal_list) + ' for line ' + line)\n    #Concat the first 5 word if not None (basically all signal declaration until signal list)\n    for i in range(0,idx_max):\n        # print('[get_type_info_from_match] tag='+tag+ ' name='+str(signal_list)+ ' match (' + str(i) + ') = ' + str(m.groups()[i]).strip())\n        if m.groups()[i] is not None:\n            tmp = m.groups()[i].strip()\n            if tmp:\n                # Cleanup space in enum/struct declaration\n                if i==4 and t in ['enum','struct']:\n                    tmp = re.sub(r'\\s+',' ',tmp,flags=re.MULTILINE)\n                #Cleanup spaces in bitwidth\n                if i==idx_bw:\n                    tmp = re.sub(r'\\s+','',tmp,flags=re.MULTILINE)\n                    bw = tmp\n                # regex can catch more than wanted, so filter based on a list\n                if not tmp.startswith('end'):\n                    ft += tmp + ' '\n    if not ft.strip():\n        return [ti_not_found]\n    ti = []\n    for signal in signal_list :\n        # print(\"signal: \" + str(signal) )\n        fts = ft + signal[0]\n        # Check if the variable is an array and the type of array (fixed, dynamic, queue, associative)\n        at = \"\"\n        if signal[1]!='':\n            fts += '[' + signal[2] + ']'\n            if signal[2] ==\"\":\n                at='dynamic'\n            elif signal[2]=='$':\n                at='queue'\n            elif signal[2]=='*':\n                at='associative'\n            else:\n                ma= re.match(r'[A-Za-z_][\\w]*$',signal[2])\n                if ma:\n                    at='associative'\n                else:\n                    at='fixed'\n        if not value and len(signal)>=4:\n            value = signal[3]\n        d = {'decl':fts,'type':t,'array':at,'bw':bw, 'name':signal[0], 'tag':tag, 'value': value}\n        ft0 = ft.split()[0]\n        if ft0 in ['local','protected']:\n            d['access'] = ft0\n        # TODO: handle init value inside list\n        # print(\"Array: \" + str(m) + \"=>\" + str(at))\n        ti.append(d)\n    return ti\n\n\n# Parse a module for port information\ndef parse_module_file(fname,mname=r'\\w+'):\n    # print(\"Parsing file \" + fname + \" for module \" + mname)\n    fdate = os.path.getmtime(fname)\n    minfo = parse_module_file_cache(fname, mname, fdate)\n    # print(parse_module_file_cache.cache_info())\n    return minfo\n\n@functools.lru_cache(maxsize=32)\ndef parse_module_file_cache(fname, mname, fdate):\n    with open(fname) as f:\n        flines = f.read()\n        minfo = parse_module(flines, mname)\n    return minfo\n\ndef parse_module(flines,mname=r'\\w+'):\n    # print(\"Parsing for module \" + mname + ' in \\n' + flines)\n    flines = clean_comment(flines)\n    m = re.search(r\"(?s)(?P<type>module|interface)\\s+(?P<name>\"+mname+r\")(?P<import>\\s+import\\s+.*?;)?\\s*(#\\s*\\((?P<param>.*?)\\))?\\s*(\\((?P<port>.*?)\\))?\\s*;(?P<content>.*?)(?P<ending>endmodule|endinterface)\", flines, re.MULTILINE)\n    if m is None:\n        return None\n    mname = m.group('name')\n    # Extract parameter name\n    params = []\n    param_type = ''\n    ## Parameter define in ANSI style\n    r = re.compile(r\"(parameter\\s+)?(?P<decl>\\b\\w+\\b\\s*(\\[[\\w\\:\\-\\+`\\s]+\\]\\s*)?)?(?P<name>\\w+)\\s*=\\s*(?P<value>[^,;\\n]+)\")\n    if m.group('param'):\n        s = clean_comment(m.group('param'))\n        for mp in r.finditer(s):\n            params.append(mp.groupdict())\n            if not params[-1]['decl']:\n                params[-1]['decl'] = param_type;\n            else :\n                params[-1]['decl'] = params[-1]['decl'].strip();\n                param_type = params[-1]['decl']\n    ## look for parameter not define in the module declaration\n    if m.group('content'):\n        s = clean_comment(m.group('content'))\n        r_param_list = re.compile(re_param,flags=re.MULTILINE)\n        for mpl in r_param_list.finditer(s):\n            param_type = ''\n            for mp in r.finditer(mpl.group(0)):\n                params.append(mp.groupdict())\n                if not params[-1]['decl']:\n                    params[-1]['decl'] = param_type;\n                else :\n                    params[-1]['decl'] = params[-1]['decl'].strip();\n                    param_type = params[-1]['decl']\n    ## Cleanup param value\n    params_name = []\n    if params:\n        for param in params:\n            param['value'] = param['value'].strip()\n            params_name.append(param['name'])\n    # Extract all type information inside the module : signal/port declaration, interface/module instantiation\n    ati = get_all_type_info(clean_comment(m.group(0)))\n    # print('[SV.parse_module] ati = ')\n    # pprint.pprint(ati,width=200)\n    # Extract port name\n    ports = []\n    ports_name = []\n    if m.group('port'):\n        s = clean_comment(m.group('port'))\n        ports_name = re.findall(r\"(\\w+)\\s*(?=,|$|\\[[^=\\^\\&\\|,;]*?\\]\\s*(?=,|$))\",s)\n        # get type for each port\n        ports = []\n        ports = [ti for ti in ati if ti['name'] in ports_name]\n    ports_name += params_name\n    # Extract instances name\n    inst = [ti for ti in ati if ti['type']!='module' and ti['type']!='interface' and ti['tag']=='inst']\n    # Extract signal name\n    signals = [ti for ti in ati if ti['type'] not in ['module','interface','modport'] and ti['tag']!='inst' and ti['name'] not in ports_name ]\n    minfo = {'name': mname, 'param':params, 'port':ports, 'inst':inst, 'type':m.group('type'), 'signal' : signals}\n    modports = [ti for ti in ati if ti['tag']=='modport']\n    if modports:\n        minfo['modport'] = modports\n    # print('[SV.parse_module] minfo = ')\n    # pprint.pprint(minfo,width=200)\n    return minfo\n\n# Parse a package for port information\ndef parse_package_file(fname,pname=r'\\w+'):\n    # print(\"Parsing file \" + fname + \" for package \" + pname)\n    fdate = os.path.getmtime(fname)\n    minfo = parse_package_file_cache(fname, pname, fdate)\n    # print(parse_package_file_cache.cache_info())\n    return minfo\n\n@functools.lru_cache(maxsize=32)\ndef parse_package_file_cache(fname, pname, fdate):\n    with open(fname) as f:\n        flines = f.read()\n        minfo = parse_package(flines, pname)\n    return minfo\n\ndef parse_package(flines,pname=r'\\w+'):\n    # print(\"Parsing for module \" + pname + ' in \\n' + flines)\n    m = re.search(r\"(?s)(?P<type>package)\\s+(?P<name>\"+pname+\")\\s*;\\s*(?P<content>.+?)(?P<ending>endpackage)\", flines, re.MULTILINE)\n    if m is None:\n        return None\n    txt = clean_comment(m.group('content'))\n    ti = get_all_function(txt)\n    ti += get_all_type_info(txt)\n    # print(ti)\n    return ti\n\ndef parse_function(flines,funcname):\n    fi = get_all_function(flines,funcname)\n    if not fi:\n        return None\n    else :\n        return fi[0]\n\n# Parse a class for function and members\ndef parse_class_file(fname,cname=r'\\w+'):\n    # print(\"Parsing file \" + fname + \" for module \" + cname)\n    fdate = os.path.getmtime(fname)\n    info = parse_class_file_cache(fname, cname, fdate)\n    # print(parse_class_file_cache.cache_info())\n    return info\n\n@functools.lru_cache(maxsize=32)\ndef parse_class_file_cache(fname, cname, fdate):\n    with open(fname) as f:\n        contents = f.read()\n        flines = clean_comment(contents)\n        info = parse_class(flines, cname)\n    return info\n\ndef parse_class(flines,cname=r'\\w+'):\n    # print(\"Parsing for class \" + cname + ' in \\n' + flines)\n    re_class = re.compile(r\"(?s)(?P<type>class)\\s+(?P<name>\"+cname+r\")\\s*(#\\s*\\((?P<param>.*?)\\))?\\s*(extends\\s+(?P<extend>\\w+(?:\\s*#\\(.*?\\))?))?\\s*;(?P<content>.*?)(?P<ending>endclass)\", flags=re.MULTILINE)\n    m = re_class.search(flines)\n    if m is None:\n        return None\n    txt = clean_comment(m.group('content'))\n    # print('Matched class in :\\n'+txt)\n    ci = {'type':'class', 'name': m.group('name'), 'extend': None if 'extend' not in m.groupdict() else m.group('extend'), 'function' : []}\n    # print('Init ci:\\n'+str(ci))\n    # TODO: handle parameters ...\n    # Extract all functions\n    ci['function'] = get_all_function(txt)\n    # print('ci after function extract\\n'+str(ci))\n    # Extract members\n    ci['member'] = get_all_type_info(txt)\n    # print('Final ci:\\n'+str(ci))\n    return ci\n\ndef get_all_function(txt,funcname=r'\\w+'):\n    fil = [] # Function Info list\n    fl = re.findall(r'(?s)(?:\\b(protected|local)\\s+)?(\\bvirtual\\s+)?\\b(function|task)\\s+((?:\\w+\\s+)?(?:\\w+\\s+|\\[[\\d:]+\\]\\s+)?)\\b('+funcname+r')\\b\\s*\\((.*?)\\s*\\)\\s*;(.*?)\\bend\\3\\b',txt,flags=re.MULTILINE)\n    for (f_access, f_virtual, f_type, f_return,f_name,f_args, f_content) in fl:\n        if f_args:\n            pi = get_all_type_info(f_args + ';')\n        else:\n            ti_all = get_all_type_info(f_content)\n            pi = [x for x in ti_all if x['decl'].startswith(('input','output','inout','ref'))]\n        f_decl = '{acc} {virt} {type} {ret} {name}'.format(acc=f_access, virt=f_virtual, type=f_type, ret=f_return,name=f_name)\n        f_decl = re.sub(r'\\s+',' ',f_decl.strip())\n        d = {'name': f_name, 'type': f_type, 'port': pi, 'return': f_return, 'decl': f_decl}\n        if f_access:\n            d['access'] = f_access\n        if d['return'].startswith('automatic'):\n            d['return'] = ' '.join(d['return'].split()[1:])\n        fil.append(d)\n    return fil\n\n# Fill all entry of a case for enum or vector (limited to 8b)\n# ti is the type infor return by get_type_info\ndef fill_case(ti,length=0):\n    if not ti['type']:\n        print('[fill_case] No type for signal ' + str(ti['name']))\n        return (None,None)\n    # print('[fill_case] ti = {0}'.format(ti))\n    t = ti['type'].split()[0]\n    s = '\\n'\n    if t == 'enum':\n        # extract enum from the declaration\n        m = re.search(r'\\{(.*)\\}', ti['decl'])\n        if m :\n            el = re.findall(r\"(\\w+).*?(,|$)\",m.groups()[0])\n            maxlen = max([len(x[0]) for x in el])\n            if maxlen < 7:\n                maxlen = 7\n            for x in el:\n                s += '\\t' + x[0].ljust(maxlen) + ' : ;\\n'\n            s += '\\tdefault'.ljust(maxlen+1) + ' : ;\\nendcase'\n            return (s,[x[0] for x in el])\n    elif t in ['logic','bit','reg','wire','input','output']:\n        m = re.search(r'\\[\\s*(\\d+)\\s*\\:\\s*(\\d+)',ti['bw'])\n        if m :\n            # If no length was provided use the complete bitwidth\n            if length>0:\n                bw = length\n            else :\n                bw = int(m.groups()[0]) + 1 - int(m.groups()[1])\n            if bw <=8 :\n                for i in range(0,(1<<bw)):\n                    s += '\\t' + str(i).ljust(7) + ' : ;\\n'\n                s += '\\tdefault : ;\\nendcase'\n                return (s,range(0,(1<<bw)))\n    print('[fill_case] Type not supported: ' + str(t))\n    return (None,None)\n\n",
 					"settings":
 					{
-						"buffer_size": 1137,
-						"line_ending": "Windows"
-					}
-				},
-				{
-					"file": "/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/serdes_rom_ad.dat",
-					"settings":
-					{
-						"buffer_size": 3905,
-						"line_ending": "Windows"
-					}
-				},
-				{
-					"file": "/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/serdes_rx_ctrl.sv",
-					"settings":
-					{
-						"buffer_size": 24829,
-						"line_ending": "Windows"
-					}
-				},
-				{
-					"file": "/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/dac_if.sv",
-					"settings":
-					{
-						"buffer_size": 16784,
-						"line_ending": "Windows"
-					}
-				},
-				{
-					"contents": "E:/FPGA/A7_changzhou/changzhou.runs/impl_1/top.bit\n\nwrite_cfgmem -force -format MCS -interface spix4 -size 512 -loadbit \"up 0x0 \\\n    E:/FPGA/A7_changzhou_reset_n/changzhou.runs/impl_1/top.bit\" \\\n    E:/FPGA/A7_changzhou_reset_n/changzhou.runs/impl_1",
-					"settings":
-					{
-						"buffer_size": 250,
-						"line_ending": "Windows",
-						"name": "E:/FPGA/A7_changzhou/changzhou.runs/impl_1/top.bit"
-					}
-				},
-				{
-					"file": "/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/top_test_led.sv",
-					"settings":
-					{
-						"buffer_size": 1467,
+						"buffer_size": 23624,
 						"line_ending": "Windows"
 					}
 				}
@@ -829,6 +1088,22 @@
 			"build_system": "",
 			"build_system_choices":
 			[
+				[
+					[
+						[
+							"Packages/C++/C++ Single File.sublime-build",
+							""
+						],
+						[
+							"Packages/C++/C++ Single File.sublime-build",
+							"Run"
+						]
+					],
+					[
+						"Packages/C++/C++ Single File.sublime-build",
+						"Run"
+					]
+				],
 				[
 					[
 						[
@@ -844,25 +1119,41 @@
 						"Packages/Python/Python.sublime-build",
 						""
 					]
+				],
+				[
+					[
+						[
+							"Packages/User/C++.sublime-build",
+							""
+						],
+						[
+							"Packages/User/C++.sublime-build",
+							"Run"
+						]
+					],
+					[
+						"Packages/User/C++.sublime-build",
+						"Run"
+					]
 				]
 			],
 			"build_varint": "",
 			"command_palette":
 			{
-				"height": 242.0,
-				"last_filter": "insta",
+				"height": 392.0,
+				"last_filter": "Package Control: ",
 				"selected_items":
 				[
 					[
-						"insta",
-						"Package Control: Install Package"
+						"Package Control: ",
+						"Package Control: Disable Package"
 					],
 					[
-						"Package Control: ",
-						"Package Control: List Packages"
+						"insta",
+						"Package Control: Install Package"
 					]
 				],
-				"width": 432.0
+				"width": 400.0
 			},
 			"console":
 			{
@@ -881,145 +1172,140 @@
 				"side_bar_visible": false,
 				"status_bar_visible": false
 			},
-			"expanded_folders":
-			[
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/serdes"
-			],
 			"file_history":
 			[
-				"/E/FPGA/A7_changzhou_reset_n/changzhou.srcs/sources_1/new/top.sv",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/dac_rom.dat",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/serdes_tx_ctrl.sv",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/constrs_1/new/serdes_exdes.xdc",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/uart_top.sv",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/uart_tb.v",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/uart_tx.v",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/uart_rx.v",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/uart_clk_gen.v",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/constrs_1/new/top.xdc",
-				"/E/FPGA/rtl_template/xilinx_primitives.v",
-				"/C/Users/Kuangxin/AppData/Local/Temp/clk_dac.xdc",
-				"/C/Users/Kuangxin/AppData/Local/Temp/sys_clk_ooc.xdc",
-				"/C/Users/Kuangxin/AppData/Local/Temp/sys_clk.xdc",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/top.sv",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/dac_if.sv",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/tob_tb.sv",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/serdes_rom_uart.dat",
-				"/C/Users/Kuangxin/Desktop/dspb_client1.py",
-				"/C/Users/Kuangxin/Desktop/dspb_client.py",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/top_test.sv",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/constrs_1/new/led.xdc",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/uart_user.v",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/serdes_rx_ctrl_tb.sv",
-				"/C/Users/Kuangxin/AppData/Local/Temp/fifo_uart_clocks.xdc",
-				"/E/FPGA/V5_1008/V5_1008/V5_0427/xilinx/src/serdes_if.v",
-				"/E/FPGA/V5_1008/V5_1008/V5_0427/xilinx/src/top.v",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/serdes_rx_ctrl.sv",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/uart.sv",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/serdes_rom_ad.txt",
-				"/C/Users/Kuangxin/Documents/MATLAB/I_data24.txt",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/serdes_rom_ad.dat",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/serdes_rom_uart.txt",
-				"/C/Users/Kuangxin/AppData/Local/Temp/ila_uart1.veo",
-				"/C/Users/Kuangxin/AppData/Local/Temp/fifo_uart_ooc.xdc",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/serdes_wrapper.sv",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/serdes/serdes_exdes.v",
-				"/C/Users/Kuangxin/AppData/Local/Temp/serdes_ram_ooc.xdc",
-				"/E/A7_serdes_x1/serdes_example/serdes_example.srcs/sources_1/imports/example_design/serdes_exdes.v",
-				"/C/Users/Kuangxin/AppData/Local/Temp/ila_dac.veo",
-				"/C/Users/Kuangxin/AppData/Local/Temp/ila_uart.veo",
-				"/C/Users/Kuangxin/AppData/Local/Temp/serdes_rx_fifo_ooc.xdc",
-				"/C/Users/Kuangxin/AppData/Local/Temp/ila_dac_ooc.xdc",
-				"/C/Users/Kuangxin/AppData/Local/Temp/ila_uart_ooc.xdc",
-				"/C/Users/Kuangxin/AppData/Local/Temp/ila_ooc.xdc",
-				"/C/Users/Kuangxin/AppData/Local/Temp/ila.xdc",
-				"/E/FPGA/A7_serdes_x1/serdes_example/serdes_example.runs/impl_1/debug_nets.ltx",
-				"/E/A7_serdes_x1/serdes_example/serdes_example.srcs/sources_1/imports/example_design/gt_rom_init_tx.dat",
-				"/C/Users/Kuangxin/AppData/Local/Temp/fifo_dac_clocks.xdc",
-				"/E/FPGA/A7_serdes_x1/serdes_example/serdes_example.srcs/sources_1/imports/example_design/serdes_exdes.v",
-				"/E/A7_serdes_x1/serdes_example/serdes_example.srcs/constrs_1/imports/example_design/serdes_exdes.xdc",
-				"/C/Users/Kuangxin/AppData/Local/Temp/serdes.veo",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/constrs_1/new/dac_if_top.xdc",
-				"/E/FPGA/V5_1006_1/V5_0427/xilinx/src/top.v",
-				"/E/FPGA/A7_serdes_x1/serdes_example/serdes_example.srcs/constrs_1/imports/example_design/serdes_exdes.xdc",
-				"/E/FPGA/V5_1006_1/V5_0427/xilinx/src/serdes_if.v",
-				"/C/Users/Kuangxin/AppData/Local/Temp/ila.veo",
-				"/C/Python27/lib/socket.py",
-				"/C/Users/Kuangxin/AppData/Local/Temp/serdes.xdc",
-				"/C/Users/Kuangxin/AppData/Local/Temp/sys_clk.veo",
-				"/E/FPGA/A7_serdes_x1/serdes_example/serdes_example.srcs/sources_1/imports/example_design/serdes_gt_frame_check.v",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/dac_if_top.sv",
-				"/E/FPGA/changzhou_Chnl2/Chnl_kintex7_2048chnl/rtl/serdes/serdes.v",
-				"/E/FPGA/changzhou_Chnl2/AD_Board_new_fir/src/serdes_if.v",
-				"/E/FPGA/A7_serdes_x1/serdes_example/serdes_example.srcs/sources_1/imports/example_design/gt_rom_init_tx.dat",
-				"/E/FPGA/changzhou_Chnl2/Chnl_kintex7_2048chnl/rtl/serdes/serdes_rx.v",
-				"/C/Users/Kuangxin/AppData/Local/Temp/clk_dac.veo",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/dac_ifx4.sv",
-				"/E/FPGA/rtl_template/generate_vivado_MCS.txt",
-				"/E/FPGA/rtl_template/serdes/example_design/serdes_exdes.v",
-				"/E/FPGA/K7_serdes/serdes_example/serdes_example/serdes_example.srcs/sources_1/imports/example_design/serdes_exdes.v",
-				"/E/FPGA/K7_changzhou/changzhou.srcs/sources_1/new/dac_ifx4.sv",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/serdes_rom.dat",
-				"/E/FPGA/K7_changzhou/changzhou.srcs/sources_1/new/dac_if_top.sv",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new - 24uart/uart_user.v",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new - 24uart/divide_325.v",
-				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/sublimesystemverilog/Snippets/always.sublime-snippet",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/serdes_exdes.v",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/constrs_1/new/serdes_exdes.v",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/dac_if_tb.sv",
-				"/e/FPGA/A7_serdes_x1/serdes_example/serdes_example.srcs/sources_1/imports/example_design/serdes_exdes.v",
-				"/E/FPGA/A7_serdes_x1/serdes_example/serdes_example.srcs/sources_1/imports/example_design/serdes_gt_frame_gen.v",
-				"/E/FPGA/A7_serdes_x1/serdes_example/serdes_example.srcs/sources_1/imports/example_design/gt_rom_init_rx.dat",
-				"/E/FPGA/PPC_20150715_50T/xilinx/src/serdes_if.v",
-				"/E/FPGA/PPC_20150715_50T/xilinx/src/top.v",
-				"/e/FPGA/A7_serdes_x1/serdes_example/serdes_example.srcs/constrs_1/imports/example_design/serdes_exdes.xdc",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/top_test_led.sv",
-				"/C/Users/Kuangxin/Documents/python/top_test_led.sv",
-				"/C/Users/Kuangxin/Documents/python/generate_sine.py",
-				"/E/FPGA/changzhou_Chnl2/Chnl_kintex7_2048chnl/rtl/DA_module.v",
-				"/C/Users/Kuangxin/Documents/MATLAB/sin12.m",
-				"/C/Users/Kuangxin/Documents/MATLAB/genarate_sin.m",
-				"/E/FPGA/changzhou_Chnl2/Chnl_kintex7_2048chnl/rtl/test_top_TB.v",
-				"/E/FPGA/changzhou_Chnl2/Chnl_kintex7_2048chnl/rtl/top.v",
-				"/E/FPGA/changzhou_Chnl2/Chnl_kintex7_2048chnl/rtl/DA_OUT.v",
-				"/E/FPGA/changzhou_Chnl2/Chnl_kintex7_2048chnl/rtl/top.ucf",
-				"/C/Users/Kuangxin/AppData/Local/Temp/fifo_dac.xdc",
-				"/C/Users/Kuangxin/AppData/Local/Temp/fifo_dac.veo",
-				"/C/Users/Kuangxin/Documents/python/dac_rom.dat",
-				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/sublimesystemverilog/Snippets/generate.sublime-snippet",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/divide_325.v",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/serdes_w",
-				"/C/Xilinx/Vivado/2015.4/scripts/init.tcl",
-				"/C/Xilinx/Vivado/2015.4/examples/Vivado_Tutorial/Sources/hdl/or1200/or1200_cpu.v",
-				"/C/Xilinx/Vivado/2015.4/examples/Vivado_Tutorial/run_cpu_kintex7_batch.tcl",
-				"/C/Xilinx/Vivado/2015.4/examples/Vivado_Tutorial/create_bft_kintex7_batch.tcl",
+				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/sublimesystemverilog/verilogutil/verilogutil.py",
+				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/sublimesystemverilog/verilogutil/__init__.py",
+				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/sublimesystemverilog/verilogutil/sublimeutil.py",
 				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
-				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
-				"/C/Users/Kuangxin/AppData/Local/Temp/HZ$D.876.391/HZ$D.876.392/aggregate_data_types_example1/array_unpacked.sv",
-				"/C/Users/Kuangxin/AppData/Local/Temp/HZ$D.795.1613/HZ$D.795.1614/aggregate_data_types_example2/array_packed.sv",
-				"/C/Users/Kuangxin/Desktop/data_types_example1/data_types_example1/ALU.sv",
-				"/C/Users/Kuangxin/Desktop/data_types_example1/data_types_example1/definitions.sv",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/generate_rom.py",
-				"/C/Users/Kuangxin/Documents/python/format_width.py",
-				"/C/Users/Kuangxin/Documents/python/bin2hex.py",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/head_rom.dat",
-				"/C/Users/Kuangxin/AppData/Local/Temp/serdes_rx_fifo.veo",
 				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/sublimesystemverilog/SystemVerilog.sublime-settings",
-				"/E/FPGA/K7_serdes/serdes_example/serdes_example/serdes_example.srcs/sources_1/imports/example_design/serdes_gt_frame_check.v",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/serdes_tx_ctrl_tb.sv",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/serdes_tx_ctrl.v",
-				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/User/SublimeGit.sublime-settings",
-				"/C/Users/Kuangxin/.gitconfig",
-				"/E/FPGA/A7_changzhou/changzhou.sim/sim_1/behav/modelsim.ini",
-				"/C/modeltech_10.0a/modelsim.ini",
-				"/C/modeltech64_10.1c/modelsim.ini",
-				"/E/FPGA/K7_serdes/serdes_example/serdes_example/serdes_example.srcs/sim_1/imports/simulation/serdes_tb.v",
-				"/E/FPGA/A7_changzhou/changzhou.sim/sim_1/behav/top_tb_simulate.do"
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/accu_data.v",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/top.v",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/gmac_if.v",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/tx_ctrl.v",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/write_ctrl.v",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/rtl/accu_data.v",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/tx_speed_array.v",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/ipcore_dir/serdes_coe/example_design/serdes_coe_exdes.v",
+				"/G/FPGA_Backup/Xilinx/Chengdu_Bird_Radar/0908_FPGA_PRJ/M_K7_M/M_K7_M/xilinx/top/top.v",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/cfar_2nd.v",
+				"/G/FPGA_Backup/Xilinx/Chengdu_Bird_Radar/0908_FPGA_PRJ/M_K7_M/M_K7_M/xilinx/top/distance_cfar.v",
+				"/E/FPGA/Bird_Radar_v2/MS_K7_P/rtl/cfar_target.v",
+				"/G/FPGA_Backup/Xilinx/Chengdu_Bird_Radar/0908_FPGA_PRJ/M_K7_M/M_K7_M/xilinx/top/wr_addr.v",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/cfar_2nd_s.v",
+				"/G/FPGA_Backup/Xilinx/Chengdu_Bird_Radar/0908_FPGA_PRJ/M_K7_M/M_K7_M/xilinx/top/cfar_2nd.v",
+				"/G/FPGA_Backup/Xilinx/Chengdu_Bird_Radar/0908_FPGA_PRJ/M_K7_M/M_K7_M/xilinx/top/read_ctrl.v",
+				"/G/FPGA_Backup/Xilinx/Chengdu_Bird_Radar/0908_FPGA_PRJ/M_K7_M/M_K7_M/xilinx/top/ctrl_mode.v",
+				"/E/FPGA/Bird_Radar_v2/MS_K7_P/rtl/accu_data.v",
+				"/E/FPGA/Bird_Radar_v2/MS_K7_P/rtl/cfar_target_tx_tran_ctrl.v",
+				"/G/FPGA_Backup/Xilinx/Chengdu_Bird_Radar/0908_FPGA_PRJ/M_K7_M/M_K7_M/xilinx/top/cfar_data.v",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/distance_cfar.v",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/cfar_data.v",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/sqrt_cfar.v",
+				"/E/FPGA/s_m_test_0720/S_K7_M420_one_test/xilinx/top/top.v",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/rtl/serdes_ifx8/serdes_k7_if.v",
+				"/E/FPGA/k7_m_simulation/k7_m_simulation/write_ctrl/top.v",
+				"/E/FPGA/k7_m_simulation/k7_m_simulation/write_ctrl/write_ctrl.v",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/top.ucf",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/top.ucf",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/ctrl_signal.v",
+				"/E/FPGA/k7_m_simulation/k7_m_simulation/read_ctrl/top.v",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/rtl/serdes_ifx8/serdes_tran_ctrl.v",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/serdes_rx_ctrl.v",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/rtl/top.v",
+				"/E/FPGA/s_m_test_0720/S_K7_M480_one_test/xilinx/top/rtl/measure_temp_volt.v",
+				"/E/FPGA/rtl_template/serdes_ifx8/serdes_tran_ctrl.v",
+				"/E/FPGA/s_m_test_0720/S_K7_M480_one_test/xilinx/top/top.ucf",
+				"/E/FPGA/s_m_test_0720/S_K7_M480_one_test/xilinx/top/ipcore_dir/pll_200mhz.v",
+				"/E/FPGA/s_m_test_0720/S_K7_M480_one_test/xilinx/top/top.v",
+				"/E/FPGA/rtl_template/xilinx_primitives.sv",
+				"/G/FPGA_Backup/Xilinx/Chengdu_Bird_Radar/0908_FPGA_PRJ/MS_K7_P/MS_K7_P/rtl/serdes_if/serdes_tran_ctrl_tb.v",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/rtl/serdes_ifx8/serdes_tran_ctrl_tb.v",
+				"/G/FPGA_Backup/Xilinx/Chengdu_Bird_Radar/0908_FPGA_PRJ/MS_K7_P/MS_K7_P/rtl/cfar_target_tx_tran_ctrl.v",
+				"/G/FPGA_Backup/Xilinx/Chengdu_Bird_Radar/0908_FPGA_PRJ/MS_K7_P/MS_K7_P/rtl/top.v",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/rtl/accu_data_TB.v",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/ram_array80.v",
+				"/E/FPGA/k7_m_simulation/k7_m_simulation/write_ctrl/ram_array80.v",
+				"/C/Users/Kuangxin/Desktop/ug480_7Series_XADC/verilog/ug480_tb.v",
+				"/C/Users/Kuangxin/Desktop/ug480_7Series_XADC/verilog/ug480.v",
+				"/E/FPGA/s_m_test_0720/S_K7_M420_one_test/xilinx/top/sqrt_cfar.v",
+				"/E/FPGA/s_m_test_0720/S_K7_M480_one_test/xilinx/top/rtl/ug480.v",
+				"/C/Users/Kuangxin/Desktop/ug480_7Series_XADC/verilog/ug480.xdc",
+				"/C/Users/Kuangxin/Desktop/ug480_7Series_XADC/readme.txt",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/ctrl_mode.v",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/read_ctrl.v",
+				"/e/FPGA/K7_serdes/gtwizard_0_example/gtwizard_0_example.srcs/sim_1/imports/simulation/gtwizard_0_tb.v",
+				"/E/FPGA/K7_serdes/gtwizard_0_example/gtwizard_0_example.srcs/sources_1/imports/example_design/gt_rom_init_tx.dat",
+				"/e/FPGA/K7_serdes/gtwizard_0_example/gtwizard_0_example.srcs/sources_1/imports/example_design/gtwizard_0_gt_frame_check.v",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/ipcore_dir/serdes_coe/example_design/serdes_coe_gt_frame_gen.v",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/serdes_ifx8/serdes_coe_exdes.v",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/ipcore_dir/serdes_coe/example_design/serdes_coe_gt_frame_check.v",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/ipcore_dir/serdes_coe/example_design/gt_rom_init_tx.dat",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/ipcore_dir/serdes_coe/example_design/gt_rom_init_rx.dat",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/serdes_ifx8/serdes_coe_gt.v",
+				"/E/FPGA/s_m_test_0720/S_K7_M420_one_test/xilinx/top/top.ucf",
+				"/E/FPGA/s_m_test_0720/S_K7_M420_one_test/xilinx/top/serdes_rx_ctrl.v",
+				"/E/FPGA/s_m_test_0720/S_K7_M420_one_test/xilinx/rtl/serdes_ifx8/serdes_k7_if.v",
+				"/E/FPGA/s_m_test_0720/S_K7_M420_one_test/xilinx/rtl/serdes_ifx8/serdes_coe_gt.v",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/no_bit/rx_data.cdc",
+				"/E/FPGA/s_m_test_0720/S_K7_M420_one_test/xilinx/top/rx_data.cdc",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/rtl/serdes_ifx8/serdes_coe_gt.v",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/ipcore_dir/serdes_coe_gt.v",
+				"/E/FPGA/rtl_template/serdesx8/serdes_coe_gt.v",
+				"/C/Users/Kuangxin/Desktop/example_design/serdes_coe_gt.v",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/rtl/serdes_ifx8/serdes_coe_exdes.v",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/serdes_ifx8/serdes_coe.v",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/serdes_ifx8/serdes_coe_init.v",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/utriEMAC_clk_wiz.v",
+				"/G/FPGA_Backup/Xilinx/Chengdu_Bird_Radar/0908_FPGA_PRJ/M_EPLD_syn/M_EPLD_syn/rtl/top.v",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/serdes_ifx8/serdes_k7_if.v",
+				"/C/Users/Kuangxin/Desktop/example_design0/serdes_coe_exdes.v",
+				"/G/FPGA_Backup/Xilinx/Chengdu_Bird_Radar/0908_FPGA_PRJ/M_EPLD_syn/M_EPLD_syn/rtl/cpu_ctrl.v",
+				"/E/FPGA/rtl_template/vivado_serdes_test/example_design/serdes_gt_frame_check.v",
+				"/E/FPGA/A7_serdes_x1/serdes_example/serdes_example.srcs/sources_1/imports/example_design/serdes_gt_frame_check.v",
+				"/E/FPGA/A7_serdes_x1/serdes_example/serdes_example.srcs/sources_1/imports/example_design/serdes_exdes.v",
+				"/E/FPGA/rtl_template/serdes_ifx8/serdes_k7_if.v",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/rtl/serdes_if/serdes_k7_if.v",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/rtl/serdes_if/serdes_tran_ctrl.v",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/serdes_coe_exdes.v",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/rtl/serdes_if/serdes_coe_exdes.v",
+				"/G/FPGA_Backup/Xilinx/Chengdu_Bird_Radar/0908_FPGA_PRJ/MS_K7_P/MS_K7_P/rtl/serdes_if/serdes_tran_ctrl.v",
+				"/G/FPGA_Backup/Xilinx/Chengdu_Bird_Radar/0908_FPGA_PRJ/M_K7_M/M_K7_M/xilinx/top/serdes_rx_ctrl.v",
+				"/E/FPGA/s_m_test_0720/S_K7_M420_one_test/xilinx/top/ipcore_dir/xadc/simulation/timing/xadc_tb.v",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/no_bit/serdes_rx.cdc",
+				"/e/FPGA/A7_xadc/xadc_wiz_0_example/xadc_wiz_0_example.srcs/sources_1/imports/example_design/xadc_wiz_0_exdes.v",
+				"/C/Users/Kuangxin/AppData/Local/Temp/xadc_wiz_0.v",
+				"/e/FPGA/A7_xadc/xadc_wiz_0_example/xadc_wiz_0_example.srcs/sim_1/imports/xadc_wiz_0/xadc_wiz_0/simulation/xadc_wiz_0_tb.v",
+				"/E/FPGA/s_m_test_0720/S_K7_M420_one_test/xilinx/top/ipcore_dir/xadc/example_design/xadc_exdes.v",
+				"/E/FPGA/s_m_test_0720/S_K7_M420_one_test/xilinx/top/ipcore_dir/xadc/simulation/xadc_tb.v",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/serdes_tx.cdc",
+				"/E/FPGA/s_m_test_0720/S_K7_M420_one_test/xilinx/top/serdes_k7_if.v",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/serdes_k7_if.v",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/serdes_rx.cdc",
+				"/E/FPGA/rtl_template/serdesx8/top.ucf",
+				"/E/FPGA/rtl_template/serdesx8/serdes_rx.cdc",
+				"/E/FPGA/rtl_template/serdesx8/serdes_top.v",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/ipcore_dir/serdes_coe.v",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/ipcore_dir/serdes_coe/example_design/serdes_coe_tx_startup_fsm.v",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/ipcore_dir/serdes_coe/example_design/serdes_coe_gt_usrclk_source.v",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/ipcore_dir/serdes_coe/example_design/serdes_coe_init.v",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/rtl/serdes_if/serdes_k7_if_tb.v",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/rtl/serdes_if/top.v",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/rtl/serdes_if/serdes_top.v",
+				"/E/FPGA/rtl_template/serdesx1/serdes_k7_if.v",
+				"/E/FPGA/s_m_test_0720/S_K7_M420_one_test/xilinx/rtl/serdes_coe_exdes.v",
+				"/C/Users/Kuangxin/Desktop/cdc0.txt",
+				"/C/Users/Kuangxin/Desktop/cdc1.txt",
+				"/E/FPGA/s_m_test_0720/S_K7_M480_one_test/xilinx/top/ipcore_dir/serdes_coe/example_design/serdes_coe_exdes.v",
+				"/E/FPGA/s_m_test_0720/S_K7_M480_one_test/xilinx/top/ipcore_dir/serdes_coe/example_design/serdes_coe_gt_frame_check.v",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/ipcore_dir/serdes_coe/example_design/serdes_coe_exdes.v",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/ipcore_dir/serdes_coe/example_design/serdes_coe_gt_frame_check.v",
+				"/E/FPGA/rtl_template/serdes_test/example_design/serdes_exdes.v",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/ipcore_dir/dcm_400mhz.v"
 			],
 			"find":
 			{
-				"height": 21.0
+				"height": 34.0
 			},
 			"find_in_files":
 			{
@@ -1033,134 +1319,134 @@
 				"case_sensitive": true,
 				"find_history":
 				[
-					"W_rst_n",
-					"I_dac_ena2",
-					"I_dac_ena1",
-					"I_dac_data2",
-					"I_dac_data1",
-					"R_start",
-					"I_dac_ena1",
-					"W_rst",
-					"negedge",
-					"W_rst_n",
-					"I_sys_clk",
-					"R_dac_ena",
-					"R_dac_double_byte",
-					"R_tx_dat",
-					"O_tx_dat",
-					"R1_rx_dat",
-					"R3_rx_dat",
-					"R1_rx_dat",
-					"R_cnt_ena",
-					"R_cnt_num",
-					"R_count_trans",
-					"R_count_sample",
-					"P_SAMPLE_BAUD_4800",
-					"P_TRANS_BAUD_4800",
-					"TX",
-					"R_count_sample",
-					"R_count_trans",
-					"P_TRANS_BAUD_2400",
-					"_sample",
-					"eate_generated_clock",
-					"create_generated_clock",
-					"[1]",
-					"get_pins",
-					"create_generated_clock",
-					"clk_100m",
-					"P_TRANS_BAUD_57600",
-					"I_baud_rate",
-					"clk_100m",
-					"I_sys_clk",
-					"W_uart_sample_clk",
-					"0",
-					"W_uart_sample_clk",
-					"W_uart_trans_clk",
-					"R_ram_rden",
-					"wire",
-					"W_serdes_rx_clk",
-					"W_serdes_tx_clk",
-					"W_SCK",
-					"I_SCLK",
-					"O_DOUT",
-					"I_sys_clk",
-					"inter_time",
-					"W_rst_n",
-					"I_rst_n",
-					"I_sys_clk",
-					"I_baud_rate",
-					"I_tx_clk",
-					"W_uart_rx_ena",
-					"I_uart_ena",
-					"RX",
-					"O_rx_valid",
-					"I_check_mode",
-					"b0010",
-					"W_uart_rx_dat",
-					"tx",
-					"W_uart_rx_dat",
-					"W_SCK",
-					"I_SCLK",
-					"I_FS",
-					"R_get_data_tosend",
-					"656",
-					"W_rst_n",
-					"R_start_en",
-					"R_initial_ok",
-					"O_serdes_tx_data",
-					"R_test_data",
-					"R_initial_ok",
-					"686",
-					"672",
-					"uart_trans_clk",
-					"W_uart_trans_clk",
-					"clk_100m",
-					"var0",
-					"var",
-					"[])",
-					"uart_sample_clk",
-					"W_uart_sample_clk",
-					"I_check_mode",
-					"W_check_mode",
-					"W_baud_rate",
-					"O_check_mode",
-					"R_rx_count",
-					"R_rx_isDA",
-					"UART_baud_count",
-					"UART_baud_en",
-					"UART_baud_count",
-					"UART_baud_length",
-					"UART_baud_en",
-					"[0]",
-					"DA_lenth_count",
-					"DA_lenth_en",
-					"O_baud_rate",
-					"W_baud_rate",
-					"R_tx_dat",
-					"R_check_mode",
-					"I_check_mode",
-					"O_rx_dat",
-					"O_rx_ena",
-					"R_even_check",
-					"R_check_mode",
-					"I_check_mode",
-					"R_tx_dat",
-					"R_even_check",
-					"end",
-					"I_check_mode",
-					"R_tx_dat",
-					"R_check_data",
-					"R_cnt_num",
-					"I_check_mode",
-					"W_check_mode",
-					"I_check_mode",
-					"W_check_mode",
-					"W_baud_rate",
-					"O_check_mode",
-					"O_baud_rate",
-					"O_check_mode",
-					"W_baud_rate",
-					"I_baud_rate"
+					"re_decl",
+					"alignDecl",
+					"\\[",
+					"re_decl",
+					"re_var",
+					"re_decl",
+					"|",
+					"re_decl",
+					"re_var",
+					"re_bw",
+					"alignDecl",
+					"alignAssign",
+					"re_bw",
+					"re_var",
+					"re_decl",
+					"re_var",
+					"re_decl",
+					"re_bw",
+					"state",
+					"states",
+					"VerilogAlign",
+					"alignDecl",
+					"block_state",
+					"txt",
+					"W_200mhz_clk",
+					"gtx_clk90_bufg",
+					"refclk_bufg",
+					"s_axi_aclk",
+					"gtx_clk_bufg",
+					"W_rang_i_dat",
+					"W_100mhz_clk",
+					"O_ctrl_en",
+					"reg",
+					"Q0_CLK0_GTREFCLK_PAD_N_IN",
+					"W_100mhz_clk",
+					"output",
+					"input",
+					"O_m_ctrl_ena",
+					"I_ctrl_ena",
+					"R3_ctrl_ena",
+					"W_ram_add",
+					"R_ctrl6_num",
+					"R_ctrl_num",
+					"I_d1_target_ena",
+					"W_d2_target_energy",
+					"R_tx_fifo1_rd",
+					"R_tx_fifo1_data",
+					"I_target_range",
+					"W_slave_speed_ena",
+					"W_slave_speed",
+					"W_rd_fft_addr",
+					"I_rd_addr",
+					"I_cfar1_end",
+					"I_result1_end",
+					"I_rd_addr",
+					"),\n",
+					"W_wr_end",
+					"W_clr_cnt_num",
+					"W_m_result_dout",
+					"W_m_rd_empty",
+					"W_fifo_out_ena",
+					"R_m_rd_en",
+					"W_m_rd_empty",
+					"R1_rang_ena",
+					"R_rang_ena",
+					"R_range_cfar",
+					"R_rang_ena",
+					"R_rang_cfar",
+					"R_rang_ena",
+					"R_result_in",
+					"R_rang_ena",
+					"I_rang_ena",
+					"R_rang_ena",
+					"I_rang_ena",
+					"R_cfar_data",
+					"I_range_cfar",
+					"W_m_result_din",
+					"W_cfar_dat",
+					"I_range_cfar",
+					"I_s_target_range",
+					"I_range_cfar",
+					"I_s_target_range",
+					"input",
+					"R_result_wr_addr",
+					"I_cfar_data",
+					"I_cfar_ena",
+					"I_rd_addr",
+					"W_rd_fft_addr",
+					"W_clr_cnt_num",
+					"R1_config_data",
+					"R_config_data",
+					"R1_config_data",
+					"R_config_data",
+					"R1_config_data",
+					"R_data_total",
+					"R1_config_data",
+					"I_config_data",
+					"I_rang_ena",
+					"I_range_cfar",
+					"I_rang_ena",
+					"I_range_cfar",
+					"R_config_data",
+					"W_m_result_dout",
+					"R_s_target_energy",
+					"R_data_sregpd",
+					"I_s_target_range",
+					"R_s_target_ena",
+					"R_config_data",
+					"R1_config_data",
+					"R_config_data",
+					"R1_config_data",
+					"R_config_data",
+					"I_config_data",
+					"I_config_ena",
+					"O_sqrt_ena",
+					"R_rdata_delay7",
+					"I_cfar_data",
+					"O_real_data_ena",
+					"O_real_data",
+					"I_wr_end",
+					"W_wr_end",
+					"W_dis_ram_wr",
+					"W_dis_ram_data",
+					"I_result1_ena",
+					"I_range_cfar",
+					"W_cfar_data_ena",
+					"I_cfar_data",
+					"R_start_rd"
 				],
 				"highlight": true,
 				"in_selection": false,
@@ -1175,73 +1461,71 @@
 				"whole_word": true,
 				"wrap": true
 			},
-			"folders":
-			[
-				{
-					"path": "E:\\FPGA\\A7_changzhou\\changzhou.srcs\\sources_1\\new"
-				}
-			],
 			"groups":
 			[
 				{
-					"selected": 3,
+					"selected": 0,
 					"sheets":
 					[
 						{
 							"buffer": 0,
-							"file": "/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/top.sv",
+							"file": "/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/rtl/accu_data.v",
 							"semi_transient": false,
 							"settings":
 							{
-								"buffer_size": 17418,
+								"buffer_size": 19985,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										7340,
-										7340
+										3046,
+										3046
 									]
 								],
 								"settings":
 								{
+									"is_init_dirty_state": true,
 									"origin_encoding": "ASCII",
 									"syntax": "Packages/sublimesystemverilog/SystemVerilog.sublime-syntax",
 									"tab_size": 4,
 									"translate_tabs_to_spaces": true
 								},
 								"translation.x": 0.0,
-								"translation.y": 2178.0,
+								"translation.y": 770.0,
 								"zoom_level": 1.0
 							},
-							"stack_index": 2,
+							"stack_index": 0,
 							"type": "text"
 						},
 						{
 							"buffer": 1,
-							"file": "/E/FPGA/A7_changzhou/changzhou.srcs/constrs_1/new/top.xdc",
+							"file": "/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/rtl/top.v",
 							"semi_transient": false,
 							"settings":
 							{
-								"buffer_size": 11898,
+								"buffer_size": 28643,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										4059,
-										4059
+										15577,
+										15106
 									]
 								],
 								"settings":
 								{
+									"is_init_dirty_state": false,
 									"origin_encoding": "ASCII",
-									"syntax": "Packages/sublimesystemverilog/SystemVerilog.sublime-syntax"
+									"syntax": "Packages/sublimesystemverilog/SystemVerilog.sublime-syntax",
+									"tab_size": 4,
+									"translate_tabs_to_spaces": true
 								},
 								"translation.x": 0.0,
-								"translation.y": 0.0,
+								"translation.y": 5367.0,
 								"zoom_level": 1.0
 							},
 							"stack_index": 3,
@@ -1249,30 +1533,31 @@
 						},
 						{
 							"buffer": 2,
-							"file": "/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/serdes/serdes_exdes.v",
+							"file": "/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/top_tb.v",
 							"semi_transient": false,
 							"settings":
 							{
-								"buffer_size": 16228,
+								"buffer_size": 83544,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										16211,
-										15696
+										29647,
+										29647
 									]
 								],
 								"settings":
 								{
+									"is_init_dirty_state": false,
 									"origin_encoding": "ASCII",
 									"syntax": "Packages/sublimesystemverilog/SystemVerilog.sublime-syntax",
 									"tab_size": 4,
 									"translate_tabs_to_spaces": true
 								},
 								"translation.x": 0.0,
-								"translation.y": 4259.0,
+								"translation.y": 9142.0,
 								"zoom_level": 1.0
 							},
 							"stack_index": 7,
@@ -1280,187 +1565,160 @@
 						},
 						{
 							"buffer": 3,
-							"file": "/E/FPGA/rtl_template/xilinx_primitives.sv",
+							"file": "/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/gene_data.v",
 							"semi_transient": false,
 							"settings":
 							{
-								"buffer_size": 1137,
+								"buffer_size": 20174,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										1137,
-										955
+										1979,
+										1979
 									]
 								],
 								"settings":
 								{
-									"origin_encoding": "ASCII",
-									"syntax": "Packages/sublimesystemverilog/SystemVerilog.sublime-syntax"
-								},
-								"translation.x": 0.0,
-								"translation.y": 468.0,
-								"zoom_level": 1.0
-							},
-							"stack_index": 1,
-							"type": "text"
-						},
-						{
-							"buffer": 4,
-							"file": "/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/serdes_rom_ad.dat",
-							"semi_transient": false,
-							"settings":
-							{
-								"buffer_size": 3905,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										2138,
-										2138
-									]
-								],
-								"settings":
-								{
-									"origin_encoding": "ASCII",
-									"syntax": "Packages/Text/Plain text.tmLanguage"
-								},
-								"translation.x": 0.0,
-								"translation.y": 585.0,
-								"zoom_level": 1.0
-							},
-							"stack_index": 4,
-							"type": "text"
-						},
-						{
-							"buffer": 5,
-							"file": "/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/serdes_rx_ctrl.sv",
-							"semi_transient": false,
-							"settings":
-							{
-								"buffer_size": 24829,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										16043,
-										16056
-									]
-								],
-								"settings":
-								{
+									"is_init_dirty_state": false,
 									"origin_encoding": "ASCII",
 									"syntax": "Packages/sublimesystemverilog/SystemVerilog.sublime-syntax",
 									"tab_size": 4,
 									"translate_tabs_to_spaces": true
 								},
 								"translation.x": 0.0,
-								"translation.y": 2693.0,
+								"translation.y": 260.0,
 								"zoom_level": 1.0
 							},
 							"stack_index": 6,
 							"type": "text"
 						},
 						{
-							"buffer": 6,
-							"file": "/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/dac_if.sv",
+							"buffer": 4,
+							"file": "/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/sublimesystemverilog/verilog_align.py",
 							"semi_transient": false,
 							"settings":
 							{
-								"buffer_size": 16784,
+								"buffer_size": 3789,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										722,
-										733
+										3547,
+										3559
 									]
 								],
 								"settings":
 								{
+									"is_init_dirty_state": false,
 									"origin_encoding": "ASCII",
-									"syntax": "Packages/sublimesystemverilog/SystemVerilog.sublime-syntax",
+									"syntax": "Packages/Python/Python.sublime-syntax",
 									"tab_size": 4,
 									"translate_tabs_to_spaces": true
 								},
 								"translation.x": 0.0,
-								"translation.y": 692.0,
+								"translation.y": 65.0,
 								"zoom_level": 1.0
 							},
 							"stack_index": 5,
 							"type": "text"
-						}
-					]
-				},
-				{
-					"selected": 0,
-					"sheets":
-					[
+						},
 						{
-							"buffer": 7,
+							"buffer": 5,
+							"file": "/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
 							"semi_transient": false,
 							"settings":
 							{
-								"buffer_size": 250,
+								"buffer_size": 2663,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										250,
-										52
+										788,
+										801
 									]
 								],
 								"settings":
 								{
-									"auto_name": "E:/FPGA/A7_changzhou/changzhou.runs/impl_1/top.bit",
-									"syntax": "Packages/Text/Plain text.tmLanguage"
+									"is_init_dirty_state": false,
+									"origin_encoding": "ASCII",
+									"syntax": "Packages/JavaScript/JSON.sublime-syntax",
+									"tab_size": 4,
+									"translate_tabs_to_spaces": true
 								},
 								"translation.x": 0.0,
 								"translation.y": 0.0,
 								"zoom_level": 1.0
 							},
-							"stack_index": 0,
+							"stack_index": 4,
 							"type": "text"
 						},
 						{
-							"buffer": 8,
-							"file": "/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/top_test_led.sv",
+							"buffer": 6,
+							"file": "/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/sublimesystemverilog/verilogutil/verilog_beautifier.py",
 							"semi_transient": false,
 							"settings":
 							{
-								"buffer_size": 1467,
+								"buffer_size": 59422,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										1360,
-										1068
+										1092,
+										1092
 									]
 								],
 								"settings":
 								{
+									"is_init_dirty_state": false,
 									"origin_encoding": "ASCII",
-									"syntax": "Packages/sublimesystemverilog/SystemVerilog.sublime-syntax",
+									"syntax": "Packages/Python/Python.sublime-syntax",
+									"tab_size": 4,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 130.0,
+								"translation.y": 11.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 1,
+							"type": "text"
+						},
+						{
+							"buffer": 7,
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 23624,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										0,
+										23624
+									]
+								],
+								"settings":
+								{
+									"is_init_dirty_state": true,
+									"syntax": "Packages/Python/Python.sublime-syntax",
 									"tab_size": 4,
 									"translate_tabs_to_spaces": true
 								},
 								"translation.x": 0.0,
-								"translation.y": 117.0,
+								"translation.y": 1629.0,
 								"zoom_level": 1.0
 							},
-							"stack_index": 8,
+							"stack_index": 2,
 							"type": "text"
 						}
 					]
@@ -1483,18 +1741,11 @@
 						0,
 						1,
 						1
-					],
-					[
-						1,
-						0,
-						2,
-						1
 					]
 				],
 				"cols":
 				[
 					0.0,
-					0.284296028881,
 					1.0
 				],
 				"rows":
@@ -1510,14 +1761,14 @@
 			},
 			"output.exec":
 			{
-				"height": 208.0
+				"height": 232.0
 			},
 			"output.find_results":
 			{
 				"height": 0.0
 			},
 			"pinned_build_system": "Packages/Python/Python.sublime-build",
-			"position": "0,2,3,-32000,-32000,-1,-1,597,491,59,1147",
+			"position": "0,2,3,-1,-1,-1,-1,638,105,100,761",
 			"project": "",
 			"replace":
 			{
@@ -1551,7 +1802,7 @@
 				],
 				"width": 0.0
 			},
-			"selected_group": 1,
+			"selected_group": 0,
 			"settings":
 			{
 			},
@@ -1559,12 +1810,12 @@
 			"show_open_files": false,
 			"show_tabs": true,
 			"side_bar_visible": true,
-			"side_bar_width": 258.0,
+			"side_bar_width": 210.0,
 			"status_bar_visible": true,
 			"template_settings":
 			{
 			},
-			"window_id": 2,
+			"window_id": 20,
 			"workspace_name": ""
 		}
 	],

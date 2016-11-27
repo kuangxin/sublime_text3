@@ -1,13 +1,22 @@
 {
 	"folder_history":
 	[
+		"/E/FPGA/s_m_test_0720/S_K7_M480_one_test/xilinx/top/rtl",
+		"/E/FPGA/s_m_test_0720/S_K7_M480_one_test/xilinx/rtl",
+		"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/rtl/serdes_if",
+		"/E/FPGA/Bird_Radar_v2/MS_K7_P/rtl",
+		"/F/2016学习/学习论文/jpeg2000/rtl",
+		"/E/FPGA/0801/0801/MS_K7_P/rtl",
+		"/E/FPGA/changzhou_reset_n/changzhou_reset_n.srcs",
+		"/E/FPGA/A7_changzhou_reset_n/changzhou.srcs",
+		"/E/FPGA/A7_changzhou/changzhou.srcs",
 		"/E/FPGA/K7_changzhou/changzhou.srcs/sources_1/new",
 		"/E/FPGA/rtl_template",
 		"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3",
 		"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new"
 	],
 	"last_version": 3114,
-	"last_window_id": 6,
+	"last_window_id": 20,
 	"log_indexing": false,
 	"settings":
 	{
@@ -19,24 +28,140 @@
 				"selected_items":
 				[
 					[
-						"W_rx",
-						"W_rx_clk"
+						"dr",
+						"DRP_CLK_IN"
+					],
+					[
+						"R",
+						"R_powerup_ok"
+					],
+					[
+						"Oc",
+						"O_config_dat"
+					],
+					[
+						"w",
+						"W_rx_link"
+					],
+					[
+						"P",
+						"P_RX_SYNC"
+					],
+					[
+						"tx",
+						"W_tx_link"
+					],
+					[
+						"rx",
+						"W_rx_link"
+					],
+					[
+						"W",
+						"W_rx_link"
+					],
+					[
+						"r1",
+						"R1_serdes_data"
+					],
+					[
+						"Rdais",
+						"R_data_is_k"
+					],
+					[
+						"O_c",
+						"O_m_ctrl_ena"
+					],
+					[
+						"img",
+						"IMG_HADD_WIDTH"
+					],
+					[
+						"S",
+						"STATE2"
+					],
+					[
+						"cons",
+						"CONST_ETA"
+					],
+					[
+						"ws",
+						"W_sum_x"
+					],
+					[
+						"m",
+						"multi_MxN"
 					],
 					[
 						"al",
 						"al	always"
 					],
 					[
-						"I_",
-						"I_baud_rate"
+						"s",
+						"W_sum_x"
 					],
 					[
-						"O_u",
-						"O_uart_trans_clk	reg"
+						"be",
+						"beg	begin .. end"
+					],
+					[
+						"da",
+						"DATA_WIDTH"
 					],
 					[
 						"div",
 						"div	comment_long"
+					],
+					[
+						"I_c",
+						"I_ctrl_ena"
+					],
+					[
+						"Is",
+						"I_sys_rst_n"
+					],
+					[
+						"I_",
+						"I_signal_ena"
+					],
+					[
+						"I",
+						"I_signal_ena"
+					],
+					[
+						"write",
+						"write_ctrl"
+					],
+					[
+						"bit",
+						"BITSTREAM"
+					],
+					[
+						"a",
+						"A"
+					],
+					[
+						"lien",
+						"line1"
+					],
+					[
+						"for",
+						"forv	Vector For Loop"
+					],
+					[
+						"rx_",
+						"R_rx_isUART"
+					],
+					[
+						"R_ex",
+						"R_exchange_dat0"
+					],
+					[
+						"W_rx",
+						"W_rx_clk"
+					],
+					[
+						"O_u",
+						"O_uart_trans_clk	reg"
 					],
 					[
 						"RST",
@@ -61,14 +186,6 @@
 					[
 						"Ic",
 						"I_SCLK"
-					],
-					[
-						"I",
-						"I_rst_n"
-					],
-					[
-						"r1",
-						"REG1_CONTINUE_MODE"
 					],
 					[
 						"r3",
@@ -97,10 +214,6 @@
 					[
 						"I_ser",
 						"I_serdes_ena"
-					],
-					[
-						"da",
-						"DA_data_begin"
 					],
 					[
 						"U",
@@ -159,10 +272,6 @@
 						"HEAD_TYPE"
 					],
 					[
-						"be",
-						"beg	begin .. end"
-					],
-					[
 						"data",
 						"sync_data_valid"
 					],
@@ -174,6 +283,22 @@
 			},
 			"build_system_choices":
 			[
+				[
+					[
+						[
+							"Packages/C++/C++ Single File.sublime-build",
+							""
+						],
+						[
+							"Packages/C++/C++ Single File.sublime-build",
+							"Run"
+						]
+					],
+					[
+						"Packages/C++/C++ Single File.sublime-build",
+						"Run"
+					]
+				],
 				[
 					[
 						[
@@ -189,25 +314,41 @@
 						"Packages/Python/Python.sublime-build",
 						""
 					]
+				],
+				[
+					[
+						[
+							"Packages/User/C++.sublime-build",
+							""
+						],
+						[
+							"Packages/User/C++.sublime-build",
+							"Run"
+						]
+					],
+					[
+						"Packages/User/C++.sublime-build",
+						"Run"
+					]
 				]
 			],
 			"build_varint": "",
 			"command_palette":
 			{
-				"height": 242.0,
-				"last_filter": "insta",
+				"height": 392.0,
+				"last_filter": "Package Control: ",
 				"selected_items":
 				[
 					[
-						"insta",
-						"Package Control: Install Package"
+						"Package Control: ",
+						"Package Control: Disable Package"
 					],
 					[
-						"Package Control: ",
-						"Package Control: List Packages"
+						"insta",
+						"Package Control: Install Package"
 					]
 				],
-				"width": 432.0
+				"width": 400.0
 			},
 			"console":
 			{
@@ -228,138 +369,138 @@
 			},
 			"file_history":
 			[
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/uart_rx.v",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/uart_tx.v",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/tob_tb.sv",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/top.sv",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/serdes_rom_uart.dat",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new - 24uart/uart_user.v",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new - 24uart/divide_325.v",
-				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/sublimesystemverilog/Snippets/always.sublime-snippet",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/constrs_1/new/top.xdc",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/serdes_wrapper.sv",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/serdes_exdes.v",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/uart.sv",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/uart_user.v",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/serdes_tx_ctrl.sv",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/serdes_rx_ctrl.sv",
-				"/E/FPGA/K7_changzhou/changzhou.srcs/sources_1/new/dac_if_top.sv",
-				"/E/FPGA/K7_changzhou/changzhou.srcs/sources_1/new/dac_ifx4.sv",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/dac_if_top.sv",
+				"/G/FPGA_Backup/Xilinx/Chengdu_Bird_Radar/0908_FPGA_PRJ/MS_K7_P/MS_K7_P/rtl/serdes_if/serdes_tran_ctrl_tb.v",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/rtl/serdes_ifx8/serdes_tran_ctrl_tb.v",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/rtl/serdes_ifx8/serdes_tran_ctrl.v",
+				"/G/FPGA_Backup/Xilinx/Chengdu_Bird_Radar/0908_FPGA_PRJ/MS_K7_P/MS_K7_P/rtl/cfar_target_tx_tran_ctrl.v",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/rtl/accu_data.v",
+				"/G/FPGA_Backup/Xilinx/Chengdu_Bird_Radar/0908_FPGA_PRJ/MS_K7_P/MS_K7_P/rtl/top.v",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/rtl/top.v",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/rtl/accu_data_TB.v",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/serdes_rx_ctrl.v",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/top.v",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/ctrl_signal.v",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/write_ctrl.v",
+				"/E/FPGA/k7_m_simulation/k7_m_simulation/write_ctrl/top.v",
+				"/E/FPGA/s_m_test_0720/S_K7_M420_one_test/xilinx/top/top.v",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/ram_array80.v",
+				"/E/FPGA/k7_m_simulation/k7_m_simulation/write_ctrl/ram_array80.v",
+				"/E/FPGA/s_m_test_0720/S_K7_M480_one_test/xilinx/top/top.v",
+				"/C/Users/Kuangxin/Desktop/ug480_7Series_XADC/verilog/ug480_tb.v",
+				"/C/Users/Kuangxin/Desktop/ug480_7Series_XADC/verilog/ug480.v",
+				"/E/FPGA/s_m_test_0720/S_K7_M420_one_test/xilinx/top/sqrt_cfar.v",
+				"/E/FPGA/s_m_test_0720/S_K7_M480_one_test/xilinx/top/rtl/ug480.v",
+				"/C/Users/Kuangxin/Desktop/ug480_7Series_XADC/verilog/ug480.xdc",
+				"/C/Users/Kuangxin/Desktop/ug480_7Series_XADC/readme.txt",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/ctrl_mode.v",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/read_ctrl.v",
+				"/e/FPGA/K7_serdes/gtwizard_0_example/gtwizard_0_example.srcs/sim_1/imports/simulation/gtwizard_0_tb.v",
+				"/E/FPGA/K7_serdes/gtwizard_0_example/gtwizard_0_example.srcs/sources_1/imports/example_design/gt_rom_init_tx.dat",
+				"/e/FPGA/K7_serdes/gtwizard_0_example/gtwizard_0_example.srcs/sources_1/imports/example_design/gtwizard_0_gt_frame_check.v",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/ipcore_dir/serdes_coe/example_design/serdes_coe_gt_frame_gen.v",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/ipcore_dir/serdes_coe/example_design/serdes_coe_exdes.v",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/serdes_ifx8/serdes_coe_exdes.v",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/ipcore_dir/serdes_coe/example_design/serdes_coe_gt_frame_check.v",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/ipcore_dir/serdes_coe/example_design/gt_rom_init_tx.dat",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/ipcore_dir/serdes_coe/example_design/gt_rom_init_rx.dat",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/serdes_ifx8/serdes_coe_gt.v",
+				"/E/FPGA/s_m_test_0720/S_K7_M420_one_test/xilinx/top/top.ucf",
+				"/E/FPGA/s_m_test_0720/S_K7_M420_one_test/xilinx/top/serdes_rx_ctrl.v",
+				"/E/FPGA/s_m_test_0720/S_K7_M420_one_test/xilinx/rtl/serdes_ifx8/serdes_k7_if.v",
+				"/E/FPGA/s_m_test_0720/S_K7_M420_one_test/xilinx/rtl/serdes_ifx8/serdes_coe_gt.v",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/no_bit/rx_data.cdc",
+				"/E/FPGA/s_m_test_0720/S_K7_M420_one_test/xilinx/top/rx_data.cdc",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/rtl/serdes_ifx8/serdes_coe_gt.v",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/ipcore_dir/serdes_coe_gt.v",
+				"/E/FPGA/rtl_template/serdesx8/serdes_coe_gt.v",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/rtl/serdes_ifx8/serdes_k7_if.v",
+				"/C/Users/Kuangxin/Desktop/example_design/serdes_coe_gt.v",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/rtl/serdes_ifx8/serdes_coe_exdes.v",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/serdes_ifx8/serdes_coe.v",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/serdes_ifx8/serdes_coe_init.v",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/utriEMAC_clk_wiz.v",
+				"/G/FPGA_Backup/Xilinx/Chengdu_Bird_Radar/0908_FPGA_PRJ/M_EPLD_syn/M_EPLD_syn/rtl/top.v",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/serdes_ifx8/serdes_k7_if.v",
+				"/C/Users/Kuangxin/Desktop/example_design0/serdes_coe_exdes.v",
+				"/G/FPGA_Backup/Xilinx/Chengdu_Bird_Radar/0908_FPGA_PRJ/M_EPLD_syn/M_EPLD_syn/rtl/cpu_ctrl.v",
+				"/E/FPGA/rtl_template/vivado_serdes_test/example_design/serdes_gt_frame_check.v",
+				"/E/FPGA/A7_serdes_x1/serdes_example/serdes_example.srcs/sources_1/imports/example_design/serdes_gt_frame_check.v",
 				"/E/FPGA/A7_serdes_x1/serdes_example/serdes_example.srcs/sources_1/imports/example_design/serdes_exdes.v",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/constrs_1/new/serdes_exdes.v",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/dac_if_tb.sv",
-				"/e/FPGA/A7_serdes_x1/serdes_example/serdes_example.srcs/sources_1/imports/example_design/serdes_exdes.v",
-				"/E/FPGA/A7_serdes_x1/serdes_example/serdes_example.srcs/sources_1/imports/example_design/serdes_gt_frame_gen.v",
-				"/E/FPGA/A7_serdes_x1/serdes_example/serdes_example.srcs/sources_1/imports/example_design/gt_rom_init_rx.dat",
-				"/E/FPGA/PPC_20150715_50T/xilinx/src/serdes_if.v",
-				"/E/FPGA/PPC_20150715_50T/xilinx/src/top.v",
-				"/e/FPGA/A7_serdes_x1/serdes_example/serdes_example.srcs/constrs_1/imports/example_design/serdes_exdes.xdc",
-				"/C/Users/Kuangxin/AppData/Local/Temp/serdes.xdc",
-				"/C/Users/Kuangxin/AppData/Local/Temp/serdes.veo",
-				"/C/Users/Kuangxin/AppData/Local/Temp/ila.veo",
+				"/E/FPGA/rtl_template/serdes_ifx8/serdes_k7_if.v",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/top.ucf",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/rtl/serdes_if/serdes_k7_if.v",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/rtl/serdes_if/serdes_tran_ctrl.v",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/serdes_coe_exdes.v",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/rtl/serdes_if/serdes_coe_exdes.v",
+				"/G/FPGA_Backup/Xilinx/Chengdu_Bird_Radar/0908_FPGA_PRJ/MS_K7_P/MS_K7_P/rtl/serdes_if/serdes_tran_ctrl.v",
+				"/G/FPGA_Backup/Xilinx/Chengdu_Bird_Radar/0908_FPGA_PRJ/M_K7_M/M_K7_M/xilinx/top/serdes_rx_ctrl.v",
+				"/E/FPGA/s_m_test_0720/S_K7_M420_one_test/xilinx/top/ipcore_dir/xadc/simulation/timing/xadc_tb.v",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/no_bit/serdes_rx.cdc",
+				"/e/FPGA/A7_xadc/xadc_wiz_0_example/xadc_wiz_0_example.srcs/sources_1/imports/example_design/xadc_wiz_0_exdes.v",
+				"/C/Users/Kuangxin/AppData/Local/Temp/xadc_wiz_0.v",
+				"/e/FPGA/A7_xadc/xadc_wiz_0_example/xadc_wiz_0_example.srcs/sim_1/imports/xadc_wiz_0/xadc_wiz_0/simulation/xadc_wiz_0_tb.v",
+				"/E/FPGA/s_m_test_0720/S_K7_M420_one_test/xilinx/top/ipcore_dir/xadc/example_design/xadc_exdes.v",
+				"/E/FPGA/s_m_test_0720/S_K7_M420_one_test/xilinx/top/ipcore_dir/xadc/simulation/xadc_tb.v",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/serdes_tx.cdc",
+				"/E/FPGA/s_m_test_0720/S_K7_M420_one_test/xilinx/top/serdes_k7_if.v",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/serdes_k7_if.v",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/serdes_rx.cdc",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/top.ucf",
+				"/E/FPGA/rtl_template/serdesx8/top.ucf",
+				"/E/FPGA/rtl_template/serdesx8/serdes_rx.cdc",
+				"/E/FPGA/rtl_template/serdesx8/serdes_top.v",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/ipcore_dir/serdes_coe.v",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/ipcore_dir/serdes_coe/example_design/serdes_coe_tx_startup_fsm.v",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/ipcore_dir/serdes_coe/example_design/serdes_coe_gt_usrclk_source.v",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/ipcore_dir/serdes_coe/example_design/serdes_coe_init.v",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/rtl/serdes_if/serdes_k7_if_tb.v",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/rtl/serdes_if/top.v",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/rtl/serdes_if/serdes_top.v",
+				"/E/FPGA/rtl_template/serdesx1/serdes_k7_if.v",
+				"/E/FPGA/s_m_test_0720/S_K7_M420_one_test/xilinx/rtl/serdes_coe_exdes.v",
+				"/C/Users/Kuangxin/Desktop/cdc0.txt",
+				"/C/Users/Kuangxin/Desktop/cdc1.txt",
+				"/E/FPGA/s_m_test_0720/S_K7_M480_one_test/xilinx/top/ipcore_dir/serdes_coe/example_design/serdes_coe_exdes.v",
+				"/E/FPGA/s_m_test_0720/S_K7_M480_one_test/xilinx/top/ipcore_dir/serdes_coe/example_design/serdes_coe_gt_frame_check.v",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/ipcore_dir/serdes_coe/example_design/serdes_coe_exdes.v",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/ipcore_dir/serdes_coe/example_design/serdes_coe_gt_frame_check.v",
+				"/E/FPGA/rtl_template/serdes_test/example_design/serdes_exdes.v",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/ipcore_dir/dcm_400mhz.v",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/bit_file/serdes_tx.cdc",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/serdes_k7_slave_if.v",
+				"/E/FPGA/s_m_test_0720/M_K7_M_one_test/xilinx/top/ipcore_dir/serdes_coe/example_design/serdes_coe_exdes.ucf",
 				"/E/FPGA/rtl_template/serdes/example_design/serdes_exdes.v",
-				"/E/FPGA/K7_serdes/serdes_example/serdes_example/serdes_example.srcs/sources_1/imports/example_design/serdes_exdes.v",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/top_test_led.sv",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/constrs_1/new/led.xdc",
-				"/C/Users/Kuangxin/Documents/python/top_test_led.sv",
-				"/C/Users/Kuangxin/Documents/python/generate_sine.py",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/dac_ifx4.sv",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/dac_if.sv",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/serdes_rx_ctrl_tb.sv",
-				"/E/FPGA/changzhou_Chnl2/Chnl_kintex7_2048chnl/rtl/DA_module.v",
-				"/C/Users/Kuangxin/Documents/MATLAB/sin12.m",
-				"/C/Users/Kuangxin/Documents/MATLAB/genarate_sin.m",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/dac_rom.dat",
-				"/E/FPGA/changzhou_Chnl2/Chnl_kintex7_2048chnl/rtl/test_top_TB.v",
-				"/E/FPGA/changzhou_Chnl2/Chnl_kintex7_2048chnl/rtl/top.v",
-				"/E/FPGA/changzhou_Chnl2/Chnl_kintex7_2048chnl/rtl/DA_OUT.v",
-				"/E/FPGA/changzhou_Chnl2/Chnl_kintex7_2048chnl/rtl/top.ucf",
-				"/C/Users/Kuangxin/AppData/Local/Temp/fifo_dac_clocks.xdc",
-				"/C/Users/Kuangxin/AppData/Local/Temp/fifo_dac.xdc",
-				"/C/Users/Kuangxin/AppData/Local/Temp/clk_dac.veo",
-				"/C/Users/Kuangxin/AppData/Local/Temp/fifo_dac.veo",
-				"/C/Users/Kuangxin/Documents/python/dac_rom.dat",
-				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/sublimesystemverilog/Snippets/generate.sublime-snippet",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/divide_325.v",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/uart_tb.v",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/serdes_w",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/serdes_rom.dat",
-				"/C/Xilinx/Vivado/2015.4/scripts/init.tcl",
-				"/C/Xilinx/Vivado/2015.4/examples/Vivado_Tutorial/Sources/hdl/or1200/or1200_cpu.v",
-				"/C/Xilinx/Vivado/2015.4/examples/Vivado_Tutorial/run_cpu_kintex7_batch.tcl",
-				"/C/Xilinx/Vivado/2015.4/examples/Vivado_Tutorial/create_bft_kintex7_batch.tcl",
-				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
-				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
-				"/C/Users/Kuangxin/AppData/Local/Temp/HZ$D.876.391/HZ$D.876.392/aggregate_data_types_example1/array_unpacked.sv",
-				"/C/Users/Kuangxin/AppData/Local/Temp/HZ$D.795.1613/HZ$D.795.1614/aggregate_data_types_example2/array_packed.sv",
-				"/C/Users/Kuangxin/Desktop/data_types_example1/data_types_example1/ALU.sv",
-				"/C/Users/Kuangxin/Desktop/data_types_example1/data_types_example1/definitions.sv",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/generate_rom.py",
-				"/C/Users/Kuangxin/Documents/python/format_width.py",
-				"/C/Users/Kuangxin/Documents/python/bin2hex.py",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/head_rom.dat",
-				"/C/Users/Kuangxin/AppData/Local/Temp/serdes_rx_fifo.veo",
-				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/sublimesystemverilog/SystemVerilog.sublime-settings",
+				"/E/FPGA/rtl_template/serdesx4/serdes_4if.v",
+				"/C/Users/Kuangxin/AppData/Local/Temp/HZ$D.893.4881/dds_config.v",
+				"/E/FPGA/s_m_test_0720/S_K7_M420_one_test/xilinx/top/serdes_s_k7_if.v",
 				"/E/FPGA/K7_serdes/serdes_example/serdes_example/serdes_example.srcs/sources_1/imports/example_design/serdes_gt_frame_check.v",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/serdes_tx_ctrl_tb.sv",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/serdes_tx_ctrl.v",
-				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/User/SublimeGit.sublime-settings",
-				"/C/Users/Kuangxin/.gitconfig",
-				"/E/FPGA/A7_changzhou/changzhou.sim/sim_1/behav/modelsim.ini",
-				"/C/modeltech_10.0a/modelsim.ini",
-				"/C/modeltech64_10.1c/modelsim.ini",
-				"/E/FPGA/K7_serdes/serdes_example/serdes_example/serdes_example.srcs/sim_1/imports/simulation/serdes_tb.v",
-				"/E/FPGA/A7_changzhou/changzhou.sim/sim_1/behav/top_tb_simulate.do",
-				"/E/FPGA/A7_changzhou/changzhou.sim/sim_3/behav/top_tb_compile.do",
-				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/sublimesystemverilog/verilogutil/verilogutil.py",
-				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/sublimesystemverilog/verilog_module.py",
-				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/sublimesystemverilog/verilog_completion.py",
-				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/top.v",
-				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/sublimesystemverilog/Snippets/comment_box.sublime-snippet",
-				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/sublimesystemverilog/Snippets/comment_long.sublime-snippet",
-				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/sublimesystemverilog/Snippets/comment_short.sublime-snippet",
-				"/H/sublimesystemverilog/Snippets/initial.sublime-snippet",
-				"/E/FPGA/rtl_template/serdes/example_design/gt_rom_init_tx.dat",
-				"/G/软件安装包/常用软件/Sublime Text 2/Packages/Verilog/Snippets/if_else.tmSnippet",
-				"/D/BaiduYunDownload/Sublime Text 2/Sublime Text 2/Packages/Verilog/Snippets/generate.tmSnippet",
-				"/G/软件安装包/常用软件/Sublime Text 2/Packages/Verilog/Snippets/generate.tmSnippet",
-				"/G/软件安装包/常用软件/Sublime Text 2/Packages/Verilog/Snippets/case.tmSnippet",
-				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/sublimesystemverilog/Snippets/case.sublime-snippet",
-				"/G/软件安装包/常用软件/Sublime Text 2/Packages/Verilog/Snippets/begin.tmSnippet",
-				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/sublimesystemverilog/Snippets/module.sublime-snippet",
-				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/sublimesystemverilog/Snippets/if.sublime-snippet",
-				"/C/Users/Kuangxin/AppData/Local/Temp/serdes_ram.veo",
-				"/C/Users/Kuangxin/AppData/Local/Temp/fifo_uart.veo",
-				"/C/Users/Kuangxin/AppData/Local/Temp/serdes_ram.vho",
-				"/E/FPGA/A7_changzhou/changzhou.sim/sim_2/behav/uart_tb_compile.do",
-				"/E/FPGA/A7_changzhou/changzhou.sim/sim_2/behav/modelsim.ini",
-				"/E/FPGA/A7_changzhou/changzhou.sim/sim_2/behav/glbl.v",
-				"/E/FPGA/A7_changzhou/changzhou.sim/sim_2/behav/uart_tb_wave.do",
-				"/E/FPGA/A7_changzhou/changzhou.sim/sim_2/behav/gt_rom_init_tx.dat",
-				"/E/FPGA/rtl_template/serdes/K7_vivado_serdes_x4/serdes_exdes.v",
-				"/e/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example/serdes_example.srcs/sources_1/imports/example_design/serdes_exdes.v",
-				"/e/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example/serdes_example.srcs/sources_1/imports/example_design/serdes_gt_frame_check.v",
-				"/e/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example/serdes_example.srcs/sim_1/imports/simulation/serdes_tb.v",
-				"/e/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example/serdes_example.srcs/sources_1/ip/serdes/serdes.v",
-				"/e/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example/serdes_example.srcs/sources_1/imports/example_design/serdes_gt_frame_gen.v",
-				"/E/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example/serdes_example.srcs/sources_1/imports/example_design/gt_rom_init_tx.dat",
-				"/E/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example/serdes_example.srcs/sim_1/imports/simulation/functional/gt_rom_init_rx.dat",
-				"/E/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example/serdes_example.srcs/sim_1/imports/simulation/functional/gt_rom_init_tx.dat",
-				"/E/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example/serdes_example.runs/impl_1/debug_nets.ltx",
-				"/C/Users/Kuangxin/AppData/Roaming/Xilinx/Vivado/debug_nets.ltx",
-				"/e/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example/serdes_example.srcs/constrs_1/imports/example_design/serdes_exdes.xdc",
-				"/E/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example/serdes_example.srcs/sources_1/imports/example_design/gt_rom_init_rx.dat",
-				"/E/FPGA/rtl_template/mac/gmac_if.v",
-				"/e/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example/serdes_example.srcs/sources_1/ip/serdes/serdes.xdc",
-				"/e/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example/serdes_example.srcs/sources_1/ip/serdes/serdes_multi_gt.v",
-				"/e/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example/serdes_example.srcs/sources_1/ip/serdes/serdes_support.v",
-				"/e/FPGA/yangzhou_signaldetect2/FPGA_PRJ/K7_serdes/serdes_example/serdes_example/serdes_example/serdes_example.srcs/sources_1/ip/serdes/serdes_init.v"
+				"/E/FPGA/K7_serdes/serdes_example/serdes_example/serdes_example.srcs/sources_1/imports/example_design/serdes_exdes.v",
+				"/E/FPGA/K7_serdes/serdes_example/serdes_example/serdes_example.srcs/sources_1/ip/serdes/serdes_init.v",
+				"/E/FPGA/K7_serdes/serdes_example/serdes_example/serdes_example.srcs/sources_1/ip/serdes/serdes.v",
+				"/E/FPGA/K7_serdes/serdes_example/serdes_example/serdes_example.srcs/sources_1/ip/serdes/serdes_multi_gt.v",
+				"/E/FPGA/K7_serdes/serdes_example/serdes_example/serdes_example.srcs/sources_1/ip/serdes/serdes_support.v",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/rtl/serdes_if/serdes_k7_slave.v",
+				"/E/FPGA/s_m_test_0720/M_K7_M_one_test/xilinx/top/serdes_coe_exdes.v",
+				"/E/FPGA/s_m_test_0720/M_K7_M_one_test/xilinx/top/top.v",
+				"/E/FPGA/s_m_test_0720/M_K7_M_one_test/xilinx/top/top.ucf",
+				"/E/FPGA/s_m_test_0720/S_K7_M420_one_test/xilinx/top/ipcore_dir/serdes_coe/example_design/serdes_coe_gt_usrclk_source.v",
+				"/E/FPGA/s_m_test_0720/M_K7_M_one_test/xilinx/top/ipcore_dir/serdes_coe/example_design/serdes_coe_exdes.v",
+				"/E/FPGA/s_m_test_0720/S_K7_M420_one_test/xilinx/top/ipcore_dir/serdes_coe/example_design/serdes_coe_exdes.ucf",
+				"/E/FPGA/s_m_test_0720/M_K7_M_one_test/xilinx/top/ipcore_dir/serdes_coe.v",
+				"/E/FPGA/s_m_test_0720/M_K7_M_one_test/xilinx/top/ipcore_dir/serdes_coe/example_design/serdes_coe_exdes.xdc",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/ipcore_dir/serdes_coe/example_design/serdes_coe_exdes.ucf",
+				"/C/Users/Kuangxin/AppData/Local/Temp/HZ$D.609.2528/HZ$D.609.2529/M_K7_M/xilinx/top/top.v",
+				"/C/Users/Kuangxin/Desktop/ar59851_ISE_14_7_preliminary_rev1/ar59851_ISE_14_7_preliminary_rev1/data/patch_readme/ar59239_Vivado_2013_4_readme_preliminary_rev1.txt",
+				"/C/Users/Kuangxin/AppData/Local/Temp/HZ$D.212.2518/HZ$D.212.2519/MS_K7_P/top.ucf",
+				"/F/2016学习/学习论文/jpeg2000/rtl/dwt.sv",
+				"/F/2016学习/学习论文/jpeg2000/08967574kakaduv5.2.5_exe/Usage_Examples.txt",
+				"/C/Users/Kuangxin/Desktop/branch_stack/branch_stack/test_branchstack.sv",
+				"/C/Users/Kuangxin/Desktop/branch_stack/branch_stack/branchstack2.sv",
+				"/C/Users/Kuangxin/Desktop/branch_stack/branch_stack/sys_defs.sv"
 			],
 			"find":
 			{
-				"height": 23.0
+				"height": 34.0
 			},
 			"find_in_files":
 			{
@@ -373,134 +514,134 @@
 				"case_sensitive": true,
 				"find_history":
 				[
-					"671",
-					"-1",
-					"740",
-					"3233\n3435\n3637\n3839\n3a3b",
-					"23",
-					"R_even_check",
-					"11",
-					"R_count_sample",
-					"P_SAMPLE_BAUD_38400",
-					"P_TRANS_BAUD_38400",
-					"O_uart_sample_clk",
-					"R_param_sample",
-					"R_even_check",
-					"R_cnt_num",
-					"I_rx_dat",
-					"W_baud_rate",
-					"24",
-					"I_tx_dat",
-					"W_uart_ready",
-					"W_ready",
-					"W_uart_ready",
-					"I_uart_ready",
-					"W_uart_ready",
-					"I_uart_ready",
-					"W_baud_rate",
-					"23",
-					"RX",
-					"I_baud_rate",
-					"W_dac_data",
-					"W_dac_ena",
-					"W_tx_clk",
-					"output",
-					"W_SCK",
-					"I_rx_clk",
-					"I_tx_clk",
-					"W_rx_clk",
-					"W_tx_clk",
-					"W_rx_clk",
-					"uart_user uart_generate (\n                        .I_rst_n          (I_rst_n          ),\n                        .I_sys_clk        (I_sys_clk        ),\n                        .I_uart_sample_clk(I_uart_sample_clk),\n                        .I_uart_trans_clk (I_uart_trans_clk ),\n                        .I_tx_clk         (I_tx_clk         ),\n                        .I_rx_clk         (I_rx_clk         ),",
-					"I_div_clk",
-					"I_sample_clk",
-					"I_div_clk",
-					"I_sample_clk",
-					"O_rx_empty",
-					"R_",
-					"R_count_sample",
-					"R_count_trans",
-					"R_count_trans_trans",
-					"R_count_trans_sample",
-					"R_cnt_num",
-					"R_count",
-					"R_cnt_num",
-					"I_sys_clk",
-					"I_clk_50M",
-					"W_uart_trans_clk",
-					"clk_sample",
-					"sample_clk",
-					"div_clk",
-					"23",
-					"I_sample_clk",
-					"I_div_clk",
-					"I_sample_clk",
-					"I_div_clk",
-					"O_uartclk_trans",
-					"O_uartclk_sample",
-					"O_clk_tx",
-					"O_clk_sample",
-					"O_clk_div",
-					"b00_0000_0000_0000_0000_0000_0001",
-					"R_uart_length",
-					"21",
-					"22",
-					"24",
-					"O_uart_rd_en",
-					"59",
-					"R_length_cnt",
-					"25",
-					"23",
-					"27",
-					"26",
-					"24",
-					"UART_data_roll",
-					"R_uart_length",
-					"UART_lenth_count",
-					"O_baud_rate",
-					"R_baud_rate",
-					"R_rx_isUART",
-					"W_rd_dout",
-					"23",
-					"R_cnt_ena",
-					"R_cnt_num",
-					"I_tx_dat",
-					"I_rx_clk",
-					"I_tx_dat",
-					"R_cnt_num",
-					"I_tx_dat",
-					"count",
-					"// TODO: Check connection ! Signal/port not matching : Expecting logic logic [15:0]  -- Found logic [15:0] ",
-					"// TODO: Check connection ! Signal/port not matching : Expecting logic logic  -- Found logic ",
-					"gt0_txfsmresetdone",
-					",",
-					"gt0_rxcharisk",
-					"soft_reset_vio_i",
-					"soft_reset_i",
-					",",
-					"gt0_txusrclk2_i",
-					"gt0_txusrclk_i",
-					"gt0_rxfsmresetdone",
-					"gt0_rxfsmresetdone_r",
-					"gt0_txfsmresetdone_r",
-					"gt0_rxfsmresetdone_i",
-					"gt0_txfsmresetdone_i",
-					"gt0_txfsmresetdone_r",
-					"gt0_rxfsmresetdone_r",
-					"gt0_rxresetdone_r",
-					"gt0_txfsmresetdone_i",
-					"gt0_txresetdone_i",
-					"gt0_rxresetdone_i",
-					"gt0_txfsmresetdone",
-					"gt0_txfsmresetdone_i",
-					"gt0_tx_system_reset_c",
-					"gt0_txfsmresetdone_i",
-					"gt0_rxresetdone_r3",
-					"gt0_tx_system_reset_c",
-					"W_dac_data",
-					"I_SCLK",
-					"var1",
-					"I_SCLK"
+					"W_M420_tx_rd_data",
+					"R_M420_tx_rd_data",
+					"O_tx1_serdes_dat",
+					"P_cycle2",
+					"P_cycle1",
+					"R_M420_result_ena",
+					"I_M420_signal_ena",
+					"R1_M420_signaldata",
+					"R_M420_signaldata",
+					"R1_M420_signaldata",
+					"W_mach_angle_cfar",
+					"R2_mode14_en",
+					"R_fifo_rd_start",
+					"R_M420_tx_rd_en",
+					"W_M420_signaldata",
+					"I_M420_i_result_dat",
+					"SIN1",
+					"COS1",
+					"P_CONST_DATAI",
+					"R3_rang_wr_ena",
+					"I_ctrl_ena",
+					"O_m_ctrl_ena",
+					"O_ctrl_en",
+					"I_ctrl_ena",
+					"I_rang_wr_ena",
+					"I_ram_data_num",
+					"W_in_ram_wr_ena",
+					"R_rang_wr_ena",
+					"R3_rang_wr_ena",
+					"R_rang_wr_ena",
+					"R3_rang_wr_ena",
+					"R_data_ram_wr",
+					"R1_rang_wr_ena",
+					"R2_rang_wr_ena",
+					"I_rang_wr_ena",
+					"I_ctrl_ena",
+					"I_rang_wr_ena",
+					"R_result_ena",
+					"R_rang_wr_ena",
+					"I_rang_wr_ena",
+					"R_data_valid",
+					"I_rang_wr_ena",
+					"R_rang_wr_ena",
+					"R_ram2_num",
+					"P_ADDR_MODE1",
+					"R_addr_mode",
+					"R2_ctrl_ena",
+					"R1_ctrl_ena",
+					"R_ctrl_ena",
+					"I_ctrl_ena",
+					"O_ram_wr_ena",
+					"R7_ctrl_ena",
+					"I_ctrl_ena",
+					"W_ctrl_ena",
+					"DCLK",
+					"VAUXP",
+					"VN",
+					"VP",
+					"CHANNEL",
+					"O_result_exp",
+					"R_delay_blk_exp",
+					"R1_result_blk_exp",
+					"W_fft32_xk_re",
+					"W_fft16_xk_re",
+					"TX_REFCLK_PERIOD",
+					"gttx_reset_i",
+					"rxn_in_i",
+					"txn_out_i",
+					"W_in_ram_wr_ena",
+					"W_rang_wr_ena",
+					"R_rd_mode",
+					"R_fft16_start",
+					"O_fft16_start",
+					"W_fft32_start",
+					"W_fft16_rfd",
+					"W_rd_fft_addr",
+					"W_fft64_start",
+					"W_fft32_start",
+					"W_data_array0",
+					"W_in_ram_wr_ena",
+					"O_rang_i_dat",
+					"R_rang_i_dat",
+					"I_rang_i_dat",
+					"W_rang_i_dat",
+					"W_rx_ctrl_data",
+					"CHANBOND_SEQ_LEN",
+					"3c1c",
+					"RX_DATA_IN",
+					"rx_data_r_track",
+					"bram_data_r",
+					"chanbondseq_in_data",
+					"input_to_chanbond_reg_i",
+					"rx_chanbond_reg",
+					"CHANBOND_SEQ_LEN",
+					"gt7_rxchbondo_i",
+					"gt6_rxchbondo_i",
+					"gt5_rxchbondo_i",
+					"gt4_rxchbondo_i",
+					"gt3_rxchbondo_i",
+					"gt2_rxchbondo_i",
+					"gt1_rxchbondo_i",
+					"gt0_rxchbondo_i",
+					"gt0_rxchanbondseq_i",
+					"gt0_rxchbonden_i",
+					"RXCHBONDLEVEL_IN",
+					"gt0_rxchbondo_i",
+					"00000000000001000000\n00000000000002bc0100\n00000000000004030000\n00000000000006050000\n0000000000003c1c0f00\n0000000000007c5c0f00\n00000000000008070000\n0000000000000a090000\n0000000000000c0b0000\n0000000000000e0d0000\n000000000000100f0000\n00000000000012110000\n00000000000014130000\n00000000000016150000\n00000000000018170000\n0000000000001a190000\n00000000000001000000\n00000000000002bc0100\n00000000000004030000\n00000000000006050000\n0000000000003c1c0f00\n0000000000007c5c0f00\n00000000000008070000\n0000000000000a090000\n0000000000000c0b0000\n0000000000000e0d0000\n000000000000100f0000\n00000000000012110000\n00000000000014130000\n00000000000016150000\n00000000000018170000\n0000000000001a190000\n00000000000001000000\n00000000000002bc0100\n00000000000004030000\n00000000000006050000\n0000000000003c1c0f00\n0000000000007c5c0f00\n00000000000008070000\n0000000000000a090000\n0000000000000c0b0000\n0000000000000e0d0000\n000000000000100f0000\n00000000000012110000\n00000000000014130000\n00000000000016150000\n00000000000018170000\n0000000000001a190000\n00000000000001000000\n00000000000002bc0100\n00000000000004030000\n00000000000006050000\n0000000000003c1c0f00\n0000000000007c5c0f00\n00000000000008070000\n0000000000000a090000\n0000000000000c0b0000\n0000000000000e0d0000\n000000000000100f0000\n00000000000012110000\n00000000000014130000\n00000000000016150000\n00000000000018170000\n0000000000001a190000\n00000000000001000000\n00000000000002bc0100\n00000000000004030000\n00000000000006050000\n0000000000003c1c0f00\n0000000000007c5c0f00\n00000000000008070000\n0000000000000a090000\n0000000000000c0b0000\n0000000000000e0d0000\n000000000000100f0000\n00000000000012110000\n00000000000014130000\n00000000000016150000\n00000000000018170000\n0000000000001a190000\n00000000000001000000\n00000000000002bc0100\n00000000000004030000\n00000000000006050000\n0000000000003c1c0f00\n0000000000007c5c0f00\n00000000000008070000\n0000000000000a090000\n0000000000000c0b0000\n0000000000000e0d0000\n000000000000100f0000\n00000000000012110000\n00000000000014130000\n00000000000016150000\n00000000000018170000\n0000000000001a190000\n00000000000001000000\n00000000000002bc0100\n00000000000004030000\n00000000000006050000\n0000000000003c1c0f00\n0000000000007c5c0f00\n00000000000008070000\n0000000000000a090000\n0000000000000c0b0000\n0000000000000e0d0000\n000000000000100f0000\n00000000000012110000\n00000000000014130000\n00000000000016150000\n00000000000018170000\n0000000000001a190000\n00000000000001000000\n00000000000002bc0100\n00000000000004030000\n00000000000006050000\n0000000000003c1c0f00\n0000000000007c5c0f00\n00000000000008070000\n0000000000000a090000\n0000000000000c0b0000\n0000000000000e0d0000\n000000000000100f0000\n00000000000012110000\n00000000000014130000\n00000000000016150000\n00000000000018170000\n0000000000001a190000\n00000000000001000000\n00000000000002bc0100\n00000000000004030000\n00000000000006050000\n0000000000003c1c0f00\n0000000000007c5c0f00\n00000000000008070000\n0000000000000a090000\n0000000000000c0b0000\n0000000000000e0d0000\n000000000000100f0000\n00000000000012110000\n00000000000014130000\n00000000000016150000\n00000000000018170000\n0000000000001a190000\n00000000000001000000\n00000000000002bc0100\n00000000000004030000\n00000000000006050000\n0000000000003c1c0f00\n0000000000007c5c0f00\n00000000000008070000\n0000000000000a090000\n0000000000000c0b0000\n0000000000000e0d0000\n000000000000100f0000\n00000000000012110000\n00000000000014130000\n00000000000016150000\n00000000000018170000\n0000000000001a190000\n00000000000001000000\n00000000000002bc0100\n00000000000004030000\n00000000000006050000\n0000000000003c1c0f00\n0000000000007c5c0f00\n00000000000008070000\n0000000000000a090000\n0000000000000c0b0000\n0000000000000e0d0000\n000000000000100f0000\n00000000000012110000\n00000000000014130000\n00000000000016150000\n00000000000018170000\n0000000000001a190000\n00000000000001000000\n00000000000002bc0100\n00000000000004030000\n00000000000006050000\n0000000000003c1c0f00\n0000000000007c5c0f00\n00000000000008070000\n0000000000000a090000\n0000000000000c0b0000\n0000000000000e0d0000\n000000000000100f0000\n00000000000012110000\n00000000000014130000\n00000000000016150000\n00000000000018170000\n0000000000001a190000\n00000000000001000000\n00000000000002bc0100\n00000000000004030000\n00000000000006050000\n0000000000003c1c0f00\n0000000000007c5c0f00\n00000000000008070000\n0000000000000a090000\n0000000000000c0b0000\n0000000000000e0d0000\n000000000000100f0000\n00000000000012110000\n00000000000014130000\n00000000000016150000\n00000000000018170000\n0000000000001a190000\n00000000000001000000\n00000000000002bc0100\n00000000000004030000\n00000000000006050000\n0000000000003c1c0f00\n0000000000007c5c0f00\n00000000000008070000\n0000000000000a090000\n0000000000000c0b0000\n0000000000000e0d0000\n000000000000100f0000\n00000000000012110000\n00000000000014130000\n00000000000016150000\n00000000000018170000\n0000000000001a190000\n00000000000001000000\n00000000000002bc0100\n00000000000004030000\n00000000000006050000\n0000000000003c1c0f00\n0000000000007c5c0f00\n00000000000008070000\n0000000000000a090000\n0000000000000c0b0000\n0000000000000e0d0000\n000000000000100f0000\n00000000000012110000\n00000000000014130000\n00000000000016150000\n00000000000018170000\n0000000000001a190000\n00000000000001000000\n00000000000002bc0100\n00000000000004030000\n00000000000006050000\n0000000000003c1c0f00\n0000000000007c5c0f00\n00000000000008070000\n0000000000000a090000\n0000000000000c0b0000\n0000000000000e0d0000\n000000000000100f0000\n00000000000012110000\n00000000000014130000\n00000000000016150000\n00000000000018170000\n0000000000001a190000\n00000000000001000000\n00000000000002bc0100\n00000000000004030000\n00000000000006050000\n0000000000003c1c0f00\n0000000000007c5c0f00\n00000000000008070000\n0000000000000a090000\n0000000000000c0b0000\n0000000000000e0d0000\n000000000000100f0000\n00000000000012110000\n00000000000014130000\n00000000000016150000\n00000000000018170000\n0000000000001a190000\n00000000000001000000\n00000000000002bc0100\n00000000000004030000\n00000000000006050000\n0000000000003c1c0f00\n0000000000007c5c0f00\n00000000000008070000\n0000000000000a090000\n0000000000000c0b0000\n0000000000000e0d0000\n000000000000100f0000\n00000000000012110000\n00000000000014130000\n00000000000016150000\n00000000000018170000\n0000000000001a190000\n00000000000001000000\n00000000000002bc0100\n00000000000004030000\n00000000000006050000\n0000000000003c1c0f00\n0000000000007c5c0f00\n00000000000008070000\n0000000000000a090000\n0000000000000c0b0000\n0000000000000e0d0000\n000000000000100f0000\n00000000000012110000\n00000000000014130000\n00000000000016150000\n00000000000018170000\n0000000000001a190000\n00000000000001000000\n00000000000002bc0100\n00000000000004030000\n00000000000006050000\n0000000000003c1c0f00\n0000000000007c5c0f00\n00000000000008070000\n0000000000000a090000\n0000000000000c0b0000\n0000000000000e0d0000\n000000000000100f0000\n00000000000012110000\n00000000000014130000\n00000000000016150000\n00000000000018170000\n0000000000001a190000\n00000000000001000000\n00000000000002bc0100\n00000000000004030000\n00000000000006050000\n0000000000003c1c0f00\n0000000000007c5c0f00\n00000000000008070000\n0000000000000a090000\n0000000000000c0b0000\n0000000000000e0d0000\n000000000000100f0000\n00000000000012110000\n00000000000014130000\n00000000000016150000\n00000000000018170000\n0000000000001a190000\n00000000000001000000\n00000000000002bc0100\n00000000000004030000\n00000000000006050000\n0000000000003c1c0f00\n0000000000007c5c0f00\n00000000000008070000\n0000000000000a090000\n0000000000000c0b0000\n0000000000000e0d0000\n000000000000100f0000\n00000000000012110000\n00000000000014130000\n00000000000016150000\n00000000000018170000\n0000000000001a190000\n00000000000001000000\n00000000000002bc0100\n00000000000004030000\n00000000000006050000\n0000000000003c1c0f00\n0000000000007c5c0f00\n00000000000008070000\n0000000000000a090000\n0000000000000c0b0000\n0000000000000e0d0000\n000000000000100f0000\n00000000000012110000\n00000000000014130000\n00000000000016150000\n00000000000018170000\n0000000000001a190000\n00000000000001000000\n00000000000002bc0100\n00000000000004030000\n00000000000006050000\n0000000000003c1c0f00\n0000000000007c5c0f00\n00000000000008070000\n0000000000000a090000\n0000000000000c0b0000\n0000000000000e0d0000\n000000000000100f0000\n00000000000012110000\n00000000000014130000\n00000000000016150000\n00000000000018170000\n0000000000001a190000\n00000000000001000000\n00000000000002bc0100\n00000000000004030000\n00000000000006050000\n0000000000003c1c0f00\n0000000000007c5c0f00\n00000000000008070000\n0000000000000a090000\n0000000000000c0b0000\n0000000000000e0d0000\n000000000000100f0000\n00000000000012110000\n00000000000014130000\n00000000000016150000\n00000000000018170000\n0000000000001a190000\n00000000000001000000\n00000000000002bc0100\n00000000000004030000\n00000000000006050000\n0000000000003c1c0f00\n0000000000007c5c0f00\n00000000000008070000\n0000000000000a090000\n0000000000000c0b0000\n0000000000000e0d0000\n000000000000100f0000\n00000000000012110000\n00000000000014130000\n00000000000016150000\n00000000000018170000\n0000000000001a190000\n00000000000001000000\n00000000000002bc0100\n00000000000004030000\n00000000000006050000\n0000000000003c1c0f00\n0000000000007c5c0f00\n00000000000008070000\n0000000000000a090000\n0000000000000c0b0000\n0000000000000e0d0000\n000000000000100f0000\n00000000000012110000\n00000000000014130000\n00000000000016150000\n00000000000018170000\n0000000000001a190000\n00000000000001000000\n00000000000002bc0100\n00000000000004030000\n00000000000006050000\n0000000000003c1c0f00\n0000000000007c5c0f00\n00000000000008070000\n0000000000000a090000\n0000000000000c0b0000\n0000000000000e0d0000\n000000000000100f0000\n00000000000012110000\n00000000000014130000\n00000000000016150000\n00000000000018170000\n0000000000001a190000\n00000000000001000000\n00000000000002bc0100\n00000000000004030000\n00000000000006050000\n0000000000003c1c0f00\n0000000000007c5c0f00\n00000000000008070000\n0000000000000a090000\n0000000000000c0b0000\n0000000000000e0d0000\n000000000000100f0000\n00000000000012110000\n00000000000014130000\n00000000000016150000\n00000000000018170000\n0000000000001a190000\n00000000000001000000\n00000000000002bc0100\n00000000000004030000\n00000000000006050000\n0000000000003c1c0f00\n0000000000007c5c0f00\n00000000000008070000\n0000000000000a090000\n0000000000000c0b0000\n0000000000000e0d0000\n000000000000100f0000\n00000000000012110000\n00000000000014130000\n00000000000016150000\n00000000000018170000\n0000000000001a190000\n00000000000001000000\n00000000000002bc0100\n00000000000004030000\n00000000000006050000\n0000000000003c1c0f00\n0000000000007c5c0f00\n00000000000008070000\n0000000000000a090000\n0000000000000c0b0000\n0000000000000e0d0000\n000000000000100f0000\n00000000000012110000\n00000000000014130000\n00000000000016150000\n00000000000018170000\n0000000000001a190000\n00000000000001000000\n00000000000002bc0100\n00000000000004030000\n00000000000006050000\n0000000000003c1c0f00\n0000000000007c5c0f00\n00000000000008070000\n0000000000000a090000\n0000000000000c0b0000\n0000000000000e0d0000\n000000000000100f0000\n00000000000012110000\n00000000000014130000\n00000000000016150000\n00000000000018170000\n0000000000001a190000\n",
+					"gt0_txcharisk_i",
+					"gt0_txcharisk_float_i",
+					"W_ctrl_ena",
+					"I_ctrl_ena",
+					"W_rd_mode",
+					"I_ctrl_mode",
+					"gt0_txcharisk_float_i",
+					"gt0_txdata_float_i",
+					"gt0_txdata_float16_i",
+					"gt0_txdata_i",
+					"1c",
+					"W_rx_link",
+					"P_RX_SYNC",
+					"R_rx_link",
+					"R_tx_link",
+					"O_data_ena",
+					"gt2_rxdata_i",
+					"W_rx_user_data2",
+					"R_energy_or_iq_gtx0",
+					"R0_energy_or_iq",
+					"gtx0"
 				],
 				"highlight": true,
 				"in_selection": false,
@@ -517,7 +658,7 @@
 			},
 			"incremental_find":
 			{
-				"height": 23.0
+				"height": 21.0
 			},
 			"input":
 			{
@@ -530,7 +671,7 @@
 			},
 			"output.exec":
 			{
-				"height": 433.0
+				"height": 232.0
 			},
 			"output.find_results":
 			{
@@ -539,7 +680,7 @@
 			"pinned_build_system": "Packages/Python/Python.sublime-build",
 			"replace":
 			{
-				"height": 42.0
+				"height": 38.0
 			},
 			"save_all_on_build": true,
 			"select_file":
@@ -573,7 +714,7 @@
 			"show_open_files": false,
 			"show_tabs": true,
 			"side_bar_visible": true,
-			"side_bar_width": 214.0,
+			"side_bar_width": 210.0,
 			"status_bar_visible": true,
 			"template_settings":
 			{
@@ -589,8 +730,160 @@
 				"selected_items":
 				[
 					[
+						"alw",
+						"always_c	always_comb"
+					],
+					[
+						"R_res",
+						"R3_result_dat"
+					],
+					[
+						"I_cf",
+						"I_cfar_ena"
+					],
+					[
+						"vccaux",
+						"vcc_aux_min"
+					],
+					[
+						"vccin",
+						"vccint_min"
+					],
+					[
+						"tem",
+						"temp_min"
+					],
+					[
+						"vccb",
+						"vcc_bram_max"
+					],
+					[
+						"vcca",
+						"vcc_aux_max"
+					],
+					[
+						"temp_",
+						"temp_max"
+					],
+					[
+						"dr",
+						"DRP_CLK_IN"
+					],
+					[
+						"R",
+						"R_powerup_ok"
+					],
+					[
+						"Oc",
+						"O_config_dat"
+					],
+					[
+						"w",
+						"W_rx_link"
+					],
+					[
+						"P",
+						"P_RX_SYNC"
+					],
+					[
+						"tx",
+						"W_tx_link"
+					],
+					[
+						"rx",
+						"W_rx_link"
+					],
+					[
+						"W",
+						"W_rx_link"
+					],
+					[
+						"r1",
+						"R1_serdes_data"
+					],
+					[
+						"Rdais",
+						"R_data_is_k"
+					],
+					[
+						"O_c",
+						"O_m_ctrl_ena"
+					],
+					[
+						"img",
+						"IMG_HADD_WIDTH"
+					],
+					[
+						"S",
+						"STATE2"
+					],
+					[
+						"cons",
+						"CONST_ETA"
+					],
+					[
+						"ws",
+						"W_sum_x"
+					],
+					[
+						"m",
+						"multi_MxN"
+					],
+					[
+						"al",
+						"al	always"
+					],
+					[
+						"s",
+						"W_sum_x"
+					],
+					[
+						"be",
+						"beg	begin .. end"
+					],
+					[
+						"da",
+						"DATA_WIDTH"
+					],
+					[
 						"div",
-						"div	comment_short"
+						"div	comment_long"
+					],
+					[
+						"I_c",
+						"I_ctrl_ena"
+					],
+					[
+						"Is",
+						"I_sys_rst_n"
+					],
+					[
+						"I_",
+						"I_signal_ena"
+					],
+					[
+						"I",
+						"I_signal_ena"
+					],
+					[
+						"write",
+						"write_ctrl"
+					],
+					[
+						"bit",
+						"BITSTREAM"
+					],
+					[
+						"a",
+						"A"
+					],
+					[
+						"lien",
+						"line1"
+					],
+					[
+						"for",
+						"forv	Vector For Loop"
 					],
 					[
 						"rx_",
@@ -603,14 +896,6 @@
 					[
 						"W_rx",
 						"W_rx_clk"
-					],
-					[
-						"al",
-						"al	always"
-					],
-					[
-						"I_",
-						"I_baud_rate"
 					],
 					[
 						"O_u",
@@ -641,14 +926,6 @@
 						"I_SCLK"
 					],
 					[
-						"I",
-						"I_rst_n"
-					],
-					[
-						"r1",
-						"REG1_CONTINUE_MODE"
-					],
-					[
 						"r3",
 						"REG3B_MUTE"
 					],
@@ -675,10 +952,6 @@
 					[
 						"I_ser",
 						"I_serdes_ena"
-					],
-					[
-						"da",
-						"DA_data_begin"
 					],
 					[
 						"U",
@@ -737,106 +1010,82 @@
 						"HEAD_TYPE"
 					],
 					[
-						"be",
-						"beg	begin .. end"
-					],
-					[
 						"data",
 						"sync_data_valid"
-					],
-					[
-						"alw",
-						"always	always Async"
 					]
 				]
 			},
 			"buffers":
 			[
 				{
-					"file": "/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/top.sv",
+					"file": "/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/rtl/accu_data.v",
 					"settings":
 					{
-						"buffer_size": 17439,
+						"buffer_size": 19522,
+						"line_ending": "Windows"
+					}
+				},
+				{
+					"file": "/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/rtl/top.v",
+					"settings":
+					{
+						"buffer_size": 28060,
+						"line_ending": "Windows"
+					}
+				},
+				{
+					"file": "/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/top_tb.v",
+					"settings":
+					{
+						"buffer_size": 83544,
+						"line_ending": "Windows"
+					}
+				},
+				{
+					"file": "/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/gene_data.v",
+					"settings":
+					{
+						"buffer_size": 20174,
+						"line_ending": "Windows"
+					}
+				},
+				{
+					"file": "/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/sublimesystemverilog/verilog_align.py",
+					"settings":
+					{
+						"buffer_size": 3789,
 						"line_ending": "Unix"
 					}
 				},
 				{
-					"file": "/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/serdes_wrapper.sv",
+					"contents": "C:/Users/Kuangxin/AppData/Roaming/Sublime Text 3",
 					"settings":
 					{
-						"buffer_size": 4384,
-						"line_ending": "Windows"
-					}
-				},
-				{
-					"file": "/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/serdes_tx_ctrl.sv",
-					"settings":
-					{
-						"buffer_size": 16584,
-						"line_ending": "Windows"
-					}
-				},
-				{
-					"file": "/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/dac_if.sv",
-					"settings":
-					{
-						"buffer_size": 16749,
-						"line_ending": "Windows"
-					}
-				},
-				{
-					"file": "/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/serdes_rx_ctrl.sv",
-					"settings":
-					{
-						"buffer_size": 24642,
-						"line_ending": "Windows"
-					}
-				},
-				{
-					"file": "/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/uart_clk_gen.v",
-					"settings":
-					{
-						"buffer_size": 5672,
-						"line_ending": "Windows"
-					}
-				},
-				{
-					"file": "/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/uart.sv",
-					"settings":
-					{
-						"buffer_size": 7060,
-						"line_ending": "Windows"
-					}
-				},
-				{
-					"file": "/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/uart_rx.v",
-					"settings":
-					{
-						"buffer_size": 6683,
-						"line_ending": "Windows"
-					}
-				},
-				{
-					"file": "/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/uart_tx.v",
-					"settings":
-					{
-						"buffer_size": 5552,
-						"line_ending": "Windows"
-					}
-				},
-				{
-					"contents": "E:/FPGA/A7_changzhou/changzhou.runs/impl_1/top.bit\n\nwrite_cfgmem -force -format MCS -interface spix4 -size 512 -loadbit \"up 0x0 \\\n    E:/FPGA/A7_changzhou_reset_n/changzhou.runs/impl_1/top.bit\" \\\n    E:/FPGA/A7_changzhou_reset_n/changzhou.runs/impl_1",
-					"settings":
-					{
-						"buffer_size": 250,
+						"buffer_size": 48,
 						"line_ending": "Windows",
-						"name": "E:/FPGA/A7_changzhou/changzhou.runs/impl_1/top.bit"
+						"name": "C:/Users/Kuangxin/AppData/Roaming/Sublime Text 3"
 					}
 				}
 			],
 			"build_system": "",
 			"build_system_choices":
 			[
+				[
+					[
+						[
+							"Packages/C++/C++ Single File.sublime-build",
+							""
+						],
+						[
+							"Packages/C++/C++ Single File.sublime-build",
+							"Run"
+						]
+					],
+					[
+						"Packages/C++/C++ Single File.sublime-build",
+						"Run"
+					]
+				],
 				[
 					[
 						[
@@ -852,25 +1101,41 @@
 						"Packages/Python/Python.sublime-build",
 						""
 					]
+				],
+				[
+					[
+						[
+							"Packages/User/C++.sublime-build",
+							""
+						],
+						[
+							"Packages/User/C++.sublime-build",
+							"Run"
+						]
+					],
+					[
+						"Packages/User/C++.sublime-build",
+						"Run"
+					]
 				]
 			],
 			"build_varint": "",
 			"command_palette":
 			{
-				"height": 242.0,
-				"last_filter": "insta",
+				"height": 392.0,
+				"last_filter": "Package Control: ",
 				"selected_items":
 				[
 					[
-						"insta",
-						"Package Control: Install Package"
+						"Package Control: ",
+						"Package Control: Disable Package"
 					],
 					[
-						"Package Control: ",
-						"Package Control: List Packages"
+						"insta",
+						"Package Control: Install Package"
 					]
 				],
-				"width": 432.0
+				"width": 400.0
 			},
 			"console":
 			{
@@ -889,145 +1154,140 @@
 				"side_bar_visible": false,
 				"status_bar_visible": false
 			},
-			"expanded_folders":
-			[
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/serdes"
-			],
 			"file_history":
 			[
-				"/E/FPGA/A7_changzhou/changzhou.srcs/constrs_1/new/top.xdc",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/dac_if.sv",
-				"/E/FPGA/rtl_template/xilinx_primitives.sv",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/serdes/serdes_exdes.v",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/serdes_rom_ad.dat",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/serdes_rx_ctrl.sv",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/top_test_led.sv",
-				"/E/FPGA/A7_changzhou_reset_n/changzhou.srcs/sources_1/new/serdes_rx_ctrl.sv",
-				"/E/FPGA/A7_changzhou_reset_n/changzhou.srcs/sources_1/new/serdes/serdes_exdes.v",
-				"/E/FPGA/A7_changzhou_reset_n/changzhou.srcs/sources_1/new/top.sv",
-				"/E/FPGA/A7_changzhou_reset_n/changzhou.srcs/sources_1/new/dac_if.sv",
-				"/E/FPGA/A7_changzhou_reset_n/changzhou.srcs/constrs_1/new/top.xdc",
-				"/C/Users/Kuangxin/Desktop/dspb_client.py",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/dac_rom.dat",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/serdes_tx_ctrl.sv",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/constrs_1/new/serdes_exdes.xdc",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/uart_top.sv",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/uart_tb.v",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/uart_tx.v",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/uart_rx.v",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/uart_clk_gen.v",
-				"/E/FPGA/rtl_template/xilinx_primitives.v",
-				"/C/Users/Kuangxin/AppData/Local/Temp/clk_dac.xdc",
-				"/C/Users/Kuangxin/AppData/Local/Temp/sys_clk_ooc.xdc",
-				"/C/Users/Kuangxin/AppData/Local/Temp/sys_clk.xdc",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/top.sv",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/tob_tb.sv",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/serdes_rom_uart.dat",
-				"/C/Users/Kuangxin/Desktop/dspb_client1.py",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/top_test.sv",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/constrs_1/new/led.xdc",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/uart_user.v",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/serdes_rx_ctrl_tb.sv",
-				"/C/Users/Kuangxin/AppData/Local/Temp/fifo_uart_clocks.xdc",
-				"/E/FPGA/V5_1008/V5_1008/V5_0427/xilinx/src/serdes_if.v",
-				"/E/FPGA/V5_1008/V5_1008/V5_0427/xilinx/src/top.v",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/uart.sv",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/serdes_rom_ad.txt",
-				"/C/Users/Kuangxin/Documents/MATLAB/I_data24.txt",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/serdes_rom_uart.txt",
-				"/C/Users/Kuangxin/AppData/Local/Temp/ila_uart1.veo",
-				"/C/Users/Kuangxin/AppData/Local/Temp/fifo_uart_ooc.xdc",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/serdes_wrapper.sv",
-				"/C/Users/Kuangxin/AppData/Local/Temp/serdes_ram_ooc.xdc",
-				"/E/A7_serdes_x1/serdes_example/serdes_example.srcs/sources_1/imports/example_design/serdes_exdes.v",
-				"/C/Users/Kuangxin/AppData/Local/Temp/ila_dac.veo",
-				"/C/Users/Kuangxin/AppData/Local/Temp/ila_uart.veo",
-				"/C/Users/Kuangxin/AppData/Local/Temp/serdes_rx_fifo_ooc.xdc",
-				"/C/Users/Kuangxin/AppData/Local/Temp/ila_dac_ooc.xdc",
-				"/C/Users/Kuangxin/AppData/Local/Temp/ila_uart_ooc.xdc",
-				"/C/Users/Kuangxin/AppData/Local/Temp/ila_ooc.xdc",
-				"/C/Users/Kuangxin/AppData/Local/Temp/ila.xdc",
-				"/E/FPGA/A7_serdes_x1/serdes_example/serdes_example.runs/impl_1/debug_nets.ltx",
-				"/E/A7_serdes_x1/serdes_example/serdes_example.srcs/sources_1/imports/example_design/gt_rom_init_tx.dat",
-				"/C/Users/Kuangxin/AppData/Local/Temp/fifo_dac_clocks.xdc",
-				"/E/FPGA/A7_serdes_x1/serdes_example/serdes_example.srcs/sources_1/imports/example_design/serdes_exdes.v",
-				"/E/A7_serdes_x1/serdes_example/serdes_example.srcs/constrs_1/imports/example_design/serdes_exdes.xdc",
-				"/C/Users/Kuangxin/AppData/Local/Temp/serdes.veo",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/constrs_1/new/dac_if_top.xdc",
-				"/E/FPGA/V5_1006_1/V5_0427/xilinx/src/top.v",
-				"/E/FPGA/A7_serdes_x1/serdes_example/serdes_example.srcs/constrs_1/imports/example_design/serdes_exdes.xdc",
-				"/E/FPGA/V5_1006_1/V5_0427/xilinx/src/serdes_if.v",
-				"/C/Users/Kuangxin/AppData/Local/Temp/ila.veo",
-				"/C/Python27/lib/socket.py",
-				"/C/Users/Kuangxin/AppData/Local/Temp/serdes.xdc",
-				"/C/Users/Kuangxin/AppData/Local/Temp/sys_clk.veo",
-				"/E/FPGA/A7_serdes_x1/serdes_example/serdes_example.srcs/sources_1/imports/example_design/serdes_gt_frame_check.v",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/dac_if_top.sv",
-				"/E/FPGA/changzhou_Chnl2/Chnl_kintex7_2048chnl/rtl/serdes/serdes.v",
-				"/E/FPGA/changzhou_Chnl2/AD_Board_new_fir/src/serdes_if.v",
-				"/E/FPGA/A7_serdes_x1/serdes_example/serdes_example.srcs/sources_1/imports/example_design/gt_rom_init_tx.dat",
-				"/E/FPGA/changzhou_Chnl2/Chnl_kintex7_2048chnl/rtl/serdes/serdes_rx.v",
-				"/C/Users/Kuangxin/AppData/Local/Temp/clk_dac.veo",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/dac_ifx4.sv",
-				"/E/FPGA/rtl_template/generate_vivado_MCS.txt",
-				"/E/FPGA/rtl_template/serdes/example_design/serdes_exdes.v",
-				"/E/FPGA/K7_serdes/serdes_example/serdes_example/serdes_example.srcs/sources_1/imports/example_design/serdes_exdes.v",
-				"/E/FPGA/K7_changzhou/changzhou.srcs/sources_1/new/dac_ifx4.sv",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/serdes_rom.dat",
-				"/E/FPGA/K7_changzhou/changzhou.srcs/sources_1/new/dac_if_top.sv",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new - 24uart/uart_user.v",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new - 24uart/divide_325.v",
-				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/sublimesystemverilog/Snippets/always.sublime-snippet",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/serdes_exdes.v",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/constrs_1/new/serdes_exdes.v",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/dac_if_tb.sv",
-				"/e/FPGA/A7_serdes_x1/serdes_example/serdes_example.srcs/sources_1/imports/example_design/serdes_exdes.v",
-				"/E/FPGA/A7_serdes_x1/serdes_example/serdes_example.srcs/sources_1/imports/example_design/serdes_gt_frame_gen.v",
-				"/E/FPGA/A7_serdes_x1/serdes_example/serdes_example.srcs/sources_1/imports/example_design/gt_rom_init_rx.dat",
-				"/E/FPGA/PPC_20150715_50T/xilinx/src/serdes_if.v",
-				"/E/FPGA/PPC_20150715_50T/xilinx/src/top.v",
-				"/e/FPGA/A7_serdes_x1/serdes_example/serdes_example.srcs/constrs_1/imports/example_design/serdes_exdes.xdc",
-				"/C/Users/Kuangxin/Documents/python/top_test_led.sv",
-				"/C/Users/Kuangxin/Documents/python/generate_sine.py",
-				"/E/FPGA/changzhou_Chnl2/Chnl_kintex7_2048chnl/rtl/DA_module.v",
-				"/C/Users/Kuangxin/Documents/MATLAB/sin12.m",
-				"/C/Users/Kuangxin/Documents/MATLAB/genarate_sin.m",
-				"/E/FPGA/changzhou_Chnl2/Chnl_kintex7_2048chnl/rtl/test_top_TB.v",
-				"/E/FPGA/changzhou_Chnl2/Chnl_kintex7_2048chnl/rtl/top.v",
-				"/E/FPGA/changzhou_Chnl2/Chnl_kintex7_2048chnl/rtl/DA_OUT.v",
-				"/E/FPGA/changzhou_Chnl2/Chnl_kintex7_2048chnl/rtl/top.ucf",
-				"/C/Users/Kuangxin/AppData/Local/Temp/fifo_dac.xdc",
-				"/C/Users/Kuangxin/AppData/Local/Temp/fifo_dac.veo",
-				"/C/Users/Kuangxin/Documents/python/dac_rom.dat",
-				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/sublimesystemverilog/Snippets/generate.sublime-snippet",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/divide_325.v",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/serdes_w",
-				"/C/Xilinx/Vivado/2015.4/scripts/init.tcl",
-				"/C/Xilinx/Vivado/2015.4/examples/Vivado_Tutorial/Sources/hdl/or1200/or1200_cpu.v",
-				"/C/Xilinx/Vivado/2015.4/examples/Vivado_Tutorial/run_cpu_kintex7_batch.tcl",
-				"/C/Xilinx/Vivado/2015.4/examples/Vivado_Tutorial/create_bft_kintex7_batch.tcl",
+				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/sublimesystemverilog/verilogutil/verilog_beautifier.py",
+				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/sublimesystemverilog/verilogutil/verilogutil.py",
+				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/sublimesystemverilog/verilogutil/__init__.py",
+				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/sublimesystemverilog/verilogutil/sublimeutil.py",
 				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
-				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
-				"/C/Users/Kuangxin/AppData/Local/Temp/HZ$D.876.391/HZ$D.876.392/aggregate_data_types_example1/array_unpacked.sv",
-				"/C/Users/Kuangxin/AppData/Local/Temp/HZ$D.795.1613/HZ$D.795.1614/aggregate_data_types_example2/array_packed.sv",
-				"/C/Users/Kuangxin/Desktop/data_types_example1/data_types_example1/ALU.sv",
-				"/C/Users/Kuangxin/Desktop/data_types_example1/data_types_example1/definitions.sv",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/generate_rom.py",
-				"/C/Users/Kuangxin/Documents/python/format_width.py",
-				"/C/Users/Kuangxin/Documents/python/bin2hex.py",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/head_rom.dat",
-				"/C/Users/Kuangxin/AppData/Local/Temp/serdes_rx_fifo.veo",
 				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/sublimesystemverilog/SystemVerilog.sublime-settings",
-				"/E/FPGA/K7_serdes/serdes_example/serdes_example/serdes_example.srcs/sources_1/imports/example_design/serdes_gt_frame_check.v",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/serdes_tx_ctrl_tb.sv",
-				"/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/serdes_tx_ctrl.v",
-				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/User/SublimeGit.sublime-settings",
-				"/C/Users/Kuangxin/.gitconfig"
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/accu_data.v",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/top.v",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/gmac_if.v",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/tx_ctrl.v",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/write_ctrl.v",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/rtl/accu_data.v",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/tx_speed_array.v",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/ipcore_dir/serdes_coe/example_design/serdes_coe_exdes.v",
+				"/G/FPGA_Backup/Xilinx/Chengdu_Bird_Radar/0908_FPGA_PRJ/M_K7_M/M_K7_M/xilinx/top/top.v",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/cfar_2nd.v",
+				"/G/FPGA_Backup/Xilinx/Chengdu_Bird_Radar/0908_FPGA_PRJ/M_K7_M/M_K7_M/xilinx/top/distance_cfar.v",
+				"/E/FPGA/Bird_Radar_v2/MS_K7_P/rtl/cfar_target.v",
+				"/G/FPGA_Backup/Xilinx/Chengdu_Bird_Radar/0908_FPGA_PRJ/M_K7_M/M_K7_M/xilinx/top/wr_addr.v",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/cfar_2nd_s.v",
+				"/G/FPGA_Backup/Xilinx/Chengdu_Bird_Radar/0908_FPGA_PRJ/M_K7_M/M_K7_M/xilinx/top/cfar_2nd.v",
+				"/G/FPGA_Backup/Xilinx/Chengdu_Bird_Radar/0908_FPGA_PRJ/M_K7_M/M_K7_M/xilinx/top/read_ctrl.v",
+				"/G/FPGA_Backup/Xilinx/Chengdu_Bird_Radar/0908_FPGA_PRJ/M_K7_M/M_K7_M/xilinx/top/ctrl_mode.v",
+				"/E/FPGA/Bird_Radar_v2/MS_K7_P/rtl/accu_data.v",
+				"/E/FPGA/Bird_Radar_v2/MS_K7_P/rtl/cfar_target_tx_tran_ctrl.v",
+				"/G/FPGA_Backup/Xilinx/Chengdu_Bird_Radar/0908_FPGA_PRJ/M_K7_M/M_K7_M/xilinx/top/cfar_data.v",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/distance_cfar.v",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/cfar_data.v",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/sqrt_cfar.v",
+				"/E/FPGA/s_m_test_0720/S_K7_M420_one_test/xilinx/top/top.v",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/rtl/serdes_ifx8/serdes_k7_if.v",
+				"/E/FPGA/k7_m_simulation/k7_m_simulation/write_ctrl/top.v",
+				"/E/FPGA/k7_m_simulation/k7_m_simulation/write_ctrl/write_ctrl.v",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/top.ucf",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/top.ucf",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/ctrl_signal.v",
+				"/E/FPGA/k7_m_simulation/k7_m_simulation/read_ctrl/top.v",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/rtl/serdes_ifx8/serdes_tran_ctrl.v",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/serdes_rx_ctrl.v",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/rtl/top.v",
+				"/E/FPGA/s_m_test_0720/S_K7_M480_one_test/xilinx/top/rtl/measure_temp_volt.v",
+				"/E/FPGA/rtl_template/serdes_ifx8/serdes_tran_ctrl.v",
+				"/E/FPGA/s_m_test_0720/S_K7_M480_one_test/xilinx/top/top.ucf",
+				"/E/FPGA/s_m_test_0720/S_K7_M480_one_test/xilinx/top/ipcore_dir/pll_200mhz.v",
+				"/E/FPGA/s_m_test_0720/S_K7_M480_one_test/xilinx/top/top.v",
+				"/E/FPGA/rtl_template/xilinx_primitives.sv",
+				"/G/FPGA_Backup/Xilinx/Chengdu_Bird_Radar/0908_FPGA_PRJ/MS_K7_P/MS_K7_P/rtl/serdes_if/serdes_tran_ctrl_tb.v",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/rtl/serdes_ifx8/serdes_tran_ctrl_tb.v",
+				"/G/FPGA_Backup/Xilinx/Chengdu_Bird_Radar/0908_FPGA_PRJ/MS_K7_P/MS_K7_P/rtl/cfar_target_tx_tran_ctrl.v",
+				"/G/FPGA_Backup/Xilinx/Chengdu_Bird_Radar/0908_FPGA_PRJ/MS_K7_P/MS_K7_P/rtl/top.v",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/rtl/accu_data_TB.v",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/ram_array80.v",
+				"/E/FPGA/k7_m_simulation/k7_m_simulation/write_ctrl/ram_array80.v",
+				"/C/Users/Kuangxin/Desktop/ug480_7Series_XADC/verilog/ug480_tb.v",
+				"/C/Users/Kuangxin/Desktop/ug480_7Series_XADC/verilog/ug480.v",
+				"/E/FPGA/s_m_test_0720/S_K7_M420_one_test/xilinx/top/sqrt_cfar.v",
+				"/E/FPGA/s_m_test_0720/S_K7_M480_one_test/xilinx/top/rtl/ug480.v",
+				"/C/Users/Kuangxin/Desktop/ug480_7Series_XADC/verilog/ug480.xdc",
+				"/C/Users/Kuangxin/Desktop/ug480_7Series_XADC/readme.txt",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/ctrl_mode.v",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/read_ctrl.v",
+				"/e/FPGA/K7_serdes/gtwizard_0_example/gtwizard_0_example.srcs/sim_1/imports/simulation/gtwizard_0_tb.v",
+				"/E/FPGA/K7_serdes/gtwizard_0_example/gtwizard_0_example.srcs/sources_1/imports/example_design/gt_rom_init_tx.dat",
+				"/e/FPGA/K7_serdes/gtwizard_0_example/gtwizard_0_example.srcs/sources_1/imports/example_design/gtwizard_0_gt_frame_check.v",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/ipcore_dir/serdes_coe/example_design/serdes_coe_gt_frame_gen.v",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/serdes_ifx8/serdes_coe_exdes.v",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/ipcore_dir/serdes_coe/example_design/serdes_coe_gt_frame_check.v",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/ipcore_dir/serdes_coe/example_design/gt_rom_init_tx.dat",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/ipcore_dir/serdes_coe/example_design/gt_rom_init_rx.dat",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/serdes_ifx8/serdes_coe_gt.v",
+				"/E/FPGA/s_m_test_0720/S_K7_M420_one_test/xilinx/top/top.ucf",
+				"/E/FPGA/s_m_test_0720/S_K7_M420_one_test/xilinx/top/serdes_rx_ctrl.v",
+				"/E/FPGA/s_m_test_0720/S_K7_M420_one_test/xilinx/rtl/serdes_ifx8/serdes_k7_if.v",
+				"/E/FPGA/s_m_test_0720/S_K7_M420_one_test/xilinx/rtl/serdes_ifx8/serdes_coe_gt.v",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/no_bit/rx_data.cdc",
+				"/E/FPGA/s_m_test_0720/S_K7_M420_one_test/xilinx/top/rx_data.cdc",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/rtl/serdes_ifx8/serdes_coe_gt.v",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/ipcore_dir/serdes_coe_gt.v",
+				"/E/FPGA/rtl_template/serdesx8/serdes_coe_gt.v",
+				"/C/Users/Kuangxin/Desktop/example_design/serdes_coe_gt.v",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/rtl/serdes_ifx8/serdes_coe_exdes.v",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/serdes_ifx8/serdes_coe.v",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/serdes_ifx8/serdes_coe_init.v",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/utriEMAC_clk_wiz.v",
+				"/G/FPGA_Backup/Xilinx/Chengdu_Bird_Radar/0908_FPGA_PRJ/M_EPLD_syn/M_EPLD_syn/rtl/top.v",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/serdes_ifx8/serdes_k7_if.v",
+				"/C/Users/Kuangxin/Desktop/example_design0/serdes_coe_exdes.v",
+				"/G/FPGA_Backup/Xilinx/Chengdu_Bird_Radar/0908_FPGA_PRJ/M_EPLD_syn/M_EPLD_syn/rtl/cpu_ctrl.v",
+				"/E/FPGA/rtl_template/vivado_serdes_test/example_design/serdes_gt_frame_check.v",
+				"/E/FPGA/A7_serdes_x1/serdes_example/serdes_example.srcs/sources_1/imports/example_design/serdes_gt_frame_check.v",
+				"/E/FPGA/A7_serdes_x1/serdes_example/serdes_example.srcs/sources_1/imports/example_design/serdes_exdes.v",
+				"/E/FPGA/rtl_template/serdes_ifx8/serdes_k7_if.v",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/rtl/serdes_if/serdes_k7_if.v",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/rtl/serdes_if/serdes_tran_ctrl.v",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/serdes_coe_exdes.v",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/rtl/serdes_if/serdes_coe_exdes.v",
+				"/G/FPGA_Backup/Xilinx/Chengdu_Bird_Radar/0908_FPGA_PRJ/MS_K7_P/MS_K7_P/rtl/serdes_if/serdes_tran_ctrl.v",
+				"/G/FPGA_Backup/Xilinx/Chengdu_Bird_Radar/0908_FPGA_PRJ/M_K7_M/M_K7_M/xilinx/top/serdes_rx_ctrl.v",
+				"/E/FPGA/s_m_test_0720/S_K7_M420_one_test/xilinx/top/ipcore_dir/xadc/simulation/timing/xadc_tb.v",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/no_bit/serdes_rx.cdc",
+				"/e/FPGA/A7_xadc/xadc_wiz_0_example/xadc_wiz_0_example.srcs/sources_1/imports/example_design/xadc_wiz_0_exdes.v",
+				"/C/Users/Kuangxin/AppData/Local/Temp/xadc_wiz_0.v",
+				"/e/FPGA/A7_xadc/xadc_wiz_0_example/xadc_wiz_0_example.srcs/sim_1/imports/xadc_wiz_0/xadc_wiz_0/simulation/xadc_wiz_0_tb.v",
+				"/E/FPGA/s_m_test_0720/S_K7_M420_one_test/xilinx/top/ipcore_dir/xadc/example_design/xadc_exdes.v",
+				"/E/FPGA/s_m_test_0720/S_K7_M420_one_test/xilinx/top/ipcore_dir/xadc/simulation/xadc_tb.v",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/serdes_tx.cdc",
+				"/E/FPGA/s_m_test_0720/S_K7_M420_one_test/xilinx/top/serdes_k7_if.v",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/serdes_k7_if.v",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/serdes_rx.cdc",
+				"/E/FPGA/rtl_template/serdesx8/top.ucf",
+				"/E/FPGA/rtl_template/serdesx8/serdes_rx.cdc",
+				"/E/FPGA/rtl_template/serdesx8/serdes_top.v",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/ipcore_dir/serdes_coe.v",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/ipcore_dir/serdes_coe/example_design/serdes_coe_tx_startup_fsm.v",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/ipcore_dir/serdes_coe/example_design/serdes_coe_gt_usrclk_source.v",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/ipcore_dir/serdes_coe/example_design/serdes_coe_init.v",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/rtl/serdes_if/serdes_k7_if_tb.v",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/rtl/serdes_if/top.v",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/rtl/serdes_if/serdes_top.v",
+				"/E/FPGA/rtl_template/serdesx1/serdes_k7_if.v",
+				"/E/FPGA/s_m_test_0720/S_K7_M420_one_test/xilinx/rtl/serdes_coe_exdes.v",
+				"/C/Users/Kuangxin/Desktop/cdc0.txt",
+				"/C/Users/Kuangxin/Desktop/cdc1.txt",
+				"/E/FPGA/s_m_test_0720/S_K7_M480_one_test/xilinx/top/ipcore_dir/serdes_coe/example_design/serdes_coe_exdes.v",
+				"/E/FPGA/s_m_test_0720/S_K7_M480_one_test/xilinx/top/ipcore_dir/serdes_coe/example_design/serdes_coe_gt_frame_check.v",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/ipcore_dir/serdes_coe/example_design/serdes_coe_exdes.v",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/ipcore_dir/serdes_coe/example_design/serdes_coe_gt_frame_check.v"
 			],
 			"find":
 			{
-				"height": 21.0
+				"height": 34.0
 			},
 			"find_in_files":
 			{
@@ -1041,134 +1301,134 @@
 				"case_sensitive": true,
 				"find_history":
 				[
-					"negedge",
-					"~I_rst",
-					"I_rst_n",
-					"negedge",
-					"I_rst_n",
-					"negedge",
-					"I_rst_n",
-					"negedge",
-					"I_rst_n",
-					"negedge",
-					"I_rst_n",
-					"negedge",
-					"I_rst_n",
-					"negedge",
-					"~",
-					"I_rst_n",
-					"negedge",
-					"I_rst_n",
-					"W_dout1",
-					"W_dout2",
-					"I_rst_n",
-					"80",
-					"x80",
-					"80",
-					"00",
-					"R_data2",
-					"R_data1",
-					"80",
-					"W_dout1",
-					"W_dout2",
-					"I_dac_data2",
-					"I_dac_data1",
-					"W_dac_ena",
-					"W_dac_data",
-					"W_dac_ena",
-					"O_DOUT",
-					"O_RST",
-					"W_rst_n",
-					"I_dac_ena2",
-					"I_dac_ena1",
-					"I_dac_data2",
-					"I_dac_data1",
-					"R_start",
-					"I_dac_ena1",
-					"W_rst",
-					"negedge",
-					"W_rst_n",
-					"I_sys_clk",
-					"R_dac_ena",
-					"R_dac_double_byte",
-					"R_tx_dat",
-					"O_tx_dat",
-					"R1_rx_dat",
-					"R3_rx_dat",
-					"R1_rx_dat",
-					"R_cnt_ena",
-					"R_cnt_num",
-					"R_count_trans",
-					"R_count_sample",
-					"P_SAMPLE_BAUD_4800",
-					"P_TRANS_BAUD_4800",
-					"TX",
-					"R_count_sample",
-					"R_count_trans",
-					"P_TRANS_BAUD_2400",
-					"_sample",
-					"eate_generated_clock",
-					"create_generated_clock",
-					"[1]",
-					"get_pins",
-					"create_generated_clock",
-					"clk_100m",
-					"P_TRANS_BAUD_57600",
-					"I_baud_rate",
-					"clk_100m",
-					"I_sys_clk",
-					"W_uart_sample_clk",
-					"0",
-					"W_uart_sample_clk",
-					"W_uart_trans_clk",
-					"R_ram_rden",
-					"wire",
-					"W_serdes_rx_clk",
-					"W_serdes_tx_clk",
-					"W_SCK",
-					"I_SCLK",
-					"O_DOUT",
-					"I_sys_clk",
-					"inter_time",
-					"W_rst_n",
-					"I_rst_n",
-					"I_sys_clk",
-					"I_baud_rate",
-					"I_tx_clk",
-					"W_uart_rx_ena",
-					"I_uart_ena",
-					"RX",
-					"O_rx_valid",
-					"I_check_mode",
-					"b0010",
-					"W_uart_rx_dat",
-					"tx",
-					"W_uart_rx_dat",
-					"W_SCK",
-					"I_SCLK",
-					"I_FS",
-					"R_get_data_tosend",
-					"656",
-					"W_rst_n",
-					"R_start_en",
-					"R_initial_ok",
-					"O_serdes_tx_data",
-					"R_test_data",
-					"R_initial_ok",
-					"686",
-					"672",
-					"uart_trans_clk",
-					"W_uart_trans_clk",
-					"clk_100m",
-					"var0",
-					"var",
-					"[])",
-					"uart_sample_clk",
-					"W_uart_sample_clk",
-					"I_check_mode",
-					"W_check_mode",
-					"W_baud_rate",
-					"O_check_mode"
+					"\\",
+					"re_decl",
+					"alignDecl",
+					"\\[",
+					"re_decl",
+					"re_var",
+					"re_decl",
+					"|",
+					"re_decl",
+					"re_var",
+					"re_bw",
+					"alignDecl",
+					"alignAssign",
+					"re_bw",
+					"re_var",
+					"re_decl",
+					"re_var",
+					"re_decl",
+					"re_bw",
+					"state",
+					"states",
+					"VerilogAlign",
+					"alignDecl",
+					"block_state",
+					"txt",
+					"W_200mhz_clk",
+					"gtx_clk90_bufg",
+					"refclk_bufg",
+					"s_axi_aclk",
+					"gtx_clk_bufg",
+					"W_rang_i_dat",
+					"W_100mhz_clk",
+					"O_ctrl_en",
+					"reg",
+					"Q0_CLK0_GTREFCLK_PAD_N_IN",
+					"W_100mhz_clk",
+					"output",
+					"input",
+					"O_m_ctrl_ena",
+					"I_ctrl_ena",
+					"R3_ctrl_ena",
+					"W_ram_add",
+					"R_ctrl6_num",
+					"R_ctrl_num",
+					"I_d1_target_ena",
+					"W_d2_target_energy",
+					"R_tx_fifo1_rd",
+					"R_tx_fifo1_data",
+					"I_target_range",
+					"W_slave_speed_ena",
+					"W_slave_speed",
+					"W_rd_fft_addr",
+					"I_rd_addr",
+					"I_cfar1_end",
+					"I_result1_end",
+					"I_rd_addr",
+					"),\n",
+					"W_wr_end",
+					"W_clr_cnt_num",
+					"W_m_result_dout",
+					"W_m_rd_empty",
+					"W_fifo_out_ena",
+					"R_m_rd_en",
+					"W_m_rd_empty",
+					"R1_rang_ena",
+					"R_rang_ena",
+					"R_range_cfar",
+					"R_rang_ena",
+					"R_rang_cfar",
+					"R_rang_ena",
+					"R_result_in",
+					"R_rang_ena",
+					"I_rang_ena",
+					"R_rang_ena",
+					"I_rang_ena",
+					"R_cfar_data",
+					"I_range_cfar",
+					"W_m_result_din",
+					"W_cfar_dat",
+					"I_range_cfar",
+					"I_s_target_range",
+					"I_range_cfar",
+					"I_s_target_range",
+					"input",
+					"R_result_wr_addr",
+					"I_cfar_data",
+					"I_cfar_ena",
+					"I_rd_addr",
+					"W_rd_fft_addr",
+					"W_clr_cnt_num",
+					"R1_config_data",
+					"R_config_data",
+					"R1_config_data",
+					"R_config_data",
+					"R1_config_data",
+					"R_data_total",
+					"R1_config_data",
+					"I_config_data",
+					"I_rang_ena",
+					"I_range_cfar",
+					"I_rang_ena",
+					"I_range_cfar",
+					"R_config_data",
+					"W_m_result_dout",
+					"R_s_target_energy",
+					"R_data_sregpd",
+					"I_s_target_range",
+					"R_s_target_ena",
+					"R_config_data",
+					"R1_config_data",
+					"R_config_data",
+					"R1_config_data",
+					"R_config_data",
+					"I_config_data",
+					"I_config_ena",
+					"O_sqrt_ena",
+					"R_rdata_delay7",
+					"I_cfar_data",
+					"O_real_data_ena",
+					"O_real_data",
+					"I_wr_end",
+					"W_wr_end",
+					"W_dis_ram_wr",
+					"W_dis_ram_data",
+					"I_result1_ena",
+					"I_range_cfar",
+					"W_cfar_data_ena",
+					"I_cfar_data"
 				],
 				"highlight": true,
 				"in_selection": false,
@@ -1183,33 +1443,59 @@
 				"whole_word": true,
 				"wrap": true
 			},
-			"folders":
-			[
-				{
-					"path": "E:\\FPGA\\A7_changzhou\\changzhou.srcs\\sources_1\\new"
-				}
-			],
 			"groups":
 			[
 				{
-					"selected": 1,
+					"selected": 5,
 					"sheets":
 					[
 						{
 							"buffer": 0,
-							"file": "/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/top.sv",
+							"file": "/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/rtl/accu_data.v",
 							"semi_transient": false,
 							"settings":
 							{
-								"buffer_size": 17439,
+								"buffer_size": 19522,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										5342,
-										5342
+										4544,
+										4544
+									]
+								],
+								"settings":
+								{
+									"is_init_dirty_state": true,
+									"origin_encoding": "ASCII",
+									"syntax": "Packages/sublimesystemverilog/SystemVerilog.sublime-syntax",
+									"tab_size": 4,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 575.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 1,
+							"type": "text"
+						},
+						{
+							"buffer": 1,
+							"file": "/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/rtl/top.v",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 28060,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										10692,
+										10692
 									]
 								],
 								"settings":
@@ -1221,437 +1507,134 @@
 									"translate_tabs_to_spaces": true
 								},
 								"translation.x": 0.0,
-								"translation.y": 3120.0,
-								"zoom_level": 1.0
-							},
-							"stack_index": 1,
-							"type": "text"
-						},
-						{
-							"buffer": 1,
-							"file": "/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/serdes_wrapper.sv",
-							"semi_transient": false,
-							"settings":
-							{
-								"buffer_size": 4384,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										2522,
-										2522
-									],
-									[
-										3049,
-										3049
-									]
-								],
-								"settings":
-								{
-									"origin_encoding": "ASCII",
-									"syntax": "Packages/sublimesystemverilog/SystemVerilog.sublime-syntax",
-									"tab_size": 4,
-									"translate_tabs_to_spaces": true
-								},
-								"translation.x": 0.0,
-								"translation.y": 1316.0,
-								"zoom_level": 1.0
-							},
-							"stack_index": 0,
-							"type": "text"
-						},
-						{
-							"buffer": 2,
-							"file": "/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/serdes_tx_ctrl.sv",
-							"semi_transient": false,
-							"settings":
-							{
-								"buffer_size": 16584,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										1971,
-										1971
-									]
-								],
-								"settings":
-								{
-									"origin_encoding": "ASCII",
-									"syntax": "Packages/sublimesystemverilog/SystemVerilog.sublime-syntax",
-									"tab_size": 4,
-									"translate_tabs_to_spaces": true
-								},
-								"translation.x": 0.0,
-								"translation.y": 465.0,
-								"zoom_level": 1.0
-							},
-							"stack_index": 4,
-							"type": "text"
-						},
-						{
-							"buffer": 3,
-							"file": "/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/dac_if.sv",
-							"semi_transient": false,
-							"settings":
-							{
-								"buffer_size": 16749,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										4729,
-										4729
-									]
-								],
-								"settings":
-								{
-									"origin_encoding": "ASCII",
-									"syntax": "Packages/sublimesystemverilog/SystemVerilog.sublime-syntax",
-									"tab_size": 4,
-									"translate_tabs_to_spaces": true
-								},
-								"translation.x": 0.0,
-								"translation.y": 1903.0,
-								"zoom_level": 1.0
-							},
-							"stack_index": 3,
-							"type": "text"
-						},
-						{
-							"buffer": 4,
-							"file": "/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/serdes_rx_ctrl.sv",
-							"semi_transient": false,
-							"settings":
-							{
-								"buffer_size": 24642,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										5202,
-										5202
-									],
-									[
-										5387,
-										5387
-									],
-									[
-										5671,
-										5671
-									],
-									[
-										6011,
-										6011
-									],
-									[
-										6199,
-										6199
-									],
-									[
-										6393,
-										6393
-									],
-									[
-										6643,
-										6643
-									],
-									[
-										6822,
-										6822
-									],
-									[
-										7011,
-										7011
-									],
-									[
-										7431,
-										7431
-									],
-									[
-										7681,
-										7681
-									],
-									[
-										7890,
-										7890
-									],
-									[
-										8113,
-										8113
-									],
-									[
-										8431,
-										8431
-									],
-									[
-										8710,
-										8710
-									],
-									[
-										9009,
-										9009
-									],
-									[
-										9422,
-										9422
-									],
-									[
-										9696,
-										9696
-									],
-									[
-										9990,
-										9990
-									],
-									[
-										10401,
-										10401
-									],
-									[
-										10684,
-										10684
-									],
-									[
-										10988,
-										10988
-									],
-									[
-										11407,
-										11407
-									],
-									[
-										11761,
-										11761
-									],
-									[
-										11955,
-										11955
-									],
-									[
-										12300,
-										12300
-									],
-									[
-										12616,
-										12616
-									],
-									[
-										14825,
-										14825
-									],
-									[
-										15259,
-										15259
-									],
-									[
-										15712,
-										15712
-									],
-									[
-										16612,
-										16612
-									],
-									[
-										17095,
-										17095
-									],
-									[
-										17455,
-										17455
-									],
-									[
-										17655,
-										17655
-									],
-									[
-										18013,
-										18013
-									],
-									[
-										18343,
-										18343
-									]
-								],
-								"settings":
-								{
-									"origin_encoding": "ASCII",
-									"syntax": "Packages/sublimesystemverilog/SystemVerilog.sublime-syntax",
-									"tab_size": 4,
-									"translate_tabs_to_spaces": true
-								},
-								"translation.x": -0.0,
-								"translation.y": 8929.0,
+								"translation.y": 3877.0,
 								"zoom_level": 1.0
 							},
 							"stack_index": 2,
 							"type": "text"
 						},
 						{
-							"buffer": 5,
-							"file": "/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/uart_clk_gen.v",
+							"buffer": 2,
+							"file": "/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/top_tb.v",
 							"semi_transient": false,
 							"settings":
 							{
-								"buffer_size": 5672,
+								"buffer_size": 83544,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										5648,
-										5648
+										29647,
+										29647
 									]
 								],
 								"settings":
 								{
+									"is_init_dirty_state": false,
 									"origin_encoding": "ASCII",
 									"syntax": "Packages/sublimesystemverilog/SystemVerilog.sublime-syntax",
 									"tab_size": 4,
 									"translate_tabs_to_spaces": true
 								},
 								"translation.x": 0.0,
-								"translation.y": 1849.0,
+								"translation.y": 9142.0,
 								"zoom_level": 1.0
 							},
 							"stack_index": 5,
 							"type": "text"
 						},
 						{
-							"buffer": 6,
-							"file": "/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/uart.sv",
+							"buffer": 3,
+							"file": "/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/gene_data.v",
 							"semi_transient": false,
 							"settings":
 							{
-								"buffer_size": 7060,
+								"buffer_size": 20174,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										7035,
-										7035
+										1979,
+										1979
 									]
 								],
 								"settings":
 								{
-									"origin_encoding": "ASCII",
-									"syntax": "Packages/sublimesystemverilog/SystemVerilog.sublime-syntax",
-									"tab_size": 2,
-									"translate_tabs_to_spaces": true
-								},
-								"translation.x": 0.0,
-								"translation.y": 2746.0,
-								"zoom_level": 1.0
-							},
-							"stack_index": 6,
-							"type": "text"
-						},
-						{
-							"buffer": 7,
-							"file": "/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/uart_rx.v",
-							"semi_transient": false,
-							"settings":
-							{
-								"buffer_size": 6683,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										6186,
-										6186
-									]
-								],
-								"settings":
-								{
+									"is_init_dirty_state": false,
 									"origin_encoding": "ASCII",
 									"syntax": "Packages/sublimesystemverilog/SystemVerilog.sublime-syntax",
 									"tab_size": 4,
 									"translate_tabs_to_spaces": true
 								},
 								"translation.x": 0.0,
-								"translation.y": 2642.0,
+								"translation.y": 260.0,
 								"zoom_level": 1.0
 							},
-							"stack_index": 7,
+							"stack_index": 4,
 							"type": "text"
 						},
 						{
-							"buffer": 8,
-							"file": "/E/FPGA/A7_changzhou/changzhou.srcs/sources_1/new/uart_tx.v",
+							"buffer": 4,
+							"file": "/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/sublimesystemverilog/verilog_align.py",
 							"semi_transient": false,
 							"settings":
 							{
-								"buffer_size": 5552,
+								"buffer_size": 3789,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										5279,
-										5279
+										3547,
+										3559
 									]
 								],
 								"settings":
 								{
+									"is_init_dirty_state": false,
 									"origin_encoding": "ASCII",
-									"syntax": "Packages/sublimesystemverilog/SystemVerilog.sublime-syntax",
+									"syntax": "Packages/Python/Python.sublime-syntax",
 									"tab_size": 4,
 									"translate_tabs_to_spaces": true
 								},
 								"translation.x": 0.0,
-								"translation.y": 2057.0,
+								"translation.y": 65.0,
 								"zoom_level": 1.0
 							},
-							"stack_index": 8,
+							"stack_index": 3,
 							"type": "text"
-						}
-					]
-				},
-				{
-					"selected": 0,
-					"sheets":
-					[
+						},
 						{
-							"buffer": 9,
+							"buffer": 5,
 							"semi_transient": false,
 							"settings":
 							{
-								"buffer_size": 250,
+								"buffer_size": 48,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										250,
-										250
+										48,
+										0
 									]
 								],
 								"settings":
 								{
-									"auto_name": "E:/FPGA/A7_changzhou/changzhou.runs/impl_1/top.bit",
-									"is_init_dirty_state": true,
+									"auto_name": "C:/Users/Kuangxin/AppData/Roaming/Sublime Text 3",
 									"syntax": "Packages/Text/Plain text.tmLanguage"
 								},
 								"translation.x": 0.0,
 								"translation.y": 0.0,
 								"zoom_level": 1.0
 							},
-							"stack_index": 9,
+							"stack_index": 0,
 							"type": "text"
 						}
 					]
@@ -1674,18 +1657,11 @@
 						0,
 						1,
 						1
-					],
-					[
-						1,
-						0,
-						2,
-						1
 					]
 				],
 				"cols":
 				[
 					0.0,
-					0.954873646209,
 					1.0
 				],
 				"rows":
@@ -1701,14 +1677,14 @@
 			},
 			"output.exec":
 			{
-				"height": 208.0
+				"height": 232.0
 			},
 			"output.find_results":
 			{
 				"height": 0.0
 			},
 			"pinned_build_system": "Packages/Python/Python.sublime-build",
-			"position": "0,2,3,-32000,-32000,-1,-1,597,491,59,1147",
+			"position": "0,2,3,-32000,-32000,-1,-1,638,105,100,761",
 			"project": "",
 			"replace":
 			{
@@ -1750,12 +1726,12 @@
 			"show_open_files": false,
 			"show_tabs": true,
 			"side_bar_visible": true,
-			"side_bar_width": 339.0,
+			"side_bar_width": 210.0,
 			"status_bar_visible": true,
 			"template_settings":
 			{
 			},
-			"window_id": 2,
+			"window_id": 20,
 			"workspace_name": ""
 		}
 	],
