@@ -3,12 +3,12 @@ import datetime, getpass
 class ModuleCommand(sublime_plugin.TextCommand):
 	def run(self, edit):
 		self.view.run_command("insert_snippet",{"contents":"%s" % 
-'''//----------------------------------------------------NUST-----------------------------------------------------
-// ==============================420=================================
+'''`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
 // Project Name :   
-// File name    :   $1.v
-// Library      :   WORK
-// Created On   :   '''+datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S %a")+'''
+// Module  Name :   $1.v
+// Created On   :   '''+datetime.datetime.now().strftime("%Y/%m/%d %H:%M %a")+'''
+// Target Devices:
 // Comments     :   
 // ----------------------------------------------------------------------
 // Revision History :
@@ -19,9 +19,7 @@ class ModuleCommand(sublime_plugin.TextCommand):
 // OverView
 // ========
 //
-// ----------------------------------------------------------------------
-// ======================================================================
-`timescale 1ns/100ps
+//////////////////////////////////////////////////////////////////////////////////
 module  $1(
     input I_rst_n    ,
     input I_sys_clk  ,
