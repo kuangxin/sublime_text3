@@ -730,6 +730,14 @@
 				"selected_items":
 				[
 					[
+						"R_ff",
+						"R_fifo4_rd"
+					],
+					[
+						"I_ff1",
+						"I_fft1_rfd"
+					],
+					[
 						"P_",
 						"P_CFAR_RANGE"
 					],
@@ -1030,52 +1038,10 @@
 			"buffers":
 			[
 				{
-					"contents": "`timescale 1ns / 1ps\n//////////////////////////////////////////////////////////////////////////////////\n// Project Name :   \n// Module  Name :   .v\n// Created On   :   2016-11-29 16:01:38 Tue\n// Target Devices:\n// Comments     :   \n// ----------------------------------------------------------------------\n// Revision History :\n// ----------------------------------------------------------------------\n//  Ver :           | Author:   kuangxin    | Mod. Date :    |    \n//  Update Detail:                  | \n// ----------------------------------------------------------------------\n// OverView\n// ========\n//\n//////////////////////////////////////////////////////////////////////////////////\nmodule  (\n    input I_rst_n    ,\n    input I_sys_clk  ,\n    output reg O_data\n    );\n\n//-----------------------------------------Internal Reg Definitions----------------------------------------------\n\n//====parameter====\nparameter       TCO_DELAY       =  1;\n\n//====internal wire define====\nwire[13:0]      W_                  ;\nwire[13:0]      W_                  ;\n\n//====internal register define====\nreg[13:0]       R_                  ;\nreg[13:0]       R1_                 ;\n\n//---------------------------------------------Main Body of Code-------------------------------------------------\n//=====================read me=====================\n//\n//  \n//  \n//  \n//\n//\n//=====================read me=====================\n\nalways_ff @(posedge I_sys_clk or negedge I_rst_n) begin\n    if(~I_rst_n) begin\n        R_count <= 0;\n    end else begin\n        R_count <= ;\n    end\nend\n\n//-------------------------------------output-------------------------------------\nassign  O_signal_I_dat  =   W_hw_i_result;\nassign  O_signal_Q_dat  =   W_hw_q_result;\n\n//-------------------------------------output-------------------------------------\nendmodule\n//====END====",
+					"file": "/E/FPGA/s_m_test_0720/S_K7_M480_temperature/xilinx/top/rtl/measure_temp_volt.v",
 					"settings":
 					{
-						"buffer_size": 1845,
-						"line_ending": "Windows",
-						"name": "`timescale 1ns / 1ps"
-					}
-				},
-				{
-					"contents": "`timescale 1ns / 1ps\n//////////////////////////////////////////////////////////////////////////////////\n// Project Name :   \n// Module  Name :   serdes_exchange_s.v\n// Created On   :   2016/11/29 16:41 Tue\n// Target Devices:\n// Comments     :   \n// ----------------------------------------------------------------------\n// Revision History :\n// ----------------------------------------------------------------------\n//  Ver :           | Author:   kuangxin    | Mod. Date :    |    \n//  Update Detail:                  | \n// ----------------------------------------------------------------------\n// OverView\n// ========\n//\n//////////////////////////////////////////////////////////////////////////////////\nmodule  serdes_exchange_s(\n    input I_rst_n    ,\n    input I_sys_clk  ,\n    output reg O_data\n    );\n\n//-----------------------------------------Internal Reg Definitions----------------------------------------------\n\n//====parameter====\nparameter       TCO_DELAY       =  1;\n\n//====internal wire define====\nwire[13:0]      W_                  ;\nwire[13:0]      W_                  ;\n\n//====internal register define====\nreg[13:0]       R_                  ;\nreg[13:0]       R1_                 ;\n\n//---------------------------------------------Main Body of Code-------------------------------------------------\n//=====================read me=====================\n//\n//  \n//  \n//  \n//\n//\n//=====================read me=====================\n\nalways_ff @(posedge I_sys_clk or negedge I_rst_n) begin\n    if(~I_rst_n) begin\n        R_count <= 0;\n    end else begin\n        R_count <= ;\n    end\nend\n\n//-------------------------------------output-------------------------------------\nassign  O_signal_I_dat  =   W_hw_i_result;\nassign  O_signal_Q_dat  =   W_hw_q_result;\n\n//-------------------------------------output-------------------------------------\nendmodule\n//====END====",
-					"settings":
-					{
-						"buffer_size": 1876,
-						"line_ending": "Windows",
-						"name": "`timescale 1ns / 1ps"
-					}
-				},
-				{
-					"file": "/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/top.v",
-					"settings":
-					{
-						"buffer_size": 99312,
-						"line_ending": "Unix"
-					}
-				},
-				{
-					"file": "/E/FPGA/s_m_test_0720/S_K7_M420_one_test/xilinx/top/top.v",
-					"settings":
-					{
-						"buffer_size": 75981,
-						"line_ending": "Unix"
-					}
-				},
-				{
-					"file": "/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/gmac_if.v",
-					"settings":
-					{
-						"buffer_size": 56822,
-						"line_ending": "Windows"
-					}
-				},
-				{
-					"file": "/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/serdes_exchange_m.v",
-					"settings":
-					{
-						"buffer_size": 31204,
+						"buffer_size": 11988,
 						"line_ending": "Windows"
 					}
 				}
@@ -1169,20 +1135,51 @@
 			},
 			"file_history":
 			[
+				"/E/FPGA/Bird_Radar_v2/MS_K7_P/rtl/top.v",
+				"/E/FPGA/Bird_Radar_v2/MS_K7_P/rtl/accu_data.v",
+				"/E/FPGA/Bird_Radar_v2/MS_K7_P/rtl/de_modulate.v",
+				"/E/FPGA/Bird_Radar_v2/MS_K7_P/rtl/serdes_if/serdes_range.v",
+				"/E/FPGA/Bird_Radar_v2/MS_K7_P/rtl/cfar_target.v",
+				"/E/FPGA/Bird_Radar_v2/MS_K7_P/rtl/top_tb.v",
+				"/E/FPGA/Bird_Radar_v2/MS_K7_P/rtl/work_state.v",
+				"/E/FPGA/Bird_Radar_v2/MS_K7_P/rtl/work_ifft.v",
+				"/E/FPGA/s_m_test_0720/S_K7_M480_temperature/xilinx/top/rtl/ug480.v",
+				"/E/FPGA/s_m_test_0720/S_K7_M480_temperature/xilinx/top/rtl/ug480.xdc",
+				"/E/FPGA/Bird_Radar_v2/MS_K7_P/rtl/work_state.vbk_fifo.v",
+				"/E/FPGA/rtl_template/xilinx_primitives.sv",
+				"/E/FPGA/Bird_Radar_v2/MS_K7_P/rtl/serdes_ifx4/serdes_k7_if.v",
+				"/E/FPGA/Bird_Radar_v2/MS_K7_P/rtl/serdes_if/serdes_k7_slave.v",
+				"/E/FPGA/Bird_Radar_v2/MS_K7_P/rtl/match_filter.v",
+				"/G/FPGA_Backup/Xilinx/Chengdu_Bird_Radar/0908_FPGA_PRJ/MS_K7_P/MS_K7_P/rtl/accu_data.v",
+				"/E/FPGA/Bird_Radar_v2/MS_K7_P/rtl/phase_mend.v",
+				"/E/FPGA/Bird_Radar_v2/MS_K7_P/rtl/top.ucf",
+				"/E/FPGA/Bird_Radar_v2/MS_K7_P/rtl/serdes_ifx4/serdes_coe_exdes.v",
+				"/E/FPGA/Bird_Radar_v2/MS_K7_P/rtl/serdes_if/serdes_coe_exdes.v",
+				"/E/FPGA/rtl_template/serdes_ifx4/serdes_coe_gt_frame_gen.v",
+				"/E/FPGA/rtl_template/serdes_ifx4/serdes_coe_gt_frame_check.v",
+				"/E/FPGA/Bird_Radar_v2/MS_K7_P/rtl/phase_adjust.v",
+				"/E/FPGA/Bird_Radar_v2/MS_K7_P/rtl/hw_fir_i.v",
+				"/E/FPGA/Bird_Radar_v2/MS_K7_P/rtl/lpf_fir_q.v",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/top.v",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/top.ucf",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/ctrl_signal.v",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/sqrt_cfar.v",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/serdes_rx_ctrl.v",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/no_bit/speed_cfar.cdc",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/serdes_exchange_m.v",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/gmac_if.v",
+				"/E/FPGA/s_m_test_0720/S_K7_M420_one_test/xilinx/top/top.v",
 				"/E/FPGA/s_m_test_0720/S_K7_M420_one_test/xilinx/top/serdes_exchange_s.v",
 				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/User/module.py",
 				"/E/FPGA/s_m_test_0720/S_K7_M420_one_test/xilinx/top/sqrt_cfar.v",
 				"/E/FPGA/s_m_test_0720/S_K7_M420_one_test/xilinx/top/distance_cfar.v",
-				"/E/FPGA/s_m_test_0720/S_K7_M420_one_test/xilinx/top/top.v",
 				"/E/FPGA/s_m_test_0720/S_K7_M420_one_test/xilinx/top/cfar_2nd.v",
 				"/E/FPGA/s_m_test_0720/S_K7_M420_one_test/xilinx/top/serdes_mode.v",
-				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/sqrt_cfar.v",
 				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/tx_ctrl.v",
 				"/E/FPGA/s_m_test_0720/S_K7_M420_one_test/xilinx/top/top.ucf",
 				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/gene_data.v",
 				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/top_tb.v",
 				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/rtl/top.v",
-				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/top.v",
 				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/rtl/accu_data.v",
 				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/serdes_ifx8/serdes_k7_if.v",
 				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/rtl/serdes_ifx8/serdes_k7_if.v",
@@ -1217,35 +1214,28 @@
 				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/sublimesystemverilog/SystemVerilog.sublime-settings",
 				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/accu_data.v",
-				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/gmac_if.v",
 				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/ipcore_dir/serdes_coe/example_design/serdes_coe_exdes.v",
 				"/G/FPGA_Backup/Xilinx/Chengdu_Bird_Radar/0908_FPGA_PRJ/M_K7_M/M_K7_M/xilinx/top/top.v",
 				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/cfar_2nd.v",
 				"/G/FPGA_Backup/Xilinx/Chengdu_Bird_Radar/0908_FPGA_PRJ/M_K7_M/M_K7_M/xilinx/top/distance_cfar.v",
-				"/E/FPGA/Bird_Radar_v2/MS_K7_P/rtl/cfar_target.v",
 				"/G/FPGA_Backup/Xilinx/Chengdu_Bird_Radar/0908_FPGA_PRJ/M_K7_M/M_K7_M/xilinx/top/wr_addr.v",
 				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/cfar_2nd_s.v",
 				"/G/FPGA_Backup/Xilinx/Chengdu_Bird_Radar/0908_FPGA_PRJ/M_K7_M/M_K7_M/xilinx/top/cfar_2nd.v",
 				"/G/FPGA_Backup/Xilinx/Chengdu_Bird_Radar/0908_FPGA_PRJ/M_K7_M/M_K7_M/xilinx/top/read_ctrl.v",
 				"/G/FPGA_Backup/Xilinx/Chengdu_Bird_Radar/0908_FPGA_PRJ/M_K7_M/M_K7_M/xilinx/top/ctrl_mode.v",
-				"/E/FPGA/Bird_Radar_v2/MS_K7_P/rtl/accu_data.v",
 				"/E/FPGA/Bird_Radar_v2/MS_K7_P/rtl/cfar_target_tx_tran_ctrl.v",
 				"/G/FPGA_Backup/Xilinx/Chengdu_Bird_Radar/0908_FPGA_PRJ/M_K7_M/M_K7_M/xilinx/top/cfar_data.v",
 				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/distance_cfar.v",
 				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/cfar_data.v",
 				"/E/FPGA/k7_m_simulation/k7_m_simulation/write_ctrl/top.v",
 				"/E/FPGA/k7_m_simulation/k7_m_simulation/write_ctrl/write_ctrl.v",
-				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/top.ucf",
-				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/ctrl_signal.v",
 				"/E/FPGA/k7_m_simulation/k7_m_simulation/read_ctrl/top.v",
 				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/rtl/serdes_ifx8/serdes_tran_ctrl.v",
-				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/serdes_rx_ctrl.v",
 				"/E/FPGA/s_m_test_0720/S_K7_M480_one_test/xilinx/top/rtl/measure_temp_volt.v",
 				"/E/FPGA/rtl_template/serdes_ifx8/serdes_tran_ctrl.v",
 				"/E/FPGA/s_m_test_0720/S_K7_M480_one_test/xilinx/top/top.ucf",
 				"/E/FPGA/s_m_test_0720/S_K7_M480_one_test/xilinx/top/ipcore_dir/pll_200mhz.v",
 				"/E/FPGA/s_m_test_0720/S_K7_M480_one_test/xilinx/top/top.v",
-				"/E/FPGA/rtl_template/xilinx_primitives.sv",
 				"/G/FPGA_Backup/Xilinx/Chengdu_Bird_Radar/0908_FPGA_PRJ/MS_K7_P/MS_K7_P/rtl/serdes_if/serdes_tran_ctrl_tb.v",
 				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/rtl/serdes_ifx8/serdes_tran_ctrl_tb.v",
 				"/G/FPGA_Backup/Xilinx/Chengdu_Bird_Radar/0908_FPGA_PRJ/MS_K7_P/MS_K7_P/rtl/cfar_target_tx_tran_ctrl.v",
@@ -1272,31 +1262,7 @@
 				"/E/FPGA/s_m_test_0720/S_K7_M420_one_test/xilinx/rtl/serdes_ifx8/serdes_coe_gt.v",
 				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/no_bit/rx_data.cdc",
 				"/E/FPGA/s_m_test_0720/S_K7_M420_one_test/xilinx/top/rx_data.cdc",
-				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/rtl/serdes_ifx8/serdes_coe_gt.v",
-				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/ipcore_dir/serdes_coe_gt.v",
-				"/E/FPGA/rtl_template/serdesx8/serdes_coe_gt.v",
-				"/C/Users/Kuangxin/Desktop/example_design/serdes_coe_gt.v",
-				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/rtl/serdes_ifx8/serdes_coe_exdes.v",
-				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/serdes_ifx8/serdes_coe.v",
-				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/serdes_ifx8/serdes_coe_init.v",
-				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/utriEMAC_clk_wiz.v",
-				"/G/FPGA_Backup/Xilinx/Chengdu_Bird_Radar/0908_FPGA_PRJ/M_EPLD_syn/M_EPLD_syn/rtl/top.v",
-				"/C/Users/Kuangxin/Desktop/example_design0/serdes_coe_exdes.v",
-				"/G/FPGA_Backup/Xilinx/Chengdu_Bird_Radar/0908_FPGA_PRJ/M_EPLD_syn/M_EPLD_syn/rtl/cpu_ctrl.v",
-				"/E/FPGA/rtl_template/vivado_serdes_test/example_design/serdes_gt_frame_check.v",
-				"/E/FPGA/A7_serdes_x1/serdes_example/serdes_example.srcs/sources_1/imports/example_design/serdes_gt_frame_check.v",
-				"/E/FPGA/A7_serdes_x1/serdes_example/serdes_example.srcs/sources_1/imports/example_design/serdes_exdes.v",
-				"/E/FPGA/rtl_template/serdes_ifx8/serdes_k7_if.v",
-				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/rtl/serdes_if/serdes_k7_if.v",
-				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/rtl/serdes_if/serdes_tran_ctrl.v",
-				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/serdes_coe_exdes.v",
-				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/rtl/serdes_if/serdes_coe_exdes.v",
-				"/G/FPGA_Backup/Xilinx/Chengdu_Bird_Radar/0908_FPGA_PRJ/MS_K7_P/MS_K7_P/rtl/serdes_if/serdes_tran_ctrl.v",
-				"/G/FPGA_Backup/Xilinx/Chengdu_Bird_Radar/0908_FPGA_PRJ/M_K7_M/M_K7_M/xilinx/top/serdes_rx_ctrl.v",
-				"/E/FPGA/s_m_test_0720/S_K7_M420_one_test/xilinx/top/ipcore_dir/xadc/simulation/timing/xadc_tb.v",
-				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/no_bit/serdes_rx.cdc",
-				"/e/FPGA/A7_xadc/xadc_wiz_0_example/xadc_wiz_0_example.srcs/sources_1/imports/example_design/xadc_wiz_0_exdes.v",
-				"/C/Users/Kuangxin/AppData/Local/Temp/xadc_wiz_0.v"
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/rtl/serdes_ifx8/serdes_coe_gt.v"
 			],
 			"find":
 			{
@@ -1314,134 +1280,134 @@
 				"case_sensitive": true,
 				"find_history":
 				[
-					"P_480data",
-					"O_d1_cfar_exp",
-					"I_cfar_exp",
-					"I_d2_cfar_exp",
-					"I_d1_cfar_exp",
-					"W_d1_cfar_exp",
-					"R_rx_355_data",
-					"R3_gt4_syn_en",
-					"R_gt4_syn_en",
-					"W_rx_fifo_data",
-					"R_gt4_syn_data",
-					"I_gtx4_rx_data",
-					"W_slave_speed",
-					"I_result_data",
-					"I_energy_dat",
-					"R_fifo_data",
-					"W_tx_fifo_data",
-					"R_tx_fifo_data",
-					"I_result_data",
-					"I_serdes_tx_clk",
-					"W_s_cfar_dat",
-					"R_rdata_sregpd",
-					"I_cfar_data",
-					"W_s_cfar_dat",
-					"I_cfar_range",
-					"O_result_addr",
-					"O_result_exp",
-					"O_cfar_end",
-					"W_ram_out_dat",
-					"R_max_dat",
-					"O_result_dat",
-					"W_gate_dat",
-					"W_sqrt_dat",
-					"R_ram_rd_ena",
-					"W_result_dat",
-					"R_rx_355_data",
-					"R1_syn_energy_ok",
-					"P_480data",
-					"W_tx_user_en0",
-					"W_tx_user_data0",
-					"gt0_txdata_i",
-					"gt4_rxdata_i",
-					"W_rx_user_data4",
-					"gt0_txdata_i",
-					"W_rx_user_data0",
-					"W_tx_user_en0",
-					"W_sqrt_dat",
-					"R_i_result_dat",
-					"P_480data",
-					";\n",
-					"R_gt5_wr_start",
-					"R_rd_finish",
-					"R3_gtx_syn_en",
-					"R_rx_fifo_rd",
-					"R_rd_finish",
-					"R1_rx_fifo_rd",
-					"P_ENERGY2",
-					"R_gt5_syn_data",
-					"P_ENERGY1",
-					"P_ENERGY2",
-					"P_ENERGY1",
-					"O_speed_ena",
-					"O_range_ena",
-					"P_480data",
-					"I_channel_num",
-					"P_ENERGY1",
-					"R_rx_cfar_speed",
-					"R1_syn_energy_ok",
-					"P_ENERGY1",
-					"P_CFAR_SPEED",
-					"P_ENERGY1",
-					"W_tx_user_data5",
-					"R_energy_num",
-					"P_ENERGY1",
-					"R1_syn_energy_ok",
-					"R_speed_ena",
-					";\n",
-					"O_speed_ena",
-					"R_speed_ena",
-					"R2_speed_ena",
-					"R_speed_ena",
-					"O_speed_ena",
-					"W_accu_ctrl_en",
-					"R_iq_data_cnt",
-					"R2_result_ena",
-					"R_result_ena",
+					"ClkPeriod",
+					"R2_ifft1_edone",
+					"R1_ifft1_edone",
+					"R2_m_ctrl_ena",
+					"R1_m_ctrl_ena",
+					"R_ctrl_idle",
+					"R1_ctrl_idle",
+					"R2_ctrl_idle",
+					"R_fft1_start",
+					"R1_ctrl_ena",
+					"R_work_state",
+					"R_fft1_start",
+					"I_ad_i_dat",
+					"R_fifo_rst",
+					"W_ad_ctrl",
+					"W_ad_signal",
+					"O_angle_fft_info",
+					"W_ad_ctrl",
+					"      ",
+					"W_ad_ctrl",
+					"W_ad_signal",
+					"O_ad_ctrl",
+					"O_ad_signal",
+					"R_ctrl_signal",
+					"I_ctrl_signal",
+					"R_ctrl_signal",
+					"I_ctrl_signal",
+					"W_ad_signal",
+					"O_ad_signal",
+					"R_ctrl_signal",
+					"I_ctrl_ena",
+					"R1_fft1_rd",
+					"R1_fft2_rd",
+					"R1_fft3_rd",
+					"R1_fft4_rd",
+					"R1_fft2_rd",
+					"I_fft1_rfd",
+					"W_fft1_rfd",
+					"I_fft1_rfd",
+					"R_fft1_rfd",
+					"R_fft1_rd",
+					"R_fft4_rd",
+					"R_fft1_rd",
+					"I_fft1_rfd",
+					"R_fft1_rd",
+					"R_fft2",
+					"I_fft1_rfd",
+					"fifo",
+					"fifo3",
+					"R_fft4_rd",
+					"R_fft2_rd",
+					"R_fft1_rd",
+					"wire",
+					"O_led1",
+					"R_count_100M",
+					"R_fft4_rd",
+					"R_fifo4_rd",
+					"W_fifo2_data_en",
+					"R_work_state",
+					"R_fft1_start",
+					"R_fifo4_wr",
+					"R_fifo3_wr",
+					"R_fifo2_wr",
+					"R_fifo1_rd",
+					"R_fifo2_dat_in",
+					"R_fft1_start",
+					"R_fifo1_wr",
+					"R_fifo1_dat_in",
+					"R_fifo1_num",
+					"I_ad_i_dat",
+					"R_fifo2_wr",
+					"R_work_state",
+					"R_ctrl_signal",
+					"R2_ctrl_idle",
+					"I_ctrl_ena",
 					"I_ctrl_idle",
-					"W_slave_speed",
-					"R_energy_num",
-					"W_cfar_data_ena",
-					"W_cfar_range",
-					"W_rx_user_data5",
-					"W_slave_speed",
-					"W_rx_user_data5",
-					"W_rx_user_data4",
-					"gt5_rxdata_i",
-					"R_energy_num",
-					"R_tx_fifo2_data",
-					"I_cfar_range",
-					"R_tx_fifo2_data",
-					"R_fifo2_data",
-					"W_tx_fifo2_data",
-					"R_fifo2_data",
-					"R_energy_num",
-					"I_gt4_tx_clk",
-					"R_tx_fifo2_data",
-					"R_tx_syn2_cnt",
-					"R_tx_fifo2_rd",
-					"R_tx_fifo2_data",
-					"O_gtx5_tx_data",
-					"O_cfar_speed",
-					"R_speed_en",
-					"I_gtx5_rx_data",
-					"O_gtx6_tx_data",
-					"O_gtx5_tx_data",
-					"R_fifo2_data",
-					"W_tx_fifo2_data",
-					"I_slave_speed",
-					"W_slave_speed",
-					"W_cfar_speed",
-					"O_result_speed",
-					"R_result1_speed",
-					"I_result1_speed",
-					"W_cfar_velocity",
-					"R1_target_speed",
-					"R_target_speed",
-					"O_result_speed",
-					"W_cfar_velocity"
+					"W1_ad_i_dat",
+					"I_fft4_rfd",
+					"I_fft4_blk_exp",
+					"I_fft4_xk_im",
+					"I_fft4_xk_re",
+					"I_fft4_xk_index",
+					"I_fft4_xn_index",
+					"I_fft4_dv",
+					"I_fft4_done",
+					"I_fft4_edone",
+					"I_fft3_done",
+					"I_fft3_edone",
+					"I_fft2_edone",
+					"I_fft1_busy",
+					"I_fft1_rfd",
+					"I_fft1_busy",
+					"I_fft1_edone",
+					"I_fft1_done",
+					"I_fft1_dv",
+					"I_fft1_xn_index",
+					"W_fft1_xk_re",
+					"Q2",
+					"q2",
+					"Q2_CLK0",
+					"R_i_result_dat",
+					"W_ifft_xk_im",
+					"O_ad_i_dat",
+					"R_i_result_dat",
+					"R_i_out_dat",
+					"R_i_result_dat",
+					"R_result_ena",
+					"R_i_result_dat",
+					"R_ifft5_xk_re",
+					"W_ifft5_xk_re",
+					"W_ifft_xk_re",
+					"W_ifft5_xk_re",
+					"R_ifft5_xk_re",
+					"R_i_result_dat",
+					"R_ifft4_xk_re",
+					"W_ifft4_xk_re",
+					"R_i_result_dat",
+					"en1",
+					"data1",
+					"gt1",
+					"en1",
+					"data1",
+					"gt1",
+					"gt0",
+					"u3",
+					"_serdes_k7_if",
+					"serdes_k7_if",
+					"serdes_k7_slave"
 				],
 				"highlight": true,
 				"in_selection": false,
@@ -1459,193 +1425,37 @@
 			"groups":
 			[
 				{
-					"selected": 1,
-					"sheets":
-					[
-						{
-							"buffer": 0,
-							"semi_transient": false,
-							"settings":
-							{
-								"buffer_size": 1845,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										210,
-										192
-									]
-								],
-								"settings":
-								{
-									"auto_name": "`timescale 1ns / 1ps",
-									"syntax": "Packages/Text/Plain text.tmLanguage"
-								},
-								"translation.x": 0.0,
-								"translation.y": 0.0,
-								"zoom_level": 1.0
-							},
-							"stack_index": 4,
-							"type": "text"
-						},
-						{
-							"buffer": 1,
-							"semi_transient": false,
-							"settings":
-							{
-								"buffer_size": 1876,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										705,
-										21
-									]
-								],
-								"settings":
-								{
-									"auto_name": "`timescale 1ns / 1ps",
-									"syntax": "Packages/Text/Plain text.tmLanguage"
-								},
-								"translation.x": 0.0,
-								"translation.y": 0.0,
-								"zoom_level": 1.0
-							},
-							"stack_index": 2,
-							"type": "text"
-						}
-					]
-				},
-				{
 					"selected": 0,
 					"sheets":
 					[
 						{
-							"buffer": 2,
-							"file": "/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/top.v",
+							"buffer": 0,
+							"file": "/E/FPGA/s_m_test_0720/S_K7_M480_temperature/xilinx/top/rtl/measure_temp_volt.v",
 							"semi_transient": false,
 							"settings":
 							{
-								"buffer_size": 99312,
+								"buffer_size": 11988,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										43920,
-										43920
+										162,
+										162
 									]
 								],
 								"settings":
 								{
-									"origin_encoding": "ASCII",
 									"syntax": "Packages/sublimesystemverilog/SystemVerilog.sublime-syntax",
-									"tab_size": 4,
-									"translate_tabs_to_spaces": true
-								},
-								"translation.x": 0.0,
-								"translation.y": 13930.0,
-								"zoom_level": 1.0
-							},
-							"stack_index": 0,
-							"type": "text"
-						},
-						{
-							"buffer": 3,
-							"file": "/E/FPGA/s_m_test_0720/S_K7_M420_one_test/xilinx/top/top.v",
-							"semi_transient": false,
-							"settings":
-							{
-								"buffer_size": 75981,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										29972,
-										29989
-									]
-								],
-								"settings":
-								{
-									"origin_encoding": "ASCII",
-									"syntax": "Packages/sublimesystemverilog/SystemVerilog.sublime-syntax",
-									"tab_size": 4,
-									"translate_tabs_to_spaces": true
-								},
-								"translation.x": 0.0,
-								"translation.y": 10019.0,
-								"zoom_level": 1.0
-							},
-							"stack_index": 3,
-							"type": "text"
-						},
-						{
-							"buffer": 4,
-							"file": "/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/gmac_if.v",
-							"semi_transient": false,
-							"settings":
-							{
-								"buffer_size": 56822,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										32188,
-										32198
-									]
-								],
-								"settings":
-								{
-									"origin_encoding": "ASCII",
-									"syntax": "Packages/sublimesystemverilog/SystemVerilog.sublime-syntax",
-									"tab_size": 4,
-									"translate_tabs_to_spaces": true
-								},
-								"translation.x": 0.0,
-								"translation.y": 4394.0,
-								"zoom_level": 1.0
-							},
-							"stack_index": 5,
-							"type": "text"
-						},
-						{
-							"buffer": 5,
-							"file": "/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/serdes_exchange_m.v",
-							"semi_transient": false,
-							"settings":
-							{
-								"buffer_size": 31204,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										713,
-										730
-									]
-								],
-								"settings":
-								{
-									"origin_encoding": "ASCII",
-									"syntax": "Packages/sublimesystemverilog/SystemVerilog.sublime-syntax",
-									"tab_size": 4,
+									"tab_size": 2,
 									"translate_tabs_to_spaces": true
 								},
 								"translation.x": 0.0,
 								"translation.y": 0.0,
 								"zoom_level": 1.0
 							},
-							"stack_index": 1,
+							"stack_index": 0,
 							"type": "text"
 						}
 					]
@@ -1668,18 +1478,11 @@
 						0,
 						1,
 						1
-					],
-					[
-						1,
-						0,
-						2,
-						1
 					]
 				],
 				"cols":
 				[
 					0.0,
-					0.302342606149,
 					1.0
 				],
 				"rows":
@@ -1702,7 +1505,7 @@
 				"height": 0.0
 			},
 			"pinned_build_system": "Packages/Python/Python.sublime-build",
-			"position": "0,2,3,-32000,-32000,-1,-1,638,107,100,763",
+			"position": "0,2,3,-1,-1,-1,-1,638,107,100,763",
 			"project": "",
 			"replace":
 			{
@@ -1736,7 +1539,7 @@
 				],
 				"width": 0.0
 			},
-			"selected_group": 1,
+			"selected_group": 0,
 			"settings":
 			{
 			},

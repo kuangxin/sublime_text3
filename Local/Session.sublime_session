@@ -730,6 +730,34 @@
 				"selected_items":
 				[
 					[
+						"R_ff",
+						"R_fifo4_rd"
+					],
+					[
+						"I_ff1",
+						"I_fft1_rfd"
+					],
+					[
+						"P_",
+						"P_CFAR_RANGE"
+					],
+					[
+						"I_s",
+						"I_speed_ena"
+					],
+					[
+						"I_",
+						"I_ctrl_idle"
+					],
+					[
+						"I_c",
+						"I_ctrl_signal"
+					],
+					[
+						"I_ctr",
+						"I_ctrl_idle"
+					],
+					[
 						"alw",
 						"always_c	always_comb"
 					],
@@ -850,16 +878,8 @@
 						"div	comment_long"
 					],
 					[
-						"I_c",
-						"I_ctrl_ena"
-					],
-					[
 						"Is",
 						"I_sys_rst_n"
-					],
-					[
-						"I_",
-						"I_signal_ena"
 					],
 					[
 						"I",
@@ -1018,50 +1038,70 @@
 			"buffers":
 			[
 				{
-					"file": "/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/rtl/accu_data.v",
+					"file": "/E/FPGA/Bird_Radar_v2/MS_K7_P/rtl/top.v",
 					"settings":
 					{
-						"buffer_size": 19517,
+						"buffer_size": 25738,
 						"line_ending": "Windows"
 					}
 				},
 				{
-					"file": "/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/sublimesystemverilog/verilogutil/verilog_beautifier.py",
+					"file": "/E/FPGA/Bird_Radar_v2/MS_K7_P/rtl/accu_data.v",
 					"settings":
 					{
-						"buffer_size": 59403,
+						"buffer_size": 16378,
+						"line_ending": "Windows"
+					}
+				},
+				{
+					"contents": "//----------------------------------------------------NUST-----------------------------------------------------\n// ==============================420=================================\n// Project Name	:	DBF\n// File name    : 	de_modulate.v\n// Library      : 	WORK\n// Created On   :	2010-9-15 11:48\n// Comments     : 	\n// ----------------------------------------------------------------------\n// >>>>>>>>>>>>>>>>>>>>>>>>> COPYRIGHT NOTICE <<<<<<<<<<<<<<<<<<<<<<<<<<<\n// ----------------------------------------------------------------------\n// Copyright 2010 (c) NUST\n//\n// NUST owns the sole copyright to this software. Under \n// international copyright laws you (1) may not make a copy of this software\n// except for the purposes of maintaining a single archive copy, (2) may not \n// derive works herefrom, (3) may not distribute this work to others. These \n// rights are provided for information clarification, other restrictions of \n// rights may apply as well.\n// ----------------------------------------------------------------------\n// >>>>>>>>>>>>>>>>>>>>>>>>>>>>> Warrantee <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<\n// ----------------------------------------------------------------------\n// NUST MAKES NO WARRANTY OF ANY KIND WITH REGARD TO THE USE OF\n// THIS SOFTWARE, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO,\n// THE IMPLIED WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR\n// PURPOSE.\n// ----------------------------------------------------------------------\n//\n// Revision History :\n// ----------------------------------------------------------------------\n//  Ver :   		| Author:	Liht    | Mod. Date :	 |    \n//  Update Detail:  				| \n// ----------------------------------------------------------------------\n// OverView\n// ========\n//\n// ----------------------------------------------------------------------\n// ======================================================================\n`timescale 1ns/100ps\nmodule  de_modulate(\n    //====system reset====\n    I_reset_n           ,\n    \n    //====system clock====\n    I_sys_clk           ,   //200MHz working clock\n    I_ctrl_signal       , \n    \n    //====AD signal interface====\n    //====input====\n    I_ad_dat            ,\n    I_ad_dat_delay      ,\n        \n    //====output====\n    O_signal_I_dat      ,\n    O_signal_Q_dat\n    );\n\n//------------------------------------------External Signal Definitions------------------------------------------\n//====input====\ninput           I_reset_n           ;\ninput           I_sys_clk           ;\ninput[13:0]     I_ad_dat            ;\ninput[13:0]     I_ad_dat_delay      ;\ninput[2:0]      I_ctrl_signal       ;\n\n//====output====                    \noutput[23:0]    O_signal_I_dat      ;\noutput[23:0]    O_signal_Q_dat      ;\n\n//-----------------------------------------Internal Reg Definitions----------------------------------------------\n//====output register define====\nreg[23:0]      O_signal_I_dat      ;\nreg[23:0]      O_signal_Q_dat      ;\n\n//====parameter====\nparameter       TCO_DELAY       =   1;\n\n//====internal register define====\nreg[13:0]       R_ad_I_dat          ;\nreg[13:0]       R1_ad_I_dat         ;\nreg[13:0]       R_ad_Q_dat          ;\nreg[13:0]       R2_ad_I_dat         ;\nreg[13:0]       R2_ad_Q_dat         ;\nreg[13:0]       R0_ad_I_dat         ;\nreg[13:0]       R0_ad_Q_dat         ;\nreg             R_num_n             ;\nreg             R1_num_n            ;\nwire[17:0]      W_lpf_i_result      ;\nwire[17:0]      W_lpf_q_result      ;\nwire[31:0]      W_hw_i_result       ;\nwire[31:0]      W_hw_q_result       ;\n(*keep=\"true\"*)\nreg[2:0]        R_ctrl_signal       ;\nreg[31:0]       R_signal_I_dat      ;\nreg[31:0]       R_signal_Q_dat      ;\n\n//---------------------------------------------Main Body of Code---------------------------------------------------\n//-------------------------------------down sampling-------------------------------------\n//=====================read me=====================\n//\n//  -------> /2 --> * (-1)^n     ------>Xi\n//  Z^-1|\n//    -----> /2 --> * (-1)^(n+1) ------>Xq\n//\n//\n//=====================read me=====================\nalways @ (posedge I_sys_clk or negedge I_reset_n)\nbegin\n    if(~I_reset_n)\n    begin\n        R_ctrl_signal   <=  3'h0;\n    end\n    else\n    begin\n        R_ctrl_signal   <=  I_ctrl_signal;\n    end\nend\n\nalways @ (posedge I_sys_clk or negedge I_reset_n)\nbegin\n    if(~I_reset_n)\n    begin\n        R0_ad_I_dat <=  14'h0;\n        R0_ad_Q_dat <=  14'h0;\n    end\n    else\n    begin\n        R0_ad_I_dat <=  I_ad_dat;\n        R0_ad_Q_dat <=  I_ad_dat_delay;\n    end\nend\n\nalways @ (posedge I_sys_clk or negedge I_reset_n)\nbegin\n    if(~I_reset_n)\n    begin\n        R_num_n     <=  1'b0;\n    end\n    else\n    begin\n        R_num_n     <=  ~R_num_n;\n    end\nend\n\nalways @ (posedge I_sys_clk or negedge I_reset_n)           //align I/Q data\nbegin\n    if(~I_reset_n)\n    begin\n        R1_ad_I_dat  <=  14'h0;\n    end\n    else\n    begin\n        R1_ad_I_dat  <=  R0_ad_I_dat;\n    end\nend\n\nalways @ (posedge I_sys_clk or negedge I_reset_n)\nbegin\n    if(~I_reset_n)\n    begin\n        R2_ad_I_dat  <=  14'h0;\n    end\n    else\n    begin\n        R2_ad_I_dat  <=  R1_ad_I_dat - 14'h2_000;           //decode\n    end\nend\n\nalways @ (posedge I_sys_clk or negedge I_reset_n)\nbegin\n    if(~I_reset_n)\n    begin\n        R2_ad_Q_dat  <=  14'h0;\n    end\n    else\n    begin\n        R2_ad_Q_dat  <=  R0_ad_Q_dat - 14'h2_000;           //decode\n    end\nend\n\nalways @ (posedge I_sys_clk or negedge I_reset_n)\nbegin\n    if(~I_reset_n)\n    begin\n        R_ad_I_dat  <=  14'h0;\n        R_ad_Q_dat  <=  14'h0;\n    end\n    else\n    begin\n        if(~R_num_n)\n        begin\n            R_ad_I_dat  <=  R2_ad_I_dat;\n            R_ad_Q_dat  <=  15'h4000 - R2_ad_Q_dat;\n        end\n        else\n        begin\n            R_ad_I_dat  <=  15'h4000 - R2_ad_I_dat;\n            R_ad_Q_dat  <=  R2_ad_Q_dat;\n        end\n    end\nend\n//  3 clk delay\n//-------------------------------------down sampling-------------------------------------\n\n\n//-----------------------------------------D Fliter-----------------------------------------\nhw_fir_i    hw_fir_i_u1(\n    //====system reset====\n    .I_reset_n          (I_reset_n    ),\n                                      \n    //====system clock====            \n    .I_sys_clk          (I_sys_clk    ),   //200MHz working clock\n    \n    //====fir input & output signal====\n    //====input====\n    .I_fir_in_dat       ({{4{R_ad_I_dat[13]}},R_ad_I_dat}),\n        \n    //====output====\n    .O_fir_out_dat      (W_hw_i_result)\n    );//  26 clk delay\n\nhw_fir_q    hw_fir_q_u1(\n    //====system reset====\n    .I_reset_n          (I_reset_n    ),\n                                      \n    //====system clock====            \n    .I_sys_clk          (I_sys_clk    ),   //200MHz working clock\n    \n    //====fir input & output signal====\n    //====input====\n    .I_fir_in_dat       ({{4{R_ad_Q_dat[13]}},R_ad_Q_dat}),\n        \n    //====output====\n    .O_fir_out_dat      (W_hw_q_result)\n    );\n//-----------------------------------------D Fliter-----------------------------------------\n\n\n//-----------------------------------------LPF-----------------------------------------\nlpf_fir_i    lpf_fir_i_u1(\n    //====system reset====\n    .I_reset_n          (I_reset_n    ),\n                                      \n    //====system clock====            \n    .I_sys_clk          (I_sys_clk    ),   //200MHz working clock\n    \n    //====fir input & output signal====\n    //====input====\n    .I_fir_in_dat       (W_hw_i_result[17:0]),\n        \n    //====output====\n    .O_fir_out_dat      (W_lpf_i_result)\n    );\n\nlpf_fir_q    lpf_fir_q_u1(\n    //====system reset====\n    .I_reset_n          (I_reset_n    ),\n                                      \n    //====system clock====            \n    .I_sys_clk          (I_sys_clk    ),   //200MHz working clock\n    \n    //====fir input & output signal====\n    //====input====\n    .I_fir_in_dat       (W_hw_q_result[17:0]),\n        \n    //====output====\n    .O_fir_out_dat      (W_lpf_q_result)\n    );//  26 clk delay\n//-----------------------------------------LPF-----------------------------------------\n\n\n//-----------------------------------------output-----------------------------------------\nalways @ (posedge I_sys_clk or negedge I_reset_n)\nbegin\n    if(~I_reset_n)\n    begin\n        R_signal_I_dat  <=  32'b0;\n        R_signal_Q_dat  <=  32'b0;\n    end\n    else\n    begin\n        R_signal_I_dat  <=  W_lpf_i_result;\n        R_signal_Q_dat  <=  W_lpf_q_result;\n    end\nend\n\nalways @ (posedge I_sys_clk or negedge I_reset_n)\nbegin\n    if(~I_reset_n)\n    begin\n        O_signal_I_dat  <=  24'b0;\n        O_signal_Q_dat  <=  24'b0;\n    end\n    else\n    begin\n        if(R_ctrl_signal[2])\n        begin\n            O_signal_I_dat  <=  R_signal_I_dat[29:6];\n            O_signal_Q_dat  <=  R_signal_Q_dat[29:6];\n        end\n        else \n        begin\n            O_signal_I_dat  <=  R_signal_I_dat[28:5];\n            O_signal_Q_dat  <=  R_signal_Q_dat[28:5];\n        end\n    end\nend\n//------------------------------------------output--------------------------------------\nendmodule\n//====END====",
+					"file": "/E/FPGA/Bird_Radar_v2/MS_K7_P/rtl/de_modulate.v",
+					"file_size": 9431,
+					"file_write_time": 131249852403665922,
+					"settings":
+					{
+						"buffer_size": 9123,
+						"line_ending": "Windows",
+						"scratch": true
+					}
+				},
+				{
+					"file": "/E/FPGA/Bird_Radar_v2/MS_K7_P/rtl/serdes_if/serdes_range.v",
+					"settings":
+					{
+						"buffer_size": 3871,
+						"line_ending": "Windows"
+					}
+				},
+				{
+					"file": "/E/FPGA/Bird_Radar_v2/MS_K7_P/rtl/cfar_target.v",
+					"settings":
+					{
+						"buffer_size": 26834,
+						"line_ending": "Windows"
+					}
+				},
+				{
+					"file": "/E/FPGA/Bird_Radar_v2/MS_K7_P/rtl/top_tb.v",
+					"settings":
+					{
+						"buffer_size": 19874,
+						"line_ending": "Windows"
+					}
+				},
+				{
+					"file": "/E/FPGA/Bird_Radar_v2/MS_K7_P/rtl/work_state.v",
+					"settings":
+					{
+						"buffer_size": 9787,
 						"line_ending": "Unix"
 					}
 				},
 				{
-					"file": "/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/rtl/top.v",
+					"file": "/E/FPGA/Bird_Radar_v2/MS_K7_P/rtl/work_ifft.v",
 					"settings":
 					{
-						"buffer_size": 28060,
-						"line_ending": "Windows"
-					}
-				},
-				{
-					"file": "/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/top_tb.v",
-					"settings":
-					{
-						"buffer_size": 83544,
-						"line_ending": "Windows"
-					}
-				},
-				{
-					"file": "/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/gene_data.v",
-					"settings":
-					{
-						"buffer_size": 20174,
-						"line_ending": "Windows"
-					}
-				},
-				{
-					"contents": "import argparse\nimport re\nimport string\nimport verilogutil\n\nclass VerilogBeautifier():\n\n    def __init__(self, nbSpace=3, useTab=False, oneBindPerLine=True, oneDeclPerLine=False, paramOneLine=True, indentSyle='1tbs', reindentOnly=False, stripEmptyLine=True, instAlignPort=True):\n        self.settings = {'nbSpace': nbSpace, \\\n                        'useTab':useTab, \\\n                        'oneBindPerLine':oneBindPerLine, \\\n                        'oneDeclPerLine':oneDeclPerLine,\\\n                        'paramOneLine': paramOneLine,\\\n                        'indentSyle' : indentSyle,\\\n                        'reindentOnly' : reindentOnly,\\\n                        'stripEmptyLine': stripEmptyLine,\\\n                        'instAlignPort' : instAlignPort }\n        self.indentSpace = ' ' * nbSpace\n        if useTab:\n            self.indent = '\\t'\n        else:\n            self.indent = self.indentSpace\n        self.states = []\n        self.state = ''\n        self.re_decl = re.compile(r'^[ \\t]*(?:(?P<param>localparam|parameter)\\s+)?(?P<scope>\\w+\\:\\:)?(?P<type>[A-Za-z_]\\w*)[ \\t]*(?P<sign>signed\\b|unsigned\\b)?[ \\t]*(\\[(?P<bw>'+verilogutil.re_bw+r')\\])?[ \\t]*(?P<name>[A-Za-z_]\\w*)[ \\t]*(?P<array>(?:\\[('+verilogutil.re_bw+r')\\][ \\t]*)*)(=\\s*(?P<init>[^;]+))?(?P<sig_list>,[\\w, \\t]*)?;[ \\t]*(?P<comment>.*)')\n        self.re_inst = re.compile(r'(?s)^[ \\t]*\\b(?P<itype>\\w+)\\s*(#\\s*\\([^;]+\\))?\\s*\\b(?P<iname>\\w+)\\s*\\(',re.MULTILINE)\n\n    def getIndentLevel(self,txt):\n        line = txt[:txt.find('\\n')]\n        # Make sure there is no mix tab/space\n        if self.settings['useTab']:\n            line = line.replace(self.indentSpace,'\\t')\n        else:\n            line = line.replace('\\t',self.indentSpace)\n        cnt = len(line) - len(line.lstrip())\n        if not self.settings['useTab']:\n            cnt = int(cnt/self.settings['nbSpace'])\n        return cnt\n\n    def stateUpdate(self,newState=None):\n        if newState:\n            self.states.append(newState)\n        else:\n            self.states.pop()\n        # Get current state from the list\n        if not self.states:\n            self.state = ''\n        else:\n            self.state = self.states[-1]\n\n    def isStateEnd(self,w):\n        if (self.state=='begin' and w=='end') :\n            return True\n        if (self.state=='covergroup' and w=='endgroup') :\n            return True\n        if (self.state=='fork' and w.startswith('join')) :\n            return True\n        if (self.state=='{' and w=='}') :\n            return True\n        if (self.state=='(' and w==')') :\n            return True\n        if (self.state.startswith('`') and w in ['`elsif', '`else', '`endif']) :\n            return True\n        if (self.state and w=='end' + self.state) :\n            return True\n        return False\n\n    def beautifyFile(self,fnameIn,fnameOut=''):\n        if not fnameOut:\n            fnameOut = fnameIn\n        with open(fnameIn, \"r\") as f:\n            txt = f.read()\n        txt = self.beautifyText(txt)\n        with open(fnameOut, \"w\") as f:\n            f.write(txt)\n\n    def beautifyText(self,txt):\n        # Variables\n        self.states = [] # block indent list\n        w_d = ['\\n','\\n'] # previous word\n        line = '' # current line\n        block = '' # block of text to align\n        self.block_state = ''\n        block_handled = False\n        block_ended = False\n        txt_new = '' # complete text beautified\n        ilvl = self.getIndentLevel(txt)\n        ilvl_prev = ilvl\n        has_indent = ilvl!=0\n        line_cnt = 1\n        split = {}\n        split_always = 0\n        last_split = None # last split that was pop\n        split_else = False # If next word is else this means the split continue\n        self.always_state = ''\n        # Split all text in word, special character, space and line return\n        words = re.findall(r\"`?\\w+|[^\\w\\s]|[ \\t]+|\\n\", txt, flags=re.MULTILINE)\n        for w in words:\n            state_end = self.isStateEnd(w)\n            # Handle special case of if/else block in a split statement (like a case)\n            if w=='else' and split_else:\n                # print('[Beautify] Detected else in a split {0} at level {1} '.format(last_split,ilvl))\n                split[ilvl] = last_split\n            elif w.strip():\n                split_else = False\n            # Start of line ?\n            if w_d[-1]=='\\n':\n                ilvl_prev = ilvl\n                if not w.strip():\n                    if w!='\\n' and self.block_state in ['module']:\n                        block+=w\n                    has_indent = w!='\\n'\n                if state_end:\n                    self.stateUpdate()\n                    assert ilvl>0, '[Beautify] Block end with already no indentation ! Line {line_cnt:4}: \"{line:<150}\" => state={state:<16} -- ilvl={ilvl}'.format(line_cnt=line_cnt, line=line, state=self.state)\n                    ilvl-=1\n                # Handle end of self.block_state\n                if self.block_state=='assign' and w!='assign' and not re.match(r'[\\t ]+',w):\n                    txt_new += self.alignAssign(block,2)\n                    block = ''\n                    self.block_state = ''\n                elif self.block_state == 'decl' and w in ['always','always_ff','always_comb','always_latch', 'constraint', 'assign'] :\n                    if self.settings['reindentOnly']:\n                        txt_new += block\n                    else :\n                        txt_new += self.alignDecl(block)\n                    block = ''\n                    self.block_state = ''\n                if not has_indent and self.state.startswith('`'):\n                    has_indent = True\n                # Insert indentation except for comment_block without initial indentation and module declaration\n                if self.block_state not in ['module'] and (self.state!='comment_block' or has_indent) and w.strip():\n                    ilvl_tmp = ilvl+split_always\n                    for i,x in split.items() :\n                        ilvl_tmp += x[0]\n                    # print('[Beautify] split={split} states={s} block={b} => ilvl = {i}'.format(split=split,i=ilvl_tmp,s=self.states, b=self.block_state))\n                    line = ilvl_tmp * self.indent\n            # Handle end of split\n            if ilvl in split:\n                if self.state not in ['comment_line','comment_block','string'] and w in [';','end','endcase'] :\n                    # print('[Beautify] End Split on line {line_cnt:4}: \"{line:<140}\" => state={block_state}.{state} -- ilvl={ilvl}'.format(line_cnt=line_cnt, line=line+w, state=self.state, block_state=self.block_state, ilvl=ilvl))\n                    last_split = split.pop(ilvl,0)\n                    split_else = (w=='end') and (':' in last_split[1]) # detect only cases where the if/else is inside a case\n            # Identify split statement\n            if w=='\\n':\n                block_ended = False\n                # Pop comment line\n                if self.state=='comment_line':\n                    self.stateUpdate()\n                    if not self.block_state:\n                        block_handled = True\n                # if line:\n                #     print('[Beautify] {line_cnt:4}: ilvl={ilvl} state={state} bs={bstate} as={astate} split={split}'.format(line_cnt=line_cnt, state=self.states, bstate=self.block_state, astate=self.always_state, ilvl=ilvl, split=split))\n                #     print(line)\n                # Search for split line requiring temporary increase of the indentation level\n                if self.state not in ['comment_block','{'] and self.block_state not in ['module','instance','struct']:\n                    # Retrieve the complete last line without verilog comment\n                    idx_eol = block.rfind('\\n')\n                    last_line = line\n                    if idx_eol>-1 and idx_eol<(len(block)-2):\n                        last_line = block[idx_eol+1:]+ line\n                    tmp = verilogutil.clean_comment(last_line).strip()\n                    # print('block=\"{0}\"\" => eol={1} => last_line=\"{2}\"'.format(block,idx_eol,last_line))\n                    if tmp:\n                        m = re.search(r'(;|\\{|\\bend|\\bendcase|\\bendgenerate)$|^\\}$|(begin(\\s*\\:\\s*\\w+)?)$|(case)\\s*\\(.*\\)$|(`\\w+)\\s*(\\(.*\\))?$|^ *(`\\w+)\\b',tmp)\n                        # print('[Beautify] Testing for split: \"{0}\" (ilvl={1} prev={2}) - split={3}'.format(tmp,ilvl,ilvl_prev,split))\n                        if not m:\n                            if tmp.startswith('always'):\n                                split_always = 1\n                                # print('[Beautify] Always split on line {line_cnt:4} => state={block_state}.{state}: \"{line:<140}\"'.format(line_cnt=line_cnt, line=line, state=self.states, block_state=self.block_state, ilvl=ilvl))\n                            elif (ilvl==ilvl_prev or tmp.startswith('end')) and self.state not in ['(',''] :\n                                if ilvl not in split:\n                                    if self.state == 'case' and re.match(r'\\s*\\w+\\s*,$',tmp):\n                                        # print('[Beautify] Multiple state case at ilvl {ilvl} on line {line_cnt:4} => state={block_state}.{state}: \"{line:<140}\"'.format(line_cnt=line_cnt, line=line, state=self.states, block_state=self.block_state, ilvl=ilvl))\n                                        pass\n                                    else:\n                                        # print('[Beautify] First split at ilvl {ilvl} on line {line_cnt:4} => state={block_state}.{state}: \"{line:<140}\"'.format(line_cnt=line_cnt, line=tmp, state=self.states, block_state=self.block_state, ilvl=ilvl))\n                                        split[ilvl] = [1,tmp]\n                                # Exclude the @(event) cases\n                                elif not split[ilvl][1].strip().startswith('@') :\n                                    # Exclude the assign cases\n                                    m = re.match(r'^\\s*(assign\\s+)?\\w+\\s*(<?=)\\s*(.*)',split[ilvl][1])\n                                    if not m:\n                                        # print('[Beautify] Incrementing split at ilvl {ilvl} on line {line_cnt:4} => state={block_state}.{state}: \"{line:<140}\"'.format(line_cnt=line_cnt, line=line, state=self.states, block_state=self.block_state, ilvl=ilvl))\n                                        split[ilvl][0] += 1\n                if self.block_state == 'decl' and not self.re_decl.match(line.strip()):\n                    if self.settings['reindentOnly']:\n                        txt_new += block\n                    else :\n                        txt_new += self.alignDecl(block)\n                    block = ''\n                    self.block_state = ''\n                # print('[Beautify] {line_cnt:4}: \"{line:<140}\" => state={block_state}.{state} -- ilvl={ilvl}'.format(line_cnt=line_cnt, line=line, state=self.state, block_state=self.block_state, ilvl=ilvl))\n                block += line.rstrip() + '\\n'\n                line = ''\n                line_cnt+=1\n            # else:\n            elif not w_d[-1]=='\\n' or w.strip():\n                if self.state not in ['comment_line','comment_block','string'] and self.settings['indentSyle']=='gnu':\n                    if w == 'begin' and line.strip()!='':\n                        ilvl_tmp = ilvl+split_always+1\n                        for i,x in split.items() :\n                            ilvl_tmp += x[0]\n                        if ilvl not in split:\n                            tmp = verilogutil.clean_comment(line).strip()\n                            # print('[Beautify] Adding split at ilvl {ilvl} on line {line_cnt:4} => state={block_state}.{state}: \"{line:<140}\"'.format(line_cnt=line_cnt, line=line, state=self.state, block_state=self.block_state, ilvl=ilvl))\n                            split[ilvl] = [1,tmp]\n                        else:\n                            split[ilvl][0] += 1\n                        line += '\\n' + ilvl_tmp * self.indent\n                    elif w == 'else' and w_d[-1]!='\\n' and w_d[-2]=='end':\n                        ilvl_tmp = ilvl+split_always\n                        for i,x in split.items() :\n                            ilvl_tmp += x[0]\n                        line += '\\n' + ilvl_tmp * self.indent\n                # Insert line return after a block ended if this is no a comment\n                if block_ended and w.strip() and (w != '/' or w_d[-1] != '/'):\n                    line = line.rstrip() + '\\n'\n                    block_ended = False\n                line += w\n                if self.state not in ['comment_line','comment_block','string']:\n                    # print('State={0}.{1} -- Testing \"{2}\"'.format(self.state,self.block_state,block+line))\n                    action = self.processWord(w,w_d, state_end, block + line)\n                    if action.startswith(\"incr_ilvl\"):\n                        ilvl+=1\n                        if action == \"incr_ilvl_flush\":\n                            txt_new += block\n                            block = line\n                            line = ''\n            # Handle the self.block_state and call appropriate alignement function\n            if w==';' and self.state not in ['comment_line','comment_block','string', '(']:\n                if self.block_state in ['text','decl','struct_assign'] and self.re_decl.match(line.strip()):\n                    self.block_state = 'decl'\n                    # print('Setting Block state to decl on line \"{0}\"'.format(line))\n                elif self.block_state in ['module','instance','text','package','decl'] or (self.block_state in ['struct','struct_assign','enum'] and self.state!='{'):\n                    if self.block_state=='module':\n                        block_tmp = self.alignModulePort(block+line,ilvl-1)\n                        line = ''\n                        block_ended = True\n                    elif self.settings['reindentOnly']:\n                        block_tmp = block + line\n                        line = ''\n                    elif self.block_state=='instance':\n                        block_tmp = self.alignInstance(block+line,ilvl)\n                        line = ''\n                    elif self.block_state=='struct':\n                        block_tmp = self.alignDecl(block+line)\n                        line = ''\n                    elif self.block_state=='struct_assign':\n                        block_tmp = self.alignAssign(block+line,1)\n                        line = ''\n                    elif self.block_state=='enum':\n                        block_tmp = self.alignAssign(block+line,4)\n                        line = ''\n                    elif self.block_state=='decl':\n                        block_tmp = self.alignDecl(block)\n                    else:\n                        block_tmp = block + line\n                        line = ''\n                    if not block_tmp:\n                        print('[Beautify: ERROR] Unable to extract a {0} from \"{1}\"'.format(self.block_state,block))\n                    else:\n                        block = block_tmp\n                    self.block_state = ''\n                    block_handled = True\n            # Handle the end of self.state\n            if state_end:\n                # Check if this was not already handled\n                # print('[Beautify] state {0}.{1} end on word {2}, ilvl={3}'.format(self.states,self.block_state,w,ilvl))\n                if self.block_state == 'generate' :\n                    block_tmp = block\n                    if not self.settings['reindentOnly']:\n                        for m in self.re_inst.finditer(block[9:]):\n                            if m and m.group('itype') not in ['else', 'begin', 'end'] and m.group('iname') not in ['if','for','foreach']:\n                                inst_start = 9+m.start()\n                                inst_end = block.find(';',inst_start)+1;\n                                if(inst_end>inst_start):\n                                    inst_block = block[inst_start:inst_end]\n                                    inst_ilvl = self.getIndentLevel(inst_block)\n                                    inst_block_aligned = self.alignInstance(inst_block,inst_ilvl)\n                                    block_tmp = block_tmp.replace(inst_block,inst_block_aligned)\n                                    # print('[Beautify] Align block inst in generate : ilvl={0} \\n{1}'.format(inst_ilvl,inst_block))\n                    block = block_tmp\n                elif w in ['endtask', 'endfunction', 'endsequence', 'endproperty']:\n                    if self.settings['reindentOnly']:\n                        block = block+line\n                    else:\n                        block = self.alignAssign(block+line,1)\n                    line = ''\n                    block_handled = True\n                if w_d[-1]!='\\n':\n                    self.stateUpdate()\n                    assert ilvl>0, '[Beautify] Block end with already no indentation ! Line {line_cnt:4}: \"{line:<150}\" => state={state:<16} '.format(line_cnt=line_cnt, line=line, state=self.state)\n                    ilvl-=1\n                    # Handle end of split\n                    if ilvl in split and w in ['end','endcase'] :\n                        # print('[Beautify] End Split on line {line_cnt:4}: \"{line:<140}\" => state={block_state}.{state} -- ilvl={ilvl}'.format(line_cnt=line_cnt, line=line+w, state=self.state, block_state=self.block_state, ilvl=ilvl))\n                        last_split = split.pop(ilvl,0)\n                        split_else = (w=='end') and (':' in last_split[1]) # detect only cases where the if/else is inside a case\n            # Comment: do not try to recognise words, just end of the comment\n            elif self.state=='comment_line':\n                if w=='\\n':\n                    self.stateUpdate()\n                    if not self.block_state:\n                        block_handled = True\n            elif self.state=='comment_block':\n                if w_d[-1]=='*' and w=='/':\n                    self.stateUpdate()\n                    block += line\n                    line = ''\n                    if not self.block_state:\n                        block_handled = True\n            elif self.state=='string':\n                if w=='\"':\n                    self.stateUpdate()\n                    block += line\n                    line = ''\n                    if not self.block_state:\n                        block_handled = True\n            # Identify start of comments/string\n            else :\n                if w_d[-1]=='/':\n                    if w=='/':\n                        self.stateUpdate('comment_line')\n                        block_ended = False\n                    elif w=='*':\n                        self.stateUpdate('comment_block')\n                        block_ended = False\n                    if line.strip() in [\"//\", \"/*\"] and not has_indent:\n                        line = line.strip()\n                    # print('[Beautify] state={block_state:<16}.{state:<16} -- ilvl={ilvl} -- {line_cnt:4}: \"{line}\" '.format(line_cnt=line_cnt, line=line, state=self.state, block_state=self.block_state, ilvl=ilvl))\n                elif w=='\"':\n                    self.stateUpdate('string')\n            # Handle always block_state\n            if self.block_state == 'always' and (not self.state or self.state in ['module','interface']):\n                tmp = verilogutil.clean_comment(block + line).strip()\n                m = re.match(r'(?s)^\\s*always\\w*\\s+(@\\s*(\\*|\\([^\\)]*\\)))?\\s*begin',tmp, flags=re.MULTILINE)\n                if (m and w=='end') or (self.always_state in ['else',''] and w in ['end',';']):\n                    if self.settings['reindentOnly']:\n                        block+=line\n                    else:\n                        block = self.alignAssign(block+line,7)\n                    line = ''\n                    block_handled = True\n                    self.always_state = ''\n                    split_always = 0\n                    # print('[Beautify] End of always block at line {0}: \\n{1}'.format(line_cnt,block))\n                elif not m :\n                    if w == 'else':\n                        # print('[Beautify] Inside else part of always at line {0}'.format(line_cnt))\n                        self.always_state = 'else'\n                    # handle case of always if() ...; without else\n                    elif self.always_state == 'expect_else' and w.strip() and w != '/':\n                        block = (block + line)\n                        last_sc = block.rfind(';') + 1\n                        last_end = block.rfind('end') + 3\n                        if last_end < last_sc:\n                            last_end = last_sc\n                        line = block[last_end:]\n                        block = block[:last_end]\n                        # remove extra indent when the always end block is discovered too late\n                        if split_always == 1:\n                            line = re.sub(r'^'+self.indent,'',line,flags=re.MULTILINE)\n                            # print('[Beautify] End of always block at line {0}, extracting {1}'.format(line_cnt,line))\n                            self.block_state = ''\n                            action = self.processWord(w,w_d,state_end, line)\n                            if action.startswith(\"incr_ilvl\"):\n                                ilvl+=1\n                                if action == \"incr_ilvl_flush\":\n                                    txt_new += block\n                                    block = line\n                                    line = ''\n                        if not self.settings['reindentOnly']:\n                            block = self.alignAssign(block,7)\n                        # print('[Beautify] End of always block at line {0} with word {1}: \\n{2}'.format(line_cnt,w,block))\n                        if not w.startswith('always'):\n                            self.always_state = ''\n                        txt_new += block\n                        block = ''\n                        split_always = 0\n                    elif w == 'if':\n                        self.always_state = 'if'\n                        # print('[Beautify] Inside if part of always at line {0}'.format(line_cnt))\n                    elif self.always_state == 'if' and w in ['end',';']:\n                        # print('[Beautify] End of if part=> next word has to be an else'.format(line_cnt))\n                        self.always_state = 'expect_else'\n            # Add block to the text\n            if block_handled:\n                # print('[Beautify] state={block_state}.{state} Block handled:\\n\"{block}\" '.format(state=self.state, block_state=self.block_state, block=block))\n                txt_new += block\n                block = ''\n                self.block_state = ''\n                block_handled = False\n            # Keep previous words\n            if w.strip() or w_d[-1]!='\\n':\n                w_d[-2] = w_d[-1]\n                w_d[-1] = w\n        # Check that there is no reminding stuff todo:\n        block = block+line\n        # print('[Beautify] state={block_state}.{state}\\n{block} '.format(state=self.state, block_state=self.block_state, block=block))\n        if self.block_state in ['module','instance','text','package','decl', 'assign'] or (self.block_state in ['struct','struct_assign','enum'] and self.state!='{'):\n            if self.block_state=='module':\n                block_tmp = self.alignModulePort(block,ilvl-1)\n            elif self.settings['reindentOnly']:\n                block_tmp = block\n            elif self.block_state=='instance':\n                block_tmp = self.alignInstance(block,ilvl)\n            elif self.block_state=='struct':\n                block_tmp = self.alignDecl(block)\n            elif self.block_state=='assign':\n                block_tmp = self.alignAssign(block,2)\n            elif self.block_state=='struct_assign':\n                block_tmp = self.alignAssign(block,1)\n            elif self.block_state=='decl':\n                block_tmp = self.alignDecl(block)\n            else:\n                block_tmp = block\n            if not block_tmp:\n                print('[Beautify: ERROR] Unable to extract a {0} from \"{1}\"'.format(self.block_state,block))\n            else:\n                block = block_tmp\n        txt_new += block\n        return txt_new\n\n    def processWord(self,w, w_prev, state_end, txt):\n        kw_block = ['module', 'class', 'interface', 'program', 'function', 'task', 'package', 'case', 'generate', 'covergroup', 'property', 'sequence', 'fork', 'begin', '{', '(', '`ifdef', '`elsif', '`else']\n        if w in kw_block:\n            # Handle case where this is an external declaration (meaning no block following)\n            if w_prev[-2] in ['extern','cover','assert']:\n                return \"\"\n            self.stateUpdate(w)\n            # print('Block {0} detected in \"{1}\". Prev= \"{2}\" => state = {3}'.format(w,txt,w_prev,self.states))\n            if w in ['module','package', 'generate', 'function', 'task', 'property', 'sequence']:\n                self.block_state = w\n                return \"incr_ilvl_flush\"\n            else:\n                return \"incr_ilvl\"\n        # Identify self.block_state\n        if not self.block_state:\n            if w in ['assign']:\n                self.block_state = w\n            elif w.startswith('always'):\n                self.block_state = 'always'\n                self.always_state = ''\n                # print('Start of always block')\n            elif w_prev[-1]=='\\n' and w!= '/' and not state_end:\n                # print('Start of text block with \"{0}\"'.format(w))\n                self.block_state = 'text'\n        elif self.block_state=='text':\n            tmp = verilogutil.clean_comment(txt).strip()\n            m = self.re_inst.match(tmp)\n            if m and m.group('itype') not in ['else', 'begin', 'end', 'assert', 'cover'] and m.group('iname') not in ['if','for','foreach']:\n                self.block_state = 'instance'\n            elif re.match(r'\\s*\\b(typedef\\s+)?(struct|union)\\b',tmp, flags=re.MULTILINE):\n                self.block_state = 'struct'\n            elif re.match(r'\\s*\\b(typedef\\s+)?(enum)\\b',tmp, flags=re.MULTILINE):\n                self.block_state = 'enum'\n            elif re.match(r\"(?s)^.*=\\s*'\\{\",tmp, flags=re.MULTILINE):\n                # print('Matching struct assign on \"{0}\"'.format(txt))\n                self.block_state = 'struct_assign'\n        # print('Test \"{0}\" => {1}.{2}.{3}'.format((txt).strip(),self.states,self.block_state,self.always_state))\n        return \"\"\n\n    # Align ANSI style port declaration of a module\n    def alignModulePort(self,txt, ilvl):\n        # Extract parameter and ports\n        m = re.search(r'(?s)(?P<module>^[ \\t]*module)\\s*(?P<mname>\\w+)(?P<import>\\s+import\\s+.*?;)?\\s*(?P<paramsfull>#\\s*\\(\\s*(?P<params>.*?)\\s*\\))?\\s*(\\(\\s*(?P<ports>.*)\\s*\\))?\\s*;$',txt,flags=re.MULTILINE)\n        if not m:\n            return ''\n        txt_new = self.indent*(ilvl) + 'module ' + m.group('mname').strip()\n        # Add optional import declaration\n        if m.group('import'):\n            txt_new += '\\n{0}{1}\\n'.format(self.indent*(ilvl+1),m.group('import').strip())\n        # Add optional parameter declaration\n        if m.group('params'):\n            param_txt = m.group('params').strip()\n            # param_txt = re.sub(r'(^|,)\\s*parameter','',param_txt) # remove multiple parameter declaration\n            re_param_str = r'^[ \\t]*(?P<parameter>parameter\\s+)?(?P<type>[\\w\\:]+\\b)?[ \\t]*(?P<sign>signed|unsigned\\b)?[ \\t]*(\\[(?P<bw>'+verilogutil.re_bw+r')\\])?[ \\t]*(?P<param>\\w+)\\b\\s*=\\s*(?P<value>[\\w\\:`\\'\\+\\-\\*\\/]+)\\s*(?P<sep>,)?[ \\t]*(?P<list>\\w+\\s*=\\s*\\w+(,)?\\s*)*(?P<comment>.*?$)'\n            re_param = re.compile(re_param_str,flags=re.MULTILINE)\n            decl = re_param.findall(param_txt)\n            if not decl:\n                print('[Beautifier: ERROR] alignModulePort unable to parse parameters in \"{0}\"'.format(param_txt))\n            len_type  = max([len(x[1]) for x in decl if x not in ['signed','unsigned']])\n            len_sign  = max([len(x[2]) for x in decl])\n            len_bw    = max([len(x[4]) for x in decl])\n            len_param = max([len(x[5]) for x in decl])\n            len_value = max([len(x[6]) for x in decl])\n            len_comment = max([len(x[10]) for x in decl])\n            has_param_list = ['' for x in decl if x[0] != '']\n            has_param_all = len(has_param_list)==len(decl)\n            has_param = len(has_param_list)>0\n            # print(str((len_type,len_sign,len_bw,len_param,len_value,len_comment,has_param_all,has_param)))\n            if m.group('import'):\n                txt_new += self.indent*(ilvl+1) + '#('\n            else:\n                txt_new += ' #('\n            # add only one parameter statement if there is at least one but not on all line\n            if has_param and not has_param_all:\n                txt_new += 'parameter'\n            # If not on one line align parameter together, otherwise keep as is\n            if '\\n' in param_txt or not self.settings['paramOneLine']:\n                txt_new += '\\n'\n                lines = param_txt.splitlines()\n                for i,line in enumerate(lines):\n                    l = line.strip()\n                    # ignore the first line with parameter keyword only since it has already been added\n                    if i==0 and l=='parameter':\n                        continue\n                    l_new = self.indent*(ilvl+1)\n                    m_param = re_param.search(l)\n                    if not m_param or self.settings['reindentOnly']:\n                        l_new += l\n                    else:\n                        # print('params = {0}'.format(m_param.groups()))\n                        if has_param_all:\n                            l_new += 'parameter '\n                        if len_type>0:\n                            if m_param.group('type'):\n                                if m_param.group('type') not in ['signed','unsigned']:\n                                    l_new += m_param.group('type').ljust(len_type+1)\n                                else:\n                                    l_new += ''.ljust(len_type+2) + m_param.group('type').ljust(len_sign+1)\n                            else:\n                                l_new += ''.ljust(len_type+2)\n                        if len_sign>0:\n                            if m_param.group('sign'):\n                                l_new += m_param.group('sign').ljust(len_sign)\n                            else:\n                                l_new += ''.ljust(len_sign+1)\n                        if len_bw>0:\n                            if m_param.group('bw'):\n                                l_new += '[' + m_param.group('bw').rjust(len_bw) + '] '\n                            else:\n                                l_new += ''.ljust(len_bw+3)\n                        l_new += m_param.group('param').ljust(len_param)\n                        l_new += ' = ' + m_param.group('value').ljust(len_value)\n                        if m_param.group('sep') and (i!=(len(lines)-1) or m_param.group('list')):\n                            l_new += m_param.group('sep')\n                        #TODO: in case of list try to do something: option to split line by line? align in column if multiple list present ?\n                        if m_param.group('list'):\n                            l_new += ' ' + m_param.group('list')\n                        if i==(len(lines)-1) and m_param.group('comment'):\n                            l_new += ' '\n                        if m_param.group('comment'):\n                            l_new += ' ' + m_param.group('comment')\n                    if not self.settings['stripEmptyLine'] or l_new.strip() !='':\n                        txt_new += l_new.rstrip() + '\\n'# + self.indent*(ilvl)\n            else :\n                if has_param and not has_param_all:\n                    txt_new += ' '\n                txt_new += param_txt\n                # print('len Comment = ' + str(len_comment)+ ': ' + str([x[9] for x in decl])+ '\"')\n                if len_comment > 0 :\n                    txt_new += '\\n' + self.indent*(ilvl)\n            txt_new += ')'\n            #\n        # Handle special case of no ports\n        if not m.group('ports'):\n            if not self.settings['reindentOnly']:\n                txt_new += '()'\n            return txt_new + ';'\n        # Add port list declaration\n        if txt_new[-1]!='\\n':\n            txt_new += ' '\n        txt_new += '(\\n'\n        # Port declaration: direction type? signess? buswidth? list ,? comment?\n        re_str = r'^[ \\t]*(?P<dir>[\\w\\.]+)[ \\t]+(?P<var>var\\b)?[ \\t]*(?P<type>[\\w\\:]+\\b)?[ \\t]*(?P<sign>signed|unsigned\\b)?[ \\t]*(?P<bw>(?:\\['+verilogutil.re_bw+r'\\][ \\t]*)*)[ \\t]*(?P<ports>(?P<port1>\\w+)[\\w, \\t\\[\\]\\*\\-\\+\\$\\(\\)\\'\\:)]*)[ \\t]*(?P<comment>.*)'\n        # print(re_str)\n        # handle case of multiple input/output declared on same line\n        txt_port = re.sub(r'[ \\t]*,[ \\t]*(input|output|inout)\\b[ \\t]+',r',\\n\\1 ',m.group('ports'))\n        decl = re.findall(re_str,txt_port,flags=re.MULTILINE)\n        # Extract max length of the different field for vertical alignement\n        port_dir_l = [x[0] for x in decl if x[0] in verilogutil.port_dir]\n        port_if_l  = [x[0] for x in decl if x[0] not in verilogutil.port_dir]\n        # Get Direction length, if any\n        len_dir = 0\n        if port_dir_l:\n            len_dir  = max([len(x) for x in port_dir_l])\n        # Get IF length, if any\n        len_if = 0\n        if port_if_l:\n            len_if  = max([len(x) for x in port_if_l])\n        # Get Var length, if any\n        len_var = 0\n        for x in decl:\n            if x[1] != '':\n                len_var = 3\n        # Get bitwidth length, if any\n        port_bw_l  = [re.findall(r'\\[(.+?)\\]',re.sub(r'\\s*','',x[4])) for x in decl]\n        len_bw_a = []\n        if len(port_bw_l)>0:\n            for x in port_bw_l:\n                for i,y in enumerate(x):\n                    if i>=len(len_bw_a):\n                        len_bw_a.append(len(y))\n                    elif len_bw_a[i]<len(y):\n                        len_bw_a[i] = len(y)\n        # get total length of bitwidth, adding all internal length and adding 2 for each dimmension for the brackets\n        len_bw = sum(len_bw_a) + 2*len(len_bw_a)\n        # Get port length (ignore list, just align on the first port of the list if nay)\n        max_port_len = 0\n        port_l = []\n        for x in decl:\n            s = x[5].strip()\n            if s[-1]==',':\n                s = s[:-1].strip()\n            if ',' in s:\n                s = x[6]\n            port_l.append(s)\n        max_port_len=max([len(x) for x in port_l])\n        len_sign = 0\n        len_type = 0\n        len_type_user = 0\n        for x in decl:\n            if x[1] == '' and x[3]=='' and x[4]=='' and x[2] not in ['logic', 'wire', 'reg', 'signed', 'unsigned']:\n                if len_type_user < len(x[2]) :\n                    len_type_user = len(x[2])\n            else :\n                if len_type < len(x[2]) and  x[2] not in ['signed','unsigned']:\n                    len_type = len(x[2])\n            if x[2] in ['signed','unsigned'] and len_sign<len(x[2]):\n                len_sign = len(x[2])\n            elif x[3] in ['signed','unsigned'] and len_sign<len(x[3]):\n                len_sign = len(x[3])\n        len_type_full = len_type\n        if len_var > 0 or len_bw > 0 or len_sign > 0 :\n            if len_type > 0:\n                len_type_full +=1\n            if len_var > 0:\n                len_type_full += 4\n            if len_bw > 0:\n                len_type_full += len_bw\n            if len_sign > 0:\n                len_type_full += 1+len_sign\n        max_len = len_type_full\n        if len_type_user < len_type_full:\n            len_type_user = len_type_full\n        else :\n            max_len = len_type_user\n        # Adjust IF length compare to the other\n        if len_if < max_len+len_dir+1:\n            len_if = max_len+len_dir+1\n        else :\n            max_len = len_if-len_dir-1\n        if len_type_user < max_len:\n            len_type_user = max_len\n        # print('Len:  dir=' + str(len_dir) + ' if=' + str(len_if) + ' type=' + str(len_type) + ' sign=' + str(len_sign) + ' bw=' + str(len_bw) + ' type_user=' + str(len_type_user) + ' port=' + str(max_port_len) + ' max_len=' + str(max_len) + ' len_type_full=' + str(len_type_full))\n        # Rewrite block line by line with padding for alignment\n        lines = txt_port.splitlines()\n\n        for i,line in enumerate(lines):\n            # Remove leading and trailing space.\n            l = line.strip()\n            # ignore empty line at the begining and the end of the connection\n            if (i!=(len(lines)-1) and i!=0 and (not self.settings['stripEmptyLine'] or l !='') ) or l !='':\n                m_port = re.search(re_str,l)\n                l_new = self.indent*(ilvl+1)\n                if self.settings['reindentOnly']:\n                    l_new += l\n                elif m_port:\n                    # For standard i/o\n                    if m_port.group('dir') in verilogutil.port_dir :\n                        l_new += m_port.group('dir').ljust(len_dir)\n                        # Align userdefined type differently from the standard type\n                        if m_port.group('var') or m_port.group('sign') or m_port.group('bw') or m_port.group('type') in ['logic', 'wire', 'reg', 'signed', 'unsigned']:\n                            if len_var>0:\n                                if m_port.group('var'):\n                                    l_new += ' ' + m_port.group('var')\n                                else:\n                                    l_new += ' '.ljust(len_var+1)\n                            if len_type>0:\n                                if m_port.group('type'):\n                                    if m_port.group('type') not in ['signed','unsigned']:\n                                        l_new += ' ' + m_port.group('type').ljust(len_type)\n                                    else:\n                                        l_new += ''.ljust(len_type+1) + ' ' + m_port.group('type').ljust(len_sign)\n                                else:\n                                    l_new += ''.ljust(len_type+1)\n                                # add sign space it exists at least for one port\n                                if len_sign>0:\n                                    if m_port.group('sign'):\n                                        l_new += ' ' + m_port.group('sign').ljust(len_sign)\n                                    elif m_port.group('type') not in ['signed','unsigned']:\n                                        l_new += ''.ljust(len_sign+1)\n                            elif len_sign>0:\n                                if m_port.group('type') in ['signed','unsigned']:\n                                    l_new += ' ' + m_port.group('type').ljust(len_sign)\n                                elif m_port.group('sign'):\n                                    l_new += ' ' + m_port.group('sign').ljust(len_sign)\n                                else:\n                                    l_new += ''.ljust(len_sign+1)\n                            # Add bus width if it exists at least for one port\n                            if len_bw>1:\n                                s = ''\n                                if m_port.group('bw'):\n                                    s = ' '\n                                    bw_a = re.findall(r'\\[(.+?)\\]',re.sub(r'\\s*','',m_port.group('bw')))\n                                    for i,bw in enumerate(bw_a):\n                                        s += '[' + bw.rjust(len_bw_a[i]) + ']'\n                                l_new += s.ljust(len_bw+1)\n                            if max_len > len_type_full:\n                                l_new += ''.ljust(max_len-len_type_full)\n                        elif m_port.group('type') :\n                            l_new += ' ' + m_port.group('type').ljust(len_type_user)\n                        elif len_type_user>0 :\n                            l_new += ' '.ljust(len_type_user+1)\n                    # For interface\n                    else :\n                        l_new += m_port.group('dir').ljust(len_if)\n                    # Add port list: space every port in the list by just on space\n                    s = re.sub(r'\\s*,\\s*',', ',m_port.group('ports').rstrip())\n                    l_new += ' '\n                    if s.endswith(', '):\n                        l_new += s[:-2].ljust(max_port_len)\n                        if i!=(len(lines)-1):\n                            l_new += ','\n                    else:\n                        l_new += s.ljust(max_port_len) + ' '\n                    # Add comment\n                    if m_port.group('comment') :\n                        l_new += ' ' + m_port.group('comment')\n                else : # No port declaration ? recopy line with just the basic indentation level\n                    # Look for a simple comment line and check its indentation: if too large, align with port comment position\n                    m_comment = re.search(r'\\s*//.*',l)\n                    if m_comment:\n                        ilvl_comment = self.getIndentLevel(line)\n                        if ilvl_comment > (ilvl+2):\n                            l_new += ''.rjust(len_if+1+max_port_len+2) + l\n                        else:\n                            l_new += l\n                    else:\n                        l_new += l\n                # Remove trailing spaces/tabs and add the end of line\n                txt_new += l_new.rstrip(' \\t') + '\\n'\n        txt_new += self.indent*(ilvl) + ');'\n        return txt_new\n\n    # Alignement for various assign (field, case, blocking, non blocking)\n    def alignAssign(self,txt, mask_op):\n        #TODO handle array\n        re_str_l = []\n        # case/structure : \"word: statement\"\n        if mask_op & 1:\n            re_str_l.append(r'^[ \\t]*(?P<scope>\\w+\\:\\:)?(?P<name>[\\w`\\'\\\"\\.]+)[ \\t]*(\\[(?P<bitslice>.*?)\\])?\\s*(?P<op>\\:(?!\\:))\\s*(?P<statement>.*)$')\n        # Continous assignement: \"assign word = statement\"\n        if mask_op & 2:\n            re_str_l.append(r'^[ \\t]*(?P<scope>assign)\\s+(?P<name>[\\w`\\'\\\"\\.]+)[ \\t]*(\\[(?P<bitslice>.*?)\\])?\\s*(?P<op>=)\\s*(?P<statement>.*)$')\n        # Assignement : \"word <= statement\"\n        if mask_op & 4:\n            re_str_l.append(r'^[ \\t]*(?P<scope>)(?P<name>[\\w`\\'\\\"\\.]+)[ \\t]*(\\[(?P<bitslice>.*?)\\])?\\s*(?P<op>(<)?=)\\s*(?P<statement>.*)$')\n        txt_new = txt\n        for i,re_str in enumerate(re_str_l):\n            lines = txt_new.splitlines()\n            lines_match = []\n            matched = False\n            ilvl = -1\n            ilvl_prev = -1\n            max_len = {}\n            max_len_idx = -1\n            # Two possible method: either align on the indent level globally,\n            # or break the text in block of same indent level\n            # First method is prefered for structure assignment (TBD for complex stuct with more than 2 level ...)\n            if (mask_op & 1) and (i==0) and txt.strip().endswith(';') and not txt.strip().startswith('always'):\n                ilvl_glob = True\n                # print(\"[Beautifier] alignAssign with ilvl_glob True for :\\n\" + txt)\n            else :\n                ilvl_glob = False\n            # Process each line to identify a signal declaration,\n            # save the match information in an array, and process the max length for a block of text with same indent level\n            for l in lines:\n                l = l\n                m = re.search(re_str,l)\n                ilvl_prev = ilvl\n                ilvl = self.getIndentLevel(l)\n                if ilvl_glob :\n                    max_len_idx = ilvl\n                elif ilvl!= ilvl_prev :\n                    max_len_idx += 1\n                if max_len_idx not in max_len:\n                    max_len[max_len_idx] = 0\n                len_c = 0\n                if m:\n                    matched = True\n                    len_c = len(m.group('name'))\n                    if m.group('scope'):\n                        len_c += len(m.group('scope'))\n                        if m.group('scope') == 'assign':\n                            len_c+=1\n                    if m.group('bitslice'):\n                        len_c += len(re.sub(r'\\s','',m.group('bitslice')))+2\n                    if len_c>max_len[max_len_idx]:\n                        max_len[max_len_idx] = len_c\n                lines_match.append((l,m,ilvl,max_len_idx))\n            # If no match return text as is\n            if matched :\n                txt_new = ''\n                # Update alignement of each line\n                for idx,(line,m,ilvl,len_idx) in enumerate(lines_match):\n                    if m:\n                        l = ''\n                        if m.group('scope'):\n                            l += m.group('scope')\n                            if m.group('scope') == 'assign':\n                                l+=' '\n                        l += m.group('name')\n                        if m.group('bitslice'):\n                            l += '[' + re.sub(r'\\s','',m.group('bitslice')) + ']'\n                        l = self.indent*ilvl + l.ljust(max_len[len_idx]) + ' ' + m.group('op') + ' ' + m.group('statement')\n                    else :\n                        l = line\n                    txt_new += l.rstrip() + '\\n'\n                if txt[-1]!='\\n':\n                    txt_new = txt_new[:-1]\n        return txt_new\n\n    # Alignement for module instance\n    def alignInstance(self,txt,ilvl):\n        # Check if parameterized module\n        m = re.search(r'(?s)(?P<emptyline>\\n*)(?P<mtype>^[ \\t]*(bind\\s+[\\w\\.]+\\s+)?\\w+)\\s*(?P<paramsfull>#\\s*\\((?P<params>.*)\\s*\\))?\\s*(?P<mname>\\w+)\\s*\\(\\s*(?P<ports>.*)\\s*\\)\\s*;(?P<comment>.*)$',txt,flags=re.MULTILINE)\n        if not m:\n            return ''\n        # Add module type\n        txt_new = m.group('emptyline') + self.indent*(ilvl) + m.group('mtype').strip()\n        #Add parameter binding : if already on one line simply remove extra space, otherwise apply standard alignement\n        if m.group('params'):\n            txt_new += ' #('\n            if ('\\n' in m.group('params').strip()) or not self.settings['paramOneLine']:\n                txt_new += '\\n'+self.alignInstanceBinding(m.group('params'),ilvl+1)+self.indent*(ilvl)\n            else :\n                p = m.group('params').strip()\n                p = re.sub(r'\\s+','',p)\n                p = re.sub(r'\\),',r'), ',p)\n                txt_new += p\n            txt_new += ')'\n        # Add module name\n        txt_new += ' ' + m.group('mname') + ' ('\n        # Add ports binding\n        if m.group('ports'):\n            # if port binding starts with a .* let it on the same line\n            if not m.group('ports').startswith('.*') and '\\n' in m.group('ports').rstrip():\n                txt_new += '\\n'\n            if '\\n' in m.group('ports').strip() :\n                txt_new += self.alignInstanceBinding(m.group('ports'),ilvl+1)\n                txt_new += self.indent*(ilvl)\n            else:\n                p = m.group('ports').strip()\n                p = re.sub(r'\\s+','',p)\n                p = re.sub(r'\\),',r'), ',p)\n                txt_new += p\n        txt_new += ');'\n        # Add end\n        if m.group('comment'):\n            txt_new += ' ' + m.group('comment')\n        return txt_new\n\n    def alignInstanceBinding(self,txt,ilvl):\n        was_split = False\n        # insert line if needed to get one binding per line\n        if self.settings['oneBindPerLine']:\n            txt = re.sub(r'\\)[ \\t]*,[ \\t]*\\.', '), \\n.', txt,flags=re.MULTILINE)\n        # Parse bindings to find length of port and signals\n        re_str_bind_port = r'^[ \\t]*(?P<lcomma>,)?[ \\t]*\\.\\s*(?P<port>\\w+)\\s*\\(\\s*'\n        re_str_bind_sig = r'(?P<signal>.*?)\\s*\\)\\s*(?P<comma>,)?\\s*(?P<comment>\\/\\/.*?|\\/\\*.*?)?$'\n        re_str_bind_implicit = r'^[ \\t]*(?P<lcomma>,)?[ \\t]*\\.\\s*(?P<port>\\w+)\\s*(,|\\/\\/.*?|\\Z)'\n        binds = re.findall(re_str_bind_port+re_str_bind_sig,txt,flags=re.MULTILINE)\n        max_port_len = 0\n        max_sig_len = 0\n        ports_len = [len(x[1]) for x in binds]\n        sigs_len = [len(x[2].strip()) for x in binds]\n        ports_impl = None\n        binds_impl = re.findall(re_str_bind_implicit,txt,flags=re.MULTILINE)\n        if binds_impl:\n            ports_impl = [x[1] for x in binds_impl]\n        if ports_len and self.settings['instAlignPort']:\n            max_port_len = max(ports_len)\n            if binds_impl:\n                ports_impl_len = [len(x[1]) for x in binds_impl]\n                max_port_len_impl = max(ports_impl_len)\n                if max_port_len_impl > max_port_len:\n                    max_port_len = max_port_len_impl\n        if sigs_len and self.settings['instAlignPort']:\n            max_sig_len = max(sigs_len)\n        #TODO: if the .* is at the beginning make sure it is not follow by another binding\n        lines = txt.strip().splitlines()\n        txt_new = ''\n        # for each line apply alignment\n        for i,line in enumerate(lines):\n            # Remove leading and trailing space. add end of line\n            l = line.strip()\n            # ignore empty line at the begining and the end of the connection\n            if (i!=(len(lines)-1) and i!=0) or l !='':\n                # Look for a binding\n                m = re.search(r'^'+re_str_bind_port+re_str_bind_sig,l)\n                is_split = False\n                # No complete binding : look for just the beginning then\n                if not m:\n                    m = re.search(re_str_bind_port+r'(?P<signal>.*?)\\s*(?P<comma>)(?P<comment>)$',l)\n                    if m:\n                        is_split = True\n                        # print('Detected split at Line ' + str(i) + ' : ' + l)\n                    # Look for an implicit port\n                    elif ports_impl:\n                        m = re.search(r'^[ \\t]*\\.\\s*(?P<port>\\w+)\\s*(?P<comma>,)?(?P<comment>\\/\\/.*?|\\/\\*.*?)?',l)\n                        if m :\n                            if m.group('port') not in ports_impl:\n                                m = None # False alert\n                if m:\n                    # print('Line ' + str(i) + '/' + str(len(lines)) + ' : ' + str(m.groups()) + ' => split = ' + str(is_split))\n                    txt_new += self.indent*(ilvl)\n                    txt_new += '.' + m.group('port').ljust(max_port_len)\n                    if 'signal' in m.groupdict():\n                        txt_new += '(' + m.group('signal').strip().ljust(max_sig_len)\n                    elif max_sig_len>0 and i!=(len(lines)-1):\n                        txt_new += ''.ljust(max_sig_len+2) # 2 is for the parenthesis ()\n                    if not is_split:\n                        if 'signal' in m.groupdict():\n                            txt_new += ')'\n                        if i!=(len(lines)-1): # Add comma for all lines except last\n                            txt_new += ','\n                    if 'comment' in m.groupdict() and m.group('comment'):\n                        if txt_new[-1] != ',':\n                            txt_new += ' '\n                        txt_new += ' ' + m.group('comment')\n                else : # No port binding ? recopy line with just the basic indentation level\n                    txt_new += self.indent*ilvl\n                    # Handle case of binding split on multiple line : try to align the end of the binding\n                    if was_split:\n                        txt_new += ''.ljust(max_port_len+2) #2 = take into account the . and the (\n                        m = re.search(re_str_bind_sig,l)\n                        if m:\n                            if m.group('signal'):\n                                txt_new += m.group('signal').strip().ljust(max_sig_len) + ')'\n                            else :\n                                txt_new += ''.strip().ljust(max_sig_len) + ')'\n                            if m.group('comma') and i!=(len(lines)-1):\n                                txt_new += ', '\n                            else:\n                                txt_new += '  '\n                            if m.group('comment'):\n                                txt_new += m.group('comment')\n                        else :\n                            txt_new += l\n                    else :\n                        txt_new += l\n                was_split = is_split\n                txt_new += '\\n'\n        return txt_new\n\n    # Alignement for signal declaration : [scope::]type [signed|unsigned] [bitwidth] signal list\n    def alignDecl(self,txt):\n        lines = txt.splitlines()\n        lines_match = []\n        len_max = {}\n        one_decl_per_line = self.settings['oneDeclPerLine']\n        # Process each line to identify a signal declaration, save the match information in an array, and process the max length for each field\n        for l in lines:\n            m = self.re_decl.search(l)\n            if m:\n                print('[alignDecl] {0} => {1}'.format(l,m.groups()))\n                ilvl = self.getIndentLevel(l)\n                if ilvl not in len_max:\n                    len_max[ilvl] = {'param':0,'scope':0,'type':0,'sign':0,'bw':0,'name':0,'array':[], 'array_sum':0, 'sig_list':0,'comment':0, 'init':0}\n                for k,g in m.groupdict().items():\n                    if g:\n                        # extract all bitwidth, to get each length individually\n                        if k=='array':\n                            port_bw_l  = re.findall(r'\\[(.+?)\\]',re.sub(r'\\s*','',g))\n                            for i,y in enumerate(port_bw_l):\n                                if i>=len(len_max[ilvl][k]):\n                                    len_max[ilvl][k].append(len(y))\n                                elif len_max[ilvl][k][i]<len(y):\n                                    len_max[ilvl][k][i] = len(y)\n                        # Get max length for each possible element of the regexp\n                        elif len(g.strip()) > len_max[ilvl][k]:\n                            len_max[ilvl][k] = len(g.strip())\n                        if k=='sig_list' and one_decl_per_line:\n                            for s in g.split(','):\n                                if len(s.strip()) > len_max[ilvl]['name']:\n                                    len_max[ilvl]['name'] = len(s.strip())\n            else:\n                ilvl = 0\n            lines_match.append((l,m,ilvl))\n        # Get total length for array\n        for k,x in len_max.items():\n            x['array_sum'] = 0\n            for y in x['array']:\n                x['array_sum'] += 2 + y\n        # Update alignement of each line\n        txt_new = ''\n        for line,m,ilvl in lines_match:\n            if m:\n                l = self.indent*ilvl\n                len_type = len_max[ilvl]['scope']+len_max[ilvl]['type']+1\n                # Add localparam/parameter. Adjust align length if not present on this line but present on other line\n                if m.group('param'):\n                    l += (m.group('param')).ljust(len_max[ilvl]['param']+1)\n                elif len_max[ilvl]['param']!=0:\n                    len_type += len_max[ilvl]['param']+1\n                # Add Scope+type\n                if m.group('scope'):\n                    l += (m.group('scope')+m.group('type')).ljust(len_type)\n                else:\n                    l += m.group('type').ljust(len_type)\n                #Align with signess only if it exist in at least one of the line\n                if len_max[ilvl]['sign']>0:\n                    if m.group('sign'):\n                        l += m.group('sign').ljust(len_max[ilvl]['sign']+1)\n                    else:\n                        l += ''.ljust(len_max[ilvl]['sign']+1)\n                #Align with width only if it exist in at least one of the line\n                if len_max[ilvl]['bw']>0:\n                    if m.group('bw'):\n                        l += '[' + m.group('bw').strip().rjust(len_max[ilvl]['bw']) + '] '\n                    else:\n                        l += ''.rjust(len_max[ilvl]['bw']+3)\n                d = l # save signal declaration before signal name in case it needs to be repeated for a signal list\n                # list of signals : do not align with the end of lign\n                if m.group('sig_list'):\n                    l += m.group('name')\n                    # No alignement for array/init in case of signal list\n                    if m.group('array'):\n                        l += re.sub(r'\\s*','',m_port.group('bw')).rjust(len_max[ilvl]['array_sum']) + ']'\n                    if m.group('init'):\n                        l += ' = ' + m.group('init').strip().ljust(len_max[ilvl]['init'])\n                    if one_decl_per_line:\n                        for s in m.group('sig_list').split(','):\n                            if s != '':\n                                l += ';\\n' + d + s.strip().ljust(len_max[ilvl]['name'])\n                    else :\n                        l += m.group('sig_list').strip()\n                else :\n                    l += m.group('name').ljust(len_max[ilvl]['name'])\n                    # Align array definition\n                    if len_max[ilvl]['array_sum']>0:\n                        s = ''\n                        if m.group('array'):\n                            bw_a = re.findall(r'\\[(.+?)\\]',re.sub(r'\\s*','',m.group('array')))\n                            for i,bw in enumerate(bw_a):\n                                s += '[' + bw.rjust(len_max[ilvl]['array'][i]) + ']'\n                        l += s.ljust(len_max[ilvl]['array_sum'])\n                    # Align init value (if available)\n                    if len_max[ilvl]['init']>0:\n                        if m.group('init'):\n                            l += ' = ' + m.group('init').strip().ljust(len_max[ilvl]['init'])\n                        else:\n                            l += ''.rjust(len_max[ilvl]['init']+3)\n                l += ';'\n                if m.group('comment'):\n                    l += ' ' + m.group('comment').strip()\n            else : # Not a declaration ? don't touch\n                l = line\n            txt_new += l + '\\n'\n        if txt[-1]!='\\n':\n            txt_new = txt_new[:-1]\n        return txt_new\n\n\nif __name__ == '__main__':\n    parser = argparse.ArgumentParser(description='Verilog Beautifier')\n    parser.add_argument('-i','--input' , required=True ,                          help='Verilog filename to beautify')\n    parser.add_argument('-o','--output', required=False,           default='',    help='Output filename. Default to input filename.')\n    parser.add_argument('-t','--tab'   , required=False,           default=False, help='Use tabulation for indentation (default: False')\n    parser.add_argument('-s','--space' , required=False, type=int, default=3,     help='Number of space for an indentation level. Default to 3.')\n    parser.add_argument('--no-oneBindPerLine', dest='oneBindPerLine', action='store_false', help='Allow more than one port binding per line in instance')\n    parser.add_argument('--oneDeclPerLine', dest='oneDeclPerLine', default=False, action='store_true', help='Force only one declration per line.')\n    parser.set_defaults(oneBindPerLine=True)\n    args = parser.parse_args()\n    beautifier = VerilogBeautifier(nbSpace=args.space, useTab=args.tab, oneBindPerLine=args.oneBindPerLine, oneDeclPerLine=args.oneDeclPerLine)\n    beautifier.beautifyFile(fnameIn=args.input, fnameOut=args.output)\n\n",
-					"settings":
-					{
-						"buffer_size": 59422,
+						"buffer_size": 12529,
 						"line_ending": "Windows"
 					}
 				}
@@ -1155,21 +1195,78 @@
 			},
 			"file_history":
 			[
+				"/E/FPGA/Bird_Radar_v2/MS_K7_P/rtl/work_state.vbk_fifo.v",
+				"/E/FPGA/rtl_template/xilinx_primitives.sv",
+				"/E/FPGA/Bird_Radar_v2/MS_K7_P/rtl/serdes_ifx4/serdes_k7_if.v",
+				"/E/FPGA/Bird_Radar_v2/MS_K7_P/rtl/serdes_if/serdes_k7_slave.v",
+				"/E/FPGA/Bird_Radar_v2/MS_K7_P/rtl/work_state.v",
+				"/E/FPGA/Bird_Radar_v2/MS_K7_P/rtl/match_filter.v",
+				"/E/FPGA/Bird_Radar_v2/MS_K7_P/rtl/accu_data.v",
+				"/G/FPGA_Backup/Xilinx/Chengdu_Bird_Radar/0908_FPGA_PRJ/MS_K7_P/MS_K7_P/rtl/accu_data.v",
+				"/E/FPGA/Bird_Radar_v2/MS_K7_P/rtl/phase_mend.v",
+				"/E/FPGA/Bird_Radar_v2/MS_K7_P/rtl/top.ucf",
+				"/E/FPGA/Bird_Radar_v2/MS_K7_P/rtl/serdes_ifx4/serdes_coe_exdes.v",
+				"/E/FPGA/Bird_Radar_v2/MS_K7_P/rtl/serdes_if/serdes_coe_exdes.v",
+				"/E/FPGA/rtl_template/serdes_ifx4/serdes_coe_gt_frame_gen.v",
+				"/E/FPGA/rtl_template/serdes_ifx4/serdes_coe_gt_frame_check.v",
+				"/E/FPGA/Bird_Radar_v2/MS_K7_P/rtl/phase_adjust.v",
+				"/E/FPGA/Bird_Radar_v2/MS_K7_P/rtl/hw_fir_i.v",
+				"/E/FPGA/Bird_Radar_v2/MS_K7_P/rtl/de_modulate.v",
+				"/E/FPGA/Bird_Radar_v2/MS_K7_P/rtl/lpf_fir_q.v",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/top.v",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/top.ucf",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/ctrl_signal.v",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/sqrt_cfar.v",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/serdes_rx_ctrl.v",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/no_bit/speed_cfar.cdc",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/serdes_exchange_m.v",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/gmac_if.v",
+				"/E/FPGA/s_m_test_0720/S_K7_M420_one_test/xilinx/top/top.v",
+				"/E/FPGA/s_m_test_0720/S_K7_M420_one_test/xilinx/top/serdes_exchange_s.v",
+				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/User/module.py",
+				"/E/FPGA/s_m_test_0720/S_K7_M420_one_test/xilinx/top/sqrt_cfar.v",
+				"/E/FPGA/s_m_test_0720/S_K7_M420_one_test/xilinx/top/distance_cfar.v",
+				"/E/FPGA/s_m_test_0720/S_K7_M420_one_test/xilinx/top/cfar_2nd.v",
+				"/E/FPGA/s_m_test_0720/S_K7_M420_one_test/xilinx/top/serdes_mode.v",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/tx_ctrl.v",
+				"/E/FPGA/s_m_test_0720/S_K7_M420_one_test/xilinx/top/top.ucf",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/gene_data.v",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/top_tb.v",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/rtl/top.v",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/rtl/accu_data.v",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/serdes_ifx8/serdes_k7_if.v",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/rtl/serdes_ifx8/serdes_k7_if.v",
+				"/E/FPGA/s_m_test_0720/S_K7_M420_one_test/xilinx/top/no_bit/serdes_top.cdc",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/tx_speed_array.v",
+				"/E/FPGA/s_m_test_0720/S_K7_M420_one_test/xilinx/top/write_ctrl.v",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/write_ctrl.v",
+				"/E/FPGA/changzhou_reset_n/changzhou_reset_n.srcs/sources_1/new/serdes_rx_ctrl.sv",
+				"/E/FPGA/s_m_test_0720/S_K7_M420_one_test/xilinx/top/ram_array80.v",
+				"/G/FPGA_Backup/Xilinx/Chengdu_Bird_Radar/0908_FPGA_PRJ/M_K7_M/M_K7_M/xilinx/top/write_ctrl.v",
+				"/E/FPGA/s_m_test_0720/M_EPLD_syn_debug/rtl/cpu_ctrl.v",
+				"/E/FPGA/s_m_test_0720/M_EPLD_syn_debug/rtl/timing_ctrl.v",
+				"/E/FPGA/s_m_test_0720/M_EPLD_syn_debug/rtl/top_tb.v",
+				"/E/FPGA/s_m_test_0720/M_EPLD_syn_debug/rtl/top_simu.v",
+				"/E/FPGA/s_m_test_0720/M_EPLD_syn_debug/output.txt",
+				"/G/FPGA_Backup/Xilinx/Chengdu_Bird_Radar/0908_FPGA_PRJ/MS_K7_P/MS_K7_P/top.ucf",
+				"/E/FPGA/s_m_test_0720/M_EPLD_syn_debug/top.ucf",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/top.ucf",
+				"/E/FPGA/s_m_test_0720/M_EPLD_syn_debug/rtl/top.v",
+				"/C/Users/Kuangxin/AppData/Local/Temp/HZ$D.127.2993/HZ$D.127.2994/s_m_test_0720/MS_K7_P_test_addsin_0707/top.ucf",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/rtl_double_board/accu_data.v",
+				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/rtl_double_board/top.v",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/read_ctrl.v",
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/ctrl_mode.v",
+				"/E/FPGA/s_m_test_0720/M_EPLD_syn_debug/rtl/round_if.v",
+				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/sublimesystemverilog/verilogutil/verilog_beautifier.py",
 				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/sublimesystemverilog/verilog_align.py",
 				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
-				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/sublimesystemverilog/verilogutil/verilog_beautifier.py",
 				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/sublimesystemverilog/verilogutil/verilogutil.py",
 				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/sublimesystemverilog/verilogutil/__init__.py",
 				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/sublimesystemverilog/verilogutil/sublimeutil.py",
 				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 				"/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/sublimesystemverilog/SystemVerilog.sublime-settings",
 				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/accu_data.v",
-				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/top.v",
-				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/gmac_if.v",
-				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/tx_ctrl.v",
-				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/write_ctrl.v",
-				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/rtl/accu_data.v",
-				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/tx_speed_array.v",
 				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/ipcore_dir/serdes_coe/example_design/serdes_coe_exdes.v",
 				"/G/FPGA_Backup/Xilinx/Chengdu_Bird_Radar/0908_FPGA_PRJ/M_K7_M/M_K7_M/xilinx/top/top.v",
 				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/cfar_2nd.v",
@@ -1180,29 +1277,19 @@
 				"/G/FPGA_Backup/Xilinx/Chengdu_Bird_Radar/0908_FPGA_PRJ/M_K7_M/M_K7_M/xilinx/top/cfar_2nd.v",
 				"/G/FPGA_Backup/Xilinx/Chengdu_Bird_Radar/0908_FPGA_PRJ/M_K7_M/M_K7_M/xilinx/top/read_ctrl.v",
 				"/G/FPGA_Backup/Xilinx/Chengdu_Bird_Radar/0908_FPGA_PRJ/M_K7_M/M_K7_M/xilinx/top/ctrl_mode.v",
-				"/E/FPGA/Bird_Radar_v2/MS_K7_P/rtl/accu_data.v",
 				"/E/FPGA/Bird_Radar_v2/MS_K7_P/rtl/cfar_target_tx_tran_ctrl.v",
 				"/G/FPGA_Backup/Xilinx/Chengdu_Bird_Radar/0908_FPGA_PRJ/M_K7_M/M_K7_M/xilinx/top/cfar_data.v",
 				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/distance_cfar.v",
 				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/cfar_data.v",
-				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/sqrt_cfar.v",
-				"/E/FPGA/s_m_test_0720/S_K7_M420_one_test/xilinx/top/top.v",
-				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/rtl/serdes_ifx8/serdes_k7_if.v",
 				"/E/FPGA/k7_m_simulation/k7_m_simulation/write_ctrl/top.v",
 				"/E/FPGA/k7_m_simulation/k7_m_simulation/write_ctrl/write_ctrl.v",
-				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/top.ucf",
-				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/top.ucf",
-				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/ctrl_signal.v",
 				"/E/FPGA/k7_m_simulation/k7_m_simulation/read_ctrl/top.v",
 				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/rtl/serdes_ifx8/serdes_tran_ctrl.v",
-				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/serdes_rx_ctrl.v",
-				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/rtl/top.v",
 				"/E/FPGA/s_m_test_0720/S_K7_M480_one_test/xilinx/top/rtl/measure_temp_volt.v",
 				"/E/FPGA/rtl_template/serdes_ifx8/serdes_tran_ctrl.v",
 				"/E/FPGA/s_m_test_0720/S_K7_M480_one_test/xilinx/top/top.ucf",
 				"/E/FPGA/s_m_test_0720/S_K7_M480_one_test/xilinx/top/ipcore_dir/pll_200mhz.v",
 				"/E/FPGA/s_m_test_0720/S_K7_M480_one_test/xilinx/top/top.v",
-				"/E/FPGA/rtl_template/xilinx_primitives.sv",
 				"/G/FPGA_Backup/Xilinx/Chengdu_Bird_Radar/0908_FPGA_PRJ/MS_K7_P/MS_K7_P/rtl/serdes_if/serdes_tran_ctrl_tb.v",
 				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/rtl/serdes_ifx8/serdes_tran_ctrl_tb.v",
 				"/G/FPGA_Backup/Xilinx/Chengdu_Bird_Radar/0908_FPGA_PRJ/MS_K7_P/MS_K7_P/rtl/cfar_target_tx_tran_ctrl.v",
@@ -1212,12 +1299,9 @@
 				"/E/FPGA/k7_m_simulation/k7_m_simulation/write_ctrl/ram_array80.v",
 				"/C/Users/Kuangxin/Desktop/ug480_7Series_XADC/verilog/ug480_tb.v",
 				"/C/Users/Kuangxin/Desktop/ug480_7Series_XADC/verilog/ug480.v",
-				"/E/FPGA/s_m_test_0720/S_K7_M420_one_test/xilinx/top/sqrt_cfar.v",
 				"/E/FPGA/s_m_test_0720/S_K7_M480_one_test/xilinx/top/rtl/ug480.v",
 				"/C/Users/Kuangxin/Desktop/ug480_7Series_XADC/verilog/ug480.xdc",
 				"/C/Users/Kuangxin/Desktop/ug480_7Series_XADC/readme.txt",
-				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/ctrl_mode.v",
-				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/read_ctrl.v",
 				"/e/FPGA/K7_serdes/gtwizard_0_example/gtwizard_0_example.srcs/sim_1/imports/simulation/gtwizard_0_tb.v",
 				"/E/FPGA/K7_serdes/gtwizard_0_example/gtwizard_0_example.srcs/sources_1/imports/example_design/gt_rom_init_tx.dat",
 				"/e/FPGA/K7_serdes/gtwizard_0_example/gtwizard_0_example.srcs/sources_1/imports/example_design/gtwizard_0_gt_frame_check.v",
@@ -1227,7 +1311,6 @@
 				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/ipcore_dir/serdes_coe/example_design/gt_rom_init_tx.dat",
 				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/ipcore_dir/serdes_coe/example_design/gt_rom_init_rx.dat",
 				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/serdes_ifx8/serdes_coe_gt.v",
-				"/E/FPGA/s_m_test_0720/S_K7_M420_one_test/xilinx/top/top.ucf",
 				"/E/FPGA/s_m_test_0720/S_K7_M420_one_test/xilinx/top/serdes_rx_ctrl.v",
 				"/E/FPGA/s_m_test_0720/S_K7_M420_one_test/xilinx/rtl/serdes_ifx8/serdes_k7_if.v",
 				"/E/FPGA/s_m_test_0720/S_K7_M420_one_test/xilinx/rtl/serdes_ifx8/serdes_coe_gt.v",
@@ -1239,50 +1322,7 @@
 				"/C/Users/Kuangxin/Desktop/example_design/serdes_coe_gt.v",
 				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/rtl/serdes_ifx8/serdes_coe_exdes.v",
 				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/serdes_ifx8/serdes_coe.v",
-				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/serdes_ifx8/serdes_coe_init.v",
-				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/utriEMAC_clk_wiz.v",
-				"/G/FPGA_Backup/Xilinx/Chengdu_Bird_Radar/0908_FPGA_PRJ/M_EPLD_syn/M_EPLD_syn/rtl/top.v",
-				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/serdes_ifx8/serdes_k7_if.v",
-				"/C/Users/Kuangxin/Desktop/example_design0/serdes_coe_exdes.v",
-				"/G/FPGA_Backup/Xilinx/Chengdu_Bird_Radar/0908_FPGA_PRJ/M_EPLD_syn/M_EPLD_syn/rtl/cpu_ctrl.v",
-				"/E/FPGA/rtl_template/vivado_serdes_test/example_design/serdes_gt_frame_check.v",
-				"/E/FPGA/A7_serdes_x1/serdes_example/serdes_example.srcs/sources_1/imports/example_design/serdes_gt_frame_check.v",
-				"/E/FPGA/A7_serdes_x1/serdes_example/serdes_example.srcs/sources_1/imports/example_design/serdes_exdes.v",
-				"/E/FPGA/rtl_template/serdes_ifx8/serdes_k7_if.v",
-				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/rtl/serdes_if/serdes_k7_if.v",
-				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/rtl/serdes_if/serdes_tran_ctrl.v",
-				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/serdes_coe_exdes.v",
-				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/rtl/serdes_if/serdes_coe_exdes.v",
-				"/G/FPGA_Backup/Xilinx/Chengdu_Bird_Radar/0908_FPGA_PRJ/MS_K7_P/MS_K7_P/rtl/serdes_if/serdes_tran_ctrl.v",
-				"/G/FPGA_Backup/Xilinx/Chengdu_Bird_Radar/0908_FPGA_PRJ/M_K7_M/M_K7_M/xilinx/top/serdes_rx_ctrl.v",
-				"/E/FPGA/s_m_test_0720/S_K7_M420_one_test/xilinx/top/ipcore_dir/xadc/simulation/timing/xadc_tb.v",
-				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/no_bit/serdes_rx.cdc",
-				"/e/FPGA/A7_xadc/xadc_wiz_0_example/xadc_wiz_0_example.srcs/sources_1/imports/example_design/xadc_wiz_0_exdes.v",
-				"/C/Users/Kuangxin/AppData/Local/Temp/xadc_wiz_0.v",
-				"/e/FPGA/A7_xadc/xadc_wiz_0_example/xadc_wiz_0_example.srcs/sim_1/imports/xadc_wiz_0/xadc_wiz_0/simulation/xadc_wiz_0_tb.v",
-				"/E/FPGA/s_m_test_0720/S_K7_M420_one_test/xilinx/top/ipcore_dir/xadc/example_design/xadc_exdes.v",
-				"/E/FPGA/s_m_test_0720/S_K7_M420_one_test/xilinx/top/ipcore_dir/xadc/simulation/xadc_tb.v",
-				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/serdes_tx.cdc",
-				"/E/FPGA/s_m_test_0720/S_K7_M420_one_test/xilinx/top/serdes_k7_if.v",
-				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/serdes_k7_if.v",
-				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/serdes_rx.cdc",
-				"/E/FPGA/rtl_template/serdesx8/top.ucf",
-				"/E/FPGA/rtl_template/serdesx8/serdes_rx.cdc",
-				"/E/FPGA/rtl_template/serdesx8/serdes_top.v",
-				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/ipcore_dir/serdes_coe.v",
-				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/ipcore_dir/serdes_coe/example_design/serdes_coe_tx_startup_fsm.v",
-				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/ipcore_dir/serdes_coe/example_design/serdes_coe_gt_usrclk_source.v",
-				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/ipcore_dir/serdes_coe/example_design/serdes_coe_init.v",
-				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/rtl/serdes_if/serdes_k7_if_tb.v",
-				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/rtl/serdes_if/top.v",
-				"/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/rtl/serdes_if/serdes_top.v",
-				"/E/FPGA/rtl_template/serdesx1/serdes_k7_if.v",
-				"/E/FPGA/s_m_test_0720/S_K7_M420_one_test/xilinx/rtl/serdes_coe_exdes.v",
-				"/C/Users/Kuangxin/Desktop/cdc0.txt",
-				"/C/Users/Kuangxin/Desktop/cdc1.txt",
-				"/E/FPGA/s_m_test_0720/S_K7_M480_one_test/xilinx/top/ipcore_dir/serdes_coe/example_design/serdes_coe_exdes.v",
-				"/E/FPGA/s_m_test_0720/S_K7_M480_one_test/xilinx/top/ipcore_dir/serdes_coe/example_design/serdes_coe_gt_frame_check.v",
-				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/ipcore_dir/serdes_coe/example_design/serdes_coe_exdes.v"
+				"/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/serdes_ifx8/serdes_coe_init.v"
 			],
 			"find":
 			{
@@ -1300,134 +1340,134 @@
 				"case_sensitive": true,
 				"find_history":
 				[
-					"alignAssign",
-					"\\",
-					"re_decl",
-					"alignDecl",
-					"\\[",
-					"re_decl",
-					"re_var",
-					"re_decl",
-					"|",
-					"re_decl",
-					"re_var",
-					"re_bw",
-					"alignDecl",
-					"alignAssign",
-					"re_bw",
-					"re_var",
-					"re_decl",
-					"re_var",
-					"re_decl",
-					"re_bw",
-					"state",
-					"states",
-					"VerilogAlign",
-					"alignDecl",
-					"block_state",
-					"txt",
-					"W_200mhz_clk",
-					"gtx_clk90_bufg",
-					"refclk_bufg",
-					"s_axi_aclk",
-					"gtx_clk_bufg",
-					"W_rang_i_dat",
-					"W_100mhz_clk",
-					"O_ctrl_en",
-					"reg",
-					"Q0_CLK0_GTREFCLK_PAD_N_IN",
-					"W_100mhz_clk",
-					"output",
-					"input",
-					"O_m_ctrl_ena",
+					"ClkPeriod",
+					"R2_ifft1_edone",
+					"R1_ifft1_edone",
+					"R2_m_ctrl_ena",
+					"R1_m_ctrl_ena",
+					"R_ctrl_idle",
+					"R1_ctrl_idle",
+					"R2_ctrl_idle",
+					"R_fft1_start",
+					"R1_ctrl_ena",
+					"R_work_state",
+					"R_fft1_start",
+					"I_ad_i_dat",
+					"R_fifo_rst",
+					"W_ad_ctrl",
+					"W_ad_signal",
+					"O_angle_fft_info",
+					"W_ad_ctrl",
+					"      ",
+					"W_ad_ctrl",
+					"W_ad_signal",
+					"O_ad_ctrl",
+					"O_ad_signal",
+					"R_ctrl_signal",
+					"I_ctrl_signal",
+					"R_ctrl_signal",
+					"I_ctrl_signal",
+					"W_ad_signal",
+					"O_ad_signal",
+					"R_ctrl_signal",
 					"I_ctrl_ena",
-					"R3_ctrl_ena",
-					"W_ram_add",
-					"R_ctrl6_num",
-					"R_ctrl_num",
-					"I_d1_target_ena",
-					"W_d2_target_energy",
-					"R_tx_fifo1_rd",
-					"R_tx_fifo1_data",
-					"I_target_range",
-					"W_slave_speed_ena",
-					"W_slave_speed",
-					"W_rd_fft_addr",
-					"I_rd_addr",
-					"I_cfar1_end",
-					"I_result1_end",
-					"I_rd_addr",
-					"),\n",
-					"W_wr_end",
-					"W_clr_cnt_num",
-					"W_m_result_dout",
-					"W_m_rd_empty",
-					"W_fifo_out_ena",
-					"R_m_rd_en",
-					"W_m_rd_empty",
-					"R1_rang_ena",
-					"R_rang_ena",
-					"R_range_cfar",
-					"R_rang_ena",
-					"R_rang_cfar",
-					"R_rang_ena",
-					"R_result_in",
-					"R_rang_ena",
-					"I_rang_ena",
-					"R_rang_ena",
-					"I_rang_ena",
-					"R_cfar_data",
-					"I_range_cfar",
-					"W_m_result_din",
-					"W_cfar_dat",
-					"I_range_cfar",
-					"I_s_target_range",
-					"I_range_cfar",
-					"I_s_target_range",
-					"input",
-					"R_result_wr_addr",
-					"I_cfar_data",
-					"I_cfar_ena",
-					"I_rd_addr",
-					"W_rd_fft_addr",
-					"W_clr_cnt_num",
-					"R1_config_data",
-					"R_config_data",
-					"R1_config_data",
-					"R_config_data",
-					"R1_config_data",
-					"R_data_total",
-					"R1_config_data",
-					"I_config_data",
-					"I_rang_ena",
-					"I_range_cfar",
-					"I_rang_ena",
-					"I_range_cfar",
-					"R_config_data",
-					"W_m_result_dout",
-					"R_s_target_energy",
-					"R_data_sregpd",
-					"I_s_target_range",
-					"R_s_target_ena",
-					"R_config_data",
-					"R1_config_data",
-					"R_config_data",
-					"R1_config_data",
-					"R_config_data",
-					"I_config_data",
-					"I_config_ena",
-					"O_sqrt_ena",
-					"R_rdata_delay7",
-					"I_cfar_data",
-					"O_real_data_ena",
-					"O_real_data",
-					"I_wr_end",
-					"W_wr_end",
-					"W_dis_ram_wr",
-					"W_dis_ram_data",
-					"I_result1_ena",
-					"I_range_cfar",
-					"W_cfar_data_ena"
+					"R1_fft1_rd",
+					"R1_fft2_rd",
+					"R1_fft3_rd",
+					"R1_fft4_rd",
+					"R1_fft2_rd",
+					"I_fft1_rfd",
+					"W_fft1_rfd",
+					"I_fft1_rfd",
+					"R_fft1_rfd",
+					"R_fft1_rd",
+					"R_fft4_rd",
+					"R_fft1_rd",
+					"I_fft1_rfd",
+					"R_fft1_rd",
+					"R_fft2",
+					"I_fft1_rfd",
+					"fifo",
+					"fifo3",
+					"R_fft4_rd",
+					"R_fft2_rd",
+					"R_fft1_rd",
+					"wire",
+					"O_led1",
+					"R_count_100M",
+					"R_fft4_rd",
+					"R_fifo4_rd",
+					"W_fifo2_data_en",
+					"R_work_state",
+					"R_fft1_start",
+					"R_fifo4_wr",
+					"R_fifo3_wr",
+					"R_fifo2_wr",
+					"R_fifo1_rd",
+					"R_fifo2_dat_in",
+					"R_fft1_start",
+					"R_fifo1_wr",
+					"R_fifo1_dat_in",
+					"R_fifo1_num",
+					"I_ad_i_dat",
+					"R_fifo2_wr",
+					"R_work_state",
+					"R_ctrl_signal",
+					"R2_ctrl_idle",
+					"I_ctrl_ena",
+					"I_ctrl_idle",
+					"W1_ad_i_dat",
+					"I_fft4_rfd",
+					"I_fft4_blk_exp",
+					"I_fft4_xk_im",
+					"I_fft4_xk_re",
+					"I_fft4_xk_index",
+					"I_fft4_xn_index",
+					"I_fft4_dv",
+					"I_fft4_done",
+					"I_fft4_edone",
+					"I_fft3_done",
+					"I_fft3_edone",
+					"I_fft2_edone",
+					"I_fft1_busy",
+					"I_fft1_rfd",
+					"I_fft1_busy",
+					"I_fft1_edone",
+					"I_fft1_done",
+					"I_fft1_dv",
+					"I_fft1_xn_index",
+					"W_fft1_xk_re",
+					"Q2",
+					"q2",
+					"Q2_CLK0",
+					"R_i_result_dat",
+					"W_ifft_xk_im",
+					"O_ad_i_dat",
+					"R_i_result_dat",
+					"R_i_out_dat",
+					"R_i_result_dat",
+					"R_result_ena",
+					"R_i_result_dat",
+					"R_ifft5_xk_re",
+					"W_ifft5_xk_re",
+					"W_ifft_xk_re",
+					"W_ifft5_xk_re",
+					"R_ifft5_xk_re",
+					"R_i_result_dat",
+					"R_ifft4_xk_re",
+					"W_ifft4_xk_re",
+					"R_i_result_dat",
+					"en1",
+					"data1",
+					"gt1",
+					"en1",
+					"data1",
+					"gt1",
+					"gt0",
+					"u3",
+					"_serdes_k7_if",
+					"serdes_k7_if",
+					"serdes_k7_slave"
 				],
 				"highlight": true,
 				"in_selection": false,
@@ -1445,99 +1485,97 @@
 			"groups":
 			[
 				{
-					"selected": 0,
+					"selected": 1,
 					"sheets":
 					[
 						{
 							"buffer": 0,
-							"file": "/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/rtl/accu_data.v",
+							"file": "/E/FPGA/Bird_Radar_v2/MS_K7_P/rtl/top.v",
 							"semi_transient": false,
 							"settings":
 							{
-								"buffer_size": 19517,
+								"buffer_size": 25738,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										9023,
-										9023
-									]
-								],
-								"settings":
-								{
-									"is_init_dirty_state": true,
-									"origin_encoding": "ASCII",
-									"syntax": "Packages/sublimesystemverilog/SystemVerilog.sublime-syntax",
-									"tab_size": 4,
-									"translate_tabs_to_spaces": true
-								},
-								"translation.x": 0.0,
-								"translation.y": 2972.0,
-								"zoom_level": 1.0
-							},
-							"stack_index": 0,
-							"type": "text"
-						},
-						{
-							"buffer": 1,
-							"file": "/C/Users/Kuangxin/AppData/Roaming/Sublime Text 3/Packages/sublimesystemverilog/verilogutil/verilog_beautifier.py",
-							"semi_transient": false,
-							"settings":
-							{
-								"buffer_size": 59403,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										45178,
-										45178
-									]
-								],
-								"settings":
-								{
-									"origin_encoding": "ASCII",
-									"syntax": "Packages/Python/Python.sublime-syntax",
-									"tab_size": 4,
-									"translate_tabs_to_spaces": true
-								},
-								"translation.x": 0.0,
-								"translation.y": 10073.0,
-								"zoom_level": 1.0
-							},
-							"stack_index": 1,
-							"type": "text"
-						},
-						{
-							"buffer": 2,
-							"file": "/E/FPGA/s_m_test_0720/MS_K7_P_test_addsin_0707/rtl/top.v",
-							"semi_transient": false,
-							"settings":
-							{
-								"buffer_size": 28060,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										10692,
-										10692
+										7083,
+										7083
 									]
 								],
 								"settings":
 								{
 									"is_init_dirty_state": false,
 									"origin_encoding": "ASCII",
+									"syntax": "Packages/sublimesystemverilog/SystemVerilog.sublime-syntax"
+								},
+								"translation.x": 0.0,
+								"translation.y": 2457.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 1,
+							"type": "text"
+						},
+						{
+							"buffer": 1,
+							"file": "/E/FPGA/Bird_Radar_v2/MS_K7_P/rtl/accu_data.v",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 16378,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										6052,
+										6052
+									]
+								],
+								"settings":
+								{
+									"origin_encoding": "ASCII",
 									"syntax": "Packages/sublimesystemverilog/SystemVerilog.sublime-syntax",
 									"tab_size": 4,
 									"translate_tabs_to_spaces": true
 								},
 								"translation.x": 0.0,
-								"translation.y": 3877.0,
+								"translation.y": 2031.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 0,
+							"type": "text"
+						},
+						{
+							"buffer": 2,
+							"file": "/E/FPGA/Bird_Radar_v2/MS_K7_P/rtl/de_modulate.v",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 9123,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										3590,
+										3603
+									]
+								],
+								"settings":
+								{
+									"in_converting": true,
+									"origin_encoding": "GB2312",
+									"syntax": "Packages/sublimesystemverilog/SystemVerilog.sublime-syntax",
+									"tab_size": 4,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 874.0,
 								"zoom_level": 1.0
 							},
 							"stack_index": 3,
@@ -1545,63 +1583,61 @@
 						},
 						{
 							"buffer": 3,
-							"file": "/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/top_tb.v",
+							"file": "/E/FPGA/Bird_Radar_v2/MS_K7_P/rtl/serdes_if/serdes_range.v",
 							"semi_transient": false,
 							"settings":
 							{
-								"buffer_size": 83544,
+								"buffer_size": 3871,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										29810,
-										29810
+										965,
+										965
 									]
 								],
 								"settings":
 								{
-									"is_init_dirty_state": false,
 									"origin_encoding": "ASCII",
 									"syntax": "Packages/sublimesystemverilog/SystemVerilog.sublime-syntax",
 									"tab_size": 4,
 									"translate_tabs_to_spaces": true
 								},
 								"translation.x": 0.0,
-								"translation.y": 8687.0,
+								"translation.y": 195.0,
 								"zoom_level": 1.0
 							},
-							"stack_index": 4,
+							"stack_index": 6,
 							"type": "text"
 						},
 						{
 							"buffer": 4,
-							"file": "/E/FPGA/s_m_test_0720/M_K7_M480_test/xilinx/top/gene_data.v",
+							"file": "/E/FPGA/Bird_Radar_v2/MS_K7_P/rtl/cfar_target.v",
 							"semi_transient": false,
 							"settings":
 							{
-								"buffer_size": 20174,
+								"buffer_size": 26834,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										1979,
-										1979
+										1764,
+										1764
 									]
 								],
 								"settings":
 								{
-									"is_init_dirty_state": false,
 									"origin_encoding": "ASCII",
 									"syntax": "Packages/sublimesystemverilog/SystemVerilog.sublime-syntax",
 									"tab_size": 4,
 									"translate_tabs_to_spaces": true
 								},
 								"translation.x": 0.0,
-								"translation.y": 260.0,
+								"translation.y": 455.0,
 								"zoom_level": 1.0
 							},
 							"stack_index": 5,
@@ -1609,31 +1645,95 @@
 						},
 						{
 							"buffer": 5,
+							"file": "/E/FPGA/Bird_Radar_v2/MS_K7_P/rtl/top_tb.v",
 							"semi_transient": false,
 							"settings":
 							{
-								"buffer_size": 59422,
+								"buffer_size": 19874,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										59422,
-										59422
+										4983,
+										4983
 									]
 								],
 								"settings":
 								{
-									"syntax": "Packages/Python/Python.sublime-syntax",
+									"origin_encoding": "ASCII",
+									"syntax": "Packages/sublimesystemverilog/SystemVerilog.sublime-syntax",
 									"tab_size": 4,
 									"translate_tabs_to_spaces": true
 								},
 								"translation.x": 0.0,
-								"translation.y": 13293.0,
+								"translation.y": 3822.0,
 								"zoom_level": 1.0
 							},
 							"stack_index": 2,
+							"type": "text"
+						},
+						{
+							"buffer": 6,
+							"file": "/E/FPGA/Bird_Radar_v2/MS_K7_P/rtl/work_state.v",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 9787,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										7557,
+										7557
+									]
+								],
+								"settings":
+								{
+									"origin_encoding": "ASCII",
+									"syntax": "Packages/sublimesystemverilog/SystemVerilog.sublime-syntax",
+									"tab_size": 4,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 3721.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 7,
+							"type": "text"
+						},
+						{
+							"buffer": 7,
+							"file": "/E/FPGA/Bird_Radar_v2/MS_K7_P/rtl/work_ifft.v",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 12529,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										12493,
+										12493
+									]
+								],
+								"settings":
+								{
+									"origin_encoding": "ASCII",
+									"syntax": "Packages/sublimesystemverilog/SystemVerilog.sublime-syntax",
+									"tab_size": 4,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 2441.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 4,
 							"type": "text"
 						}
 					]
@@ -1683,7 +1783,7 @@
 				"height": 0.0
 			},
 			"pinned_build_system": "Packages/Python/Python.sublime-build",
-			"position": "0,2,3,-32000,-32000,-1,-1,638,105,100,761",
+			"position": "0,2,3,-32000,-32000,-1,-1,638,107,100,763",
 			"project": "",
 			"replace":
 			{
