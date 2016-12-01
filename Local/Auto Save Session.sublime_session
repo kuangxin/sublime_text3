@@ -1038,10 +1038,10 @@
 			"buffers":
 			[
 				{
-					"file": "/E/FPGA/s_m_test_0720/S_K7_M480_temperature/xilinx/top/rtl/measure_temp_volt.v",
+					"file": "/E/FPGA/s_m_test_0720/S_K7_M480_temperature/xilinx/top/rtl/xadc_if.v",
 					"settings":
 					{
-						"buffer_size": 11988,
+						"buffer_size": 11967,
 						"line_ending": "Windows"
 					}
 				}
@@ -1430,19 +1430,19 @@
 					[
 						{
 							"buffer": 0,
-							"file": "/E/FPGA/s_m_test_0720/S_K7_M480_temperature/xilinx/top/rtl/measure_temp_volt.v",
+							"file": "/E/FPGA/s_m_test_0720/S_K7_M480_temperature/xilinx/top/rtl/xadc_if.v",
 							"semi_transient": false,
 							"settings":
 							{
-								"buffer_size": 11988,
+								"buffer_size": 11967,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										162,
-										162
+										152,
+										152
 									]
 								],
 								"settings":
