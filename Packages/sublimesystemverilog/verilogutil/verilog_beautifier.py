@@ -21,11 +21,7 @@ class VerilogBeautifier():
         else:
             self.indent = self.indentSpace
         self.states = []
-<<<<<<< HEAD
-        self.state = ''                                                                                                       #allign                    
-=======
         self.state = ''
->>>>>>> f66b386a8643f73597de708af693384ca0bb39ae
         self.re_decl = re.compile(r'^[ \t]*(?:(?P<param>localparam|parameter)\s+)?(?P<scope>\w+\:\:)?(?P<type>[A-Za-z_]\w*)[ \t]*(?P<sign>signed\b|unsigned\b)?[ \t]*(\[(?P<bw>'+verilogutil.re_bw+r')\])?[ \t]*(?P<name>[A-Za-z_]\w*)[ \t]*(?P<array>(?:\[('+verilogutil.re_bw+r')\][ \t]*)*)(=\s*(?P<init>[^;]+))?(?P<sig_list>,[\w, \t]*)?;[ \t]*(?P<comment>.*)')
         self.re_inst = re.compile(r'(?s)^[ \t]*\b(?P<itype>\w+)\s*(#\s*\([^;]+\))?\s*\b(?P<iname>\w+)\s*\(',re.MULTILINE)
 
@@ -568,11 +564,7 @@ class VerilogBeautifier():
             txt_new += ' '
         txt_new += '(\n'
         # Port declaration: direction type? signess? buswidth? list ,? comment?
-<<<<<<< HEAD
-        re_str = r'^[ \t]*(?P<dir>[\w\.]+)[ \t]*+(?P<var>var\b)?[ \t]*(?P<type>[\w\:]+\b)?[ \t]*(?P<sign>signed|unsigned\b)?[ \t]*(?P<bw>(?:\['+verilogutil.re_bw+r'\][ \t]*)*)[ \t]*(?P<ports>(?P<port1>\w+)[\w, \t\[\]\*\-\+\$\(\)\'\:)]*)[ \t]*(?P<comment>.*)'
-=======
         re_str = r'^[ \t]*(?P<dir>[\w\.]+)[ \t]+(?P<var>var\b)?[ \t]*(?P<type>[\w\:]+\b)?[ \t]*(?P<sign>signed|unsigned\b)?[ \t]*(?P<bw>(?:\['+verilogutil.re_bw+r'\][ \t]*)*)[ \t]*(?P<ports>(?P<port1>\w+)[\w, \t\[\]\*\-\+\$\(\)\'\:)]*)[ \t]*(?P<comment>.*)'
->>>>>>> f66b386a8643f73597de708af693384ca0bb39ae
         # print(re_str)
         # handle case of multiple input/output declared on same line
         txt_port = re.sub(r'[ \t]*,[ \t]*(input|output|inout)\b[ \t]+',r',\n\1 ',m.group('ports'))
@@ -964,11 +956,7 @@ class VerilogBeautifier():
         for l in lines:
             m = self.re_decl.search(l)
             if m:
-<<<<<<< HEAD
                 # print('[alignDecl] {0} => {1}'.format(l,m.groups()))
-=======
-                print('[alignDecl] {0} => {1}'.format(l,m.groups()))
->>>>>>> f66b386a8643f73597de708af693384ca0bb39ae
                 ilvl = self.getIndentLevel(l)
                 if ilvl not in len_max:
                     len_max[ilvl] = {'param':0,'scope':0,'type':0,'sign':0,'bw':0,'name':0,'array':[], 'array_sum':0, 'sig_list':0,'comment':0, 'init':0}
