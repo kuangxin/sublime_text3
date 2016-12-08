@@ -1,0 +1,23 @@
+<snippet>
+	<description>always</description>
+	<content><![CDATA[always @(posedge I_sys_clk or negedge I_rst_n) 
+begin
+    if(~I_rst_n)
+    begin
+        R_ <= ;
+    end 
+    else
+    begin
+        if()
+        begin
+            R_ <= ;
+        end
+        else
+        begin
+            R_ <= ;
+        end
+    end
+end]]></content>
+	<tabTrigger>al</tabTrigger>
+	<scope>source.systemverilog</scope>
+</snippet>

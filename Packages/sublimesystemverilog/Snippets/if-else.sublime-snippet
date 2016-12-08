@@ -1,0 +1,13 @@
+<snippet>
+	<description>if else</description>
+	<content><![CDATA[if ($1) 
+begin
+    $2
+end
+else
+begin
+    $0
+end]]></content>
+	<tabTrigger>if</tabTrigger>
+	<scope>source.systemverilog</scope>
+</snippet>

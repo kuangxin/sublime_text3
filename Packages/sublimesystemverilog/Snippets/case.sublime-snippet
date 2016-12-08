@@ -1,0 +1,12 @@
+<snippet>
+	<description>Case</description>
+	<content><![CDATA[case ($1)
+    $2: 
+    begin
+        $3
+    end
+    default:; 
+endcase]]></content>
+	<tabTrigger>case</tabTrigger>
+	<scope>source.systemverilog</scope>
+</snippet>
