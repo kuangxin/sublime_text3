@@ -522,6 +522,7 @@ class VerilogDoModuleInstCommand(sublime_plugin.TextCommand):
                                 ac.pop(p['name'],None)
             # Get declaration of signal for connecteion
             if p['decl'] :
+<<<<<<< HEAD
                 d = re.sub(r'input|output|inout','',p['decl']) # remove I/O indication
                 d = re.sub(r'var |reg ','',d) # remove var indication
                 if p['type'].startswith(('input')) :
@@ -530,6 +531,14 @@ class VerilogDoModuleInstCommand(sublime_plugin.TextCommand):
                     d = 'wire' + ' ' + d
                 elif '.' in d: # For interface remove modport and add instantiation. (No support for autoconnection of interface)
                     d = re.sub(r'(\w+)\.\w+\s+(.*)',r'\1 \2()',d)
+=======
+                d = re.sub(r'input |output |inout ','',p['decl']) # remove I/O indication
+                d = re.sub(r'var |reg ','',d) # remove var indication
+                ##if p['type'].startswith(('input','output','inout')) :
+                d = sig_type + ' ' + d
+                ##elif '.' in d: # For interface remove modport and add instantiation. (No support for autoconnection of interface)
+                ##    d = re.sub(r'(\w+)\.\w+\s+(.*)',r'\1 \2()',d)
+>>>>>>> f66b386a8643f73597de708af693384ca0bb39ae
                 for (k,v) in param_dict.items():
                     if k in d:
                         d = re.sub(r'\b'+k+r'\b',v,d)
